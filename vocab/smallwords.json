@@ -136,7 +136,7 @@
   },
   {
     "sv": "hem",
-    "en": "home",
+    "en": "home (direction: go home)",
     "alt": ["homeward", "homewards"],
     "pos": "adv",
     "ipa": "hɛmː",
@@ -409,7 +409,7 @@
   },
   {
     "sv": "när",
-    "en": "when",
+    "en": "when (conjunction)",
     "alt": ["whenever"],
     "pos": "conj",
     "ipa": "næːr",
