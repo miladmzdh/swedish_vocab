@@ -83,8 +83,9 @@
   },
   {
     "sv": "Det gör inget",
-    "en": "it doesn't matter",
+    "en": "it doesn't matter (no harm done)",
     "alt": [
+      "it doesn't matter",
       "never mind",
       "no matter",
       "that's okay",
@@ -540,7 +541,7 @@
       "feel better soon"
     ],
     "pos": "phrase",
-    "ipa": "ˈkryːa ˈpoː dɛj",
+    "ipa": "kryːa ˈpoː dɛj",
     "ex": "Jag hörde att du är sjuk. {Krya på dig}!",
     "exEn": "I heard you're sick. Get well soon!",
     "lvl": "A2",
