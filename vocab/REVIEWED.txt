@@ -20,3 +20,4 @@ health
 school
 kitchen
 leisure
+verbs2
