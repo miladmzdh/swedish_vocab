@@ -32,3 +32,4 @@ tech
 culture
 expressions
 adjectives2
+arts
