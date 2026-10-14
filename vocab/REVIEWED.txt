@@ -22,3 +22,4 @@ kitchen
 leisure
 verbs2
 feelings
+restaurant
