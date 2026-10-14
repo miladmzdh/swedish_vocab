@@ -1,0 +1,953 @@
+[
+  {
+    "sv": "spis",
+    "en": "stove",
+    "alt": [
+      "cooker",
+      "range",
+      "cooktop"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "spisen",
+      "spisar",
+      "spisarna"
+    ],
+    "ipa": "spiːs",
+    "tone": 1,
+    "ex": "Glömde du stänga av {spisen}?",
+    "exEn": "Did you forget to turn off the stove?",
+    "lvl": "A2",
+    "note": "En öppen spis is a fireplace."
+  },
+  {
+    "sv": "ugn",
+    "en": "oven",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "ugnen",
+      "ugnar",
+      "ugnarna"
+    ],
+    "ipa": "ɵŋn",
+    "tone": 1,
+    "ex": "Sätt {ugnen} på 200 grader.",
+    "exEn": "Set the oven to 200 degrees.",
+    "lvl": "A2",
+    "note": "g before n sounds like ng: \"ungn\"."
+  },
+  {
+    "sv": "mikro",
+    "en": "microwave",
+    "alt": [
+      "microwave oven"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "mikron",
+      "mikror",
+      "mikrorna"
+    ],
+    "ipa": "ˈmɪkːrʊ",
+    "tone": 1,
+    "ex": "Kör den i {mikron} i två minuter.",
+    "exEn": "Put it in the microwave for two minutes.",
+    "lvl": "A2",
+    "note": "Everyday short form of mikrovågsugn."
+  },
+  {
+    "sv": "kylskåp",
+    "en": "fridge",
+    "alt": [
+      "refrigerator"
+    ],
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "kylskåpet",
+      "kylskåp",
+      "kylskåpen"
+    ],
+    "ipa": "ˈɕyːlˌskoːp",
+    "tone": 2,
+    "ex": "Mjölken står i {kylskåpet}.",
+    "exEn": "The milk is in the fridge.",
+    "lvl": "A2",
+    "note": "Often just kylen: Lägg det i kylen. k before y is soft (tj-sound)."
+  },
+  {
+    "sv": "frys",
+    "en": "freezer",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "frysen",
+      "frysar",
+      "frysarna"
+    ],
+    "ipa": "fryːs",
+    "tone": 1,
+    "ex": "Det finns glass i {frysen}.",
+    "exEn": "There's ice cream in the freezer.",
+    "lvl": "A2",
+    "note": "Related verb: frysa (to freeze). Jag fryser = I'm cold."
+  },
+  {
+    "sv": "diskmaskin",
+    "en": "dishwasher",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "diskmaskinen",
+      "diskmaskiner",
+      "diskmaskinerna"
+    ],
+    "ipa": "ˈdɪsːkmaˌɧiːn",
+    "tone": 2,
+    "ex": "Kan du plocka ur {diskmaskinen}?",
+    "exEn": "Can you empty the dishwasher?",
+    "lvl": "A2"
+  },
+  {
+    "sv": "vask",
+    "en": "kitchen sink",
+    "alt": [
+      "sink"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "vasken",
+      "vaskar",
+      "vaskarna"
+    ],
+    "ipa": "vasːk",
+    "tone": 1,
+    "ex": "Ställ disken i {vasken}.",
+    "exEn": "Put the dirty dishes in the sink.",
+    "lvl": "A2",
+    "note": "Also called diskho. A bathroom sink is a handfat."
+  },
+  {
+    "sv": "kaffebryggare",
+    "en": "coffee maker",
+    "alt": [
+      "coffee machine",
+      "coffeemaker"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "kaffebryggaren",
+      "kaffebryggare",
+      "kaffebryggarna"
+    ],
+    "ipa": "ˈkafːɛˌbrʏɡːarɛ",
+    "tone": 2,
+    "ex": "Vi har köpt en ny {kaffebryggare}.",
+    "exEn": "We've bought a new coffee maker.",
+    "lvl": "A2",
+    "note": "Like most -are words, the plural is the same: två kaffebryggare."
+  },
+  {
+    "sv": "vattenkokare",
+    "en": "kettle",
+    "alt": [
+      "electric kettle"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "vattenkokaren",
+      "vattenkokare",
+      "vattenkokarna"
+    ],
+    "ipa": "ˈvatːɛnˌkuːkarɛ",
+    "tone": 2,
+    "ex": "Ska jag sätta på {vattenkokaren}?",
+    "exEn": "Should I put the kettle on?",
+    "lvl": "A2",
+    "note": "Literally \"water boiler\"."
+  },
+  {
+    "sv": "brödrost",
+    "en": "toaster",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "brödrosten",
+      "brödrostar",
+      "brödrostarna"
+    ],
+    "ipa": "ˈbrøːdˌrɔsːt",
+    "tone": 2,
+    "ex": "Jag rostar bröd i {brödrosten}.",
+    "exEn": "I'm making toast in the toaster.",
+    "lvl": "A2",
+    "note": "Toast is rostat bröd (toasted bread)."
+  },
+  {
+    "sv": "kastrull",
+    "en": "saucepan",
+    "alt": [
+      "pot"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "kastrullen",
+      "kastruller",
+      "kastrullerna"
+    ],
+    "ipa": "kaˈstrɵlː",
+    "tone": 1,
+    "ex": "Koka vatten i en stor {kastrull}.",
+    "exEn": "Boil water in a large saucepan.",
+    "lvl": "A2",
+    "note": "Stress on the second syllable: kas-TRULL."
+  },
+  {
+    "sv": "stekpanna",
+    "en": "frying pan",
+    "alt": [
+      "skillet",
+      "pan",
+      "fry pan"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "stekpannan",
+      "stekpannor",
+      "stekpannorna"
+    ],
+    "ipa": "ˈsteːkˌpanːa",
+    "tone": 2,
+    "ex": "Hetta upp lite olja i en {stekpanna}.",
+    "exEn": "Heat a little oil in a frying pan.",
+    "lvl": "A2",
+    "note": "Often just pannan in everyday speech."
+  },
+  {
+    "sv": "lock",
+    "en": "lid",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "locket",
+      "lock",
+      "locken"
+    ],
+    "ipa": "lɔkː",
+    "tone": 1,
+    "ex": "Lägg på ett {lock}, så kokar vattnet snabbare.",
+    "exEn": "Put a lid on, and the water will boil faster.",
+    "lvl": "A2",
+    "note": "False friend: a lock (for a door) is ett lås."
+  },
+  {
+    "sv": "kniv",
+    "en": "knife",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "kniven",
+      "knivar",
+      "knivarna"
+    ],
+    "ipa": "kniːv",
+    "tone": 1,
+    "ex": "Den här {kniven} är jättevass.",
+    "exEn": "This knife is really sharp.",
+    "lvl": "A1",
+    "note": "Unlike in English, the k is pronounced: k-niv."
+  },
+  {
+    "sv": "gaffel",
+    "en": "fork",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "gaffeln",
+      "gafflar",
+      "gafflarna"
+    ],
+    "ipa": "ˈɡafːɛl",
+    "tone": 1,
+    "ex": "Kan jag få en ren {gaffel}?",
+    "exEn": "Can I have a clean fork?",
+    "lvl": "A1",
+    "note": "The plural drops the e: gafflar."
+  },
+  {
+    "sv": "sked",
+    "en": "spoon",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "skeden",
+      "skedar",
+      "skedarna"
+    ],
+    "ipa": "ɧeːd",
+    "tone": 1,
+    "ex": "Soppa äter man med {sked}.",
+    "exEn": "You eat soup with a spoon.",
+    "lvl": "A1",
+    "note": "sk before e is the sj-sound."
+  },
+  {
+    "sv": "tesked",
+    "en": "teaspoon",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "teskeden",
+      "teskedar",
+      "teskedarna"
+    ],
+    "ipa": "ˈteːˌɧeːd",
+    "tone": 2,
+    "ex": "Jag tar en {tesked} socker i teet.",
+    "exEn": "I take a teaspoon of sugar in my tea.",
+    "lvl": "A2",
+    "note": "Written tsk in recipes."
+  },
+  {
+    "sv": "matsked",
+    "en": "tablespoon",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "matskeden",
+      "matskedar",
+      "matskedarna"
+    ],
+    "ipa": "ˈmɑːtˌɧeːd",
+    "tone": 2,
+    "ex": "Två {matskedar} socker räcker.",
+    "exEn": "Two tablespoons of sugar is enough.",
+    "lvl": "A2",
+    "note": "Written msk in recipes."
+  },
+  {
+    "sv": "bestick",
+    "en": "silverware",
+    "alt": [
+      "cutlery",
+      "flatware"
+    ],
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "besticket",
+      "bestick",
+      "besticken"
+    ],
+    "ipa": "bɛˈstɪkː",
+    "tone": 1,
+    "ex": "{Besticken} ligger i översta lådan.",
+    "exEn": "The silverware is in the top drawer.",
+    "lvl": "A2",
+    "note": "Knives, forks and spoons together. Stress on -stick."
+  },
+  {
+    "sv": "tallrik",
+    "en": "plate",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "tallriken",
+      "tallrikar",
+      "tallrikarna"
+    ],
+    "ipa": "ˈtalːrɪk",
+    "tone": 2,
+    "ex": "Ta en {tallrik} och ta för dig!",
+    "exEn": "Grab a plate and help yourself!",
+    "lvl": "A1"
+  },
+  {
+    "sv": "glas",
+    "en": "glass",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "glaset",
+      "glas",
+      "glasen"
+    ],
+    "ipa": "ɡlɑːs",
+    "tone": 1,
+    "ex": "Kan jag få ett {glas} vatten?",
+    "exEn": "Can I have a glass of water?",
+    "lvl": "A1",
+    "note": "Same form in the plural: två glas. Don't mix it up with glass, which means ice cream!"
+  },
+  {
+    "sv": "kopp",
+    "en": "cup",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "koppen",
+      "koppar",
+      "kopparna"
+    ],
+    "ipa": "kɔpː",
+    "tone": 1,
+    "ex": "Vill du ha en {kopp} kaffe?",
+    "exEn": "Would you like a cup of coffee?",
+    "lvl": "A1",
+    "note": "No word for \"of\": en kopp te = a cup of tea."
+  },
+  {
+    "sv": "mugg",
+    "en": "mug",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "muggen",
+      "muggar",
+      "muggarna"
+    ],
+    "ipa": "mɵɡː",
+    "tone": 1,
+    "ex": "Jag dricker te ur en stor {mugg}.",
+    "exEn": "I drink tea from a big mug.",
+    "lvl": "A2",
+    "note": "You drink ur (out of) a cup or mug."
+  },
+  {
+    "sv": "skål",
+    "en": "bowl",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "skålen",
+      "skålar",
+      "skålarna"
+    ],
+    "ipa": "skoːl",
+    "tone": 1,
+    "ex": "Ta fram en stor {skål}.",
+    "exEn": "Get out a big bowl.",
+    "lvl": "A2",
+    "note": "Skål! on its own means Cheers!"
+  },
+  {
+    "sv": "skärbräda",
+    "en": "cutting board",
+    "alt": [
+      "chopping board"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "skärbrädan",
+      "skärbrädor",
+      "skärbrädorna"
+    ],
+    "ipa": "ˈɧæːrˌbrɛːda",
+    "tone": 2,
+    "ex": "Hämta en {skärbräda} och en vass kniv.",
+    "exEn": "Get a cutting board and a sharp knife.",
+    "lvl": "A2",
+    "note": "From skära (to cut) + bräda (board)."
+  },
+  {
+    "sv": "laga mat",
+    "en": "to cook",
+    "alt": [
+      "to make food",
+      "to do the cooking"
+    ],
+    "pos": "verb",
+    "f": [
+      "lagar mat",
+      "lagade mat",
+      "lagat mat",
+      "laga mat"
+    ],
+    "ipa": "lɑːɡa ˈmɑːt",
+    "ex": "Vem {lagar mat} hemma hos er?",
+    "exEn": "Who does the cooking at your house?",
+    "lvl": "A1",
+    "note": "Laga on its own usually means to fix: laga cykeln."
+  },
+  {
+    "sv": "koka",
+    "en": "to boil",
+    "alt": [
+      "to cook"
+    ],
+    "pos": "verb",
+    "f": [
+      "kokar",
+      "kokade",
+      "kokat",
+      "koka"
+    ],
+    "ipa": "ˈkuːka",
+    "tone": 2,
+    "ex": "{Koka} potatisen i tjugo minuter.",
+    "exEn": "Boil the potatoes for twenty minutes.",
+    "lvl": "A2",
+    "note": "Also used for coffee: koka kaffe = to make coffee."
+  },
+  {
+    "sv": "steka",
+    "en": "to fry",
+    "alt": [
+      "to pan-fry",
+      "to roast"
+    ],
+    "pos": "verb",
+    "f": [
+      "steker",
+      "stekte",
+      "stekt",
+      "stek"
+    ],
+    "ipa": "ˈsteːka",
+    "tone": 2,
+    "ex": "{Stek} köttbullarna i smör.",
+    "exEn": "Fry the meatballs in butter.",
+    "lvl": "A2",
+    "note": "Also used for roasting meat in the oven."
+  },
+  {
+    "sv": "baka",
+    "en": "to bake",
+    "pos": "verb",
+    "f": [
+      "bakar",
+      "bakade",
+      "bakat",
+      "baka"
+    ],
+    "ipa": "ˈbɑːka",
+    "tone": 2,
+    "ex": "Vi {bakade} kanelbullar i helgen.",
+    "exEn": "We baked cinnamon buns over the weekend.",
+    "lvl": "A2"
+  },
+  {
+    "sv": "grilla",
+    "en": "to grill",
+    "alt": [
+      "to barbecue",
+      "to have a barbecue",
+      "to bbq"
+    ],
+    "pos": "verb",
+    "f": [
+      "grillar",
+      "grillade",
+      "grillat",
+      "grilla"
+    ],
+    "ipa": "ˈɡrɪlːa",
+    "tone": 2,
+    "ex": "Ska vi {grilla} i kväll?",
+    "exEn": "Should we have a barbecue tonight?",
+    "lvl": "A2"
+  },
+  {
+    "sv": "skära",
+    "en": "to cut (with a knife)",
+    "alt": [
+      "to cut",
+      "to slice"
+    ],
+    "pos": "verb",
+    "f": [
+      "skär",
+      "skar",
+      "skurit",
+      "skär"
+    ],
+    "ipa": "ˈɧæːra",
+    "tone": 2,
+    "ex": "Han {skar} tomaterna i bitar.",
+    "exEn": "He cut the tomatoes into pieces.",
+    "lvl": "A2",
+    "note": "Irregular: skär, skar, skurit. sk before ä is the sj-sound."
+  },
+  {
+    "sv": "hacka",
+    "en": "to chop",
+    "alt": [
+      "to dice",
+      "to mince"
+    ],
+    "pos": "verb",
+    "f": [
+      "hackar",
+      "hackade",
+      "hackat",
+      "hacka"
+    ],
+    "ipa": "ˈhakːa",
+    "tone": 2,
+    "ex": "{Hacka} löken fint.",
+    "exEn": "Chop the onion finely.",
+    "lvl": "A2"
+  },
+  {
+    "sv": "skala",
+    "en": "to peel",
+    "pos": "verb",
+    "f": [
+      "skalar",
+      "skalade",
+      "skalat",
+      "skala"
+    ],
+    "ipa": "ˈskɑːla",
+    "tone": 2,
+    "ex": "Kan du {skala} potatisen?",
+    "exEn": "Can you peel the potatoes?",
+    "lvl": "A2",
+    "note": "Ett skal is a peel or shell."
+  },
+  {
+    "sv": "röra",
+    "en": "to stir; to touch",
+    "alt": [
+      "to stir",
+      "to touch"
+    ],
+    "pos": "verb",
+    "f": [
+      "rör",
+      "rörde",
+      "rört",
+      "rör"
+    ],
+    "ipa": "ˈrœːra",
+    "tone": 2,
+    "ex": "{Rör} i såsen hela tiden.",
+    "exEn": "Keep stirring the sauce.",
+    "lvl": "A2",
+    "note": "Röra om = to give it a stir. Rör inte! = Don't touch!"
+  },
+  {
+    "sv": "blanda",
+    "en": "to mix",
+    "alt": [
+      "to blend",
+      "to combine"
+    ],
+    "pos": "verb",
+    "f": [
+      "blandar",
+      "blandade",
+      "blandat",
+      "blanda"
+    ],
+    "ipa": "ˈblanːda",
+    "tone": 2,
+    "ex": "{Blanda} mjöl och socker i en skål.",
+    "exEn": "Mix the flour and sugar in a bowl.",
+    "lvl": "A2"
+  },
+  {
+    "sv": "vispa",
+    "en": "to whisk",
+    "alt": [
+      "to whip",
+      "to beat"
+    ],
+    "pos": "verb",
+    "f": [
+      "vispar",
+      "vispade",
+      "vispat",
+      "vispa"
+    ],
+    "ipa": "ˈvɪsːpa",
+    "tone": 2,
+    "ex": "Kan du {vispa} grädden?",
+    "exEn": "Can you whip the cream?",
+    "lvl": "B1",
+    "note": "The tool is en visp (a whisk)."
+  },
+  {
+    "sv": "smaka",
+    "en": "to taste",
+    "pos": "verb",
+    "f": [
+      "smakar",
+      "smakade",
+      "smakat",
+      "smaka"
+    ],
+    "ipa": "ˈsmɑːka",
+    "tone": 2,
+    "ex": "Det här {smakar} jättegott!",
+    "exEn": "This tastes really good!",
+    "lvl": "A2",
+    "note": "Vill du smaka? = Would you like a taste?"
+  },
+  {
+    "sv": "värma",
+    "en": "to heat (up)",
+    "alt": [
+      "to heat",
+      "to heat up",
+      "to warm",
+      "to warm up"
+    ],
+    "pos": "verb",
+    "f": [
+      "värmer",
+      "värmde",
+      "värmt",
+      "värm"
+    ],
+    "ipa": "ˈværːma",
+    "tone": 2,
+    "ex": "Jag {värmer} lite soppa till lunch.",
+    "exEn": "I'm heating up some soup for lunch.",
+    "lvl": "A2"
+  },
+  {
+    "sv": "hälla",
+    "en": "to pour",
+    "pos": "verb",
+    "f": [
+      "häller",
+      "hällde",
+      "hällt",
+      "häll"
+    ],
+    "ipa": "ˈhɛlːa",
+    "tone": 2,
+    "ex": "{Häll} mjölken i en kastrull.",
+    "exEn": "Pour the milk into a saucepan.",
+    "lvl": "A2",
+    "note": "Hälla upp = to pour a drink: Ska jag hälla upp kaffe?"
+  },
+  {
+    "sv": "diska",
+    "en": "to do the dishes",
+    "alt": [
+      "to wash the dishes",
+      "to wash up",
+      "to do the washing-up"
+    ],
+    "pos": "verb",
+    "f": [
+      "diskar",
+      "diskade",
+      "diskat",
+      "diska"
+    ],
+    "ipa": "ˈdɪsːka",
+    "tone": 2,
+    "ex": "Vems tur är det att {diska}?",
+    "exEn": "Whose turn is it to do the dishes?",
+    "lvl": "A2",
+    "note": "The dirty dishes are disken: Jag tar disken = I'll do the dishes."
+  },
+  {
+    "sv": "duka",
+    "en": "to set the table",
+    "alt": [
+      "to lay the table"
+    ],
+    "pos": "verb",
+    "f": [
+      "dukar",
+      "dukade",
+      "dukat",
+      "duka"
+    ],
+    "ipa": "ˈdʉːka",
+    "tone": 2,
+    "ex": "Kan du {duka}? Maten är snart klar.",
+    "exEn": "Can you set the table? The food's almost ready.",
+    "lvl": "A2",
+    "note": "From en duk (a tablecloth)."
+  },
+  {
+    "sv": "duka av",
+    "en": "to clear the table",
+    "pos": "verb",
+    "f": [
+      "dukar av",
+      "dukade av",
+      "dukat av",
+      "duka av"
+    ],
+    "ipa": "dʉːka ˈɑːv",
+    "ex": "Kan du hjälpa mig att {duka av}?",
+    "exEn": "Can you help me clear the table?",
+    "lvl": "A2",
+    "note": "The stress is on av."
+  },
+  {
+    "sv": "ingrediens",
+    "en": "ingredient",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "ingrediensen",
+      "ingredienser",
+      "ingredienserna"
+    ],
+    "ipa": "ɪnɡrɛdɪˈɛnːs",
+    "tone": 1,
+    "ex": "Vilka {ingredienser} behöver vi?",
+    "exEn": "What ingredients do we need?",
+    "lvl": "B1",
+    "note": "Stress on the last syllable: ingredi-ENS."
+  },
+  {
+    "sv": "krydda",
+    "en": "spice",
+    "alt": [
+      "seasoning",
+      "herb"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "kryddan",
+      "kryddor",
+      "kryddorna"
+    ],
+    "ipa": "ˈkrʏdːa",
+    "tone": 2,
+    "ex": "Vilka {kryddor} har du i grytan?",
+    "exEn": "What spices have you put in the stew?",
+    "lvl": "A2",
+    "note": "Also a verb: krydda (kryddar) = to season."
+  },
+  {
+    "sv": "deciliter",
+    "en": "deciliter",
+    "alt": [
+      "decilitre",
+      "dl"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "decilitern",
+      "deciliter",
+      "decilitrarna"
+    ],
+    "ipa": "dɛsɪˈliːtɛr",
+    "tone": 1,
+    "ex": "Det behövs tre {deciliter} mjölk.",
+    "exEn": "You need three deciliters of milk.",
+    "lvl": "A2",
+    "note": "Swedish recipes use dl: 1 dl = 100 ml, a little under half a cup."
+  },
+  {
+    "sv": "liter",
+    "en": "liter",
+    "alt": [
+      "litre"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "litern",
+      "liter",
+      "litrarna"
+    ],
+    "ipa": "ˈliːtɛr",
+    "tone": 1,
+    "ex": "Koka upp en {liter} vatten.",
+    "exEn": "Bring a liter of water to a boil.",
+    "lvl": "A2",
+    "note": "Same form in the plural: två liter."
+  },
+  {
+    "sv": "gram",
+    "en": "gram",
+    "alt": [
+      "gramme"
+    ],
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "grammet",
+      "gram",
+      "grammen"
+    ],
+    "ipa": "ɡramː",
+    "tone": 1,
+    "ex": "Ett paket smör är 500 {gram}.",
+    "exEn": "A pack of butter is 500 grams.",
+    "lvl": "A2",
+    "note": "Same form in the plural: 200 gram."
+  },
+  {
+    "sv": "rå",
+    "en": "raw",
+    "alt": [
+      "uncooked"
+    ],
+    "pos": "adj",
+    "f": [
+      "rått",
+      "råa",
+      null,
+      null
+    ],
+    "ipa": "roː",
+    "tone": 1,
+    "ex": "Kycklingen är fortfarande {rå} inuti.",
+    "exEn": "The chicken is still raw inside.",
+    "lvl": "A2",
+    "note": "Ett-form rått: rått kött = raw meat."
+  },
+  {
+    "sv": "kokt",
+    "en": "boiled",
+    "alt": [
+      "cooked"
+    ],
+    "pos": "adj",
+    "f": [
+      "kokt",
+      "kokta",
+      null,
+      null
+    ],
+    "ipa": "kuːkt",
+    "tone": 1,
+    "ex": "Vi äter {kokt} potatis till fisken.",
+    "exEn": "We're having boiled potatoes with the fish.",
+    "lvl": "A2",
+    "note": "From koka. Kokt potatis is a classic Swedish side dish."
+  },
+  {
+    "sv": "stekt",
+    "en": "fried",
+    "alt": [
+      "pan-fried",
+      "roasted"
+    ],
+    "pos": "adj",
+    "f": [
+      "stekt",
+      "stekta",
+      null,
+      null
+    ],
+    "ipa": "steːkt",
+    "tone": 1,
+    "ex": "Jag vill ha ett {stekt} ägg, tack.",
+    "exEn": "I'd like a fried egg, please.",
+    "lvl": "A2",
+    "note": "From steka."
+  }
+]
