@@ -174,19 +174,23 @@ export function exampleBlock(w, { speakable = true } = {}) {
   if (!w.ex) return null;
   const p = splitExample(w);
   const plain = w.ex.replace(/[{}]/g, '');
+  const play = (slow) => (e) => {
+    e.stopPropagation();
+    speak(plain, slow ? { rate: slowRate() } : {});
+  };
   return h(
     'div.example',
     h(
-      'p.sv',
-      speakable ? { onclick: () => speak(plain), role: 'button', tabindex: 0, title: 'Tap to listen' } : null,
-      p.before,
-      h('b', p.word),
-      p.after,
-      speakable ? h('span.mini', ' 🔊') : null,
+      'div.ex-text',
+      h('p.sv', speakable ? { onclick: play(false), title: 'Tap to listen' } : null, p.before, h('b', p.word), p.after),
+      h('p.en', w.exEn),
     ),
-    h('p.en', w.exEn),
     speakable
-      ? h('button.chip.slow-ex', { type: 'button', onclick: (e) => (e.stopPropagation(), speak(plain, { rate: slowRate() })) }, '🐢 Slowly')
+      ? h(
+          'div.ex-btns',
+          h('button.speaker.sm', { type: 'button', 'aria-label': 'Play the sentence', title: 'Play the sentence', onclick: play(false), html: ICON_SPEAKER }),
+          h('button.speaker.sm', { type: 'button', 'aria-label': 'Play the sentence slowly', title: 'Play slowly', onclick: play(true) }, '🐢'),
+        )
       : null,
   );
 }
@@ -209,10 +213,8 @@ export function wordCard(w, { compact = false } = {}) {
     'div.wordcard',
     h(
       'div.headline',
-      h('div', prefix(w) ? h('span.prefix', prefix(w) + ' ') : null, h('span.sv', w.sv)),
-      speakerBtn(w),
-      speakerBtn(w, { slow: true }),
-      nativeBtn(w, { onStatus: (st, n) => setNativeLine(nativeLine, st, n) }),
+      h('div.hw', prefix(w) ? h('span.prefix', prefix(w) + ' ') : null, h('span.sv', w.sv)),
+      h('div.sound-btns', speakerBtn(w), speakerBtn(w, { slow: true }), nativeBtn(w, { onStatus: (st, n) => setNativeLine(nativeLine, st, n) })),
     ),
     ipaLine(w),
     nativeLine,

@@ -112,13 +112,13 @@ export function learnView() {
   const cards = h(
     'div.mini-cards',
     h(
-      'button.mini' + (due ? '.due' : ''),
+      'button.mini-card' + (due ? '.due' : ''),
       { type: 'button', onclick: () => (due ? startReview() : toast('Nothing to review right now 🎉')) },
       h('span.mini-icon', '🔁'),
       h('div', h('b', due ? `${due} to review` : 'All reviewed'), h('div.muted.small', due ? 'Keep them fresh' : 'Nice work')),
     ),
     h(
-      'button.mini',
+      'button.mini-card',
       { type: 'button', onclick: () => (location.hash = '#practice') },
       h('span.mini-icon', '📜'),
       h('div', h('b', `Quests ${qDone}/${q.length}`), h('div.muted.small', qDone === q.length ? 'All done!' : `${questReward} kr each`)),

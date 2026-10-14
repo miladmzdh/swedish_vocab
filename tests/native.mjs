@@ -91,6 +91,12 @@ await page.click('.wordcard .speaker >> nth=0');
 await page.click('.wordcard .speaker >> nth=1');
 await page.waitForTimeout(100);
 out.hejAudio = await page.evaluate(() => ({ played: window.__played, spoken: window.__spoken }));
+// The example sentence has its own normal and slow buttons.
+await page.evaluate(() => { window.__spoken = []; });
+await page.click('.wordcard .ex-btns .speaker >> nth=0');
+await page.click('.wordcard .ex-btns .speaker >> nth=1');
+await page.waitForTimeout(100);
+out.exampleAudio = await page.evaluate(() => window.__spoken);
 await openWord('tack');
 out.tackLine = await line();
 await openWord('katt');
@@ -115,6 +121,7 @@ const ok =
   /Wiktionary/.test(out.hejLine) && out.oldCacheRemoved &&
   out.hejAudio.played.length === 1 && out.hejAudio.played[0].rate === 1 && /Sv-hej\.ogg\.mp3$/.test(out.hejAudio.played[0].src) &&
   out.hejAudio.spoken.length === 2 && out.hejAudio.spoken[1].rate < out.hejAudio.spoken[0].rate &&
+  out.exampleAudio.length === 2 && out.exampleAudio[0].text.split(' ').length > 1 && out.exampleAudio[0].text === out.exampleAudio[1].text && out.exampleAudio[1].rate < out.exampleAudio[0].rate &&
   /Lingua Libre speaker Ninjastrikers/.test(out.tackLine) &&
   /Swedish Wiktionary/.test(out.kattLine) &&
   !out.nejCachedAfterOffline && /No native recording/.test(out.nejLine) && out.nejNativeHidden &&

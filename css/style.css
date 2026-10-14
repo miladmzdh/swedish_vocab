@@ -313,8 +313,9 @@ button.card:disabled { opacity: 0.6; }
 /* ---------- word card ---------- */
 
 .wordcard { background: var(--surface); border: 2px solid var(--line); border-radius: var(--radius); padding: 16px; }
-.wordcard .headline { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.wordcard .headline > div:first-child { font-size: 2rem; font-weight: 800; margin-right: auto; }
+.wordcard .headline { display: flex; align-items: center; gap: 10px 12px; flex-wrap: wrap; }
+.wordcard .headline .hw { flex: 1 1 auto; min-width: 0; font-size: 2rem; font-weight: 800; line-height: 1.15; overflow-wrap: anywhere; }
+.sound-btns { display: flex; gap: 8px; flex: none; }
 .prefix { color: var(--muted); font-weight: 600; }
 .wordcard .en { font-size: 1.15rem; font-weight: 700; margin: 6px 0; }
 .wordcard .meta { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
@@ -328,12 +329,17 @@ table.forms { border-collapse: collapse; margin: 8px 0; width: 100%; font-size: 
 table.forms th { text-align: left; color: var(--muted); font-weight: 600; padding: 4px 8px 4px 0; width: 45%; }
 table.forms td { font-weight: 700; padding: 4px 0; }
 table.forms tr + tr { border-top: 1px solid var(--line); }
-.example { background: var(--surface-2); border-radius: 12px; padding: 10px 12px; margin-top: 8px; }
+.example {
+  display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: start;
+  background: var(--surface-2); border-radius: 14px; padding: 10px 10px 10px 12px; margin-top: 8px;
+}
 .example p { margin: 0; }
 .example .sv { font-weight: 600; cursor: pointer; }
-.example .en { color: var(--muted); font-size: 0.9rem; margin-top: 2px; }
+.example .en { color: var(--muted); font-size: 0.9rem; margin-top: 3px; }
 .example b { color: var(--brand); }
-.example .slow-ex { margin-top: 6px; cursor: pointer; }
+.ex-btns { display: flex; flex-direction: column; gap: 6px; }
+.speaker.sm { width: 36px; height: 36px; border-radius: 10px; font-size: 1rem; box-shadow: 0 2px 0 var(--brand-dark); }
+.speaker.sm:active { box-shadow: none; }
 .note { margin-top: 10px; font-size: 0.9rem; background: color-mix(in srgb, var(--accent) 18%, var(--surface)); border-radius: 12px; padding: 8px 12px; }
 .speaker {
   width: 44px; height: 44px; flex: none; border-radius: 12px; border: 0; background: var(--brand-2); color: #fff;
@@ -612,14 +618,14 @@ textarea.code { font-family: ui-monospace, Menlo, monospace; font-size: 0.75rem;
 .hero-btn:active:not(:disabled) { box-shadow: 0 1px 0 var(--accent-dark); }
 
 .mini-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 4px; }
-.mini {
+.mini-card {
   display: flex; align-items: center; gap: 10px; text-align: left; padding: 12px; border-radius: 16px;
   background: var(--surface); border: 2px solid var(--line); box-shadow: var(--shadow);
 }
-.mini:active { transform: translateY(2px); box-shadow: none; }
-.mini.due { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 16%, var(--surface)); }
+.mini-card:active { transform: translateY(2px); box-shadow: none; }
+.mini-card.due { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 16%, var(--surface)); }
 .mini-icon { font-size: 1.6rem; }
-.mini b { font-size: 0.95rem; }
+.mini-card b { font-size: 0.95rem; }
 
 .path { position: relative; }
 .path svg.trail { position: absolute; left: 0; top: 0; pointer-events: none; z-index: 0; overflow: visible; }
