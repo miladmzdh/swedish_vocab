@@ -10,3 +10,4 @@ home
 colors
 city
 animals
+clothes
