@@ -236,12 +236,12 @@
     "en": "slow",
     "pos": "adj",
     "f": ["långsamt", "långsamma", "långsammare", "långsammast"],
-    "ipa": "ˈlɔŋːˌsam",
+    "ipa": "ˈlɔŋːˌsamː",
     "tone": 2,
     "ex": "Datorn är så {långsam} idag.",
     "exEn": "The computer is so slow today.",
     "lvl": "A1",
-    "note": "Double m when an ending is added: långsamma. 'Slowly' is långsamt or sakta."
+    "note": "Double m before a vowel ending: långsamma. 'Slowly' is långsamt or sakta."
   },
   {
     "sv": "dyr",
@@ -314,7 +314,7 @@
     "ex": "Receptet är {enkelt} och gott.",
     "exEn": "The recipe is simple and tasty.",
     "lvl": "A2",
-    "note": "The e drops before an ending: enkla, enklare."
+    "note": "The e drops before a vowel ending: enkla, enklare."
   },
   {
     "sv": "ren",
@@ -602,7 +602,7 @@
     "ex": "Stockholm är en {vacker} stad.",
     "exEn": "Stockholm is a beautiful city.",
     "lvl": "A1",
-    "note": "The e drops before an ending: vackra, vackrare."
+    "note": "The e drops before a vowel ending: vackra, vackrare."
   },
   {
     "sv": "ful",
