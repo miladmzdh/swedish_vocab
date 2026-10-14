@@ -7,7 +7,7 @@ import { levelInfo, wordStats, unitProgress, unitStars, unitUnlocked, quests, AC
 import { startSession, buildLesson, buildReview, buildPractice, bossConfig, jumpConfig, survivalConfig, labConfig, dueWords, weakestWords } from './session.js';
 import { blitz, genderRush, matchMadness } from './arcade.js';
 import { wordCard, speakerBtn, canListen } from './exercises.js';
-import { speak, swedishVoices, onVoices, ttsSupported, speechRecognitionSupported, sfx } from './audio.js';
+import { speak, slowRate, swedishVoices, onVoices, ttsSupported, speechRecognitionSupported, sfx } from './audio.js';
 import { downloadBackup, backupCode, parseBackup, importBackup, gistToken, gistId, setGist, syncGist, autoSync, cleanToken, tokenProblem } from './sync.js';
 
 let rerender = () => {};
@@ -707,7 +707,11 @@ export function settingsView() {
         h('input', { type: 'range', min: 0.5, max: 1.2, step: 0.05, value: st.rate, oninput: (e) => set('rate', Number(e.target.value)) }),
       ),
       h('div.setting', h('div', h('b', 'Swedish voice'), voiceNote), voiceSel),
-      h('button.btn.ghost', { type: 'button', onclick: () => speak('Hej! Välkommen till Svenska Quest. Sju sjösjuka sjömän.') }, '▶︎ Test voice'),
+      h(
+        'div.row',
+        h('button.btn.ghost', { type: 'button', onclick: () => speak('Hej! Välkommen till Svenska Quest. Sju sjösjuka sjömän.') }, '▶︎ Test voice'),
+        h('button.btn.ghost', { type: 'button', onclick: () => speak('Sju sjösjuka sjömän.', { rate: slowRate() }) }, '🐢 Test slow'),
+      ),
     ),
     h(
       'section.card',

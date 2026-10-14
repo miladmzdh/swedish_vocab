@@ -190,12 +190,15 @@ export function findNative(word) {
 }
 
 let current = null;
-export function playUrl(url) {
+export function playUrl(url, { rate = 1 } = {}) {
   return new Promise((resolve) => {
     try {
       current && current.pause();
       const a = new Audio(url);
       current = a;
+      // Slow playback keeps the speaker's pitch (time-stretching) instead of sounding deeper.
+      a.preservesPitch = a.webkitPreservesPitch = a.mozPreservesPitch = true;
+      a.playbackRate = rate;
       a.onended = () => resolve(true);
       a.onerror = () => resolve(false);
       a.play().catch(() => resolve(false));
@@ -210,13 +213,17 @@ export function cachedNative(word) {
   return c && c.u ? { url: c.u, credit: c.by, page: c.p } : null;
 }
 
+// Slow mode is half the learner's normal speed. On iPhone the browser maps speech rates below 1
+// linearly onto the system voice, so halving gives a clearly slower, still natural voice.
+export const slowRate = () => Math.max(0.3, S.settings.rate * 0.5);
+
 /** Say a vocabulary entry: a native recording when enabled and already found, otherwise TTS (nouns with their article). */
-export async function sayWord(w, { rate, native = true } = {}) {
+export async function sayWord(w, { rate, native = true, slow = false } = {}) {
   if (native && S.settings.native) {
     const n = cachedNative(w.sv);
-    if (n && (await playUrl(n.url))) return 'native';
+    if (n && (await playUrl(n.url, { rate: slow ? 0.6 : 1 }))) return 'native';
   }
-  await speak(speakText(w), { rate });
+  await speak(speakText(w), { rate: slow ? slowRate() : rate });
   return 'tts';
 }
 

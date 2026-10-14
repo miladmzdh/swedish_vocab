@@ -3,7 +3,7 @@
 import { h } from './ui.js';
 import { S } from './store.js';
 import { display, prefix, distractors, shuffle, splitExample, unitWords, WORDS, SV_FORMS, POS_LABEL, FORM_LABELS } from './data.js';
-import { sayWord, speak, sfx, findNative, cachedNative, swedishVoices, ttsSupported, listenOnce, speechRecognitionSupported } from './audio.js';
+import { sayWord, speak, slowRate, sfx, findNative, cachedNative, swedishVoices, ttsSupported, listenOnce, speechRecognitionSupported } from './audio.js';
 import { checkTyped, checkSpoken, norm } from './answer.js';
 
 // ---------- capability checks ----------
@@ -125,7 +125,7 @@ export function speakerBtn(w, { big = false, slow = false, label } = {}) {
       'aria-label': label || (slow ? 'Play slowly' : 'Play pronunciation'),
       onclick: (e) => {
         e.stopPropagation();
-        sayWord(w, slow ? { rate: 0.55, native: false } : {});
+        sayWord(w, slow ? { slow: true } : {});
       },
       html: slow ? ICON_TURTLE : ICON_SPEAKER,
     },
@@ -178,6 +178,9 @@ export function exampleBlock(w, { speakable = true } = {}) {
       speakable ? h('span.mini', ' 🔊') : null,
     ),
     h('p.en', w.exEn),
+    speakable
+      ? h('button.chip.slow-ex', { type: 'button', onclick: (e) => (e.stopPropagation(), speak(plain, { rate: slowRate() })) }, '🐢 Slowly')
+      : null,
   );
 }
 
