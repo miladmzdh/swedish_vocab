@@ -13,7 +13,8 @@ const browser = await chromium.launch({ executablePath: process.env.CHROMIUM || 
 const ctx = await browser.newContext({ ...devices['iPhone 13'], serviceWorkers: 'block' });
 const page = await ctx.newPage();
 page.on('pageerror', (e) => errors.push('pageerror: ' + e.message));
-page.on('console', (m) => m.type() === 'error' && errors.push('console: ' + m.text()));
+// External hosts (Wikimedia, GitHub) are unreachable in CI; only report errors from the app itself.
+page.on('console', (m) => m.type() === 'error' && !/Failed to load resource/.test(m.text()) && errors.push('console: ' + m.text()));
 const shot = async (name) => shots && page.screenshot({ path: `${shots}/${name}.png` });
 
 await page.goto(base);
@@ -73,6 +74,21 @@ await page.reload();
 await page.waitForSelector('.path .node');
 const xpAfterReload = await page.evaluate(() => Object.values(JSON.parse(localStorage.getItem('svenskaquest.v1')).days).reduce((a, b) => a + b, 0));
 await shot('06-after');
+
+// Arcade games start, accept answers and can be quit.
+for (const [name, sel] of [['Blitz', '.opt'], ['Gender Rush', '.gbtn'], ['Match Madness', '.mcard']]) {
+  await page.goto(base + '#practice');
+  await page.click(`.game:has-text("${name}")`);
+  await page.waitForSelector(sel);
+  for (let i = 0; i < 4; i++) {
+    const b = await page.$(`${sel}:not(:disabled)`);
+    if (b) await b.click().catch(() => {});
+    await page.waitForTimeout(300);
+  }
+  await shot('07-' + name.replace(/ /g, '-'));
+  await page.click('.s-top .icon-btn');
+  await page.waitForSelector('#session', { state: 'hidden' });
+}
 
 console.log(JSON.stringify({
   summary,

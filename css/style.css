@@ -203,6 +203,7 @@ button.card:disabled { opacity: 0.6; }
 }
 .level-head::before, .level-head::after { content: ''; flex: 1; height: 2px; background: var(--line); }
 .node-wrap { display: flex; flex-direction: column; align-items: center; margin: 6px 0 14px; position: relative; }
+.node-wrap.has-bubble { margin-top: 40px; }
 .node {
   position: relative; width: 92px; height: 92px; border-radius: 50%; border: 0; padding: 0;
   background: var(--surface); display: grid; place-items: center;

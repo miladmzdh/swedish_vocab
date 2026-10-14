@@ -97,7 +97,8 @@ export function startSession(cfg) {
   function drawTop() {
     const total = st.done + st.queue.length + (st.current ? 1 : 0);
     const pct = cfg.endless ? Math.min(1, st.correct / (cfg.goal || 50)) : total ? st.done / total : 0;
-    top.replaceChildren(
+    mount(
+      top,
       h('button.icon-btn', { type: 'button', 'aria-label': 'Quit', onclick: quit }, '✕'),
       cfg.boss
         ? h('div.s-title', cfg.title)

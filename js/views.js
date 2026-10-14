@@ -120,7 +120,7 @@ export function learnView() {
     const C = 2 * Math.PI * R;
     path.append(
       h(
-        'div.node-wrap',
+        'div.node-wrap' + (isCurrent ? '.has-bubble' : ''),
         { style: { transform: `translateX(${offset}px)` } },
         isCurrent ? h('div.bubble', p.lessons ? 'CONTINUE' : 'START') : null,
         h(
