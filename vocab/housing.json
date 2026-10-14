@@ -273,7 +273,7 @@
     "ex": "Har du betalat {räkningarna}?",
     "exEn": "Have you paid the bills?",
     "lvl": "A2",
-    "note": "At a restaurant you ask for notan, not räkningen."
+    "note": "At a restaurant the bill is usually called notan."
   },
   {
     "sv": "avgift",
@@ -370,7 +370,7 @@
     "ex": "Var kan jag {slänga} gamla batterier?",
     "exEn": "Where can I throw away old batteries?",
     "lvl": "A2",
-    "note": "The everyday word for throwing things away. Kasta is to throw (a ball)."
+    "note": "The everyday word for throwing things away. Kasta works too, and also means to throw (a ball)."
   },
   {
     "sv": "återvinning",
