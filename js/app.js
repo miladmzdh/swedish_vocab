@@ -114,6 +114,15 @@ function registerSW() {
   navigator.serviceWorker
     .register('sw.js')
     .then((reg) => {
+      // Phones often resume the app from the background instead of reloading it, so check for a new
+      // app version and refresh the cached word list whenever it comes back to the foreground.
+      let lastCheck = Date.now();
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState !== 'visible' || Date.now() - lastCheck < 10 * 60000) return;
+        lastCheck = Date.now();
+        reg.update().catch(() => {});
+        fetch('data/vocab.json').catch(() => {});
+      });
       const offer = (w) => {
         if (!w) return;
         const btn = h('button.btn.small', { type: 'button', onclick: () => w.postMessage('skipWaiting') }, 'Update');
