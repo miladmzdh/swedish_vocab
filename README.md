@@ -5,10 +5,10 @@ A free, gamified Swedish vocabulary app built for phones. It is a plain static w
 
 ## What's inside
 
-- **~1,700 words in 35 themed units** (A1 → B1): greetings, food, home, verbs, travel, work, health, Swedish culture and more.
+- **~1,800 words in 35 themed units** (A1 → B1): greetings, food, home, verbs, travel, work, health, Swedish culture and more.
   Every entry has gender (en/ett), all inflected forms, an example sentence with translation, IPA pronunciation and tonal accent.
 - **A learning path** of units with lessons, ★★★ stars and a **boss battle** at the end of each unit (Tomten, Älgen, Surströmmingen…).
-- **12 exercise types**: multiple choice both ways, listening, typing (with å ä ö keys), en/ett, word forms, fill-the-gap,
+- **11 exercise types** plus new-word cards: multiple choice both ways, listening, typing (with å ä ö keys), en/ett, word forms, fill-the-gap,
   letter scramble, matching pairs, dictation and **speaking** (speech recognition checks your pronunciation).
 - **Arcade games**: Blitz (60 s), Survival (3 lives), Gender Rush (en or ett?), Match Madness, Listening Lab.
 - **Gamification**: XP and levels, daily goal ring, streaks with streak freezes, daily quests, 34 achievements,
