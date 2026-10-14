@@ -17,3 +17,4 @@ weather
 work
 shopping
 health
+school
