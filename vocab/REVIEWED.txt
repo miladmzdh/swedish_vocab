@@ -31,3 +31,4 @@ abstract
 tech
 culture
 expressions
+adjectives2
