@@ -71,27 +71,65 @@ export const gistId = () => {
   }
 };
 
+// Tokens pasted on phones often pick up spaces, line breaks or invisible characters.
+export const cleanToken = (t) => String(t || '').replace(/[\s\u200B-\u200D\u2060\uFEFF]/g, '');
+
+/** A human-readable problem with the token's format, or null if it looks like a GitHub token. */
+export function tokenProblem(t) {
+  if (!t) return 'Paste your GitHub token first.';
+  if (/^(ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|[0-9a-f]{40})$/.test(t)) return null;
+  return `That doesn't look like a GitHub token (it has ${t.length} characters and starts with “${t.slice(0, 4)}…”). A classic token starts with “ghp_” and is 40 characters long. On GitHub, use the copy button next to the token, then paste it here.`;
+}
+
 export function setGist(token, id) {
   try {
-    if (token != null) token ? localStorage.setItem(TOKEN_KEY, token.trim()) : localStorage.removeItem(TOKEN_KEY);
+    if (token != null) token ? localStorage.setItem(TOKEN_KEY, cleanToken(token)) : localStorage.removeItem(TOKEN_KEY);
     if (id != null) id ? localStorage.setItem(GIST_KEY, id.trim()) : localStorage.removeItem(GIST_KEY);
   } catch {}
 }
 
+const headers = (extra) => ({
+  Accept: 'application/vnd.github+json',
+  Authorization: `Bearer ${gistToken()}`,
+  'X-GitHub-Api-Version': '2022-11-28',
+  ...extra,
+});
+
+const INVALID =
+  'GitHub says this token is not valid: it was mistyped, has expired, or was deleted (GitHub deletes tokens automatically if they are ever posted publicly). Create a new token and paste it with the copy button.';
+
 async function gh(path, opts = {}) {
   const r = await fetch(`https://api.github.com${path}`, {
     ...opts,
-    headers: {
-      Accept: 'application/vnd.github+json',
-      Authorization: `Bearer ${gistToken()}`,
-      'X-GitHub-Api-Version': '2022-11-28',
-      ...(opts.body ? { 'Content-Type': 'application/json' } : {}),
-    },
+    headers: headers(opts.body ? { 'Content-Type': 'application/json' } : {}),
   });
-  if (r.status === 401) throw new Error('GitHub rejected the token. Check that it is valid and has the "gist" scope.');
-  if (r.status === 404) throw new Error('Gist not found. It may have been deleted. Clear the Gist ID to create a new one.');
-  if (!r.ok) throw new Error(`GitHub error ${r.status}`);
+  if (r.status === 401) throw new Error(INVALID);
+  if (r.status === 403)
+    throw new Error('This token is not allowed to use gists. Classic token: tick the “gist” scope. Fine-grained token: Account permissions → Gists → Read and write.');
+  if (r.status === 404) throw new Error(path.startsWith('/gists/') ? 'Gist not found. It may have been deleted. Clear the Gist ID field and sync again to create a new one.' : 'GitHub could not find that (404). Check the token’s permissions.');
+  if (!r.ok) throw new Error(`GitHub error ${r.status}. Try again in a minute.`);
   return r.json();
+}
+
+/** Check the token before syncing so the learner gets a precise message. */
+export async function verifyToken() {
+  const t = gistToken();
+  const problem = tokenProblem(t);
+  if (problem) throw new Error(problem);
+  let r;
+  try {
+    r = await fetch('https://api.github.com/user', { headers: headers() });
+  } catch {
+    throw new Error('Could not reach GitHub. Check your internet connection.');
+  }
+  if (r.status === 401) throw new Error(INVALID);
+  if (!r.ok) throw new Error(`GitHub error ${r.status}. Try again in a minute.`);
+  // Classic tokens report their scopes; fine-grained tokens don't send this header.
+  const scopes = r.headers.get('x-oauth-scopes');
+  if (scopes != null && !scopes.split(',').map((x) => x.trim()).includes('gist'))
+    throw new Error('The token works, but it is missing the “gist” scope. On GitHub, open the token, tick “gist”, and click Update token.');
+  const user = await r.json().catch(() => ({}));
+  return user.login || '';
 }
 
 async function findExisting() {
@@ -102,8 +140,9 @@ async function findExisting() {
 }
 
 /** Pull the gist, merge with local progress, push the result. Returns 'created' | 'synced'. */
-export async function syncGist() {
+export async function syncGist({ verify = false } = {}) {
   if (!gistToken()) throw new Error('Add a GitHub token first.');
+  if (verify) await verifyToken();
   let id = gistId() || (await findExisting());
   const body = (state) => JSON.stringify({ files: { [FILE]: { content: JSON.stringify(state) } } });
   if (!id) {

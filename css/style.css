@@ -562,6 +562,9 @@ input.name { padding: 6px 10px; font-weight: 800; font-size: 1.1rem; border-widt
 .switch:checked::after { transform: translateX(20px); }
 .switch:disabled { opacity: 0.4; }
 .warn { color: var(--bad-dark); }
+input.token { -webkit-text-security: disc; font-family: ui-monospace, Menlo, monospace; flex: 1; min-width: 0; }
+input.token.shown { -webkit-text-security: none; }
+.settings .row input.token { width: auto; }
 textarea.code { font-family: ui-monospace, Menlo, monospace; font-size: 0.75rem; word-break: break-all; }
 
 /* guide */

@@ -8,7 +8,7 @@ import { startSession, buildLesson, buildReview, buildPractice, bossConfig, jump
 import { blitz, genderRush, matchMadness } from './arcade.js';
 import { wordCard, speakerBtn, canListen } from './exercises.js';
 import { speak, swedishVoices, onVoices, ttsSupported, speechRecognitionSupported, sfx } from './audio.js';
-import { downloadBackup, backupCode, parseBackup, importBackup, gistToken, gistId, setGist, syncGist, autoSync } from './sync.js';
+import { downloadBackup, backupCode, parseBackup, importBackup, gistToken, gistId, setGist, syncGist, autoSync, cleanToken, tokenProblem } from './sync.js';
 
 let rerender = () => {};
 export const setRerender = (fn) => (rerender = fn);
@@ -618,16 +618,36 @@ export function settingsView() {
     });
   }
 
-  const tokenIn = h('input', { type: 'password', placeholder: 'GitHub token (gist scope)', value: gistToken(), autocomplete: 'off', 'aria-label': 'GitHub token' });
+  // A plain text field (masked with CSS) so phones don't offer to replace it with a generated password.
+  const tokenIn = h('input.token', {
+    type: 'text',
+    placeholder: 'Paste token (starts with ghp_)',
+    value: gistToken(),
+    autocomplete: 'off',
+    autocapitalize: 'off',
+    autocorrect: 'off',
+    spellcheck: false,
+    inputmode: 'text',
+    'aria-label': 'GitHub token',
+  });
+  const showToken = h('button.btn.ghost.small', { type: 'button', onclick: () => tokenIn.classList.toggle('shown') }, '👁 Show');
   const gistIn = h('input', { type: 'text', placeholder: 'Gist ID (filled in automatically)', value: gistId(), autocomplete: 'off', 'aria-label': 'Gist ID' });
   const syncMsg = h('div.muted.small', S.lastSync ? `Last synced ${ago(S.lastSync)}.` : 'Not set up.');
   const doSync = async () => {
-    setGist(tokenIn.value, gistIn.value);
-    syncMsg.textContent = 'Syncing…';
+    const token = cleanToken(tokenIn.value);
+    tokenIn.value = token;
+    const problem = tokenProblem(token);
+    if (problem) {
+      syncMsg.textContent = '⚠️ ' + problem;
+      return;
+    }
+    setGist(token, gistIn.value);
+    syncMsg.textContent = 'Checking token…';
     try {
-      const r = await syncGist();
+      const r = await syncGist({ verify: true });
       gistIn.value = gistId();
       syncMsg.textContent = r === 'created' ? '✅ Created a private gist with your progress.' : '✅ Synced.';
+      toast(r === 'created' ? '☁️ Sync is set up: your progress is now backed up to a private gist.' : '☁️ Synced with GitHub');
       rerender();
     } catch (e) {
       syncMsg.textContent = '⚠️ ' + e.message;
@@ -743,7 +763,7 @@ export function settingsView() {
         'p.muted.small',
         'Keeps your progress in a private Gist on your own GitHub account, so it survives a lost phone and syncs between devices. Create a token at github.com → Settings → Developer settings → Personal access tokens → Tokens (classic), with only the “gist” scope. The token is stored only on this device.',
       ),
-      tokenIn,
+      h('div.row', tokenIn, showToken),
       gistIn,
       h('div.row', h('button.btn', { type: 'button', onclick: doSync }, 'Sync now'), h('button.btn.ghost', { type: 'button', onclick: () => (setGist('', ''), (tokenIn.value = ''), (gistIn.value = ''), (syncMsg.textContent = 'Disconnected.')) }, 'Disconnect')),
       syncMsg,
