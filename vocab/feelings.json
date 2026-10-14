@@ -6,7 +6,7 @@
     "pos": "noun",
     "g": "en",
     "f": ["känslan", "känslor", "känslorna"],
-    "ipa": "ˈɕɛnsla",
+    "ipa": "ˈɕɛnːsla",
     "tone": 2,
     "ex": "Det är en härlig {känsla} att vara hemma igen.",
     "exEn": "It's a wonderful feeling to be home again.",
@@ -88,7 +88,7 @@
     "ex": "Och så levde de {lyckliga} i alla sina dagar.",
     "exEn": "And they lived happily ever after.",
     "lvl": "A2",
-    "note": "Deeper and more lasting than glad. False friend: it doesn't mean lucky (that's ha tur)."
+    "note": "Deeper and more lasting than glad. False friend: Jag är lycklig = I'm happy, not I'm lucky (that's Jag har tur)."
   },
   {
     "sv": "olycklig",
@@ -277,7 +277,7 @@
     "ex": "Jag är så {avundsjuk} på din semester!",
     "exEn": "I'm so jealous of your vacation!",
     "lvl": "B1",
-    "note": "avundsjuk på = jealous of. Jealousy in a relationship is svartsjuk."
+    "note": "avundsjuk på = jealous of. Jealous in a relationship is svartsjuk."
   },
   {
     "sv": "generad",
@@ -298,7 +298,7 @@
     "pos": "noun",
     "g": "ett",
     "f": ["humöret", "humör", "humören"],
-    "ipa": "hɵˈmøːr",
+    "ipa": "hɵˈmœːr",
     "tone": 1,
     "ex": "Hon är på dåligt {humör} idag.",
     "exEn": "She's in a bad mood today.",
@@ -481,7 +481,7 @@
     "alt": ["to care"],
     "pos": "verb",
     "f": ["bryr sig om", "brydde sig om", "brytt sig om", "bry dig om"],
-    "ipa": "bryː sɛj ˈɔmː",
+    "ipa": "ˈbryː sɛj ɔm",
     "ex": "Jag {bryr mig om} dig.",
     "exEn": "I care about you.",
     "lvl": "B1",
