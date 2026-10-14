@@ -18,3 +18,4 @@ work
 shopping
 health
 school
+kitchen
