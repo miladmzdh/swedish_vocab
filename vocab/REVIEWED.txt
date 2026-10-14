@@ -6,3 +6,4 @@ numbers
 verbs1
 family
 body
+home
