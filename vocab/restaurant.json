@@ -1,0 +1,969 @@
+[
+  {
+    "sv": "meny",
+    "en": "menu",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "menyn",
+      "menyer",
+      "menyerna"
+    ],
+    "ipa": "mɛˈnyː",
+    "tone": 1,
+    "ex": "Har ni en {meny} på engelska?",
+    "exEn": "Do you have a menu in English?",
+    "lvl": "A2",
+    "note": "Stress on the last syllable: me-NY."
+  },
+  {
+    "sv": "Har ni ett bord för två?",
+    "en": "do you have a table for two?",
+    "alt": [
+      "do you have a table for 2",
+      "have you got a table for two",
+      "a table for two",
+      "table for two"
+    ],
+    "pos": "phrase",
+    "ipa": "hɑːr niː ɛt ˈbuːɖ fœr ˈtvoː",
+    "ex": "Hej! {Har ni ett bord för två} i kväll?",
+    "exEn": "Hi! Do you have a table for two tonight?",
+    "lvl": "A2",
+    "note": "Use ni (you, plural): you are asking the restaurant, not one person."
+  },
+  {
+    "sv": "boka bord",
+    "en": "to book a table",
+    "alt": [
+      "to reserve a table",
+      "book a table",
+      "reserve a table"
+    ],
+    "pos": "verb",
+    "f": [
+      "bokar bord",
+      "bokade bord",
+      "bokat bord",
+      "boka bord"
+    ],
+    "ipa": "buːka ˈbuːɖ",
+    "ex": "Jag har {bokat bord} till klockan åtta.",
+    "exEn": "I've booked a table for eight o'clock.",
+    "lvl": "A2",
+    "note": "Usually said without an article: boka bord."
+  },
+  {
+    "sv": "bokning",
+    "en": "reservation",
+    "alt": [
+      "booking"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "bokningen",
+      "bokningar",
+      "bokningarna"
+    ],
+    "ipa": "ˈbuːknɪŋ",
+    "tone": 2,
+    "ex": "Hej, jag har en {bokning} på namnet Ali.",
+    "exEn": "Hi, I have a reservation under the name Ali.",
+    "lvl": "A2",
+    "note": "Har ni bokat? = Do you have a reservation?"
+  },
+  {
+    "sv": "servitör",
+    "en": "waiter",
+    "alt": [
+      "server"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "servitören",
+      "servitörer",
+      "servitörerna"
+    ],
+    "ipa": "sɛrvɪˈtœːr",
+    "tone": 1,
+    "ex": "{Servitören} kommer med maten.",
+    "exEn": "The waiter is bringing the food.",
+    "lvl": "A2",
+    "note": "Stress on the last syllable. A waitress is a servitris."
+  },
+  {
+    "sv": "servitris",
+    "en": "waitress",
+    "alt": [
+      "server"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "servitrisen",
+      "servitriser",
+      "servitriserna"
+    ],
+    "ipa": "sɛrvɪˈtriːs",
+    "tone": 1,
+    "ex": "Min syster jobbar som {servitris} på ett kafé.",
+    "exEn": "My sister works as a waitress at a café.",
+    "lvl": "A2"
+  },
+  {
+    "sv": "Vad får det vara?",
+    "en": "what can I get you?",
+    "alt": [
+      "what can I get you",
+      "what would you like",
+      "what will it be",
+      "what'll it be"
+    ],
+    "pos": "phrase",
+    "ipa": "vɑː foːr dɛ ˈvɑːra",
+    "ex": "{Vad får det vara} idag?",
+    "exEn": "What can I get you today?",
+    "lvl": "A2",
+    "note": "What staff say at the counter. Literally 'what may it be?'."
+  },
+  {
+    "sv": "Kan jag få …?",
+    "en": "can I have …?",
+    "alt": [
+      "can I have",
+      "could I have",
+      "can I get",
+      "may I have",
+      "could I get"
+    ],
+    "pos": "phrase",
+    "ipa": "kan jɑː ˈfoː",
+    "ex": "{Kan jag få} ett glas vatten?",
+    "exEn": "Can I have a glass of water?",
+    "lvl": "A1",
+    "note": "The standard polite way to ask for something. Add tack at the end for extra politeness."
+  },
+  {
+    "sv": "Jag skulle vilja ha …",
+    "en": "I would like …",
+    "alt": [
+      "I'd like",
+      "I would like",
+      "I'd like to have",
+      "I would like to have"
+    ],
+    "pos": "phrase",
+    "ipa": "jɑː ˈskɵlːɛ ˈvɪlːja hɑː",
+    "ex": "{Jag skulle vilja ha} en kopp te, tack.",
+    "exEn": "I'd like a cup of tea, please.",
+    "lvl": "A2",
+    "note": "Polite and a little formal; Jag tar … is more everyday."
+  },
+  {
+    "sv": "Jag tar …",
+    "en": "I'll have …",
+    "alt": [
+      "I'll have",
+      "I'll take",
+      "I will have",
+      "I will take"
+    ],
+    "pos": "phrase",
+    "ipa": "jɑː ˈtɑːr",
+    "ex": "{Jag tar} samma sak som hon.",
+    "exEn": "I'll have the same as her.",
+    "lvl": "A1",
+    "note": "The usual way to order in Sweden: short, but not rude."
+  },
+  {
+    "sv": "beställa",
+    "en": "to order (food, goods)",
+    "alt": [
+      "to order"
+    ],
+    "pos": "verb",
+    "f": [
+      "beställer",
+      "beställde",
+      "beställt",
+      "beställ"
+    ],
+    "ipa": "bɛˈstɛlːa",
+    "tone": 1,
+    "ex": "Vad vill du {beställa}?",
+    "exEn": "What do you want to order?",
+    "lvl": "A2",
+    "note": "Don't mix it up with bestämma (to decide)."
+  },
+  {
+    "sv": "beställning",
+    "en": "order (of food, goods)",
+    "alt": [
+      "order"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "beställningen",
+      "beställningar",
+      "beställningarna"
+    ],
+    "ipa": "bɛˈstɛlːnɪŋ",
+    "tone": 1,
+    "ex": "Vår {beställning} har inte kommit än.",
+    "exEn": "Our order hasn't come yet.",
+    "lvl": "A2"
+  },
+  {
+    "sv": "rätt",
+    "en": "dish (food)",
+    "alt": [
+      "dish",
+      "course"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "rätten",
+      "rätter",
+      "rätterna"
+    ],
+    "ipa": "rɛtː",
+    "tone": 1,
+    "ex": "Vilken {rätt} rekommenderar du?",
+    "exEn": "Which dish do you recommend?",
+    "lvl": "A2",
+    "note": "Also an adjective: rätt = right, correct."
+  },
+  {
+    "sv": "förrätt",
+    "en": "appetizer",
+    "alt": [
+      "starter",
+      "first course"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "förrätten",
+      "förrätter",
+      "förrätterna"
+    ],
+    "ipa": "ˈfœrːˌɛtː",
+    "tone": 2,
+    "ex": "Vill ni ha någon {förrätt}?",
+    "exEn": "Would you like an appetizer?",
+    "lvl": "A2",
+    "note": "Literally 'before dish'."
+  },
+  {
+    "sv": "huvudrätt",
+    "en": "main course",
+    "alt": [
+      "main dish",
+      "entrée",
+      "entree",
+      "main"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "huvudrätten",
+      "huvudrätter",
+      "huvudrätterna"
+    ],
+    "ipa": "ˈhʉːvɵdˌrɛtː",
+    "tone": 2,
+    "ex": "Till {huvudrätt} tar jag laxen.",
+    "exEn": "For the main course, I'll have the salmon.",
+    "lvl": "A2",
+    "note": "Literally 'head dish'. A full dinner: förrätt, huvudrätt, efterrätt."
+  },
+  {
+    "sv": "efterrätt",
+    "en": "dessert",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "efterrätten",
+      "efterrätter",
+      "efterrätterna"
+    ],
+    "ipa": "ˈɛfːtɛˌrɛtː",
+    "tone": 2,
+    "ex": "Det finns alltid plats för {efterrätt}!",
+    "exEn": "There's always room for dessert!",
+    "lvl": "A2",
+    "note": "Literally 'after dish'. Swedish also has dessert, stressed on the last syllable."
+  },
+  {
+    "sv": "dagens rätt",
+    "en": "dish of the day",
+    "alt": [
+      "today's special",
+      "special of the day",
+      "daily special",
+      "today's dish"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈdɑːɡɛns ˈrɛtː",
+    "ex": "{Dagens rätt} är kyckling med ris.",
+    "exEn": "The dish of the day is chicken with rice.",
+    "lvl": "A2",
+    "note": "On weekdays many restaurants serve a cheap dagens lunch, often with salad and coffee included."
+  },
+  {
+    "sv": "portion",
+    "en": "portion",
+    "alt": [
+      "serving",
+      "helping"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "portionen",
+      "portioner",
+      "portionerna"
+    ],
+    "ipa": "pʊʈˈɧuːn",
+    "tone": 1,
+    "ex": "{Portionerna} är stora på den här restaurangen.",
+    "exEn": "The portions are big at this restaurant.",
+    "lvl": "A2",
+    "note": "-tion is pronounced 'shoon'."
+  },
+  {
+    "sv": "uteservering",
+    "en": "outdoor seating",
+    "alt": [
+      "patio",
+      "terrace",
+      "outdoor café",
+      "outdoor seating area",
+      "sidewalk café"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "uteserveringen",
+      "uteserveringar",
+      "uteserveringarna"
+    ],
+    "ipa": "ˈʉːtɛsɛrˌveːrɪŋ",
+    "tone": 2,
+    "ex": "Ska vi sitta på {uteserveringen}?",
+    "exEn": "Shall we sit on the patio?",
+    "lvl": "B1",
+    "note": "ute (outside) + servering (serving area). They fill up on the first warm day of spring."
+  },
+  {
+    "sv": "äta ute",
+    "en": "to eat out",
+    "alt": [
+      "eat out",
+      "to dine out",
+      "to go out to eat"
+    ],
+    "pos": "verb",
+    "f": [
+      "äter ute",
+      "åt ute",
+      "ätit ute",
+      "ät ute"
+    ],
+    "ipa": "ɛːta ˈʉːtɛ",
+    "ex": "Vi {åt ute} på en thairestaurang igår.",
+    "exEn": "We ate out at a Thai restaurant yesterday.",
+    "lvl": "A2",
+    "note": "Irregular like äta: åt, ätit. It can also mean to eat outdoors."
+  },
+  {
+    "sv": "hämtmat",
+    "en": "takeout (food)",
+    "alt": [
+      "takeout",
+      "take-out",
+      "takeaway",
+      "take away"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "hämtmaten",
+      null,
+      null
+    ],
+    "ipa": "ˈhɛmːtˌmɑːt",
+    "tone": 2,
+    "ex": "Vi köper {hämtmat} och äter hemma.",
+    "exEn": "We'll get takeout and eat at home.",
+    "lvl": "B1",
+    "note": "From hämta (to pick up) + mat. Many people just say take away."
+  },
+  {
+    "sv": "Äta här eller ta med?",
+    "en": "for here or to go?",
+    "alt": [
+      "for here or to go",
+      "eat in or take away",
+      "eat here or take away",
+      "eat in or take out"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈɛːta ˈhæːr ɛlɛr tɑː ˈmeːd",
+    "ex": "– {Äta här eller ta med}? – Ta med, tack.",
+    "exEn": "– For here or to go? – To go, please.",
+    "lvl": "A2",
+    "note": "ta med = take with you. Also: Äter du här eller tar du med?"
+  },
+  {
+    "sv": "smaklig måltid",
+    "en": "enjoy your meal",
+    "alt": [
+      "bon appétit",
+      "bon appetit",
+      "enjoy"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈsmɑːklɪ ˈmoːlˌtiːd",
+    "ex": "Maten är klar. {Smaklig måltid}!",
+    "exEn": "The food is ready. Enjoy your meal!",
+    "lvl": "A2",
+    "note": "Said before eating, like bon appétit. The g in smaklig is silent."
+  },
+  {
+    "sv": "Det var gott!",
+    "en": "that was delicious!",
+    "alt": [
+      "that was delicious",
+      "that was good",
+      "it was delicious",
+      "it was good",
+      "that was tasty"
+    ],
+    "pos": "phrase",
+    "ipa": "dɛ vɑːr ˈɡɔtː",
+    "ex": "Tack för maten, {det var gott}!",
+    "exEn": "Thanks for the meal, that was delicious!",
+    "lvl": "A2",
+    "note": "gott is god (tasty) in the ett-form, agreeing with det."
+  },
+  {
+    "sv": "mätt",
+    "en": "full (after eating)",
+    "alt": [
+      "full",
+      "satisfied",
+      "stuffed"
+    ],
+    "pos": "adj",
+    "f": [
+      "mätt",
+      "mätta",
+      "mättare",
+      "mättast"
+    ],
+    "ipa": "mɛtː",
+    "tone": 1,
+    "ex": "Jag kan inte äta mer, jag är {mätt}.",
+    "exEn": "I can't eat any more, I'm full.",
+    "lvl": "A2",
+    "note": "Don't say full about food: Jag är full means 'I'm drunk'!"
+  },
+  {
+    "sv": "nota",
+    "en": "bill (in a restaurant)",
+    "alt": [
+      "bill",
+      "check",
+      "tab"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "notan",
+      "notor",
+      "notorna"
+    ],
+    "ipa": "ˈnuːta",
+    "tone": 2,
+    "ex": "Ska vi dela på {notan}?",
+    "exEn": "Shall we split the bill?",
+    "lvl": "A2",
+    "note": "Mostly heard in the definite form, notan."
+  },
+  {
+    "sv": "Notan, tack!",
+    "en": "the bill, please!",
+    "alt": [
+      "the bill, please",
+      "the check, please",
+      "bill please",
+      "check please",
+      "can we have the bill"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈnuːtan ˈtakː",
+    "ex": "Vi är klara. {Notan, tack}!",
+    "exEn": "We're done. The bill, please!",
+    "lvl": "A2",
+    "note": "A little softer: Kan vi få notan?"
+  },
+  {
+    "sv": "dricks",
+    "en": "tip (money)",
+    "alt": [
+      "tip",
+      "gratuity"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "dricksen",
+      null,
+      null
+    ],
+    "ipa": "drɪkːs",
+    "tone": 1,
+    "ex": "Vi gav servitören lite {dricks}.",
+    "exEn": "We gave the waiter a small tip.",
+    "lvl": "A2",
+    "note": "Uncountable: lite dricks. Tipping is optional in Sweden; many people just round up."
+  },
+  {
+    "sv": "bjuda",
+    "en": "to treat (pay for someone)",
+    "alt": [
+      "to treat",
+      "to buy someone something",
+      "to offer"
+    ],
+    "pos": "verb",
+    "f": [
+      "bjuder",
+      "bjöd",
+      "bjudit",
+      "bjud"
+    ],
+    "ipa": "ˈbjʉːda",
+    "tone": 2,
+    "ex": "Jag {bjuder} på kaffe idag!",
+    "exEn": "The coffee's on me today!",
+    "lvl": "A2",
+    "note": "Irregular: bjöd, bjudit. Jag bjuder! = It's on me! bjuda in = to invite."
+  },
+  {
+    "sv": "skål",
+    "en": "cheers",
+    "alt": [
+      "to your health",
+      "bottoms up"
+    ],
+    "pos": "interj",
+    "ipa": "skoːl",
+    "tone": 1,
+    "ex": "{Skål} och grattis på födelsedagen!",
+    "exEn": "Cheers, and happy birthday!",
+    "lvl": "A2",
+    "note": "Look people in the eye when you say skål. As a noun, en skål is a bowl."
+  },
+  {
+    "sv": "vegetarian",
+    "en": "vegetarian (person)",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "vegetarianen",
+      "vegetarianer",
+      "vegetarianerna"
+    ],
+    "ipa": "vɛɡɛtarɪˈɑːn",
+    "tone": 1,
+    "ex": "Jag är {vegetarian}, så jag äter inte kött.",
+    "exEn": "I'm a vegetarian, so I don't eat meat.",
+    "lvl": "A2",
+    "note": "No article after är: Jag är vegetarian."
+  },
+  {
+    "sv": "vegetarisk",
+    "en": "vegetarian (food)",
+    "alt": [
+      "vegetarian",
+      "veggie",
+      "meat-free",
+      "meatless"
+    ],
+    "pos": "adj",
+    "f": [
+      "vegetariskt",
+      "vegetariska",
+      null,
+      null
+    ],
+    "ipa": "vɛɡɛˈtɑːrɪsk",
+    "tone": 1,
+    "ex": "Har ni något {vegetariskt}?",
+    "exEn": "Do you have anything vegetarian?",
+    "lvl": "A2",
+    "note": "For a person, use the noun: Jag är vegetarian."
+  },
+  {
+    "sv": "vegansk",
+    "en": "vegan (food)",
+    "alt": [
+      "vegan",
+      "plant-based"
+    ],
+    "pos": "adj",
+    "f": [
+      "veganskt",
+      "veganska",
+      null,
+      null
+    ],
+    "ipa": "vɛˈɡɑːnsk",
+    "tone": 1,
+    "ex": "Finns det några {veganska} alternativ?",
+    "exEn": "Are there any vegan options?",
+    "lvl": "A2",
+    "note": "A vegan person is en vegan. The g is hard."
+  },
+  {
+    "sv": "glutenfri",
+    "en": "gluten-free",
+    "alt": [
+      "gluten free"
+    ],
+    "pos": "adj",
+    "f": [
+      "glutenfritt",
+      "glutenfria",
+      null,
+      null
+    ],
+    "ipa": "ˈɡlʉːtɛnˌfriː",
+    "tone": 2,
+    "ex": "Har ni {glutenfritt} bröd?",
+    "exEn": "Do you have gluten-free bread?",
+    "lvl": "A2",
+    "note": "-fri = -free: laktosfri, sockerfri, alkoholfri."
+  },
+  {
+    "sv": "laktosfri",
+    "en": "lactose-free",
+    "alt": [
+      "lactose free"
+    ],
+    "pos": "adj",
+    "f": [
+      "laktosfritt",
+      "laktosfria",
+      null,
+      null
+    ],
+    "ipa": "lakˈtoːsˌfriː",
+    "tone": 2,
+    "ex": "Kan jag få {laktosfri} mjölk i kaffet?",
+    "exEn": "Can I have lactose-free milk in my coffee?",
+    "lvl": "A2"
+  },
+  {
+    "sv": "allergisk",
+    "en": "allergic",
+    "pos": "adj",
+    "f": [
+      "allergiskt",
+      "allergiska",
+      "mer allergisk",
+      "mest allergisk"
+    ],
+    "ipa": "aˈlærɡɪsk",
+    "tone": 1,
+    "ex": "Jag är {allergisk} mot nötter.",
+    "exEn": "I'm allergic to nuts.",
+    "lvl": "A2",
+    "note": "allergic to = allergisk mot. The g is hard."
+  },
+  {
+    "sv": "sugen",
+    "en": "craving",
+    "alt": [
+      "in the mood for",
+      "feel like",
+      "feeling like",
+      "longing for"
+    ],
+    "pos": "adj",
+    "f": [
+      "suget",
+      "sugna",
+      "sugnare",
+      "sugnast"
+    ],
+    "ipa": "ˈsʉːɡɛn",
+    "tone": 2,
+    "ex": "Jag är {sugen} på något sött.",
+    "exEn": "I feel like something sweet.",
+    "lvl": "A2",
+    "note": "sugen på = craving, in the mood for. Also for activities: sugen på att bada."
+  },
+  {
+    "sv": "fika",
+    "en": "coffee break (with a snack)",
+    "alt": [
+      "fika",
+      "coffee break",
+      "coffee and cake",
+      "coffee"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "fikan",
+      "fikor",
+      "fikorna"
+    ],
+    "ipa": "ˈfiːka",
+    "tone": 2,
+    "ex": "På jobbet har vi {fika} klockan tre.",
+    "exEn": "At work we have our coffee break at three.",
+    "lvl": "A2",
+    "note": "A Swedish institution: coffee or tea with something sweet, with friends or colleagues. Some say ett fika."
+  },
+  {
+    "sv": "fika",
+    "en": "to have coffee (and a snack)",
+    "alt": [
+      "to have fika",
+      "to fika",
+      "to have coffee",
+      "to have a coffee break",
+      "to have coffee and cake"
+    ],
+    "pos": "verb",
+    "f": [
+      "fikar",
+      "fikade",
+      "fikat",
+      "fika"
+    ],
+    "ipa": "ˈfiːka",
+    "tone": 2,
+    "ex": "Ska vi {fika} i eftermiddag?",
+    "exEn": "Shall we have coffee this afternoon?",
+    "lvl": "A2"
+  },
+  {
+    "sv": "konditori",
+    "en": "pastry shop (café)",
+    "alt": [
+      "pastry shop",
+      "patisserie",
+      "cake shop",
+      "bakery café"
+    ],
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "konditoriet",
+      "konditorier",
+      "konditorierna"
+    ],
+    "ipa": "kɔndɪtʊˈriː",
+    "tone": 1,
+    "ex": "Vi fikade på ett mysigt {konditori}.",
+    "exEn": "We had coffee at a cozy pastry shop.",
+    "lvl": "B1",
+    "note": "A traditional café that sells cakes and pastries. Stress on the last syllable."
+  },
+  {
+    "sv": "påtår",
+    "en": "refill (of coffee)",
+    "alt": [
+      "refill",
+      "second cup",
+      "top-up"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "påtåren",
+      "påtårar",
+      "påtårarna"
+    ],
+    "ipa": "ˈpoːˌtoːr",
+    "tone": 2,
+    "ex": "Vill du ha {påtår}?",
+    "exEn": "Would you like a refill?",
+    "lvl": "B1",
+    "note": "A second cup of coffee. In many cafés it is included: påtår ingår."
+  },
+  {
+    "sv": "kanelbulle",
+    "en": "cinnamon bun",
+    "alt": [
+      "cinnamon roll"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "kanelbullen",
+      "kanelbullar",
+      "kanelbullarna"
+    ],
+    "ipa": "kaˈneːlˌbɵlːɛ",
+    "tone": 2,
+    "ex": "Det luktar {kanelbullar} i hela huset!",
+    "exEn": "The whole house smells of cinnamon buns!",
+    "lvl": "A2",
+    "note": "Stress on -nel-. October 4 is kanelbullens dag (Cinnamon Bun Day)."
+  },
+  {
+    "sv": "kardemummabulle",
+    "en": "cardamom bun",
+    "alt": [
+      "cardamom roll"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "kardemummabullen",
+      "kardemummabullar",
+      "kardemummabullarna"
+    ],
+    "ipa": "kaɖɛˈmɵmːaˌbɵlːɛ",
+    "tone": 2,
+    "ex": "Vill du ha en {kardemummabulle} eller en kanelbulle?",
+    "exEn": "Do you want a cardamom bun or a cinnamon bun?",
+    "lvl": "A2",
+    "note": "Stress on -mum-."
+  },
+  {
+    "sv": "tårta",
+    "en": "cake (layer cake)",
+    "alt": [
+      "cake",
+      "layer cake",
+      "torte"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "tårtan",
+      "tårtor",
+      "tårtorna"
+    ],
+    "ipa": "ˈtoːʈa",
+    "tone": 2,
+    "ex": "Vi köpte en {tårta} till pappas födelsedag.",
+    "exEn": "We bought a cake for Dad's birthday.",
+    "lvl": "A2",
+    "note": "A tårta is a big cake with cream or filling, for celebrations; a kaka is a plain cake or a cookie."
+  },
+  {
+    "sv": "prinsesstårta",
+    "en": "princess cake",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "prinsesstårtan",
+      "prinsesstårtor",
+      "prinsesstårtorna"
+    ],
+    "ipa": "prɪnˈsɛsːˌtoːʈa",
+    "tone": 2,
+    "ex": "Mormor fyller år, så vi köper en {prinsesstårta}.",
+    "exEn": "It's Grandma's birthday, so we're buying a princess cake.",
+    "lvl": "B1",
+    "note": "Sponge cake with jam, custard and whipped cream under a dome of green marzipan."
+  },
+  {
+    "sv": "semla",
+    "en": "semla (cream bun)",
+    "alt": [
+      "semla",
+      "cream bun",
+      "Lenten bun"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "semlan",
+      "semlor",
+      "semlorna"
+    ],
+    "ipa": "ˈsɛmːla",
+    "tone": 2,
+    "ex": "Hur många {semlor} har du ätit i år?",
+    "exEn": "How many semlor have you eaten this year?",
+    "lvl": "A2",
+    "note": "A cardamom bun filled with almond paste and whipped cream, eaten in late winter, above all on Shrove Tuesday (fettisdagen)."
+  },
+  {
+    "sv": "wienerbröd",
+    "en": "Danish pastry",
+    "alt": [
+      "danish"
+    ],
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "wienerbrödet",
+      "wienerbröd",
+      "wienerbröden"
+    ],
+    "ipa": "ˈviːnɛrˌbrøːd",
+    "tone": 2,
+    "ex": "Det här {wienerbrödet} är fortfarande varmt.",
+    "exEn": "This Danish is still warm.",
+    "lvl": "B1",
+    "note": "Literally 'Vienna bread'. The w is pronounced like v."
+  },
+  {
+    "sv": "kladdkaka",
+    "en": "sticky chocolate cake",
+    "alt": [
+      "chocolate mud cake",
+      "mud cake",
+      "gooey chocolate cake",
+      "chocolate cake"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "kladdkakan",
+      "kladdkakor",
+      "kladdkakorna"
+    ],
+    "ipa": "ˈkladːˌkɑːka",
+    "tone": 2,
+    "ex": "Ska vi baka en {kladdkaka}?",
+    "exEn": "Shall we bake a sticky chocolate cake?",
+    "lvl": "B1",
+    "note": "From kladdig (sticky, gooey). Often served with whipped cream."
+  },
+  {
+    "sv": "chokladboll",
+    "en": "chocolate ball",
+    "alt": [
+      "chocolate oat ball",
+      "chocolate truffle"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "chokladbollen",
+      "chokladbollar",
+      "chokladbollarna"
+    ],
+    "ipa": "ɧʊˈklɑːdˌbɔlː",
+    "tone": 2,
+    "ex": "Barnen gör {chokladbollar} av havregryn och kakao.",
+    "exEn": "The kids are making chocolate balls from oats and cocoa.",
+    "lvl": "B1",
+    "note": "A no-bake treat of oats, sugar, butter and cocoa, often rolled in coconut."
+  }
+]

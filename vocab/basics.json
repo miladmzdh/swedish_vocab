@@ -1,0 +1,654 @@
+[
+  {
+    "sv": "hej",
+    "en": "hello",
+    "alt": [
+      "hi",
+      "hey"
+    ],
+    "pos": "interj",
+    "ipa": "hɛjː",
+    "tone": 1,
+    "ex": "{Hej}, Anna! Kul att se dig.",
+    "exEn": "Hi, Anna! Nice to see you.",
+    "lvl": "A1",
+    "note": "Swedes say hej to everyone, from friends to the boss. It can also mean bye."
+  },
+  {
+    "sv": "hej då",
+    "en": "goodbye",
+    "alt": [
+      "bye",
+      "bye-bye",
+      "good bye"
+    ],
+    "pos": "phrase",
+    "ipa": "hɛj ˈdoː",
+    "ex": "{Hej då}, vi ses på måndag!",
+    "exEn": "Bye, see you on Monday!",
+    "lvl": "A1",
+    "note": "Also written hejdå."
+  },
+  {
+    "sv": "tack",
+    "en": "thank you",
+    "alt": [
+      "thanks"
+    ],
+    "pos": "interj",
+    "ipa": "takː",
+    "tone": 1,
+    "ex": "En kaffe, {tack}.",
+    "exEn": "A coffee, please.",
+    "lvl": "A1",
+    "note": "Swedish has no everyday word for 'please': you add tack instead."
+  },
+  {
+    "sv": "ja",
+    "en": "yes",
+    "alt": [
+      "yeah"
+    ],
+    "pos": "interj",
+    "ipa": "jɑː",
+    "tone": 1,
+    "ex": "– Är du svensk? – {Ja}, det är jag.",
+    "exEn": "– Are you Swedish? – Yes, I am.",
+    "lvl": "A1"
+  },
+  {
+    "sv": "nej",
+    "en": "no",
+    "pos": "interj",
+    "ipa": "nɛjː",
+    "tone": 1,
+    "ex": "{Nej}, jag dricker inte kaffe.",
+    "exEn": "No, I don't drink coffee.",
+    "lvl": "A1",
+    "note": "Before a noun, 'no' is ingen/inget/inga: inga pengar (no money)."
+  },
+  {
+    "sv": "tack så mycket",
+    "en": "thank you very much",
+    "alt": [
+      "thank you so much",
+      "thanks so much",
+      "thanks a lot",
+      "many thanks"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈtakː soː ˈmʏkːɛ",
+    "ex": "{Tack så mycket} för presenten!",
+    "exEn": "Thank you so much for the present!",
+    "lvl": "A1",
+    "note": "The t in mycket is silent."
+  },
+  {
+    "sv": "varsågod",
+    "en": "here you go",
+    "alt": [
+      "here you are",
+      "there you go",
+      "you're welcome",
+      "help yourself",
+      "go ahead"
+    ],
+    "pos": "interj",
+    "ipa": "ˌvɑːʂɔˈɡuːd",
+    "tone": 1,
+    "ex": "{Varsågod} och ta en kaka!",
+    "exEn": "Please, have a cookie!",
+    "lvl": "A1",
+    "note": "Said when handing something over or inviting someone to go ahead. Also written var så god."
+  },
+  {
+    "sv": "ingen orsak",
+    "en": "don't mention it",
+    "alt": [
+      "you're welcome",
+      "no problem",
+      "no worries",
+      "not at all"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈɪŋːɛn ˈuːˌʂɑːk",
+    "ex": "– Tack för hjälpen! – {Ingen orsak}!",
+    "exEn": "– Thanks for the help! – Don't mention it!",
+    "lvl": "A1",
+    "note": "A reply to tack; literally 'no reason'."
+  },
+  {
+    "sv": "ursäkta",
+    "en": "excuse me",
+    "alt": [
+      "pardon me",
+      "pardon"
+    ],
+    "pos": "interj",
+    "ipa": "ˈʉːˌʂɛkta",
+    "tone": 2,
+    "ex": "{Ursäkta}, är den här platsen ledig?",
+    "exEn": "Excuse me, is this seat free?",
+    "lvl": "A1",
+    "note": "Used to get attention or to get past someone; to apologize, say förlåt."
+  },
+  {
+    "sv": "förlåt",
+    "en": "sorry",
+    "alt": [
+      "I'm sorry",
+      "I am sorry",
+      "forgive me"
+    ],
+    "pos": "interj",
+    "ipa": "fœˈɭoːt",
+    "tone": 1,
+    "ex": "{Förlåt} att jag är sen!",
+    "exEn": "Sorry I'm late!",
+    "lvl": "A1",
+    "note": "From the verb förlåta (to forgive)."
+  },
+  {
+    "sv": "okej",
+    "en": "okay",
+    "alt": [
+      "OK",
+      "all right",
+      "alright",
+      "fine"
+    ],
+    "pos": "interj",
+    "ipa": "ɔˈkɛjː",
+    "tone": 1,
+    "ex": "{Okej}, vi ses klockan sju.",
+    "exEn": "Okay, see you at seven.",
+    "lvl": "A1",
+    "note": "Also written OK or ok."
+  },
+  {
+    "sv": "god morgon",
+    "en": "good morning",
+    "alt": [
+      "morning"
+    ],
+    "pos": "phrase",
+    "ipa": "ɡuː ˈmɔrːɔn",
+    "ex": "{God morgon}! Har du sovit gott?",
+    "exEn": "Good morning! Did you sleep well?",
+    "lvl": "A1",
+    "note": "Sounds like 'go-morron': the d and the g are usually silent."
+  },
+  {
+    "sv": "god kväll",
+    "en": "good evening",
+    "pos": "phrase",
+    "ipa": "ɡuː ˈkvɛlː",
+    "ex": "{God kväll}! Har ni bokat bord?",
+    "exEn": "Good evening! Have you booked a table?",
+    "lvl": "A1",
+    "note": "Fairly formal; friends just say hej."
+  },
+  {
+    "sv": "god natt",
+    "en": "good night",
+    "alt": [
+      "night"
+    ],
+    "pos": "phrase",
+    "ipa": "ɡuː ˈnatː",
+    "ex": "Jag går och lägger mig nu. {God natt}!",
+    "exEn": "I'm going to bed now. Good night!",
+    "lvl": "A1",
+    "note": "Said when someone goes to bed. Also written godnatt."
+  },
+  {
+    "sv": "välkommen",
+    "en": "welcome",
+    "pos": "adj",
+    "f": [
+      "välkommet",
+      "välkomna",
+      null,
+      null
+    ],
+    "ipa": "ˈvɛːlˌkɔmːɛn",
+    "tone": 2,
+    "ex": "{Välkommen} till Sverige!",
+    "exEn": "Welcome to Sweden!",
+    "lvl": "A1",
+    "note": "To more than one person, say välkomna!"
+  },
+  {
+    "sv": "Hur mår du?",
+    "en": "how are you (feeling)?",
+    "alt": [
+      "how are you",
+      "how are you feeling",
+      "how do you feel"
+    ],
+    "pos": "phrase",
+    "ipa": "hʉːr ˈmoːr dʉː",
+    "ex": "{Hur mår du} idag?",
+    "exEn": "How are you feeling today?",
+    "lvl": "A1",
+    "note": "Asks how someone feels; Hur är det? is the more casual greeting."
+  },
+  {
+    "sv": "Jag mår bra",
+    "en": "I'm fine",
+    "alt": [
+      "I am fine",
+      "I'm well",
+      "I am well",
+      "I'm good",
+      "I'm OK",
+      "I feel good"
+    ],
+    "pos": "phrase",
+    "ipa": "jɑː moːr ˈbrɑː",
+    "ex": "{Jag mår bra}, tack. Och du?",
+    "exEn": "I'm fine, thanks. And you?",
+    "lvl": "A1"
+  },
+  {
+    "sv": "Och du?",
+    "en": "and you?",
+    "alt": [
+      "what about you",
+      "how about you"
+    ],
+    "pos": "phrase",
+    "ipa": "ɔ ˈdʉː",
+    "ex": "Jag heter Anna. {Och du}?",
+    "exEn": "My name is Anna. And you?",
+    "lvl": "A1",
+    "note": "och is usually pronounced 'å'."
+  },
+  {
+    "sv": "Hur är det?",
+    "en": "how's it going?",
+    "alt": [
+      "how are you",
+      "how are things",
+      "how is it going",
+      "how's things"
+    ],
+    "pos": "phrase",
+    "ipa": "hʉːr ˈɛː dɛ",
+    "ex": "Hej! {Hur är det} med dig?",
+    "exEn": "Hi! How are you doing?",
+    "lvl": "A1",
+    "note": "A typical reply: Bra, tack! Och du?"
+  },
+  {
+    "sv": "Vad heter du?",
+    "en": "what's your name?",
+    "alt": [
+      "what is your name",
+      "what are you called"
+    ],
+    "pos": "phrase",
+    "ipa": "vɑː ˈheːtɛr dʉː",
+    "ex": "Förlåt, {vad heter du} igen?",
+    "exEn": "Sorry, what's your name again?",
+    "lvl": "A1",
+    "note": "vad is usually pronounced 'va': the d is silent."
+  },
+  {
+    "sv": "Jag heter …",
+    "en": "my name is …",
+    "alt": [
+      "my name is",
+      "I am called",
+      "I'm called"
+    ],
+    "pos": "phrase",
+    "ipa": "jɑː ˈheːtɛr",
+    "ex": "Hej, {jag heter} Ahmed.",
+    "exEn": "Hi, my name is Ahmed.",
+    "lvl": "A1",
+    "note": "jag is usually pronounced 'ja': the g is silent."
+  },
+  {
+    "sv": "Trevligt att träffas",
+    "en": "nice to meet you",
+    "alt": [
+      "pleased to meet you",
+      "nice meeting you"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈtreːvlɪt at ˈtrɛfːas",
+    "ex": "Hej, Sara! {Trevligt att träffas}!",
+    "exEn": "Hi, Sara! Nice to meet you!",
+    "lvl": "A1",
+    "note": "A typical reply: Detsamma! (Likewise!)"
+  },
+  {
+    "sv": "Var kommer du ifrån?",
+    "en": "where are you from?",
+    "alt": [
+      "where do you come from"
+    ],
+    "pos": "phrase",
+    "ipa": "vɑːr ˈkɔmːɛr dʉː ɪˈfroːn",
+    "ex": "Du pratar bra svenska! {Var kommer du ifrån}?",
+    "exEn": "You speak good Swedish! Where are you from?",
+    "lvl": "A1",
+    "note": "A bit more formal: Varifrån kommer du?"
+  },
+  {
+    "sv": "Jag kommer från …",
+    "en": "I'm from …",
+    "alt": [
+      "I am from",
+      "I come from"
+    ],
+    "pos": "phrase",
+    "ipa": "jɑː ˈkɔmːɛr froːn",
+    "ex": "{Jag kommer från} Iran, men jag bor i Malmö.",
+    "exEn": "I'm from Iran, but I live in Malmö.",
+    "lvl": "A1"
+  },
+  {
+    "sv": "Vi ses!",
+    "en": "see you!",
+    "alt": [
+      "see you later",
+      "see ya",
+      "see you"
+    ],
+    "pos": "phrase",
+    "ipa": "viː ˈseːs",
+    "ex": "{Vi ses} imorgon!",
+    "exEn": "See you tomorrow!",
+    "lvl": "A1",
+    "note": "Literally 'we see each other': the -s makes the verb mutual."
+  },
+  {
+    "sv": "Ha det bra!",
+    "en": "take care!",
+    "alt": [
+      "take care",
+      "all the best",
+      "have a good one",
+      "bye"
+    ],
+    "pos": "phrase",
+    "ipa": "hɑː dɛ ˈbrɑː",
+    "ex": "Hej då och {ha det bra}!",
+    "exEn": "Goodbye and take care!",
+    "lvl": "A1",
+    "note": "det is pronounced 'de' in everyday speech."
+  },
+  {
+    "sv": "ja tack",
+    "en": "yes, please",
+    "alt": [
+      "yes please",
+      "yes, thanks",
+      "yes thank you"
+    ],
+    "pos": "phrase",
+    "ipa": "jɑː ˈtakː",
+    "ex": "– Vill du ha kaffe? – {Ja tack}!",
+    "exEn": "– Would you like some coffee? – Yes, please!",
+    "lvl": "A1"
+  },
+  {
+    "sv": "nej tack",
+    "en": "no, thank you",
+    "alt": [
+      "no thanks",
+      "no thank you",
+      "no, thanks"
+    ],
+    "pos": "phrase",
+    "ipa": "nɛj ˈtakː",
+    "ex": "{Nej tack}, jag är mätt.",
+    "exEn": "No, thank you, I'm full.",
+    "lvl": "A1"
+  },
+  {
+    "sv": "jo",
+    "en": "yes (to a negative question)",
+    "alt": [
+      "yes",
+      "yeah",
+      "sure"
+    ],
+    "pos": "interj",
+    "ipa": "juː",
+    "tone": 1,
+    "ex": "– Har du inte ätit? – {Jo}, det har jag.",
+    "exEn": "– Haven't you eaten? – Yes, I have.",
+    "lvl": "A1",
+    "note": "Use jo, not ja, to say yes to a question with inte (not) in it."
+  },
+  {
+    "sv": "hejsan",
+    "en": "hi there",
+    "alt": [
+      "hi",
+      "hello",
+      "hey"
+    ],
+    "pos": "interj",
+    "ipa": "ˈhɛjːsan",
+    "tone": 2,
+    "ex": "{Hejsan}! Vad får det vara?",
+    "exEn": "Hi there! What can I get you?",
+    "lvl": "A1"
+  },
+  {
+    "sv": "tusen tack",
+    "en": "thanks a million",
+    "alt": [
+      "many thanks",
+      "thanks a lot",
+      "thanks so much",
+      "a thousand thanks"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈtʉːsɛn ˈtakː",
+    "ex": "{Tusen tack} för en trevlig kväll!",
+    "exEn": "Thanks a million for a lovely evening!",
+    "lvl": "A1",
+    "note": "Literally 'a thousand thanks'."
+  },
+  {
+    "sv": "tack för hjälpen",
+    "en": "thanks for the help",
+    "alt": [
+      "thanks for your help",
+      "thank you for the help",
+      "thank you for your help"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈtakː fœr ˈjɛlːpɛn",
+    "ex": "{Tack för hjälpen}! Det var snällt av dig.",
+    "exEn": "Thanks for the help! That was kind of you.",
+    "lvl": "A1",
+    "note": "The h in hj is silent: hjälp sounds like 'yelp'."
+  },
+  {
+    "sv": "snälla",
+    "en": "please (pleading)",
+    "alt": [
+      "please"
+    ],
+    "pos": "interj",
+    "ipa": "ˈsnɛlːa",
+    "tone": 2,
+    "ex": "Kan du stänga dörren, {snälla}?",
+    "exEn": "Can you close the door, please?",
+    "lvl": "A1",
+    "note": "Sounds pleading or insistent; in ordinary requests Swedes use tack or a polite question."
+  },
+  {
+    "sv": "gärna",
+    "en": "gladly",
+    "alt": [
+      "happily",
+      "willingly",
+      "with pleasure",
+      "I'd love to"
+    ],
+    "pos": "adv",
+    "ipa": "ˈjæːɳa",
+    "tone": 2,
+    "ex": "– Vill du följa med på bio? – Ja, {gärna}!",
+    "exEn": "– Do you want to come to the movies? – Yes, I'd love to!",
+    "lvl": "A1",
+    "note": "Ja, gärna! = Yes, I'd love to! Irregular comparison: hellre (rather), helst (preferably)."
+  },
+  {
+    "sv": "Jag förstår inte",
+    "en": "I don't understand",
+    "alt": [
+      "I do not understand"
+    ],
+    "pos": "phrase",
+    "ipa": "jɑː fœˈʂʈoːr ˈɪntɛ",
+    "ex": "{Jag förstår inte} vad du säger.",
+    "exEn": "I don't understand what you're saying.",
+    "lvl": "A1",
+    "note": "inte (not) comes right after the verb."
+  },
+  {
+    "sv": "Kan du prata långsammare?",
+    "en": "can you speak more slowly?",
+    "alt": [
+      "could you speak more slowly",
+      "can you speak slower",
+      "can you talk slower",
+      "can you talk more slowly",
+      "could you speak slower"
+    ],
+    "pos": "phrase",
+    "ipa": "kan dʉː ˈprɑːta ˈlɔŋˌsamːarɛ",
+    "ex": "Ursäkta, {kan du prata långsammare}?",
+    "exEn": "Excuse me, can you speak more slowly?",
+    "lvl": "A1",
+    "note": "långsammare = more slowly, from långsam (slow)."
+  },
+  {
+    "sv": "Talar du engelska?",
+    "en": "do you speak English?",
+    "alt": [
+      "can you speak English",
+      "speak English"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈtɑːlar dʉː ˈɛŋːɛlska",
+    "ex": "Hej! {Talar du engelska}? Jag är turist.",
+    "exEn": "Hi! Do you speak English? I'm a tourist.",
+    "lvl": "A1",
+    "note": "In everyday speech: Pratar du engelska?"
+  },
+  {
+    "sv": "Jag pratar lite svenska",
+    "en": "I speak a little Swedish",
+    "alt": [
+      "I speak some Swedish",
+      "I talk a little Swedish"
+    ],
+    "pos": "phrase",
+    "ipa": "jɑː ˈprɑːtar ˈliːtɛ ˈsvɛnska",
+    "ex": "{Jag pratar lite svenska}, men jag övar varje dag.",
+    "exEn": "I speak a little Swedish, but I practice every day.",
+    "lvl": "A1",
+    "note": "Names of languages are lowercase in Swedish: svenska, engelska."
+  },
+  {
+    "sv": "Vad sa du?",
+    "en": "what did you say?",
+    "alt": [
+      "what did you say",
+      "sorry, what did you say",
+      "pardon"
+    ],
+    "pos": "phrase",
+    "ipa": "vɑː ˈsɑː dʉː",
+    "ex": "Förlåt, {vad sa du}? Jag hörde inte.",
+    "exEn": "Sorry, what did you say? I didn't hear.",
+    "lvl": "A1",
+    "note": "sa is the everyday form of sade (said)."
+  },
+  {
+    "sv": "Kan du hjälpa mig?",
+    "en": "can you help me?",
+    "alt": [
+      "could you help me"
+    ],
+    "pos": "phrase",
+    "ipa": "kan dʉː ˈjɛlːpa mɛj",
+    "ex": "{Kan du hjälpa mig}? Jag hittar inte stationen.",
+    "exEn": "Can you help me? I can't find the station.",
+    "lvl": "A1",
+    "note": "mig is pronounced 'mej'."
+  },
+  {
+    "sv": "Vi hörs!",
+    "en": "talk soon!",
+    "alt": [
+      "talk to you later",
+      "speak soon",
+      "talk later"
+    ],
+    "pos": "phrase",
+    "ipa": "viː ˈhœːʂ",
+    "ex": "Jag måste gå nu. {Vi hörs}!",
+    "exEn": "I have to go now. Talk soon!",
+    "lvl": "A2",
+    "note": "Literally 'we hear each other'; common at the end of calls and chats."
+  },
+  {
+    "sv": "Trevlig helg!",
+    "en": "have a nice weekend!",
+    "alt": [
+      "have a good weekend",
+      "nice weekend",
+      "enjoy your weekend"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈtreːvlɪɡ ˈhɛlj",
+    "ex": "Tack för idag och {trevlig helg}!",
+    "exEn": "Thanks for today, and have a nice weekend!",
+    "lvl": "A1",
+    "note": "Heard everywhere on Fridays: at work, in shops and in emails."
+  },
+  {
+    "sv": "jaha",
+    "en": "I see",
+    "alt": [
+      "oh",
+      "oh I see",
+      "aha",
+      "ah",
+      "okay"
+    ],
+    "pos": "interj",
+    "ipa": "jaˈhɑː",
+    "tone": 1,
+    "ex": "– Bussen är försenad. – {Jaha}, då tar vi en taxi.",
+    "exEn": "– The bus is late. – I see, then we'll take a taxi.",
+    "lvl": "A2"
+  },
+  {
+    "sv": "tjena",
+    "en": "hey (casual)",
+    "alt": [
+      "hey",
+      "hi",
+      "hiya",
+      "hello"
+    ],
+    "pos": "interj",
+    "ipa": "ˈɕeːna",
+    "tone": 2,
+    "ex": "{Tjena}, Erik! Ska vi ta en fika?",
+    "exEn": "Hey, Erik! Shall we grab a coffee?",
+    "lvl": "A2",
+    "note": "Casual, between friends. tj is a soft 'sh' sound."
+  }
+]
