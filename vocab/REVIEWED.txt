@@ -28,3 +28,4 @@ environment
 smallwords
 society
 abstract
+tech
