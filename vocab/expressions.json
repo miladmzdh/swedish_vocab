@@ -1,0 +1,825 @@
+[
+  {
+    "sv": "Jag vet inte",
+    "en": "I don't know",
+    "alt": [
+      "I do not know",
+      "dunno"
+    ],
+    "pos": "phrase",
+    "ipa": "jɑː ˈveːt ˈɪntɛ",
+    "ex": "{Jag vet inte} om jag hinner.",
+    "exEn": "I don't know if I'll have time.",
+    "lvl": "A1",
+    "note": "veta = to know a fact; to know a person is känna. Casually just: Vet inte."
+  },
+  {
+    "sv": "Ingen aning",
+    "en": "no idea",
+    "alt": [
+      "I have no idea",
+      "I've no idea",
+      "no clue",
+      "I have no clue"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈɪŋːɛn ˈɑːnɪŋ",
+    "ex": "– Vem vann matchen? – {Ingen aning}, jag såg den inte.",
+    "exEn": "– Who won the game? – No idea, I didn't see it.",
+    "lvl": "A2",
+    "note": "aning = hunch, notion. Full sentence: Jag har ingen aning."
+  },
+  {
+    "sv": "Inga problem",
+    "en": "no problem",
+    "alt": [
+      "not a problem",
+      "no problems",
+      "no worries"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈɪŋːa prʊˈbleːm",
+    "ex": "– Kan du hämta mig vid stationen? – {Inga problem}!",
+    "exEn": "– Can you pick me up at the station? – No problem!",
+    "lvl": "A1",
+    "note": "problem is the same in the plural: ett problem, två problem."
+  },
+  {
+    "sv": "Ingen fara",
+    "en": "no worries",
+    "alt": [
+      "no harm done",
+      "don't worry",
+      "it's fine",
+      "it's okay",
+      "it's OK",
+      "no problem"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈɪŋːɛn ˈfɑːra",
+    "ex": "– Förlåt att jag är sen! – {Ingen fara}, vi har inte börjat än.",
+    "exEn": "– Sorry I'm late! – No worries, we haven't started yet.",
+    "lvl": "A2",
+    "note": "Literally 'no danger'. A kind reply to an apology."
+  },
+  {
+    "sv": "Det är lugnt",
+    "en": "it's fine",
+    "alt": [
+      "it's cool",
+      "it's all good",
+      "it's okay",
+      "it's OK",
+      "that's fine",
+      "no worries",
+      "don't worry about it"
+    ],
+    "pos": "phrase",
+    "ipa": "dɛ ɛː ˈlɵŋnt",
+    "ex": "– Ska jag hjälpa dig? – Nej tack, {det är lugnt}.",
+    "exEn": "– Shall I help you? – No thanks, it's fine.",
+    "lvl": "A2",
+    "note": "Literally 'it's calm'. A relaxed reply to thanks, apologies and offers."
+  },
+  {
+    "sv": "Det gör inget",
+    "en": "it doesn't matter",
+    "alt": [
+      "never mind",
+      "no matter",
+      "that's okay",
+      "that's OK",
+      "it's okay",
+      "no harm done"
+    ],
+    "pos": "phrase",
+    "ipa": "dɛ jœːr ˈɪŋːɛt",
+    "ex": "– Jag glömde din bok. – {Det gör inget}, ta med den imorgon.",
+    "exEn": "– I forgot your book. – It doesn't matter, bring it tomorrow.",
+    "lvl": "A2",
+    "note": "Also: Det gör inget om du är sen (It's OK if you're late)."
+  },
+  {
+    "sv": "Det spelar ingen roll",
+    "en": "it makes no difference",
+    "alt": [
+      "it doesn't matter",
+      "doesn't matter",
+      "it's all the same",
+      "it does not matter"
+    ],
+    "pos": "phrase",
+    "ipa": "dɛ ˈspeːlar ˈɪŋːɛn ˈrɔlː",
+    "ex": "{Det spelar ingen roll} vad andra tycker.",
+    "exEn": "It doesn't matter what other people think.",
+    "lvl": "B1",
+    "note": "Literally 'it plays no role'. Spelar det någon roll? = Does it matter?"
+  },
+  {
+    "sv": "Det är inte hela världen",
+    "en": "it's not the end of the world",
+    "alt": [
+      "not the end of the world",
+      "it's no big deal",
+      "no big deal"
+    ],
+    "pos": "phrase",
+    "ipa": "dɛ ɛː ˈɪntɛ ˈheːla ˈvæːɖɛn",
+    "ex": "Vi förlorade, men {det är inte hela världen}.",
+    "exEn": "We lost, but it's not the end of the world.",
+    "lvl": "B1",
+    "note": "Literally 'it's not the whole world'."
+  },
+  {
+    "sv": "Vad bra!",
+    "en": "that's good!",
+    "alt": [
+      "how good",
+      "that's good",
+      "that's great",
+      "good to hear",
+      "glad to hear it",
+      "great",
+      "good"
+    ],
+    "pos": "phrase",
+    "ipa": "vɑː ˈbrɑː",
+    "ex": "– Jag mår mycket bättre nu. – {Vad bra}!",
+    "exEn": "– I feel much better now. – That's good!",
+    "lvl": "A1",
+    "note": "vad + adjective in the ett-form = how …!: Vad skönt! (What a relief!), Vad gulligt! (How cute!)"
+  },
+  {
+    "sv": "Vad roligt!",
+    "en": "how nice!",
+    "alt": [
+      "how nice",
+      "how fun",
+      "how lovely",
+      "that's great",
+      "that's nice",
+      "how wonderful"
+    ],
+    "pos": "phrase",
+    "ipa": "vɑː ˈruːlɪt",
+    "ex": "– Vi ska gifta oss! – Åh, {vad roligt}!",
+    "exEn": "– We're getting married! – Oh, how lovely!",
+    "lvl": "A2",
+    "note": "Said when you hear good news. Vad kul! means the same and is just as common. The g in roligt is silent."
+  },
+  {
+    "sv": "Vad synd!",
+    "en": "what a pity!",
+    "alt": [
+      "what a pity",
+      "what a shame",
+      "too bad",
+      "that's a pity",
+      "that's a shame",
+      "pity",
+      "shame"
+    ],
+    "pos": "phrase",
+    "ipa": "vɑː ˈsʏnd",
+    "ex": "– Jag kan inte komma på festen. – {Vad synd}!",
+    "exEn": "– I can't come to the party. – What a shame!",
+    "lvl": "A2",
+    "note": "synd also means 'sin'. Det är synd om honom = I feel sorry for him."
+  },
+  {
+    "sv": "toppen",
+    "en": "great",
+    "alt": [
+      "excellent",
+      "super",
+      "awesome",
+      "perfect",
+      "brilliant",
+      "terrific"
+    ],
+    "pos": "interj",
+    "ipa": "ˈtɔpːɛn",
+    "tone": 1,
+    "ex": "– Jag fixar biljetterna. – {Toppen}, tack!",
+    "exEn": "– I'll sort out the tickets. – Great, thanks!",
+    "lvl": "A2",
+    "note": "Literally 'the top'. Also: Det var toppen! (It was great!)"
+  },
+  {
+    "sv": "oj",
+    "en": "oh; oops",
+    "alt": [
+      "oh",
+      "oops",
+      "wow",
+      "whoa",
+      "oh dear"
+    ],
+    "pos": "interj",
+    "ipa": "ɔjː",
+    "tone": 1,
+    "ex": "{Oj}, förlåt! Det var inte meningen.",
+    "exEn": "Oops, sorry! I didn't mean to.",
+    "lvl": "A1",
+    "note": "Shows surprise or a small mistake. Oj då! = Oops! / Oh dear!"
+  },
+  {
+    "sv": "usch",
+    "en": "ugh",
+    "alt": [
+      "yuck",
+      "yuk",
+      "eww",
+      "ew"
+    ],
+    "pos": "interj",
+    "ipa": "ɵɧː",
+    "tone": 1,
+    "ex": "{Usch}, vad kallt det är idag!",
+    "exEn": "Ugh, it's so cold today!",
+    "lvl": "A2",
+    "note": "Shows dislike or disgust: Usch, vad äckligt! (Yuck, how gross!)"
+  },
+  {
+    "sv": "jaså",
+    "en": "really?; is that so?",
+    "alt": [
+      "really",
+      "is that so",
+      "oh really",
+      "oh",
+      "I see"
+    ],
+    "pos": "interj",
+    "ipa": "ˈjasːɔ",
+    "tone": 2,
+    "ex": "– Jag ska flytta till Norge. – {Jaså}? När då?",
+    "exEn": "– I'm moving to Norway. – Really? When?",
+    "lvl": "A2",
+    "note": "Shows surprise or interest in news. Pronounced 'jasså'."
+  },
+  {
+    "sv": "va",
+    "en": "what?; huh?",
+    "alt": [
+      "what",
+      "huh",
+      "eh",
+      "pardon"
+    ],
+    "pos": "interj",
+    "ipa": "vɑː",
+    "tone": 1,
+    "ex": "{Va}? Har du sålt bilen?",
+    "exEn": "What? You've sold the car?",
+    "lvl": "A2",
+    "note": "Casual. More polite: Förlåt? or Vad sa du? Also a tag at the end: Snyggt, va? (Nice, huh?)"
+  },
+  {
+    "sv": "Jag håller med",
+    "en": "I agree",
+    "alt": [
+      "I agree with you",
+      "agreed"
+    ],
+    "pos": "phrase",
+    "ipa": "jɑː hɔlːɛr ˈmeːd",
+    "ex": "– Filmen var för lång. – Ja, {jag håller med}.",
+    "exEn": "– The movie was too long. – Yes, I agree.",
+    "lvl": "A2",
+    "note": "From hålla med (to agree), with stress on med. Jag håller med dig = I agree with you."
+  },
+  {
+    "sv": "Det stämmer",
+    "en": "that's right",
+    "alt": [
+      "that's correct",
+      "that's true",
+      "correct",
+      "right",
+      "that is right"
+    ],
+    "pos": "phrase",
+    "ipa": "dɛ ˈstɛmːɛr",
+    "ex": "– Bor du i Uppsala? – Ja, {det stämmer}.",
+    "exEn": "– Do you live in Uppsala? – Yes, that's right.",
+    "lvl": "A2",
+    "note": "stämma = to be correct, to add up. Stämmer det? = Is that right?"
+  },
+  {
+    "sv": "precis",
+    "en": "exactly",
+    "alt": [
+      "precisely",
+      "exactly right",
+      "that's it"
+    ],
+    "pos": "interj",
+    "ipa": "prɛˈsiːs",
+    "tone": 1,
+    "ex": "– Så vi ses klockan sex? – {Precis}!",
+    "exEn": "– So we'll meet at six? – Exactly!",
+    "lvl": "A2",
+    "note": "As an adverb it also means 'just': precis som jag (just like me), Jag kom precis hem (I just got home)."
+  },
+  {
+    "sv": "absolut",
+    "en": "absolutely",
+    "alt": [
+      "definitely",
+      "certainly",
+      "of course",
+      "sure"
+    ],
+    "pos": "interj",
+    "ipa": "absʊˈlʉːt",
+    "tone": 1,
+    "ex": "– Får jag låna din cykel? – {Absolut}!",
+    "exEn": "– Can I borrow your bike? – Absolutely!",
+    "lvl": "A2",
+    "note": "Absolut inte! = Absolutely not! / No way!"
+  },
+  {
+    "sv": "Ja visst!",
+    "en": "yes, sure!",
+    "alt": [
+      "sure",
+      "yes sure",
+      "of course",
+      "yes, of course",
+      "certainly",
+      "sure thing"
+    ],
+    "pos": "phrase",
+    "ipa": "jɑː ˈvɪst",
+    "ex": "– Får jag sitta här? – {Ja visst}!",
+    "exEn": "– May I sit here? – Sure!",
+    "lvl": "A2",
+    "note": "visst also asks for agreement: Visst är det fint här? (Isn't it lovely here?)"
+  },
+  {
+    "sv": "så klart",
+    "en": "of course",
+    "alt": [
+      "naturally",
+      "obviously",
+      "sure"
+    ],
+    "pos": "phrase",
+    "ipa": "soː ˈklɑːʈ",
+    "ex": "Hon vann {så klart}, som vanligt.",
+    "exEn": "She won, of course, as usual.",
+    "lvl": "A2",
+    "note": "Also written såklart. Självklart means the same."
+  },
+  {
+    "sv": "Det låter bra",
+    "en": "sounds good",
+    "alt": [
+      "that sounds good",
+      "sounds great",
+      "that sounds great",
+      "sounds fine"
+    ],
+    "pos": "phrase",
+    "ipa": "dɛ ˈloːtɛr ˈbrɑː",
+    "ex": "– Ska vi ses vid sju? – {Det låter bra}!",
+    "exEn": "– Shall we meet at seven? – Sounds good!",
+    "lvl": "A2",
+    "note": "låta = to sound. Det låter kul! = Sounds fun!"
+  },
+  {
+    "sv": "Eller hur?",
+    "en": "right?",
+    "alt": [
+      "right",
+      "isn't it",
+      "don't you",
+      "aren't you",
+      "isn't that right",
+      "don't you think"
+    ],
+    "pos": "phrase",
+    "ipa": "ɛlɛr ˈhʉːr",
+    "ex": "Det är kallt idag, {eller hur}?",
+    "exEn": "It's cold today, isn't it?",
+    "lvl": "A2",
+    "note": "Like English isn't it? or don't you?, but it never changes form."
+  },
+  {
+    "sv": "Det beror på",
+    "en": "it depends",
+    "alt": [
+      "that depends",
+      "depends"
+    ],
+    "pos": "phrase",
+    "ipa": "dɛ bɛˈruːr ˈpoː",
+    "ex": "– Kommer du imorgon? – {Det beror på} vädret.",
+    "exEn": "– Are you coming tomorrow? – It depends on the weather.",
+    "lvl": "A2",
+    "note": "bero på = to depend on; also 'to be due to': Förseningen beror på snön (The delay is due to the snow)."
+  },
+  {
+    "sv": "inte än",
+    "en": "not yet",
+    "pos": "phrase",
+    "ipa": "ˈɪntɛ ˈɛnː",
+    "ex": "– Har du ätit? – Nej, {inte än}.",
+    "exEn": "– Have you eaten? – No, not yet.",
+    "lvl": "A2",
+    "note": "In a full sentence än usually comes last: Jag har inte ätit än. Also: inte ännu."
+  },
+  {
+    "sv": "typ",
+    "en": "about; like (casual)",
+    "alt": [
+      "about",
+      "like",
+      "roughly",
+      "around",
+      "sort of",
+      "kind of",
+      "approximately",
+      "for example"
+    ],
+    "pos": "adv",
+    "ipa": "tyːp",
+    "tone": 1,
+    "ex": "Vi kan äta något enkelt, {typ} pasta.",
+    "exEn": "We can eat something simple, like pasta.",
+    "lvl": "B1",
+    "note": "Very common in casual speech (Det tar typ en timme = It takes about an hour). Avoid it in formal writing."
+  },
+  {
+    "sv": "liksom",
+    "en": "sort of; like (filler)",
+    "alt": [
+      "like",
+      "sort of",
+      "kind of",
+      "you know"
+    ],
+    "pos": "adv",
+    "ipa": "ˈlɪkːsɔm",
+    "tone": 1,
+    "ex": "Det var {liksom} lite konstigt.",
+    "exEn": "It was, like, a bit weird.",
+    "lvl": "B1",
+    "note": "A filler word in casual speech. In formal Swedish it means 'like; as': liksom förra året (as last year)."
+  },
+  {
+    "sv": "hur som helst",
+    "en": "anyway (moving on)",
+    "alt": [
+      "anyway",
+      "anyhow",
+      "in any case"
+    ],
+    "pos": "phrase",
+    "ipa": "hʉːr sɔm ˈhɛlst",
+    "ex": "{Hur som helst}, nu måste jag gå.",
+    "exEn": "Anyway, I have to go now.",
+    "lvl": "B1",
+    "note": "Also 'any old way': Man kan inte parkera hur som helst (You can't park any old way)."
+  },
+  {
+    "sv": "i alla fall",
+    "en": "at least; anyway",
+    "alt": [
+      "anyway",
+      "at least",
+      "in any case",
+      "at any rate",
+      "anyhow"
+    ],
+    "pos": "phrase",
+    "ipa": "ɪ ˈalːa ˈfalː",
+    "ex": "Det regnade, men vi hade kul {i alla fall}.",
+    "exEn": "It rained, but we had fun anyway.",
+    "lvl": "B1",
+    "note": "Also 'at least': Det var i alla fall gratis (At least it was free). In texts often iaf."
+  },
+  {
+    "sv": "grattis",
+    "en": "congratulations",
+    "alt": [
+      "congrats",
+      "happy birthday"
+    ],
+    "pos": "interj",
+    "ipa": "ˈɡratːɪs",
+    "tone": 1,
+    "ex": "{Grattis} på födelsedagen!",
+    "exEn": "Happy birthday!",
+    "lvl": "A1",
+    "note": "Short for gratulerar. Used for birthdays, new jobs, passed exams and so on."
+  },
+  {
+    "sv": "Lycka till!",
+    "en": "good luck!",
+    "alt": [
+      "good luck",
+      "best of luck",
+      "break a leg"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈlʏkːa ˈtɪlː",
+    "ex": "{Lycka till} med provet imorgon!",
+    "exEn": "Good luck with the test tomorrow!",
+    "lvl": "A1",
+    "note": "lycka means both luck and happiness."
+  },
+  {
+    "sv": "Krya på dig!",
+    "en": "get well soon!",
+    "alt": [
+      "get well soon",
+      "get better soon",
+      "feel better",
+      "feel better soon"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈkryːa ˈpoː dɛj",
+    "ex": "Jag hörde att du är sjuk. {Krya på dig}!",
+    "exEn": "I heard you're sick. Get well soon!",
+    "lvl": "A2",
+    "note": "From krya på sig (to get better). To several people: Krya på er!"
+  },
+  {
+    "sv": "Bra jobbat!",
+    "en": "well done!",
+    "alt": [
+      "well done",
+      "good job",
+      "great job",
+      "nice work",
+      "good work"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈbrɑː ˈjɔbːat",
+    "ex": "{Bra jobbat}, allihop! Nu är vi klara.",
+    "exEn": "Well done, everyone! We're finished now.",
+    "lvl": "A2",
+    "note": "jobbat is the supine of jobba (to work). Also common: Snyggt jobbat!"
+  },
+  {
+    "sv": "Ha en bra dag!",
+    "en": "have a nice day!",
+    "alt": [
+      "have a nice day",
+      "have a good day",
+      "have a great day"
+    ],
+    "pos": "phrase",
+    "ipa": "hɑː ɛn ˈbrɑː ˈdɑːɡ",
+    "ex": "Här är ditt kvitto. {Ha en bra dag}!",
+    "exEn": "Here's your receipt. Have a nice day!",
+    "lvl": "A1",
+    "note": "Typical reply: Tack, detsamma! (Thanks, you too!)"
+  },
+  {
+    "sv": "Ha det så kul!",
+    "en": "have fun!",
+    "alt": [
+      "have fun",
+      "have a good time",
+      "have a great time",
+      "enjoy yourself",
+      "enjoy"
+    ],
+    "pos": "phrase",
+    "ipa": "hɑː dɛ soː ˈkʉːl",
+    "ex": "Ska ni till Paris? {Ha det så kul}!",
+    "exEn": "Are you going to Paris? Have fun!",
+    "lvl": "A2",
+    "note": "Also: Ha så kul! or Ha det så roligt!"
+  },
+  {
+    "sv": "Sov gott!",
+    "en": "sleep well!",
+    "alt": [
+      "sleep well",
+      "sleep tight",
+      "sweet dreams"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈsoːv ˈɡɔtː",
+    "ex": "God natt, älskling. {Sov gott}!",
+    "exEn": "Good night, darling. Sleep well!",
+    "lvl": "A1",
+    "note": "sov is the imperative of sova (to sleep); gott here means 'well'."
+  },
+  {
+    "sv": "detsamma",
+    "en": "same to you",
+    "alt": [
+      "you too",
+      "likewise",
+      "the same to you",
+      "same here"
+    ],
+    "pos": "interj",
+    "ipa": "dɛˈsamːa",
+    "tone": 1,
+    "ex": "– Trevlig helg! – Tack, {detsamma}!",
+    "exEn": "– Have a nice weekend! – Thanks, you too!",
+    "lvl": "A2",
+    "note": "The usual reply to good wishes like Trevlig helg! or Ha en bra dag!, often as Tack, detsamma!"
+  },
+  {
+    "sv": "Tack för maten!",
+    "en": "thanks for the meal!",
+    "alt": [
+      "thanks for the meal",
+      "thanks for the food",
+      "thank you for the meal",
+      "thank you for the food",
+      "thanks for dinner"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈtakː fœr ˈmɑːtɛn",
+    "ex": "Barn, glöm inte att säga {tack för maten}!",
+    "exEn": "Kids, don't forget to say thank you for the meal!",
+    "lvl": "A1",
+    "note": "Said to the host, or whoever cooked, when you get up from the table."
+  },
+  {
+    "sv": "Tack för senast!",
+    "en": "thanks for last time!",
+    "alt": [
+      "thanks for last time",
+      "thank you for last time",
+      "thanks for the other day",
+      "thanks for the other night"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈtakː fœr ˈseːnast",
+    "ex": "{Tack för senast}! Det var en jättetrevlig kväll.",
+    "exEn": "Thanks for the other night! It was a really lovely evening.",
+    "lvl": "A2",
+    "note": "Said the next time you see someone you spent time with, for example after a dinner at their place. A key part of Swedish politeness."
+  },
+  {
+    "sv": "Det var länge sedan!",
+    "en": "long time no see!",
+    "alt": [
+      "long time no see",
+      "it's been a long time",
+      "it's been ages",
+      "it's been a while"
+    ],
+    "pos": "phrase",
+    "ipa": "dɛ vɑːr ˈlɛŋːɛ ˈsɛnː",
+    "ex": "{Det var länge sedan} vi sågs!",
+    "exEn": "It's been ages since we last saw each other!",
+    "lvl": "A2",
+    "note": "sedan is usually said (and often written) sen here. Literally 'it was long ago'."
+  },
+  {
+    "sv": "Hur gick det?",
+    "en": "how did it go?",
+    "alt": [
+      "how did it go",
+      "how was it",
+      "how did it turn out"
+    ],
+    "pos": "phrase",
+    "ipa": "hʉːr ˈjɪkː dɛ",
+    "ex": "{Hur gick det} på jobbintervjun?",
+    "exEn": "How did the job interview go?",
+    "lvl": "A2",
+    "note": "gick is the past tense of gå. Answer: Det gick bra! (It went well!)"
+  },
+  {
+    "sv": "Vad gör du?",
+    "en": "what are you doing?",
+    "alt": [
+      "what are you doing",
+      "what're you doing",
+      "what are you up to",
+      "what do you do"
+    ],
+    "pos": "phrase",
+    "ipa": "vɑː ˈjœːr dʉː",
+    "ex": "Hej! {Vad gör du} i helgen?",
+    "exEn": "Hi! What are you doing this weekend?",
+    "lvl": "A1",
+    "note": "For someone's job, Swedes usually ask: Vad jobbar du med?"
+  },
+  {
+    "sv": "Hur säger man … på svenska?",
+    "en": "how do you say … in Swedish?",
+    "alt": [
+      "how do you say in Swedish",
+      "how do you say it in Swedish",
+      "how do you say that in Swedish"
+    ],
+    "pos": "phrase",
+    "ipa": "hʉːr ˈsɛjːɛr man poː ˈsvɛnska",
+    "ex": "{Hur säger man} ”spoon” på svenska?",
+    "exEn": "How do you say \"spoon\" in Swedish?",
+    "lvl": "A1",
+    "note": "man = one, people in general. Also common: Vad heter … på svenska?"
+  },
+  {
+    "sv": "Vad betyder …?",
+    "en": "what does … mean?",
+    "alt": [
+      "what does it mean",
+      "what does that mean",
+      "what does this mean"
+    ],
+    "pos": "phrase",
+    "ipa": "vɑː bɛˈtyːdɛr",
+    "ex": "Ursäkta, {vad betyder} det här ordet?",
+    "exEn": "Excuse me, what does this word mean?",
+    "lvl": "A1",
+    "note": "betyda = to mean. Vad menar du? = What do you mean (by that)?"
+  },
+  {
+    "sv": "Kan du upprepa det?",
+    "en": "can you repeat that?",
+    "alt": [
+      "could you repeat that",
+      "can you say that again",
+      "could you say that again",
+      "repeat that please"
+    ],
+    "pos": "phrase",
+    "ipa": "kan dʉː ˈɵpːˌreːpa dɛ",
+    "ex": "Förlåt, jag hörde inte. {Kan du upprepa det}?",
+    "exEn": "Sorry, I didn't hear. Can you repeat that?",
+    "lvl": "A2",
+    "note": "More casual: Kan du säga det igen?"
+  },
+  {
+    "sv": "Ta det lugnt!",
+    "en": "take it easy!",
+    "alt": [
+      "take it easy",
+      "calm down",
+      "relax",
+      "chill",
+      "easy"
+    ],
+    "pos": "phrase",
+    "ipa": "tɑː dɛ ˈlɵŋnt",
+    "ex": "{Ta det lugnt}, vi har gott om tid.",
+    "exEn": "Take it easy, we have plenty of time.",
+    "lvl": "A2",
+    "note": "Also a casual goodbye: Hej då, ta det lugnt!"
+  },
+  {
+    "sv": "Skynda dig!",
+    "en": "hurry up!",
+    "alt": [
+      "hurry up",
+      "hurry",
+      "be quick",
+      "quick"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈɧʏnda dɛj",
+    "ex": "{Skynda dig}, bussen går om två minuter!",
+    "exEn": "Hurry up, the bus leaves in two minutes!",
+    "lvl": "A2",
+    "note": "sk before y is the sj-sound. To several people: Skynda er!"
+  },
+  {
+    "sv": "Akta dig!",
+    "en": "watch out!",
+    "alt": [
+      "watch out",
+      "look out",
+      "be careful",
+      "careful",
+      "mind out"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈakta dɛj",
+    "ex": "{Akta dig}, golvet är halt!",
+    "exEn": "Watch out, the floor is slippery!",
+    "lvl": "A2",
+    "note": "Akta dig för hunden! = Watch out for the dog! To several people: Akta er!"
+  },
+  {
+    "sv": "Vänta lite!",
+    "en": "wait a moment!",
+    "alt": [
+      "wait a moment",
+      "wait a minute",
+      "wait a second",
+      "just a moment",
+      "hang on",
+      "hold on",
+      "one moment"
+    ],
+    "pos": "phrase",
+    "ipa": "ˈvɛnta ˈliːtɛ",
+    "ex": "{Vänta lite}, jag ska bara hämta jackan.",
+    "exEn": "Wait a moment, I'm just going to get my jacket.",
+    "lvl": "A1",
+    "note": "More formal: Ett ögonblick! (One moment!)"
+  }
+]

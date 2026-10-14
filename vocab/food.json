@@ -1,0 +1,1082 @@
+[
+  {
+    "sv": "mat",
+    "en": "food",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "maten",
+      null,
+      null
+    ],
+    "ipa": "mɑːt",
+    "tone": 1,
+    "ex": "{Maten} är klar!",
+    "exEn": "Food's ready!",
+    "lvl": "A1",
+    "note": "Maten är klar! is how you call everyone to the table."
+  },
+  {
+    "sv": "frukost",
+    "en": "breakfast",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "frukosten",
+      "frukostar",
+      "frukostarna"
+    ],
+    "ipa": "ˈfrɵkːɔst",
+    "tone": 1,
+    "ex": "Vad äter du till {frukost}?",
+    "exEn": "What do you have for breakfast?",
+    "lvl": "A1",
+    "note": "äta frukost = to have breakfast; till frukost = for breakfast."
+  },
+  {
+    "sv": "lunch",
+    "en": "lunch",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "lunchen",
+      "luncher",
+      "luncherna"
+    ],
+    "ipa": "lɵnːɧ",
+    "tone": 1,
+    "ex": "Ska vi äta {lunch} tillsammans?",
+    "exEn": "Shall we have lunch together?",
+    "lvl": "A1",
+    "note": "The ch is pronounced like the sj-sound."
+  },
+  {
+    "sv": "middag",
+    "en": "dinner",
+    "alt": [
+      "supper",
+      "evening meal"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "middagen",
+      "middagar",
+      "middagarna"
+    ],
+    "ipa": "ˈmɪdːɑːɡ",
+    "tone": 1,
+    "ex": "Vad blir det till {middag}?",
+    "exEn": "What's for dinner?",
+    "lvl": "A1",
+    "note": "The main hot meal of the day, eaten in the evening. Often pronounced \"midda\"."
+  },
+  {
+    "sv": "måltid",
+    "en": "meal",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "måltiden",
+      "måltider",
+      "måltiderna"
+    ],
+    "ipa": "ˈmoːlˌtiːd",
+    "tone": 2,
+    "ex": "Frukost är dagens viktigaste {måltid}.",
+    "exEn": "Breakfast is the most important meal of the day.",
+    "lvl": "A2",
+    "note": "Smaklig måltid! = Enjoy your meal!"
+  },
+  {
+    "sv": "mellanmål",
+    "en": "snack",
+    "alt": [
+      "light meal",
+      "snack between meals"
+    ],
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "mellanmålet",
+      "mellanmål",
+      "mellanmålen"
+    ],
+    "ipa": "ˈmɛlːanˌmoːl",
+    "tone": 2,
+    "ex": "Jag tar en banan som {mellanmål}.",
+    "exEn": "I have a banana as a snack.",
+    "lvl": "A2",
+    "note": "Literally \"between-meal\": a small meal like a sandwich, fruit or yogurt."
+  },
+  {
+    "sv": "dryck",
+    "en": "drink",
+    "alt": [
+      "beverage"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "drycken",
+      "drycker",
+      "dryckerna"
+    ],
+    "ipa": "drʏkː",
+    "tone": 1,
+    "ex": "En {dryck} ingår i priset.",
+    "exEn": "A drink is included in the price.",
+    "lvl": "A2",
+    "note": "In speech people often say något att dricka (something to drink). En drink is a cocktail."
+  },
+  {
+    "sv": "vatten",
+    "en": "water",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "vattnet",
+      null,
+      null
+    ],
+    "ipa": "ˈvatːɛn",
+    "tone": 1,
+    "ex": "Jag dricker mycket {vatten} när det är varmt.",
+    "exEn": "I drink a lot of water when it's hot.",
+    "lvl": "A1",
+    "note": "The e drops in the definite form: vattnet. Swedish tap water is good to drink."
+  },
+  {
+    "sv": "mjölk",
+    "en": "milk",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "mjölken",
+      null,
+      null
+    ],
+    "ipa": "mjœlːk",
+    "tone": 1,
+    "ex": "Vi har ingen {mjölk} kvar.",
+    "exEn": "We're out of milk.",
+    "lvl": "A1",
+    "note": "Both the j and the l are pronounced: m-yölk."
+  },
+  {
+    "sv": "kaffe",
+    "en": "coffee",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "kaffet",
+      null,
+      null
+    ],
+    "ipa": "ˈkafːɛ",
+    "tone": 2,
+    "ex": "Jag dricker {kaffe} varje morgon.",
+    "exEn": "I drink coffee every morning.",
+    "lvl": "A1",
+    "note": "An ett-word (kaffet), but when ordering people say En kaffe, tack (= a cup of coffee)."
+  },
+  {
+    "sv": "te",
+    "en": "tea",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "teet",
+      null,
+      null
+    ],
+    "ipa": "teː",
+    "tone": 1,
+    "ex": "Vill du ha {te} eller kaffe?",
+    "exEn": "Would you like tea or coffee?",
+    "lvl": "A1",
+    "note": "An ett-word: teet = the tea."
+  },
+  {
+    "sv": "juice",
+    "en": "juice",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "juicen",
+      null,
+      null
+    ],
+    "ipa": "juːs",
+    "tone": 1,
+    "ex": "Vill du ha {juice} till frukosten?",
+    "exEn": "Would you like juice with your breakfast?",
+    "lvl": "A1",
+    "note": "Pronounced \"yoos\". Saft is something else: a sweet fruit cordial mixed with water."
+  },
+  {
+    "sv": "läsk",
+    "en": "soda",
+    "alt": [
+      "soft drink",
+      "pop",
+      "fizzy drink",
+      "soda pop"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "läsken",
+      null,
+      null
+    ],
+    "ipa": "lɛsːk",
+    "tone": 1,
+    "ex": "Vill du ha en {läsk}?",
+    "exEn": "Do you want a soda?",
+    "lvl": "A2",
+    "note": "Short for läskedryck. En läsk = a can or bottle of soda."
+  },
+  {
+    "sv": "öl",
+    "en": "beer",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "ölen",
+      "öl",
+      "ölen"
+    ],
+    "ipa": "øːl",
+    "tone": 1,
+    "ex": "Ska vi ta en {öl} efter jobbet?",
+    "exEn": "Shall we grab a beer after work?",
+    "lvl": "A1",
+    "note": "En öl = a beer (a glass or bottle); beer as a drink is often ett öl, ölet. Plural öl: två öl."
+  },
+  {
+    "sv": "vin",
+    "en": "wine",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "vinet",
+      "viner",
+      "vinerna"
+    ],
+    "ipa": "viːn",
+    "tone": 1,
+    "ex": "Vill du ha rött eller vitt {vin}?",
+    "exEn": "Would you like red or white wine?",
+    "lvl": "A1",
+    "note": "Wine and strong beer are sold only at Systembolaget, the state-run liquor store."
+  },
+  {
+    "sv": "bröd",
+    "en": "bread",
+    "alt": [
+      "loaf"
+    ],
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "brödet",
+      "bröd",
+      "bröden"
+    ],
+    "ipa": "brøːd",
+    "tone": 1,
+    "ex": "Har vi något {bröd} kvar?",
+    "exEn": "Do we have any bread left?",
+    "lvl": "A1",
+    "note": "Ett bröd can be a whole loaf: Jag köpte två bröd."
+  },
+  {
+    "sv": "smör",
+    "en": "butter",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "smöret",
+      null,
+      null
+    ],
+    "ipa": "smøːr",
+    "tone": 1,
+    "ex": "Kan du skicka {smöret}?",
+    "exEn": "Can you pass the butter?",
+    "lvl": "A1",
+    "note": "The smör in smörgås (sandwich)."
+  },
+  {
+    "sv": "ost",
+    "en": "cheese",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "osten",
+      "ostar",
+      "ostarna"
+    ],
+    "ipa": "ʊsːt",
+    "tone": 1,
+    "ex": "Kan du köpa {ost} och mjölk?",
+    "exEn": "Can you buy cheese and milk?",
+    "lvl": "A1",
+    "note": "Swedes slice cheese with an osthyvel (cheese slicer)."
+  },
+  {
+    "sv": "ägg",
+    "en": "egg",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "ägget",
+      "ägg",
+      "äggen"
+    ],
+    "ipa": "ɛɡː",
+    "tone": 1,
+    "ex": "Jag äter ett kokt {ägg} till frukost.",
+    "exEn": "I have a boiled egg for breakfast.",
+    "lvl": "A1",
+    "note": "Same form in the plural: två ägg."
+  },
+  {
+    "sv": "smörgås",
+    "en": "sandwich",
+    "alt": [
+      "open sandwich"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "smörgåsen",
+      "smörgåsar",
+      "smörgåsarna"
+    ],
+    "ipa": "ˈsmœrːˌɡoːs",
+    "tone": 2,
+    "ex": "Vi tar en {smörgås} till kaffet.",
+    "exEn": "We'll have a sandwich with our coffee.",
+    "lvl": "A1",
+    "note": "Usually open-faced, with no bread on top. In everyday speech: en macka."
+  },
+  {
+    "sv": "gröt",
+    "en": "porridge",
+    "alt": [
+      "oatmeal",
+      "hot cereal"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "gröten",
+      null,
+      null
+    ],
+    "ipa": "ɡrøːt",
+    "tone": 1,
+    "ex": "Jag äter {gröt} med sylt till frukost.",
+    "exEn": "I have porridge with jam for breakfast.",
+    "lvl": "A2",
+    "note": "Usually havregrynsgröt (oatmeal), eaten with milk and jam."
+  },
+  {
+    "sv": "yoghurt",
+    "en": "yogurt",
+    "alt": [
+      "yoghurt"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "yoghurten",
+      null,
+      null
+    ],
+    "ipa": "ˈjɔɡːɵʈ",
+    "tone": 1,
+    "ex": "Vill du ha {yoghurt} eller gröt?",
+    "exEn": "Would you like yogurt or porridge?",
+    "lvl": "A1",
+    "note": "Swedes also eat fil (filmjölk), a thinner sour milk, the same way."
+  },
+  {
+    "sv": "flingor",
+    "en": "cereal",
+    "alt": [
+      "breakfast cereal",
+      "cornflakes",
+      "flakes"
+    ],
+    "pos": "noun",
+    "g": "pl",
+    "f": [
+      null,
+      "flingor",
+      "flingorna"
+    ],
+    "ipa": "ˈflɪŋːʊr",
+    "tone": 2,
+    "ex": "Jag äter {flingor} med mjölk på morgonen.",
+    "exEn": "I eat cereal with milk in the morning.",
+    "lvl": "A2",
+    "note": "Plural in Swedish: one flake is en flinga. Also called frukostflingor."
+  },
+  {
+    "sv": "kött",
+    "en": "meat",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "köttet",
+      null,
+      null
+    ],
+    "ipa": "ɕœtː",
+    "tone": 1,
+    "ex": "Jag äter inte {kött}.",
+    "exEn": "I don't eat meat.",
+    "lvl": "A1",
+    "note": "k before ö is soft (the tj-sound)."
+  },
+  {
+    "sv": "fisk",
+    "en": "fish",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "fisken",
+      "fiskar",
+      "fiskarna"
+    ],
+    "ipa": "fɪsːk",
+    "tone": 1,
+    "ex": "Vi äter {fisk} minst en gång i veckan.",
+    "exEn": "We eat fish at least once a week.",
+    "lvl": "A1",
+    "note": "As food, no article: äta fisk. The animal: en fisk, två fiskar."
+  },
+  {
+    "sv": "kyckling",
+    "en": "chicken",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "kycklingen",
+      "kycklingar",
+      "kycklingarna"
+    ],
+    "ipa": "ˈɕʏkːlɪŋ",
+    "tone": 2,
+    "ex": "I kväll blir det {kyckling} och ris.",
+    "exEn": "Tonight we're having chicken and rice.",
+    "lvl": "A1",
+    "note": "k before y is soft (the tj-sound). Also means a baby chick."
+  },
+  {
+    "sv": "korv",
+    "en": "sausage",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "korven",
+      "korvar",
+      "korvarna"
+    ],
+    "ipa": "kɔrːv",
+    "tone": 1,
+    "ex": "Barnen vill ha {korv} och mos.",
+    "exEn": "The kids want sausage and mashed potatoes.",
+    "lvl": "A1",
+    "note": "Korv med bröd = a hot dog, sold at kiosks everywhere."
+  },
+  {
+    "sv": "skinka",
+    "en": "ham",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "skinkan",
+      "skinkor",
+      "skinkorna"
+    ],
+    "ipa": "ˈɧɪŋːka",
+    "tone": 2,
+    "ex": "Jag tar en macka med ost och {skinka}.",
+    "exEn": "I'll have a sandwich with cheese and ham.",
+    "lvl": "A2",
+    "note": "sk before i is the sj-sound. Julskinka = Christmas ham."
+  },
+  {
+    "sv": "köttbulle",
+    "en": "meatball",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "köttbullen",
+      "köttbullar",
+      "köttbullarna"
+    ],
+    "ipa": "ˈɕœtːˌbɵlːɛ",
+    "tone": 2,
+    "ex": "Vi äter {köttbullar} med potatis och lingonsylt.",
+    "exEn": "We're having meatballs with potatoes and lingonberry jam.",
+    "lvl": "A2",
+    "note": "Kött (meat) + bulle (bun). Mostly used in the plural."
+  },
+  {
+    "sv": "potatis",
+    "en": "potato",
+    "alt": [
+      "potatoes"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "potatisen",
+      "potatisar",
+      "potatisarna"
+    ],
+    "ipa": "pʊˈtɑːtɪs",
+    "tone": 1,
+    "ex": "Vill du ha ris eller {potatis} till fisken?",
+    "exEn": "Would you like rice or potatoes with the fish?",
+    "lvl": "A1",
+    "note": "Stress on the second syllable. As food it is often uncountable: Vi äter potatis."
+  },
+  {
+    "sv": "ris",
+    "en": "rice",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "riset",
+      null,
+      null
+    ],
+    "ipa": "riːs",
+    "tone": 1,
+    "ex": "{Riset} ska koka i tjugo minuter.",
+    "exEn": "The rice needs to cook for twenty minutes.",
+    "lvl": "A1",
+    "note": "Ris also means twigs, as in påskris (Easter twigs)."
+  },
+  {
+    "sv": "pasta",
+    "en": "pasta",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "pastan",
+      null,
+      null
+    ],
+    "ipa": "ˈpasːta",
+    "tone": 2,
+    "ex": "Vi äter {pasta} med köttfärssås i kväll.",
+    "exEn": "We're having pasta with meat sauce tonight.",
+    "lvl": "A1",
+    "note": "Pasta med köttfärssås is a Swedish weeknight classic."
+  },
+  {
+    "sv": "pizza",
+    "en": "pizza",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "pizzan",
+      "pizzor",
+      "pizzorna"
+    ],
+    "ipa": "ˈpɪtːsa",
+    "tone": 2,
+    "ex": "Ska vi beställa {pizza}?",
+    "exEn": "Shall we order pizza?",
+    "lvl": "A1",
+    "note": "Plural pizzor, like most words ending in -a."
+  },
+  {
+    "sv": "soppa",
+    "en": "soup",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "soppan",
+      "soppor",
+      "sopporna"
+    ],
+    "ipa": "ˈsɔpːa",
+    "tone": 2,
+    "ex": "Jag lagar {soppa} när det är kallt ute.",
+    "exEn": "I make soup when it's cold out.",
+    "lvl": "A1",
+    "note": "Thursday is soup day: ärtsoppa (pea soup) followed by pancakes."
+  },
+  {
+    "sv": "sallad",
+    "en": "salad",
+    "alt": [
+      "lettuce"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "salladen",
+      "sallader",
+      "salladerna"
+    ],
+    "ipa": "ˈsalːad",
+    "tone": 2,
+    "ex": "Jag tar en {sallad} till lunch.",
+    "exEn": "I'll have a salad for lunch.",
+    "lvl": "A1",
+    "note": "Also lettuce: ett salladshuvud = a head of lettuce."
+  },
+  {
+    "sv": "grönsak",
+    "en": "vegetable",
+    "alt": [
+      "veggie",
+      "vegetables"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "grönsaken",
+      "grönsaker",
+      "grönsakerna"
+    ],
+    "ipa": "ˈɡrøːnˌsɑːk",
+    "tone": 2,
+    "ex": "Du borde äta mer {grönsaker}.",
+    "exEn": "You should eat more vegetables.",
+    "lvl": "A1",
+    "note": "Literally \"green thing\". Mostly used in the plural."
+  },
+  {
+    "sv": "tomat",
+    "en": "tomato",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "tomaten",
+      "tomater",
+      "tomaterna"
+    ],
+    "ipa": "tʊˈmɑːt",
+    "tone": 1,
+    "ex": "Jag skär {tomaterna} till salladen.",
+    "exEn": "I'm cutting the tomatoes for the salad.",
+    "lvl": "A1",
+    "note": "Stress on the second syllable: to-MAAT."
+  },
+  {
+    "sv": "gurka",
+    "en": "cucumber",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "gurkan",
+      "gurkor",
+      "gurkorna"
+    ],
+    "ipa": "ˈɡɵrːka",
+    "tone": 2,
+    "ex": "Jag gillar inte {gurka}.",
+    "exEn": "I don't like cucumber.",
+    "lvl": "A2",
+    "note": "Inlagd gurka (pickled cucumber) is a common side dish."
+  },
+  {
+    "sv": "lök",
+    "en": "onion",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "löken",
+      "lökar",
+      "lökarna"
+    ],
+    "ipa": "løːk",
+    "tone": 1,
+    "ex": "Jag gråter alltid när jag skär {lök}.",
+    "exEn": "I always cry when I cut onions.",
+    "lvl": "A2",
+    "note": "Rödlök = red onion, vitlök = garlic."
+  },
+  {
+    "sv": "morot",
+    "en": "carrot",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "moroten",
+      "morötter",
+      "morötterna"
+    ],
+    "ipa": "ˈmuːˌruːt",
+    "tone": 2,
+    "ex": "Barnen äter gärna {morötter}.",
+    "exEn": "The kids like eating carrots.",
+    "lvl": "A2",
+    "note": "Irregular plural: en morot, två morötter."
+  },
+  {
+    "sv": "frukt",
+    "en": "fruit",
+    "alt": [
+      "piece of fruit"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "frukten",
+      "frukter",
+      "frukterna"
+    ],
+    "ipa": "frɵkːt",
+    "tone": 1,
+    "ex": "Ta en {frukt} om du är hungrig.",
+    "exEn": "Have a piece of fruit if you're hungry.",
+    "lvl": "A1",
+    "note": "En frukt = a piece of fruit."
+  },
+  {
+    "sv": "äpple",
+    "en": "apple",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "äpplet",
+      "äpplen",
+      "äpplena"
+    ],
+    "ipa": "ˈɛpːlɛ",
+    "tone": 2,
+    "ex": "Vill du ha ett {äpple} eller en banan?",
+    "exEn": "Would you like an apple or a banana?",
+    "lvl": "A1",
+    "note": "Ett-word with the plural äpplen: två äpplen."
+  },
+  {
+    "sv": "banan",
+    "en": "banana",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "bananen",
+      "bananer",
+      "bananerna"
+    ],
+    "ipa": "baˈnɑːn",
+    "tone": 1,
+    "ex": "Jag äter en {banan} efter träningen.",
+    "exEn": "I eat a banana after my workout.",
+    "lvl": "A1",
+    "note": "Stress on the second syllable: ba-NAAN."
+  },
+  {
+    "sv": "apelsin",
+    "en": "orange (fruit)",
+    "alt": [
+      "orange"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "apelsinen",
+      "apelsiner",
+      "apelsinerna"
+    ],
+    "ipa": "apɛlˈsiːn",
+    "tone": 1,
+    "ex": "Kan du skala en {apelsin} åt mig?",
+    "exEn": "Can you peel an orange for me?",
+    "lvl": "A1",
+    "note": "The color orange is orange (said o-RANSH). Apelsinjuice = orange juice."
+  },
+  {
+    "sv": "päron",
+    "en": "pear",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "päronet",
+      "päron",
+      "päronen"
+    ],
+    "ipa": "ˈpæːrɔn",
+    "tone": 2,
+    "ex": "Det här {päronet} är jättegott.",
+    "exEn": "This pear is really good.",
+    "lvl": "A2",
+    "note": "Same form in the plural: två päron."
+  },
+  {
+    "sv": "citron",
+    "en": "lemon",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "citronen",
+      "citroner",
+      "citronerna"
+    ],
+    "ipa": "sɪˈtruːn",
+    "tone": 1,
+    "ex": "Vill du ha {citron} i teet?",
+    "exEn": "Would you like lemon in your tea?",
+    "lvl": "A2",
+    "note": "c before i is pronounced s. Stress on -tron."
+  },
+  {
+    "sv": "jordgubbe",
+    "en": "strawberry",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "jordgubben",
+      "jordgubbar",
+      "jordgubbarna"
+    ],
+    "ipa": "ˈjuːɖˌɡɵbːɛ",
+    "tone": 2,
+    "ex": "På sommaren äter vi {jordgubbar} med grädde.",
+    "exEn": "In summer we eat strawberries with cream.",
+    "lvl": "A2",
+    "note": "Mostly used in the plural. A must at midsummer."
+  },
+  {
+    "sv": "glass",
+    "en": "ice cream",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "glassen",
+      "glassar",
+      "glassarna"
+    ],
+    "ipa": "ɡlasː",
+    "tone": 1,
+    "ex": "Ska vi köpa en {glass}?",
+    "exEn": "Shall we get an ice cream?",
+    "lvl": "A1",
+    "note": "False friend: glass = ice cream. A drinking glass is ett glas."
+  },
+  {
+    "sv": "kaka",
+    "en": "cookie; cake",
+    "alt": [
+      "cookie",
+      "cake",
+      "biscuit"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "kakan",
+      "kakor",
+      "kakorna"
+    ],
+    "ipa": "ˈkɑːka",
+    "tone": 2,
+    "ex": "Mormor har bakat {kakor}.",
+    "exEn": "Grandma has baked cookies.",
+    "lvl": "A1",
+    "note": "Usually a cookie or a plain cake. A layer cake with cream is en tårta."
+  },
+  {
+    "sv": "choklad",
+    "en": "chocolate",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "chokladen",
+      null,
+      null
+    ],
+    "ipa": "ɧʊˈklɑːd",
+    "tone": 1,
+    "ex": "Jag älskar mörk {choklad}.",
+    "exEn": "I love dark chocolate.",
+    "lvl": "A1",
+    "note": "ch is the sj-sound. Varm choklad = hot chocolate."
+  },
+  {
+    "sv": "godis",
+    "en": "candy",
+    "alt": [
+      "sweets",
+      "candies"
+    ],
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "godiset",
+      null,
+      null
+    ],
+    "ipa": "ˈɡuːdɪs",
+    "tone": 1,
+    "ex": "Barnen får {godis} på lördagar.",
+    "exEn": "The kids get candy on Saturdays.",
+    "lvl": "A1",
+    "note": "An ett-word: godiset. Lördagsgodis (Saturday candy) is a Swedish tradition."
+  },
+  {
+    "sv": "socker",
+    "en": "sugar",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "sockret",
+      null,
+      null
+    ],
+    "ipa": "ˈsɔkːɛr",
+    "tone": 1,
+    "ex": "Tar du {socker} i kaffet?",
+    "exEn": "Do you take sugar in your coffee?",
+    "lvl": "A1",
+    "note": "The e drops in the definite form: sockret."
+  },
+  {
+    "sv": "salt",
+    "en": "salt",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "saltet",
+      null,
+      null
+    ],
+    "ipa": "salːt",
+    "tone": 1,
+    "ex": "Soppan behöver lite mer {salt}.",
+    "exEn": "The soup needs a little more salt.",
+    "lvl": "A1",
+    "note": "Also an adjective: Soppan är för salt = The soup is too salty."
+  },
+  {
+    "sv": "peppar",
+    "en": "pepper",
+    "alt": [
+      "black pepper"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "pepparn",
+      null,
+      null
+    ],
+    "ipa": "ˈpɛpːar",
+    "tone": 2,
+    "ex": "Smaka av med salt och {peppar}.",
+    "exEn": "Season to taste with salt and pepper.",
+    "lvl": "A2",
+    "note": "The vegetable (bell pepper) is paprika."
+  },
+  {
+    "sv": "hungrig",
+    "en": "hungry",
+    "pos": "adj",
+    "f": [
+      "hungrigt",
+      "hungriga",
+      "hungrigare",
+      "hungrigast"
+    ],
+    "ipa": "ˈhɵŋːrɪɡ",
+    "tone": 2,
+    "ex": "Jag är så {hungrig}!",
+    "exEn": "I'm so hungry!",
+    "lvl": "A1",
+    "note": "The final g is usually silent: \"hungri\"."
+  },
+  {
+    "sv": "törstig",
+    "en": "thirsty",
+    "pos": "adj",
+    "f": [
+      "törstigt",
+      "törstiga",
+      "törstigare",
+      "törstigast"
+    ],
+    "ipa": "ˈtœʂʈɪɡ",
+    "tone": 2,
+    "ex": "Är du {törstig}? Det finns vatten i kylen.",
+    "exEn": "Are you thirsty? There's water in the fridge.",
+    "lvl": "A1"
+  },
+  {
+    "sv": "god",
+    "en": "tasty",
+    "alt": [
+      "good",
+      "delicious",
+      "yummy"
+    ],
+    "pos": "adj",
+    "f": [
+      "gott",
+      "goda",
+      "godare",
+      "godast"
+    ],
+    "ipa": "ɡuːd",
+    "tone": 1,
+    "ex": "Mmm, vad {gott}!",
+    "exEn": "Mmm, so good!",
+    "lvl": "A1",
+    "note": "Det var gott! = That was delicious. Comparative godare, godast (not bättre, bäst). In god morgon it simply means good."
+  },
+  {
+    "sv": "äcklig",
+    "en": "disgusting",
+    "alt": [
+      "gross",
+      "nasty",
+      "yucky"
+    ],
+    "pos": "adj",
+    "f": [
+      "äckligt",
+      "äckliga",
+      "äckligare",
+      "äckligast"
+    ],
+    "ipa": "ˈɛkːlɪɡ",
+    "tone": 2,
+    "ex": "Maten i skolan var {äcklig}.",
+    "exEn": "The food at school was disgusting.",
+    "lvl": "A2",
+    "note": "The opposite of god (tasty)."
+  },
+  {
+    "sv": "nyttig",
+    "en": "healthy (food)",
+    "alt": [
+      "healthy",
+      "good for you",
+      "nutritious"
+    ],
+    "pos": "adj",
+    "f": [
+      "nyttigt",
+      "nyttiga",
+      "nyttigare",
+      "nyttigast"
+    ],
+    "ipa": "ˈnʏtːɪɡ",
+    "tone": 2,
+    "ex": "Frukt är {nyttigt}.",
+    "exEn": "Fruit is good for you.",
+    "lvl": "A2",
+    "note": "For food and habits; a healthy (not ill) person is frisk. General statements often use the ett-form: Frukt är nyttigt."
+  }
+]

@@ -1,0 +1,624 @@
+[
+  {
+    "sv": "färg",
+    "en": "color",
+    "alt": [
+      "colour",
+      "paint"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "färgen",
+      "färger",
+      "färgerna"
+    ],
+    "ipa": "færːj",
+    "tone": 1,
+    "ex": "Vilken {färg} har din bil?",
+    "exEn": "What color is your car?",
+    "lvl": "A1",
+    "note": "Also means paint: Våt färg! (Wet paint!). After r, the g sounds like j."
+  },
+  {
+    "sv": "röd",
+    "en": "red",
+    "pos": "adj",
+    "f": [
+      "rött",
+      "röda",
+      "rödare",
+      "rödast"
+    ],
+    "ipa": "røːd",
+    "tone": 1,
+    "ex": "Gå inte än, det är {rött}!",
+    "exEn": "Don't go yet, it's red!",
+    "lvl": "A1",
+    "note": "Neuter: rött with double t (ett rött äpple, rött vin)."
+  },
+  {
+    "sv": "blå",
+    "en": "blue",
+    "pos": "adj",
+    "f": [
+      "blått",
+      "blå",
+      "blåare",
+      "blåast"
+    ],
+    "ipa": "bloː",
+    "tone": 1,
+    "ex": "Hon har stora {blå} ögon.",
+    "exEn": "She has big blue eyes.",
+    "lvl": "A1",
+    "note": "Neuter: blått. Plural: blå, in speech often blåa."
+  },
+  {
+    "sv": "grön",
+    "en": "green",
+    "pos": "adj",
+    "f": [
+      "grönt",
+      "gröna",
+      "grönare",
+      "grönast"
+    ],
+    "ipa": "ɡrøːn",
+    "tone": 1,
+    "ex": "Gräset är så {grönt} efter regnet.",
+    "exEn": "The grass is so green after the rain.",
+    "lvl": "A1"
+  },
+  {
+    "sv": "gul",
+    "en": "yellow",
+    "pos": "adj",
+    "f": [
+      "gult",
+      "gula",
+      "gulare",
+      "gulast"
+    ],
+    "ipa": "ɡʉːl",
+    "tone": 1,
+    "ex": "Bananerna är inte {gula} än.",
+    "exEn": "The bananas aren't yellow yet.",
+    "lvl": "A1"
+  },
+  {
+    "sv": "svart",
+    "en": "black",
+    "pos": "adj",
+    "f": [
+      "svart",
+      "svarta",
+      "svartare",
+      "svartast"
+    ],
+    "ipa": "svaʈː",
+    "tone": 1,
+    "ex": "Jag dricker mitt kaffe {svart}.",
+    "exEn": "I drink my coffee black.",
+    "lvl": "A1",
+    "note": "The neuter stays svart: ett svart hus."
+  },
+  {
+    "sv": "vit",
+    "en": "white",
+    "pos": "adj",
+    "f": [
+      "vitt",
+      "vita",
+      "vitare",
+      "vitast"
+    ],
+    "ipa": "viːt",
+    "tone": 1,
+    "ex": "Vi fick en {vit} jul i år.",
+    "exEn": "We had a white Christmas this year.",
+    "lvl": "A1",
+    "note": "Neuter: vitt (vitt vin, white wine)."
+  },
+  {
+    "sv": "grå",
+    "en": "gray",
+    "alt": [
+      "grey"
+    ],
+    "pos": "adj",
+    "f": [
+      "grått",
+      "grå",
+      "gråare",
+      "gråast"
+    ],
+    "ipa": "ɡroː",
+    "tone": 1,
+    "ex": "Himlen är så {grå} idag.",
+    "exEn": "The sky is so gray today.",
+    "lvl": "A1",
+    "note": "Neuter: grått. Plural: grå, in speech often gråa."
+  },
+  {
+    "sv": "brun",
+    "en": "brown",
+    "alt": [
+      "tanned"
+    ],
+    "pos": "adj",
+    "f": [
+      "brunt",
+      "bruna",
+      "brunare",
+      "brunast"
+    ],
+    "ipa": "brʉːn",
+    "tone": 1,
+    "ex": "Jag letar efter ett par {bruna} skor.",
+    "exEn": "I'm looking for a pair of brown shoes.",
+    "lvl": "A1",
+    "note": "Also means tanned: Du är så brun! (You are so tanned!)"
+  },
+  {
+    "sv": "rosa",
+    "en": "pink",
+    "pos": "adj",
+    "f": [
+      "rosa",
+      "rosa",
+      null,
+      null
+    ],
+    "ipa": "ˈroːsa",
+    "tone": 2,
+    "ex": "Min dotter vill bara ha {rosa} kläder.",
+    "exEn": "My daughter only wants pink clothes.",
+    "lvl": "A1",
+    "note": "Never changes form: en rosa tröja, ett rosa hus, rosa skor."
+  },
+  {
+    "sv": "lila",
+    "en": "purple",
+    "alt": [
+      "violet",
+      "lilac"
+    ],
+    "pos": "adj",
+    "f": [
+      "lila",
+      "lila",
+      null,
+      null
+    ],
+    "ipa": "ˈliːla",
+    "tone": 2,
+    "ex": "Hon har färgat håret {lila}.",
+    "exEn": "She has dyed her hair purple.",
+    "lvl": "A1",
+    "note": "The everyday word for purple. Never changes form. Don't mix it up with lilla (little)."
+  },
+  {
+    "sv": "orange",
+    "en": "orange (color)",
+    "pos": "adj",
+    "f": [
+      "orange",
+      "orange",
+      null,
+      null
+    ],
+    "ipa": "ʊˈranːɧ",
+    "tone": 1,
+    "ex": "På hösten blir löven gula och {orange}.",
+    "exEn": "In the fall the leaves turn yellow and orange.",
+    "lvl": "A1",
+    "note": "Stress on the second syllable, ending in the sj-sound. Usually unchanged in form. The fruit is en apelsin."
+  },
+  {
+    "sv": "beige",
+    "en": "beige",
+    "pos": "adj",
+    "f": [
+      "beige",
+      "beige",
+      null,
+      null
+    ],
+    "ipa": "bɛːɧ",
+    "tone": 1,
+    "ex": "Vi har köpt en {beige} soffa till vardagsrummet.",
+    "exEn": "We've bought a beige sofa for the living room.",
+    "lvl": "A2",
+    "note": "Said like \"bäsch\", ending in the sj-sound. Never changes form."
+  },
+  {
+    "sv": "turkos",
+    "en": "turquoise",
+    "pos": "adj",
+    "f": [
+      "turkost",
+      "turkosa",
+      null,
+      null
+    ],
+    "ipa": "tɵrˈkoːs",
+    "tone": 1,
+    "ex": "Vattnet var {turkost} och varmt.",
+    "exEn": "The water was turquoise and warm.",
+    "lvl": "B1",
+    "note": "Stress on the last syllable. Unlike rosa and lila, it takes endings: turkost, turkosa."
+  },
+  {
+    "sv": "guld",
+    "en": "gold",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "guldet",
+      null,
+      null
+    ],
+    "ipa": "ɡɵlːd",
+    "tone": 1,
+    "ex": "Ringen är av äkta {guld}.",
+    "exEn": "The ring is made of real gold.",
+    "lvl": "A2",
+    "note": "For the color, say guldfärgad or i guld: skor i guld. In sports: ta guld (win gold)."
+  },
+  {
+    "sv": "silver",
+    "en": "silver",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "silvret",
+      null,
+      null
+    ],
+    "ipa": "ˈsɪlːvɛr",
+    "tone": 1,
+    "ex": "Hon fick ett armband i {silver}.",
+    "exEn": "She got a silver bracelet.",
+    "lvl": "A2",
+    "note": "Definite form: silvret. For the color: silverfärgad (en silverfärgad bil)."
+  },
+  {
+    "sv": "ljusblå",
+    "en": "light blue",
+    "pos": "adj",
+    "f": [
+      "ljusblått",
+      "ljusblå",
+      null,
+      null
+    ],
+    "ipa": "ˈjʉːsˌbloː",
+    "tone": 2,
+    "ex": "Han hade på sig en {ljusblå} skjorta.",
+    "exEn": "He was wearing a light blue shirt.",
+    "lvl": "A2",
+    "note": "ljus- (light) and mörk- (dark) go with any color: ljusgrön, mörkröd. Lj- sounds like j."
+  },
+  {
+    "sv": "mörkblå",
+    "en": "dark blue",
+    "pos": "adj",
+    "f": [
+      "mörkblått",
+      "mörkblå",
+      null,
+      null
+    ],
+    "ipa": "ˈmœrːkˌbloː",
+    "tone": 2,
+    "ex": "Kostymen är {mörkblå}, inte svart.",
+    "exEn": "The suit is dark blue, not black.",
+    "lvl": "A2",
+    "note": "Works the same with other colors: mörkgrön, mörkbrun, mörkröd."
+  },
+  {
+    "sv": "blond",
+    "en": "blond",
+    "alt": [
+      "blonde",
+      "fair-haired"
+    ],
+    "pos": "adj",
+    "f": [
+      "blont",
+      "blonda",
+      "blondare",
+      "blondast"
+    ],
+    "ipa": "blɔnːd",
+    "tone": 1,
+    "ex": "Hon har långt {blont} hår.",
+    "exEn": "She has long blond hair.",
+    "lvl": "A2",
+    "note": "Neuter: blont (blont hår). Used about hair and people."
+  },
+  {
+    "sv": "färgglad",
+    "en": "colorful",
+    "alt": [
+      "colourful",
+      "brightly colored"
+    ],
+    "pos": "adj",
+    "f": [
+      "färgglatt",
+      "färgglada",
+      "färggladare",
+      "färggladast"
+    ],
+    "ipa": "ˈfærːjˌɡlɑːd",
+    "tone": 2,
+    "ex": "Barnen målade {färgglada} bilder.",
+    "exEn": "The children painted colorful pictures.",
+    "lvl": "A2",
+    "note": "Literally \"color-happy\". Neuter: färgglatt."
+  },
+  {
+    "sv": "form",
+    "en": "shape",
+    "alt": [
+      "form"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "formen",
+      "former",
+      "formerna"
+    ],
+    "ipa": "fɔrːm",
+    "tone": 1,
+    "ex": "Kakan har {formen} av ett hjärta.",
+    "exEn": "The cookie is shaped like a heart.",
+    "lvl": "A2",
+    "note": "Also fitness: i bra form (in good shape). En bakform is a baking tin."
+  },
+  {
+    "sv": "cirkel",
+    "en": "circle",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "cirkeln",
+      "cirklar",
+      "cirklarna"
+    ],
+    "ipa": "ˈsɪrːkɛl",
+    "tone": 2,
+    "ex": "Rita en stor {cirkel} mitt på pappret.",
+    "exEn": "Draw a big circle in the middle of the paper.",
+    "lvl": "A2",
+    "note": "C sounds like s. The e drops in the plural: cirklar."
+  },
+  {
+    "sv": "kvadrat",
+    "en": "square (shape)",
+    "alt": [
+      "square"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "kvadraten",
+      "kvadrater",
+      "kvadraterna"
+    ],
+    "ipa": "kvaˈdrɑːt",
+    "tone": 1,
+    "ex": "En {kvadrat} har fyra lika långa sidor.",
+    "exEn": "A square has four sides of equal length.",
+    "lvl": "A2",
+    "note": "Square meter: kvadratmeter (kvm). A town square is ett torg."
+  },
+  {
+    "sv": "rektangel",
+    "en": "rectangle",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "rektangeln",
+      "rektanglar",
+      "rektanglarna"
+    ],
+    "ipa": "rɛkˈtaŋːɛl",
+    "tone": 1,
+    "ex": "Vår trädgård är en lång, smal {rektangel}.",
+    "exEn": "Our garden is a long, narrow rectangle.",
+    "lvl": "A2",
+    "note": "Stress on the second syllable. The e drops in the plural: rektanglar."
+  },
+  {
+    "sv": "triangel",
+    "en": "triangle",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "triangeln",
+      "trianglar",
+      "trianglarna"
+    ],
+    "ipa": "trɪˈaŋːɛl",
+    "tone": 1,
+    "ex": "Skär smörgåsen i två {trianglar}.",
+    "exEn": "Cut the sandwich into two triangles.",
+    "lvl": "A2",
+    "note": "Stress on the second syllable. The e drops in the plural: trianglar."
+  },
+  {
+    "sv": "linje",
+    "en": "line",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "linjen",
+      "linjer",
+      "linjerna"
+    ],
+    "ipa": "ˈlɪnːjɛ",
+    "tone": 1,
+    "ex": "Skriv ditt namn på {linjen}.",
+    "exEn": "Write your name on the line.",
+    "lvl": "A2",
+    "note": "Also a bus or subway line: linje 4. A line of people waiting is en kö."
+  },
+  {
+    "sv": "prick",
+    "en": "dot",
+    "alt": [
+      "spot"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "pricken",
+      "prickar",
+      "prickarna"
+    ],
+    "ipa": "prɪkː",
+    "tone": 1,
+    "ex": "Nyckelpigan är röd med svarta {prickar}.",
+    "exEn": "The ladybug is red with black spots.",
+    "lvl": "A2",
+    "note": "No rude meaning in Swedish. På pricken means exactly, spot on."
+  },
+  {
+    "sv": "mönster",
+    "en": "pattern",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "mönstret",
+      "mönster",
+      "mönstren"
+    ],
+    "ipa": "ˈmœnːstɛr",
+    "tone": 1,
+    "ex": "Vilket fint {mönster} på din tröja!",
+    "exEn": "What a nice pattern on your sweater!",
+    "lvl": "A2",
+    "note": "The e drops in the definite: mönstret, mönstren. Plural: mönster (no ending)."
+  },
+  {
+    "sv": "rund",
+    "en": "round",
+    "pos": "adj",
+    "f": [
+      "runt",
+      "runda",
+      "rundare",
+      "rundast"
+    ],
+    "ipa": "rɵnːd",
+    "tone": 1,
+    "ex": "Jorden är {rund}.",
+    "exEn": "The earth is round.",
+    "lvl": "A1",
+    "note": "The neuter runt is also the preposition \"around\": runt hörnet."
+  },
+  {
+    "sv": "fyrkantig",
+    "en": "square-shaped",
+    "alt": [
+      "square",
+      "rectangular",
+      "four-sided"
+    ],
+    "pos": "adj",
+    "f": [
+      "fyrkantigt",
+      "fyrkantiga",
+      null,
+      null
+    ],
+    "ipa": "ˈfyːrˌkanːtɪɡ",
+    "tone": 2,
+    "ex": "Är bordet runt eller {fyrkantigt}?",
+    "exEn": "Is the table round or square?",
+    "lvl": "A2",
+    "note": "Fyr- (four) + kant (edge): covers both squares and rectangles. Figuratively: rigid."
+  },
+  {
+    "sv": "rak",
+    "en": "straight",
+    "pos": "adj",
+    "f": [
+      "rakt",
+      "raka",
+      "rakare",
+      "rakast"
+    ],
+    "ipa": "rɑːk",
+    "tone": 1,
+    "ex": "Vägen är helt {rak} här.",
+    "exEn": "The road is completely straight here.",
+    "lvl": "A2",
+    "note": "Rakt fram = straight ahead. Rakt hår = straight hair."
+  },
+  {
+    "sv": "randig",
+    "en": "striped",
+    "alt": [
+      "stripy"
+    ],
+    "pos": "adj",
+    "f": [
+      "randigt",
+      "randiga",
+      null,
+      null
+    ],
+    "ipa": "ˈranːdɪɡ",
+    "tone": 2,
+    "ex": "Vi har en grå, {randig} katt.",
+    "exEn": "We have a gray, striped cat.",
+    "lvl": "A2",
+    "note": "From en rand (a stripe), plural ränder."
+  },
+  {
+    "sv": "rutig",
+    "en": "checkered",
+    "alt": [
+      "checked",
+      "plaid"
+    ],
+    "pos": "adj",
+    "f": [
+      "rutigt",
+      "rutiga",
+      null,
+      null
+    ],
+    "ipa": "ˈrʉːtɪɡ",
+    "tone": 2,
+    "ex": "Vi satt på en {rutig} filt i parken.",
+    "exEn": "We sat on a checkered blanket in the park.",
+    "lvl": "A2",
+    "note": "From en ruta (a square, a box). Rutigt papper = graph paper."
+  },
+  {
+    "sv": "prickig",
+    "en": "spotted",
+    "alt": [
+      "dotted",
+      "polka-dot"
+    ],
+    "pos": "adj",
+    "f": [
+      "prickigt",
+      "prickiga",
+      null,
+      null
+    ],
+    "ipa": "ˈprɪkːɪɡ",
+    "tone": 2,
+    "ex": "Hon hade en {prickig} klänning på festen.",
+    "exEn": "She wore a polka-dot dress at the party.",
+    "lvl": "A2"
+  }
+]
