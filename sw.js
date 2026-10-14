@@ -1,6 +1,6 @@
 // Service worker: makes the app work offline and load instantly.
 // Bump VERSION whenever app files change so phones pick up the new version.
-const VERSION = 'sq-v4';
+const VERSION = 'sq-v5';
 const SHELL = [
   './',
   'index.html',

@@ -7,7 +7,7 @@ import { levelInfo, wordStats, unitProgress, unitStars, unitUnlocked, quests, AC
 import { startSession, buildLesson, buildReview, buildPractice, bossConfig, jumpConfig, survivalConfig, labConfig, dueWords, weakestWords } from './session.js';
 import { blitz, genderRush, matchMadness } from './arcade.js';
 import { wordCard, speakerBtn, canListen } from './exercises.js';
-import { speak, slowRate, swedishVoices, onVoices, ttsSupported, speechRecognitionSupported, sfx } from './audio.js';
+import { speak, slowRate, findNative, playUrl, lastNativeError, swedishVoices, onVoices, ttsSupported, speechRecognitionSupported, sfx } from './audio.js';
 import { downloadBackup, backupCode, parseBackup, importBackup, gistToken, gistId, setGist, syncGist, autoSync, cleanToken, tokenProblem } from './sync.js';
 
 let rerender = () => {};
@@ -698,7 +698,8 @@ export function settingsView() {
       'section.card',
       h('h2', 'Sound'),
       toggle('autoplay', 'Auto-play pronunciation'),
-      toggle('native', 'Native-speaker recordings', 'Fetches real recordings from Wikimedia Commons when one exists'),
+      toggle('native', 'Native-speaker recordings', 'Fetches real recordings from Wikimedia Commons when one exists (🎙️ button)'),
+      nativeTest(),
       toggle('sfx', 'Sound effects'),
       'vibrate' in navigator ? toggle('haptics', 'Vibration') : null,
       h(
@@ -814,6 +815,29 @@ export function settingsView() {
       h('p.muted.small', `${WORDS.length} words · ${UNITS.length} units`),
     ),
   );
+}
+
+function nativeTest() {
+  const msg = h('div.muted.small');
+  const run = async () => {
+    msg.textContent = 'Looking up “hund” and “tack” on Wikimedia Commons…';
+    const words = ['hund', 'tack'];
+    const found = [];
+    for (const w of words) {
+      const n = await findNative(w, { force: true });
+      if (n) found.push([w, n]);
+    }
+    if (found.length) {
+      msg.textContent = `✅ Native recordings work on this phone (found ${found.map(([w]) => w).join(' and ')}). Playing “${found[0][0]}”…`;
+      const ok = await playUrl(found[0][1].url);
+      if (!ok) msg.textContent += ' …but the phone could not play the audio file. Tell me which phone and browser you use.';
+    } else if (lastNativeError) {
+      msg.textContent = `⚠️ Couldn’t reach Wikimedia Commons (${lastNativeError.message || 'network error'}). Check your connection; the phone voice is used meanwhile.`;
+    } else {
+      msg.textContent = 'Wikimedia answered but had no recording for these test words, which is unexpected.';
+    }
+  };
+  return h('div.setting', h('div', h('b', 'Native recordings check'), msg), h('button.btn.ghost.small', { type: 'button', onclick: run }, '🎙️ Test'));
 }
 
 function restoreFlow(data) {

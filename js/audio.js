@@ -149,18 +149,33 @@ async function fileUrl(name) {
   return mp3?.src || null;
 }
 
-/** Find a native recording for a single Swedish word. Resolves to {url, credit, page} or null. */
-export function findNative(word) {
+export let lastNativeError = null;
+
+/** 'found' | 'none' (Wikimedia has no recording) | 'unknown' (not looked up yet, or the lookup failed). */
+export function nativeStatus(word) {
+  const hit = readCache()[word];
+  if (!hit) return 'unknown';
+  if (hit.u) return 'found';
+  return Date.now() - hit.t < MISS_TTL ? 'none' : 'unknown';
+}
+
+/**
+ * Find a native recording for a single Swedish word. Resolves to {url, credit, page} or null.
+ * A miss is only remembered when Wikimedia actually answered, so being offline never hides recordings.
+ */
+export function findNative(word, { force = false } = {}) {
   if (!word || /\s/.test(word) || typeof fetch === 'undefined') return Promise.resolve(null);
   const c = readCache();
   const hit = c[word];
-  if (hit && (hit.u || Date.now() - hit.t < MISS_TTL)) return Promise.resolve(hit.u ? { url: hit.u, credit: hit.by, page: hit.p } : null);
+  if (!force && hit && (hit.u || Date.now() - hit.t < MISS_TTL)) return Promise.resolve(hit.u ? { url: hit.u, credit: hit.by, page: hit.p } : null);
   if (inflight.has(word)) return inflight.get(word);
   const p = (async () => {
     let found = null;
+    let failed = false;
+    lastNativeError = null;
     try {
       const j = await getJson(`${WIKT}&action=parse&prop=wikitext&redirects=1&page=${encodeURIComponent(word)}`);
-      const files = audioFilesIn(swedishSection(j?.parse?.wikitext?.['*'] || ''));
+      const files = j && j.error ? [] : audioFilesIn(swedishSection(j?.parse?.wikitext?.['*'] || ''));
       for (const f of files) {
         const url = await fileUrl(f);
         if (url) {
@@ -168,7 +183,10 @@ export function findNative(word) {
           break;
         }
       }
-    } catch {}
+    } catch (e) {
+      failed = true;
+      lastNativeError = e;
+    }
     if (!found) {
       try {
         const q = `intitle:"LL-Q9027 (swe)" intitle:"${word}"`;
@@ -178,9 +196,13 @@ export function findNative(word) {
           const url = await fileUrl(m.file);
           if (url) found = { url, credit: `Lingua Libre speaker ${m.speaker} (CC BY-SA)`, page: `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(m.file)}` };
         }
-      } catch {}
+      } catch (e) {
+        failed = true;
+        lastNativeError = e;
+      }
     }
-    c[word] = found ? { u: found.url, by: found.credit, p: found.page, t: Date.now() } : { u: null, t: Date.now() };
+    if (found) c[word] = { u: found.url, by: found.credit, p: found.page, t: Date.now() };
+    else if (!failed) c[word] = { u: null, t: Date.now() };
     writeCache();
     inflight.delete(word);
     return found;
@@ -211,6 +233,12 @@ export function playUrl(url, { rate = 1 } = {}) {
 export function cachedNative(word) {
   const c = readCache()[word];
   return c && c.u ? { url: c.u, credit: c.by, page: c.p } : null;
+}
+
+/** Play the native-speaker recording at its original speed (resolves false if there is none). */
+export async function playNative(w) {
+  const n = cachedNative(w.sv) || (S.settings.native ? await findNative(w.sv) : null);
+  return n ? playUrl(n.url) : false;
 }
 
 // Slow mode is half the learner's normal speed. On iPhone the browser maps speech rates below 1

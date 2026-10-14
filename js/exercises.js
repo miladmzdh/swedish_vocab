@@ -3,7 +3,7 @@
 import { h } from './ui.js';
 import { S } from './store.js';
 import { display, prefix, distractors, shuffle, splitExample, unitWords, WORDS, SV_FORMS, POS_LABEL, FORM_LABELS } from './data.js';
-import { sayWord, speak, slowRate, sfx, findNative, cachedNative, swedishVoices, ttsSupported, listenOnce, speechRecognitionSupported } from './audio.js';
+import { sayWord, speak, slowRate, sfx, findNative, cachedNative, playNative, nativeStatus, swedishVoices, ttsSupported, listenOnce, speechRecognitionSupported } from './audio.js';
 import { checkTyped, checkSpoken, norm } from './answer.js';
 
 // ---------- capability checks ----------
@@ -117,19 +117,42 @@ const ICON_SPEAKER =
   '<svg viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true"><path fill="currentColor" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 8v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg>';
 const ICON_TURTLE = '🐢';
 
+// 🔊 / 🐢 always use the phone's Swedish voice (normal / half speed). The big listening button plays the
+// best available audio: the native recording when one exists, otherwise the phone voice.
 export function speakerBtn(w, { big = false, slow = false, label } = {}) {
   return h(
     'button.speaker' + (big ? '.big' : ''),
     {
       type: 'button',
-      'aria-label': label || (slow ? 'Play slowly' : 'Play pronunciation'),
+      'aria-label': label || (slow ? 'Phone voice, slow' : big ? 'Play' : 'Phone voice'),
+      title: slow ? 'Phone voice, slow' : big ? 'Play' : 'Phone voice',
       onclick: (e) => {
         e.stopPropagation();
-        sayWord(w, slow ? { slow: true } : {});
+        sayWord(w, slow ? { slow: true, native: false } : { native: big });
       },
       html: slow ? ICON_TURTLE : ICON_SPEAKER,
     },
   );
+}
+
+/** 🎙️ native speaker at the original speed. Hidden until a recording is found for this word. */
+export function nativeBtn(w, { onStatus } = {}) {
+  const btn = h('button.speaker.native', { type: 'button', 'aria-label': 'Native speaker (original speed)', title: 'Native speaker (original speed)', hidden: true, onclick: (e) => (e.stopPropagation(), playNative(w)) }, '🎙️');
+  if (!S.settings.native || /\s/.test(w.sv)) {
+    onStatus && onStatus('off', null);
+    return btn;
+  }
+  const show = (n) => {
+    btn.hidden = !n;
+    onStatus && onStatus(n ? 'found' : nativeStatus(w.sv) === 'none' ? 'none' : 'unknown', n);
+  };
+  const c = cachedNative(w.sv);
+  if (c) show(c);
+  else {
+    onStatus && onStatus('looking', null);
+    findNative(w.sv).then(show);
+  }
+  return btn;
 }
 
 export function ipaLine(w) {
@@ -139,22 +162,6 @@ export function ipaLine(w) {
     `/${w.ipa}/`,
     w.tone && /[ˈ]/.test(w.ipa) ? h('span.chip.tone', { title: w.tone === 2 ? 'Accent 2: the "sing-song" double tone' : 'Accent 1: single falling tone' }, `accent ${w.tone}`) : null,
   );
-}
-
-function nativeBadge(w) {
-  const slot = h('div.native');
-  if (!S.settings.native || /\s/.test(w.sv)) return slot;
-  const show = (n) => {
-    if (!n) return;
-    slot.replaceChildren(
-      h('button.chip.native-btn', { type: 'button', onclick: () => sayWord(w) }, '🎙️ native speaker'),
-      h('a.credit', { href: n.page, target: '_blank', rel: 'noopener' }, n.credit),
-    );
-  };
-  const c = cachedNative(w.sv);
-  if (c) show(c);
-  else if (navigator.onLine !== false) findNative(w.sv).then(show);
-  return slot;
 }
 
 function formsTable(w) {
@@ -184,7 +191,20 @@ export function exampleBlock(w, { speakable = true } = {}) {
   );
 }
 
+function setNativeLine(el, st, n) {
+  el.replaceChildren(
+    ...(st === 'found'
+      ? ['🎙️ Native speaker: ', h('a.credit', { href: n.page, target: '_blank', rel: 'noopener' }, n.credit)]
+      : st === 'looking'
+        ? ['Looking for a native-speaker recording…']
+        : st === 'none'
+          ? ['No native recording of this word yet: 🔊 uses your phone’s Swedish voice.']
+          : []),
+  );
+}
+
 export function wordCard(w, { compact = false } = {}) {
+  const nativeLine = h('div.native-line.muted.small');
   return h(
     'div.wordcard',
     h(
@@ -192,9 +212,10 @@ export function wordCard(w, { compact = false } = {}) {
       h('div', prefix(w) ? h('span.prefix', prefix(w) + ' ') : null, h('span.sv', w.sv)),
       speakerBtn(w),
       speakerBtn(w, { slow: true }),
+      nativeBtn(w, { onStatus: (st, n) => setNativeLine(nativeLine, st, n) }),
     ),
     ipaLine(w),
-    nativeBadge(w),
+    nativeLine,
     h('div.en', w.en),
     h('div.meta', h('span.chip', POS_LABEL[w.pos] || w.pos), w.g === 'pl' ? h('span.chip', 'plural only') : null, h('span.chip', w.lvl)),
     compact ? null : formsTable(w),
@@ -299,7 +320,7 @@ export const RENDER = {
     return h(
       'div.ex',
       header('What does this mean?'),
-      h('div.prompt', h('div.big-word', prefix(w) ? h('span.prefix', prefix(w) + ' ') : null, w.sv), speakerBtn(w), ipaLine(w)),
+      h('div.prompt', h('div.big-word', prefix(w) ? h('span.prefix', prefix(w) + ' ') : null, w.sv), h('div.row.center-row', speakerBtn(w), speakerBtn(w, { slow: true }), nativeBtn(w)), ipaLine(w)),
       optionButtons(ex.options, ex.label, w, ctx),
     );
   },
@@ -320,7 +341,7 @@ export const RENDER = {
     return h(
       'div.ex',
       header('What do you hear?'),
-      h('div.prompt.listen', speakerBtn(w, { big: true }), speakerBtn(w, { slow: true })),
+      h('div.prompt.listen', speakerBtn(w, { big: true }), speakerBtn(w, { slow: true }), nativeBtn(w)),
       optionButtons(ex.options, ex.label, w, ctx),
     );
   },
@@ -373,7 +394,7 @@ export const RENDER = {
     return h(
       'div.ex',
       header('Type what you hear'),
-      h('div.prompt.listen', speakerBtn(w, { big: true }), speakerBtn(w, { slow: true })),
+      h('div.prompt.listen', speakerBtn(w, { big: true }), speakerBtn(w, { slow: true }), nativeBtn(w)),
       typedInput(ctx, [w.sv, display(w)], { placeholder: 'Type what you hear', w }),
     );
   },
@@ -494,7 +515,7 @@ export const RENDER = {
     return h(
       'div.ex',
       header('Say it out loud'),
-      h('div.prompt', h('div.big-word', w.sv), speakerBtn(w), ipaLine(w), h('div.hint', w.en)),
+      h('div.prompt', h('div.big-word', w.sv), h('div.row.center-row', speakerBtn(w), speakerBtn(w, { slow: true }), nativeBtn(w)), ipaLine(w), h('div.hint', w.en)),
       h('div.speakbox', mic, status),
       h(
         'button.btn.ghost.small',
