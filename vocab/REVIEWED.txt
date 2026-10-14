@@ -19,3 +19,4 @@ shopping
 health
 school
 kitchen
+leisure
