@@ -34,7 +34,7 @@
 ## 🎮 How it works
 
 ### The learning path 🗺️
-The **Learn** tab is a path of units, from easy to harder. Each unit has a few short **lessons** of 5 new words (about 3 minutes each) and ends with a **boss battle**.
+The **Learn** tab starts with a big **▶ Continue** button that jumps straight into your next lesson, followed by a path of units from easy to harder. Each unit has a few short **lessons** of 5 new words (about 3 minutes each) and ends with a **boss battle**.
 
 <p align="center">
   <img src="docs/screenshots/2-unit.png" width="220" alt="A unit with its lessons, stars and boss">
@@ -54,7 +54,7 @@ New words come with a card showing the word, its pronunciation, its forms, an ex
 | 📝 Fill the gap in a sentence | 🧩 Spell it from letter tiles | 🃏 Match the pairs |
 | ✍️ Dictation: type what you hear | 🎙️ Say it out loud (speech recognition) | |
 
-Get something wrong and it comes back later in the lesson until you get it right. Small typos and missing accents count as correct, but you'll be shown the right spelling.
+Tap an answer to select it (you can still change your mind), then press **Check**. Prefer one tap? Turn on **Instant answers** in Settings. Get something wrong and it comes back later in the lesson until you get it right. Small typos and missing accents count as correct, but you'll be shown the right spelling.
 
 ### Reviews 🔁
 Words come back for review on a schedule (after a few hours, then 1 day, 3 days, a week, two weeks…). When some are due, a **"words to review"** card appears at the top of the Learn tab. Doing a few every day is the secret to remembering them.
@@ -206,7 +206,7 @@ tests/                  unit tests and phone-sized browser tests (Playwright)
 - `node tools/lookup.mjs hund katt` shows the reference pronunciations and frequency of words
 - `node tools/build-vocab.mjs --report` merges all units into `data/vocab.json` and lists overlaps
 - `node --test tests/*.test.mjs` runs the unit tests
-- `node tests/smoke.mjs http://localhost:8080/` plays a whole lesson and the arcade games in a phone-sized browser; `tests/navigation.mjs` checks the back buttons and the phone back gesture; `tests/sync.mjs` and `tests/native.mjs` test gist sync and native recordings against mocked APIs
+- `node tests/smoke.mjs http://localhost:8080/` plays a whole lesson and the arcade games in a phone-sized browser; `tests/navigation.mjs` checks the back buttons, the phone back gesture and the select-then-Check answers; `tests/sync.mjs` and `tests/native.mjs` test gist sync and native recordings against mocked APIs
 - `node tools/screenshots.mjs` regenerates the screenshots in this README
 
 Word progress is stored per word id (`<word>.<part-of-speech>`), so you can edit translations, examples or pronunciations without anyone losing progress.

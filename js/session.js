@@ -149,7 +149,9 @@ export function startSession(cfg) {
         clearInterval(st.timer);
         if (!st.awaiting && st.current) {
           body.classList.add('locked');
-          st.currentCtx.answer(false, { timeout: true });
+          // Time's up: a selected-but-unchecked answer still counts; otherwise it's a miss.
+          if (st.checkFn) st.checkFn();
+          else st.currentCtx.answer(false, { timeout: true });
         }
       }
     }, 100);

@@ -93,23 +93,35 @@ export function learnView() {
   let currentIdx = UNITS.findIndex((u, i) => unitUnlocked(i) && unitProgress(u.id).lessons < unitProgress(u.id).total);
   if (currentIdx < 0) currentIdx = UNITS.length - 1;
 
+  // One-tap "continue where you left off" card.
+  const cu = UNITS[currentIdx];
+  const cp = unitProgress(cu.id);
+  const allDone = cp.lessons >= cp.total;
+  const heroAction = allDone
+    ? cp.boss
+      ? { label: '🎯 Practice', run: () => startSession({ kind: 'practice', title: `Practice: ${cu.title}`, steps: buildPractice(cu.id), pool: unitWords(cu.id), onExit: after }) }
+      : { label: `${cu.boss.emoji} Fight ${cu.boss.name}`, run: () => startSession({ ...bossConfig(cu.id), onExit: after }) }
+    : { label: cp.lessons ? '▶ Continue' : '▶ Start', run: () => startLesson(cu.id, cp.lessons) };
+  const hero = h(
+    'section.hero',
+    h('div.hero-top', h('div.hero-emoji', cu.emoji), h('div.hero-text', h('div.hero-kicker', `Unit ${currentIdx + 1} · ${cu.level}`), h('div.hero-title', cu.title))),
+    h('div.hero-progress', h('div.bar', h('div.fill', { style: { width: `${(cp.lessons / cp.total) * 100}%` } })), h('span', allDone ? 'All lessons done' : `Lesson ${cp.lessons + 1} of ${cp.total}`)),
+    h('button.btn.wide.hero-btn', { type: 'button', onclick: heroAction.run }, heroAction.label),
+  );
+
   const cards = h(
-    'div.cards',
-    due > 0
-      ? h(
-          'button.card.review-card',
-          { type: 'button', onclick: () => startReview() },
-          h('span.card-icon', '🔁'),
-          h('div', h('b', `${due} word${due > 1 ? 's' : ''} to review`), h('div.muted', 'Spaced repetition keeps them fresh')),
-          h('span.go', '›'),
-        )
-      : null,
+    'div.mini-cards',
     h(
-      'button.card',
+      'button.mini' + (due ? '.due' : ''),
+      { type: 'button', onclick: () => (due ? startReview() : toast('Nothing to review right now 🎉')) },
+      h('span.mini-icon', '🔁'),
+      h('div', h('b', due ? `${due} to review` : 'All reviewed'), h('div.muted.small', due ? 'Keep them fresh' : 'Nice work')),
+    ),
+    h(
+      'button.mini',
       { type: 'button', onclick: () => (location.hash = '#practice') },
-      h('span.card-icon', '📜'),
-      h('div', h('b', `Daily quests ${qDone}/${q.length}`), h('div.muted', q.find((x) => x.n < x.target)?.text || 'All done, great job!')),
-      h('span.go', '›'),
+      h('span.mini-icon', '📜'),
+      h('div', h('b', `Quests ${qDone}/${q.length}`), h('div.muted.small', qDone === q.length ? 'All done!' : `${questReward} kr each`)),
     ),
   );
 
@@ -118,7 +130,7 @@ export function learnView() {
   UNITS.forEach((u, i) => {
     if (u.level !== lastLevel) {
       lastLevel = u.level;
-      path.append(h('div.level-head', LEVEL_NAME[u.level] || u.level));
+      path.append(h('div.level-head.lv-' + u.level, h('span', LEVEL_NAME[u.level] || u.level)));
     }
     const p = unitProgress(u.id);
     const stars = unitStars(u.id);
@@ -146,7 +158,8 @@ export function learnView() {
       ),
     );
   });
-  const wrap = h('div.view.learn', cards, path);
+  const wrap = h('div.view.learn', hero, cards, path);
+  requestAnimationFrame(() => drawTrail(path));
   // Scroll the current unit into view on first render.
   setTimeout(() => {
     const cur = wrap.querySelector('.node.current');
@@ -156,6 +169,43 @@ export function learnView() {
     }
   }, 50);
   return wrap;
+}
+
+window.addEventListener('resize', () => {
+  const p = document.querySelector('.path');
+  if (p) drawTrail(p);
+});
+
+// A dotted trail connecting the unit circles; the part you've completed is drawn in color.
+function drawTrail(path) {
+  if (!path.isConnected) return;
+  const box = path.getBoundingClientRect();
+  const nodes = [...path.querySelectorAll('.node')];
+  if (nodes.length < 2 || !box.width) return;
+  // Each segment runs from below a unit's title to the top of the next circle, so it never crosses text.
+  const pts = nodes.map((n) => {
+    const r = n.getBoundingClientRect();
+    const wrap = n.closest('.node-wrap').getBoundingClientRect();
+    return { x: r.left - box.left + r.width / 2, top: r.top - box.top - 4, bottom: wrap.bottom - box.top + 4, open: !n.classList.contains('locked') };
+  });
+  let d = '';
+  let done = '';
+  for (let i = 1; i < pts.length; i++) {
+    const a = pts[i - 1];
+    const b = pts[i];
+    if (b.top - a.bottom < 12) continue;
+    const mid = (a.bottom + b.top) / 2;
+    const seg = `M${a.x},${a.bottom} C${a.x},${mid} ${b.x},${mid} ${b.x},${b.top}`;
+    d += seg;
+    if (b.open) done += seg;
+  }
+  path.querySelector('svg.trail')?.remove();
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('class', 'trail');
+  svg.setAttribute('width', box.width);
+  svg.setAttribute('height', path.scrollHeight);
+  svg.innerHTML = `<path d="${d}" class="trail-all"/><path d="${done}" class="trail-done"/>`;
+  path.prepend(svg);
 }
 
 function startReview() {
@@ -700,6 +750,7 @@ export function settingsView() {
         ),
       ),
       toggle('typing', 'Typing exercises', 'Write words yourself (å ä ö keys included)'),
+      toggle('quickAnswer', 'Instant answers', 'Tapping an answer submits it right away, with no Check button'),
       toggle('speaking', 'Speaking exercises', speechRecognitionSupported() ? 'Uses the microphone and your browser’s speech recognition' : 'Not supported in this browser', !speechRecognitionSupported()),
       toggle('showIpa', 'Show IPA pronunciation', 'Phonetic spelling under each word'),
       toggle('freeMode', 'Free mode', 'Unlock every unit right away'),

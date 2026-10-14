@@ -65,6 +65,7 @@ for (let i = 0; i < 6 && !(await page.$('.opt')); i++) {
   await wait(300);
 }
 await page.click('.opt');
+await page.click('.s-foot .btn.wide'); // Check
 await wait(200);
 await page.goBack();
 await page.waitForSelector('.confirm');
@@ -77,6 +78,56 @@ await page.waitForSelector('.confirm');
 await page.click('.confirm .btn.danger'); // Quit
 await wait();
 check('quit closes the lesson', !(await page.isVisible('#session')) && (await hash()) === '#learn');
+
+// 4b. Answers: tapping only selects; you can change your mind before Check
+await page.goto(base + '#learn');
+await page.waitForSelector('.hero-btn');
+await page.click('.hero-btn');
+await page.waitForSelector('.session');
+for (let i = 0; i < 8 && !(await page.$('.opt')); i++) {
+  await page.click('.s-foot .btn.wide');
+  await wait(300);
+}
+const checkDisabled = await page.$eval('.s-foot .btn.wide', (b) => b.disabled);
+await page.click('.opt >> nth=0');
+await page.click('.opt >> nth=1');
+const state = await page.evaluate(() => ({
+  selected: [...document.querySelectorAll('.opt')].map((b) => b.classList.contains('selected')),
+  graded: !!document.querySelector('.opt.correct, .opt.wrong'),
+  check: document.querySelector('.s-foot .btn.wide')?.textContent,
+}));
+check('Check is disabled until an answer is picked', checkDisabled);
+check('tapping selects without grading, and the choice can change', !state.graded && state.selected[1] && !state.selected[0] && state.check === 'Check');
+await page.click('.s-foot .btn.wide');
+await wait(200);
+check('Check grades the selected answer', !!(await page.$('.opt.correct')) && !!(await page.$('#continue')));
+await page.click('.s-top .icon-btn');
+await page.waitForSelector('.confirm');
+await page.click('.confirm .btn.danger');
+await wait();
+
+// 4c. The "Instant answers" setting submits on tap
+await page.evaluate(() => {
+  const st = JSON.parse(localStorage.getItem('svenskaquest.v1')) || { v: 1 };
+  st.settings = { ...(st.settings || {}), quickAnswer: true };
+  localStorage.setItem('svenskaquest.v1', JSON.stringify(st));
+});
+await page.goto(base + '#learn');
+await page.reload();
+await page.waitForSelector('.hero-btn');
+await page.click('.hero-btn');
+await page.waitForSelector('.session');
+for (let i = 0; i < 8 && !(await page.$('.opt')); i++) {
+  await page.click('.s-foot .btn.wide');
+  await wait(300);
+}
+await page.click('.opt >> nth=0');
+await wait(200);
+check('Instant answers grades on tap', !!(await page.$('.opt.correct')) && !!(await page.$('#continue')));
+await page.click('.s-top .icon-btn');
+await page.waitForSelector('.confirm');
+await page.click('.confirm .btn.danger');
+await wait();
 
 // 5. Arcade game: phone back quits the game
 await page.goto(base + '#practice');

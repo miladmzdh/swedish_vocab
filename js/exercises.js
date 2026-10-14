@@ -224,33 +224,42 @@ export function wordCard(w, { compact = false } = {}) {
   );
 }
 
+// Multiple choice: tap to select (you can change your mind), then Check. With the "Instant answers"
+// setting a tap submits right away.
 function optionButtons(options, label, correct, ctx, { onPick } = {}) {
   let done = false;
+  let sel = -1;
+  const reveal = (i) => {
+    if (done || i < 0) return;
+    done = true;
+    const o = options[i];
+    const ok = o === correct;
+    btns[i].classList.remove('selected');
+    btns[i].classList.add(ok ? 'correct' : 'wrong');
+    if (!ok) btns[options.indexOf(correct)].classList.add('correct');
+    btns.forEach((b) => (b.disabled = true));
+    onPick && onPick(o, ok);
+    ctx.answer(ok, { picked: o });
+  };
+  const select = (i) => {
+    if (done) return;
+    if (S.settings.quickAnswer) return reveal(i);
+    sel = i;
+    btns.forEach((b, k) => {
+      b.classList.toggle('selected', k === i);
+      b.setAttribute('aria-pressed', String(k === i));
+    });
+    sfx('tap');
+    ctx.setCheck(() => reveal(sel));
+  };
   const btns = options.map((o, i) =>
-    h(
-      'button.opt',
-      {
-        type: 'button',
-        onclick: () => {
-          if (done) return;
-          done = true;
-          const ok = o === correct;
-          btn(i).classList.add(ok ? 'correct' : 'wrong');
-          if (!ok) btns[options.indexOf(correct)].classList.add('correct');
-          btns.forEach((b) => (b.disabled = true));
-          onPick && onPick(o, ok);
-          ctx.answer(ok, { picked: o });
-        },
-      },
-      h('span.key', String(i + 1)),
-      h('span.lbl', label(o)),
-    ),
+    h('button.opt', { type: 'button', 'aria-pressed': 'false', onclick: () => select(i) }, h('span.key', String(i + 1)), h('span.lbl', label(o))),
   );
-  const btn = (i) => btns[i];
   ctx.keys = (k) => {
     const n = Number(k);
-    if (n >= 1 && n <= btns.length) btns[n - 1].click();
+    if (n >= 1 && n <= btns.length) select(n - 1);
   };
+  if (!S.settings.quickAnswer) ctx.setCheck(null);
   return h('div.opts', btns);
 }
 
@@ -423,20 +432,28 @@ export const RENDER = {
       picked.push(i);
       redraw();
       if (picked.length === target.length) {
-        done = true;
-        const ok = picked.map((k) => ex.tiles[k]).join('') === target;
-        slots.classList.add(ok ? 'correct' : 'wrong');
-        redraw();
-        ctx.answer(ok, { typed: picked.map((k) => ex.tiles[k]).join(''), expected: w.sv });
+        if (S.settings.quickAnswer) check();
+        else ctx.setCheck(check);
       }
+    }
+    function check() {
+      if (done || picked.length !== target.length) return;
+      done = true;
+      const typed = picked.map((k) => ex.tiles[k]).join('');
+      const ok = typed === target;
+      slots.classList.add(ok ? 'correct' : 'wrong');
+      redraw();
+      ctx.answer(ok, { typed, expected: w.sv });
     }
     function unpick(k) {
       if (done || picked[k] == null) return;
       picked.splice(k, 1);
       redraw();
+      ctx.setCheck(null);
     }
     tray.append(...tiles);
     redraw();
+    if (!S.settings.quickAnswer) ctx.setCheck(null);
     return h('div.ex', header('Spell the Swedish word'), h('div.prompt', h('div.big-en', w.en), h('div.hint', POS_LABEL[w.pos])), slots, tray);
   },
 

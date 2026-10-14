@@ -28,6 +28,7 @@ export function defaultSettings() {
     native: true,
     speaking: true,
     typing: true,
+    quickAnswer: false,
     showIpa: true,
     theme: 'auto',
     freeMode: false,

@@ -35,17 +35,18 @@ await page.waitForSelector('.session');
 
 // Drive the lesson: answer whatever is on screen until the summary appears.
 const seenTypes = new Set();
-for (let step = 0; step < 120; step++) {
+for (let step = 0; step < 500; step++) {
   if (await page.$('.summary')) break;
   const cont = await page.$('#continue');
   if (cont) { await cont.click(); await page.waitForTimeout(120); continue; }
   const instr = await page.$eval('.instr', (e) => e.textContent).catch(() => '');
   seenTypes.add(instr);
   if (step < 25) await shot(`04-step-${String(step).padStart(2, '0')}`);
-  const gotIt = await page.$('.s-foot .btn.wide:not(:disabled)');
-  if (gotIt && (await gotIt.textContent()) === 'Got it') { await gotIt.click(); continue; }
-  const opt = await page.$('.opt:not(:disabled)');
-  if (opt) { await opt.click(); await page.waitForTimeout(100); continue; }
+  const footBtn = await page.$('.s-foot .btn.wide:not(:disabled)');
+  const footText = footBtn ? await footBtn.textContent() : '';
+  if (footText === 'Got it' || footText === 'Check') { await footBtn.click(); await page.waitForTimeout(100); continue; }
+  const opt = await page.$('.opt:not(:disabled):not(.selected)');
+  if (opt && !(await page.$('.opt.selected'))) { await opt.click(); await page.waitForTimeout(100); continue; }
   const input = await page.$('input.answer:not(:disabled)');
   if (input) { await input.fill('hej'); await page.keyboard.press('Enter'); await page.waitForTimeout(100); continue; }
   const tiles = await page.$$('.ltile:not(:disabled)');
