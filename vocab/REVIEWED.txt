@@ -12,3 +12,4 @@ city
 animals
 clothes
 adjectives1
+travel
