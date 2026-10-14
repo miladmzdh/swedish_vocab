@@ -66,7 +66,11 @@ export const stopSpeaking = () => {
 
 // ---------- native recordings (Wiktionary / Lingua Libre on Wikimedia Commons) ----------
 
-const CACHE_KEY = 'svenskaquest.audio';
+// v1 of this cache stored false "no recording" results (a broken Commons request), so it is discarded.
+const CACHE_KEY = 'svenskaquest.audio.v2';
+try {
+  localStorage.removeItem('svenskaquest.audio');
+} catch {}
 const MISS_TTL = 21 * 86400000;
 let cache = null;
 const inflight = new Map();
@@ -86,7 +90,7 @@ function writeCache() {
   } catch {}
 }
 
-async function getJson(url, ms = 7000) {
+async function getJson(url, ms = 8000) {
   const ctl = typeof AbortController !== 'undefined' ? new AbortController() : null;
   const t = setTimeout(() => ctl && ctl.abort(), ms);
   try {
@@ -98,35 +102,52 @@ async function getJson(url, ms = 7000) {
   }
 }
 
-const WIKT = 'https://en.wiktionary.org/w/api.php?format=json&origin=*';
-const COMMONS = 'https://commons.wikimedia.org/w/api.php?format=json&origin=*';
+const API = '/w/api.php?format=json&origin=*';
+const WIKT_EN = `https://en.wiktionary.org${API}&action=parse&prop=wikitext&redirects=1&page=`;
+const WIKT_SV = `https://sv.wiktionary.org${API}&action=parse&prop=wikitext&redirects=1&page=`;
+const COMMONS = `https://commons.wikimedia.org${API}&action=query`;
 
-export function swedishSection(wikitext) {
-  const start = wikitext.search(/^==\s*Swedish\s*==\s*$/m);
+/** The wikitext of one language section ("==Swedish==" on en.wiktionary, "==Svenska==" on sv.wiktionary). */
+export function langSection(wikitext, name) {
+  const start = wikitext.search(new RegExp(`^==\\s*${name}\\s*==\\s*$`, 'm'));
   if (start < 0) return '';
   const rest = wikitext.slice(start + 2);
   const end = rest.search(/^==[^=].*==\s*$/m);
   return end < 0 ? rest : rest.slice(0, end);
 }
+export const swedishSection = (wikitext) => langSection(wikitext, 'Swedish');
 
+const AUDIO_FILE = /^[^<>[\]{}|#\n]+\.(ogg|oga|mp3|wav|flac|opus)$/i;
+
+/** Every audio file name used in a section's templates or file links, whatever the template is called. */
 export function audioFilesIn(section) {
   const out = [];
-  for (const m of section.matchAll(/\{\{\s*audio\s*\|([^}]*)\}\}/gi)) {
-    const parts = m[1].split('|').map((s) => s.trim());
-    const file = parts.find((p) => /\.(ogg|oga|mp3|wav|flac|opus)$/i.test(p));
-    if (file) out.push(file.replace(/^(File|Image):/i, ''));
+  const consider = (raw) => {
+    let v = raw.includes('=') ? raw.slice(raw.indexOf('=') + 1) : raw;
+    v = v.trim().replace(/^(File|Fil|Image|Bild|Media):/i, '');
+    if (AUDIO_FILE.test(v)) out.push(v);
+  };
+  for (const m of section.matchAll(/\{\{([^{}]*)\}\}/g)) m[1].split('|').forEach(consider);
+  for (const m of section.matchAll(/\[\[([^\][]*)\]\]/g)) consider(m[1].split('|')[0]);
+  return [...new Set(out)];
+}
+
+const LL = /^LL-Q9027 \(swe\)-(.+?)-(.+)\.(wav|ogg|mp3|flac)$/i;
+
+export function linguaLibreMatches(titles, word) {
+  const w = word.toLowerCase();
+  const out = [];
+  for (const t of titles) {
+    const name = t.replace(/^File:/, '');
+    const m = name.match(LL);
+    if (m && m[2].toLowerCase() === w) out.push(name);
   }
   return out;
 }
-
-export function linguaLibreMatch(titles, word) {
-  const w = word.toLowerCase();
-  for (const t of titles) {
-    const m = t.replace(/^File:/, '').match(/^LL-Q9027 \(swe\)-(.+?)-(.+)\.(wav|ogg|mp3|flac)$/i);
-    if (m && m[2].toLowerCase() === w) return { file: t.replace(/^File:/, ''), speaker: m[1] };
-  }
-  return null;
-}
+export const linguaLibreMatch = (titles, word) => {
+  const name = linguaLibreMatches(titles, word)[0];
+  return name ? { file: name, speaker: name.match(LL)[1] } : null;
+};
 
 const canOgg = () => {
   try {
@@ -136,20 +157,38 @@ const canOgg = () => {
   }
 };
 
-async function fileUrl(name) {
-  const j = await getJson(`${COMMONS}&prop=videoinfo|imageinfo&viprop=url|derivatives&iiprop=url&titles=${encodeURIComponent('File:' + name)}`);
-  const page = Object.values(j?.query?.pages || {})[0];
-  if (!page || page.missing !== undefined) return null;
-  const vi = page.videoinfo?.[0];
-  const ii = page.imageinfo?.[0];
-  const original = vi?.url || ii?.url;
-  const isOgg = /\.(ogg|oga|opus)$/i.test(name);
-  if (!isOgg || canOgg()) return original || null;
-  const mp3 = (vi?.derivatives || []).find((d) => /mpeg|mp3/i.test(d.type || '') || /\.mp3$/i.test(d.src || ''));
-  return mp3?.src || null;
+function creditFor(name, source) {
+  const m = name.match(LL);
+  if (m) return `Lingua Libre speaker ${m[1]} (CC BY-SA)`;
+  return source === 'sv' ? 'Swedish Wiktionary / Wikimedia Commons' : source === 'en' ? 'Wiktionary / Wikimedia Commons' : 'Wikimedia Commons';
+}
+
+const fileTitle = (name) => 'File:' + name.charAt(0).toUpperCase() + name.slice(1).replace(/_/g, ' ');
+
+/** Look up many Commons files in one request; returns Map(title -> playable URL) for the ones this device can play. */
+async function playableUrls(names) {
+  const out = new Map();
+  if (!names.length) return out;
+  const titles = names.map(fileTitle);
+  const j = await getJson(`${COMMONS}&prop=videoinfo|imageinfo&viprop=url|derivatives&iiprop=url&titles=${encodeURIComponent(titles.join('|'))}`);
+  const ogg = canOgg();
+  for (const page of Object.values(j?.query?.pages || {})) {
+    if (!page || page.missing !== undefined || !page.title) continue;
+    const vi = page.videoinfo?.[0];
+    const original = vi?.url || page.imageinfo?.[0]?.url;
+    let url = null;
+    if (/\.(ogg|oga|opus)$/i.test(page.title) && !ogg) {
+      const mp3 = (vi?.derivatives || []).find((d) => /mpeg|mp3/i.test(d.type || '') || /\.mp3$/i.test(d.src || ''));
+      url = mp3?.src || null;
+    } else url = original || null;
+    if (url) out.set(page.title, url);
+  }
+  return out;
 }
 
 export let lastNativeError = null;
+/** Details of the most recent lookup, shown by the Settings check. */
+export let lastNativeLookup = null;
 
 /** 'found' | 'none' (Wikimedia has no recording) | 'unknown' (not looked up yet, or the lookup failed). */
 export function nativeStatus(word) {
@@ -161,7 +200,9 @@ export function nativeStatus(word) {
 
 /**
  * Find a native recording for a single Swedish word. Resolves to {url, credit, page} or null.
- * A miss is only remembered when Wikimedia actually answered, so being offline never hides recordings.
+ * Sources (asked in parallel): English Wiktionary, Swedish Wiktionary, the conventional "Sv-<word>.ogg"
+ * file, and Lingua Libre. A miss is only remembered when every source answered, so being offline or a
+ * flaky source never hides recordings.
  */
 export function findNative(word, { force = false } = {}) {
   if (!word || /\s/.test(word) || typeof fetch === 'undefined') return Promise.resolve(null);
@@ -170,37 +211,62 @@ export function findNative(word, { force = false } = {}) {
   if (!force && hit && (hit.u || Date.now() - hit.t < MISS_TTL)) return Promise.resolve(hit.u ? { url: hit.u, credit: hit.by, page: hit.p } : null);
   if (inflight.has(word)) return inflight.get(word);
   const p = (async () => {
-    let found = null;
+    const log = { word, sources: {}, candidates: 0, found: null };
     let failed = false;
     lastNativeError = null;
+    const fromWikt = async (base, section, key) => {
+      try {
+        const j = await getJson(base + encodeURIComponent(word));
+        const files = j && j.parse ? audioFilesIn(langSection(j.parse.wikitext?.['*'] || '', section)) : [];
+        log.sources[key] = `ok, ${files.length} file${files.length === 1 ? '' : 's'}`;
+        return files.map((f) => ({ name: f, src: key }));
+      } catch (e) {
+        failed = true;
+        lastNativeError = e;
+        log.sources[key] = `error: ${e.message || e.name}`;
+        return [];
+      }
+    };
+    const fromLinguaLibre = async () => {
+      try {
+        const q = `intitle:"LL-Q9027 (swe)" intitle:"${word}"`;
+        const j = await getJson(`${COMMONS}&list=search&srnamespace=6&srlimit=50&srsearch=${encodeURIComponent(q)}`);
+        const files = linguaLibreMatches((j?.query?.search || []).map((r) => r.title), word).slice(0, 3);
+        log.sources.ll = `ok, ${files.length} file${files.length === 1 ? '' : 's'}`;
+        return files.map((f) => ({ name: f, src: 'll' }));
+      } catch (e) {
+        failed = true;
+        lastNativeError = e;
+        log.sources.ll = `error: ${e.message || e.name}`;
+        return [];
+      }
+    };
+    const lists = await Promise.all([fromWikt(WIKT_EN, 'Swedish', 'en'), fromWikt(WIKT_SV, 'Svenska', 'sv'), fromLinguaLibre()]);
+    const cands = [];
+    const seen = new Set();
+    for (const it of [...lists[0], ...lists[1], { name: `Sv-${word}.ogg`, src: 'guess' }, ...lists[2]]) {
+      const t = fileTitle(it.name);
+      if (!seen.has(t)) {
+        seen.add(t);
+        cands.push({ ...it, title: t });
+      }
+    }
+    log.candidates = cands.length;
+    let found = null;
     try {
-      const j = await getJson(`${WIKT}&action=parse&prop=wikitext&redirects=1&page=${encodeURIComponent(word)}`);
-      const files = j && j.error ? [] : audioFilesIn(swedishSection(j?.parse?.wikitext?.['*'] || ''));
-      for (const f of files) {
-        const url = await fileUrl(f);
-        if (url) {
-          found = { url, credit: 'Wiktionary / Wikimedia Commons', page: `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(f)}` };
-          break;
-        }
+      const urls = await playableUrls(cands.slice(0, 40).map((x) => x.name));
+      log.sources.commons = `ok, ${urls.size} playable`;
+      const best = cands.find((x) => urls.has(x.title));
+      if (best) {
+        found = { url: urls.get(best.title), credit: creditFor(best.name, best.src), page: `https://commons.wikimedia.org/wiki/${encodeURIComponent(best.title.replace(/ /g, '_'))}` };
+        log.found = best.title;
       }
     } catch (e) {
       failed = true;
       lastNativeError = e;
+      log.sources.commons = `error: ${e.message || e.name}`;
     }
-    if (!found) {
-      try {
-        const q = `intitle:"LL-Q9027 (swe)" intitle:"${word}"`;
-        const j = await getJson(`${COMMONS}&action=query&list=search&srnamespace=6&srlimit=50&srsearch=${encodeURIComponent(q)}`);
-        const m = linguaLibreMatch((j?.query?.search || []).map((r) => r.title), word);
-        if (m) {
-          const url = await fileUrl(m.file);
-          if (url) found = { url, credit: `Lingua Libre speaker ${m.speaker} (CC BY-SA)`, page: `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(m.file)}` };
-        }
-      } catch (e) {
-        failed = true;
-        lastNativeError = e;
-      }
-    }
+    lastNativeLookup = log;
     if (found) c[word] = { u: found.url, by: found.credit, p: found.page, t: Date.now() };
     else if (!failed) c[word] = { u: null, t: Date.now() };
     writeCache();

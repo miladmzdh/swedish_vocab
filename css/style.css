@@ -568,6 +568,8 @@ input.name { padding: 6px 10px; font-weight: 800; font-size: 1.1rem; border-widt
 input.token { -webkit-text-security: disc; font-family: ui-monospace, Menlo, monospace; flex: 1; min-width: 0; }
 input.token.shown { -webkit-text-security: none; }
 .settings .row input.token { width: auto; }
+
+.diag { font-family: ui-monospace, Menlo, monospace; font-size: 0.68rem; margin-top: 6px; word-break: break-word; }
 textarea.code { font-family: ui-monospace, Menlo, monospace; font-size: 0.75rem; word-break: break-all; }
 
 /* guide */
