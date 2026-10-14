@@ -17,6 +17,16 @@ const after = () => {
   autoSync();
 };
 
+// ---------- back navigation for full screens (Settings) ----------
+
+let navCount = 0;
+window.addEventListener('hashchange', () => navCount++);
+/** Go back to the previous tab, or to Learn when there is nothing in the app to go back to. */
+export function goBack() {
+  if (navCount > 0 && history.length > 1) history.back();
+  else location.hash = '#learn';
+}
+
 // ---------- header ----------
 
 export function headerBar() {
@@ -671,7 +681,7 @@ export function settingsView() {
 
   return h(
     'div.view.settings',
-    h('h1', 'Settings'),
+    h('div.view-head', h('button.back-btn', { type: 'button', onclick: goBack }, '‹ Back'), h('h1', 'Settings')),
     h(
       'section.card',
       h('h2', 'Learning'),

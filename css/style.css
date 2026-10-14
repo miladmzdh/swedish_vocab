@@ -245,6 +245,17 @@ button.card:disabled { opacity: 0.6; }
 .sheet.tall { height: 88vh; }
 .backdrop.show .sheet { transform: none; }
 .grab { width: 44px; height: 5px; border-radius: 3px; background: var(--line); margin: 10px auto 8px; }
+.sheet-bar { position: sticky; top: 0; z-index: 3; display: flex; align-items: center; min-height: 56px; padding: 8px 14px; background: var(--bg); }
+.sheet-bar.no-back { min-height: 24px; padding: 0; }
+.sheet-bar .grab { position: absolute; left: 50%; top: 6px; transform: translateX(-50%); margin: 0; }
+.back-btn {
+  display: inline-flex; align-items: center; gap: 4px; background: var(--surface); color: var(--brand);
+  border: 2px solid var(--line); border-radius: 12px; padding: 8px 14px; font-weight: 800; font-size: 1rem;
+  box-shadow: 0 2px 0 var(--line); cursor: pointer;
+}
+.back-btn:active { transform: translateY(2px); box-shadow: none; }
+.view-head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.view-head h1 { margin: 0; }
 .confirm { padding: 4px 18px 18px; }
 
 #toasts { position: fixed; left: 0; right: 0; top: calc(env(safe-area-inset-top) + 10px); z-index: 90; display: grid; justify-items: center; gap: 8px; pointer-events: none; }

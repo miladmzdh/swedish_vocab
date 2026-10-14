@@ -51,23 +51,98 @@ export function toast(msg, ms = 2600) {
   }, ms);
 }
 
+// ---------- back navigation ----------
+// While any layer (bottom sheet, lesson, game) is open, the app keeps exactly one extra history entry.
+// The phone's back gesture/button consumes it: we close the top layer and re-arm the entry if layers
+// remain. Closing the last layer by a button gives the entry back with history.back(), deferred a tick
+// so that opening a new layer right away (e.g. sheet → lesson) simply reuses the entry.
+const layers = [];
+let armed = false;
+let skipPops = 0;
+let pendingBack = null;
+
+function arm() {
+  if (armed) return;
+  armed = true;
+  try {
+    history.pushState({ sqLayer: true }, '');
+  } catch {}
+}
+
+/** Register a layer. Returns {release, drop}: release() when it closes by itself, drop() to forget it silently. */
+export function pushLayer(onBack) {
+  const layer = { onBack };
+  layers.push(layer);
+  if (pendingBack) {
+    clearTimeout(pendingBack);
+    pendingBack = null;
+  }
+  arm();
+  const remove = () => {
+    const i = layers.indexOf(layer);
+    if (i < 0) return false;
+    layers.splice(i, 1);
+    return true;
+  };
+  return {
+    release: () => {
+      if (!remove() || layers.length || pendingBack) return;
+      pendingBack = setTimeout(() => {
+        pendingBack = null;
+        if (!layers.length && armed) {
+          armed = false;
+          skipPops++;
+          history.back();
+        }
+      }, 0);
+    },
+    drop: () => {
+      remove();
+      if (!layers.length) armed = false; // the app navigated on; the old entry is just a previous page now
+    },
+  };
+}
+
+window.addEventListener('popstate', () => {
+  if (skipPops > 0) {
+    skipPops--;
+    return;
+  }
+  if (!armed) return;
+  armed = false;
+  const top = layers.pop();
+  if (top) top.onBack();
+  if (layers.length) arm();
+});
+
+export const hasLayers = () => layers.length > 0;
+
 const sheets = [];
 
-/** Bottom sheet. Returns a close() function. */
-export function sheet(content, { onClose, tall = false } = {}) {
-  const panel = h('div.sheet' + (tall ? '.tall' : ''), { role: 'dialog', 'aria-modal': 'true' }, h('div.grab'), content);
+/** Bottom sheet with a ‹ Back button. Returns a close() function. */
+export function sheet(content, { onClose, tall = false, back: showBack = true } = {}) {
+  let close;
+  const bar = h(
+    'div.sheet-bar' + (showBack ? '' : '.no-back'),
+    showBack ? h('button.back-btn', { type: 'button', onclick: () => close() }, '‹ Back') : null,
+    h('div.grab'),
+  );
+  const panel = h('div.sheet' + (tall ? '.tall' : ''), { role: 'dialog', 'aria-modal': 'true' }, bar, content);
   const back = h('div.backdrop', panel);
   let closed = false;
-  const close = () => {
+  const layer = pushLayer(() => close('history'));
+  close = (how) => {
     if (closed) return;
     closed = true;
+    if (how === 'silent') layer.drop();
+    else if (how !== 'history') layer.release();
     back.classList.remove('show');
     sheets.splice(sheets.indexOf(close), 1);
     setTimeout(() => back.remove(), 250);
     onClose && onClose();
   };
   back.addEventListener('click', (e) => e.target === back && close());
-  // Swipe down on the grab handle to close.
+  // Swipe down from the top of the sheet to close.
   let y0 = null;
   panel.addEventListener('touchstart', (e) => (panel.scrollTop <= 0 ? (y0 = e.touches[0].clientY) : (y0 = null)), { passive: true });
   panel.addEventListener('touchend', (e) => {
@@ -77,10 +152,11 @@ export function sheet(content, { onClose, tall = false } = {}) {
   document.body.append(back);
   sheets.push(close);
   requestAnimationFrame(() => back.classList.add('show'));
-  return close;
+  return () => close();
 }
 
-export const closeTopSheet = () => (sheets.length ? (sheets[sheets.length - 1](), true) : false);
+// Used when the app navigates to another tab: close the sheet without stepping back in history.
+export const closeTopSheet = () => (sheets.length ? (sheets[sheets.length - 1]('silent'), true) : false);
 
 export function confirmDialog(title, text, ok = 'OK', danger = false) {
   return new Promise((resolve) => {
@@ -101,7 +177,7 @@ export function confirmDialog(title, text, ok = 'OK', danger = false) {
           h('button.btn' + (danger ? '.danger' : ''), { onclick: () => done(true) }, ok),
         ),
       ),
-      { onClose: () => !answered && resolve(false) },
+      { onClose: () => !answered && resolve(false), back: false },
     );
   });
 }

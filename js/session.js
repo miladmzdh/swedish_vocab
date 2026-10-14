@@ -1,6 +1,6 @@
 // The session engine: runs a queue of exercises (lesson, review, boss battle, survival, …),
 // shows feedback, then applies spaced-repetition updates and rewards.
-import { h, mount, confirmDialog, confetti } from './ui.js';
+import { h, mount, confirmDialog, confetti, pushLayer } from './ui.js';
 import { S, save } from './store.js';
 import { review, newRecord, isDue } from './srs.js';
 import { RENDER, exerciseFor, makeExercise, stageOf, solutionText, speakerBtn } from './exercises.js';
@@ -44,6 +44,24 @@ export function startSession(cfg) {
   active = st;
   document.body.classList.add('in-session');
   root.hidden = false;
+  // The phone's back gesture asks to quit (or continues from the summary) instead of leaving the app.
+  let layerGone = false;
+  let layer = pushLayer(onBackGesture);
+  async function onBackGesture() {
+    layerGone = true;
+    if (st.result !== undefined) {
+      close();
+      return cfg.onExit && cfg.onExit(st.result);
+    }
+    const sure = st.answers === 0 || (await confirmDialog('Quit this session?', 'You will lose the progress you made in it.', 'Quit', true));
+    if (sure && !st.finished) {
+      close();
+      cfg.onExit && cfg.onExit(null);
+    } else if (!st.finished || st.result !== undefined) {
+      layerGone = false;
+      layer = pushLayer(onBackGesture);
+    }
+  }
 
   // Fetch native recordings for this session's words in the background.
   if (S.settings.native) {
@@ -268,6 +286,8 @@ export function startSession(cfg) {
   }
 
   function close() {
+    if (!layerGone) layer.release();
+    layerGone = true;
     st.finished = true;
     clearInterval(st.timer);
     clearTimeout(st.autoTimer);
@@ -284,6 +304,7 @@ export function startSession(cfg) {
     st.finished = true;
     clearInterval(st.timer);
     const res = applyResults(st);
+    st.result = res;
     mount(body, summary(st, res));
     foot.className = 's-foot';
     foot.replaceChildren(

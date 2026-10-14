@@ -206,7 +206,7 @@ tests/                  unit tests and phone-sized browser tests (Playwright)
 - `node tools/lookup.mjs hund katt` shows the reference pronunciations and frequency of words
 - `node tools/build-vocab.mjs --report` merges all units into `data/vocab.json` and lists overlaps
 - `node --test tests/*.test.mjs` runs the unit tests
-- `node tests/smoke.mjs http://localhost:8080/` plays a whole lesson and the arcade games in a phone-sized browser; `tests/sync.mjs` and `tests/native.mjs` test gist sync and native recordings against mocked APIs
+- `node tests/smoke.mjs http://localhost:8080/` plays a whole lesson and the arcade games in a phone-sized browser; `tests/navigation.mjs` checks the back buttons and the phone back gesture; `tests/sync.mjs` and `tests/native.mjs` test gist sync and native recordings against mocked APIs
 - `node tools/screenshots.mjs` regenerates the screenshots in this README
 
 Word progress is stored per word id (`<word>.<part-of-speech>`), so you can edit translations, examples or pronunciations without anyone losing progress.

@@ -1,5 +1,5 @@
 // Arcade games: Blitz (60-second quiz), Gender Rush (en/ett) and Match Madness (pairs against the clock).
-import { h, mount, confetti } from './ui.js';
+import { h, mount, confetti, pushLayer } from './ui.js';
 import { S, save } from './store.js';
 import { WORDS, display, distractors, shuffle, unitWords } from './data.js';
 import { sfx, buzz, sayWord, stopSpeaking } from './audio.js';
@@ -29,16 +29,24 @@ function shell(title, onExit) {
   const timer = h('div.timer', h('div.fill'));
   mount(root, h('div.session', top, timer, body, foot));
   let closed = false;
+  // The phone's back gesture quits the game (stopping its clock) instead of leaving the app.
+  let onBack = () => close();
+  let layerGone = false;
+  const layer = pushLayer(() => {
+    layerGone = true;
+    onBack();
+  });
   const close = () => {
     if (closed) return;
     closed = true;
+    if (!layerGone) layer.release();
     stopSpeaking();
     document.body.classList.remove('in-session');
     root.hidden = true;
     root.replaceChildren();
     onExit && onExit();
   };
-  return { root, top, body, foot, timer, close, title };
+  return { root, top, body, foot, timer, close, title, setBack: (fn) => (onBack = fn) };
 }
 
 function clock(sh, seconds, onTick, onEnd) {
@@ -128,6 +136,7 @@ export function blitz(onExit) {
   const missed = [];
   let ended = false;
   const quit = () => (clk.stop(), sh.close());
+  sh.setBack(() => quit());
   const draw = (secs) => topBar(sh, { score, combo, secs }, quit);
   const clk = clock(sh, 60, (s) => draw(s), () => {
     ended = true;
@@ -195,6 +204,7 @@ export function genderRush(onExit) {
   const missed = [];
   let ended = false;
   const quit = () => (clk.stop(), sh.close());
+  sh.setBack(() => quit());
   const draw = (secs) => topBar(sh, { score, combo, secs }, quit);
   const clk = clock(sh, 45, (s) => draw(s), () => {
     ended = true;
@@ -250,6 +260,7 @@ export function matchMadness(onExit) {
     bag = [];
   let ended = false;
   const quit = () => (clk.stop(), sh.close());
+  sh.setBack(() => quit());
   const draw = (secs) => topBar(sh, { score, combo, secs }, quit);
   const clk = clock(sh, 60, (s) => draw(s), () => {
     ended = true;
