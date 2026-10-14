@@ -1,0 +1,904 @@
+[
+  {
+    "sv": "kläder",
+    "en": "clothes",
+    "alt": [
+      "clothing"
+    ],
+    "pos": "noun",
+    "g": "pl",
+    "f": [
+      null,
+      "kläder",
+      "kläderna"
+    ],
+    "ipa": "ˈklɛːdɛr",
+    "tone": 1,
+    "ex": "Var köper du dina {kläder}?",
+    "exEn": "Where do you buy your clothes?",
+    "lvl": "A1",
+    "note": "Always plural: Kläderna ligger på golvet. One item of clothing is ett plagg."
+  },
+  {
+    "sv": "tröja",
+    "en": "sweater",
+    "alt": [
+      "jumper",
+      "pullover",
+      "top",
+      "sweatshirt"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "tröjan",
+      "tröjor",
+      "tröjorna"
+    ],
+    "ipa": "ˈtrœjːa",
+    "tone": 2,
+    "ex": "Ta med en {tröja}, det blir kallt i kväll.",
+    "exEn": "Bring a sweater, it'll get cold tonight.",
+    "lvl": "A1",
+    "note": "Used for most tops with sleeves, from a thick sweater to a thin long-sleeved top. A hoodie is en huvtröja."
+  },
+  {
+    "sv": "skjorta",
+    "en": "shirt (with buttons)",
+    "alt": [
+      "shirt",
+      "button-down shirt",
+      "dress shirt"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "skjortan",
+      "skjortor",
+      "skjortorna"
+    ],
+    "ipa": "ˈɧʊʈːa",
+    "tone": 2,
+    "ex": "Ska jag stryka din {skjorta}?",
+    "exEn": "Shall I iron your shirt?",
+    "lvl": "A1",
+    "note": "skj is the sj-sound: \"sjorta\". A shirt with a collar and buttons; a T-shirt is en t-shirt."
+  },
+  {
+    "sv": "blus",
+    "en": "blouse",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "blusen",
+      "blusar",
+      "blusarna"
+    ],
+    "ipa": "blʉːs",
+    "tone": 1,
+    "ex": "Hon köpte en ny {blus} till festen.",
+    "exEn": "She bought a new blouse for the party.",
+    "lvl": "A2"
+  },
+  {
+    "sv": "t-shirt",
+    "en": "T-shirt",
+    "alt": [
+      "tee",
+      "tee shirt",
+      "t shirt",
+      "tshirt"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "t-shirten",
+      "t-shirtar",
+      "t-shirtarna"
+    ],
+    "ipa": "ˈtiːˌɧœːʈ",
+    "tone": 2,
+    "ex": "Det är så varmt, jag går ut i {t-shirt}.",
+    "exEn": "It's so warm, I'm going out in a T-shirt.",
+    "lvl": "A1",
+    "note": "Plural t-shirtar, but t-shirts is also very common. Said roughly \"ti-sjört\"."
+  },
+  {
+    "sv": "byxor",
+    "en": "pants",
+    "alt": [
+      "trousers",
+      "pair of pants"
+    ],
+    "pos": "noun",
+    "g": "pl",
+    "f": [
+      null,
+      "byxor",
+      "byxorna"
+    ],
+    "ipa": "ˈbʏkːsʊr",
+    "tone": 2,
+    "ex": "De här {byxorna} är för korta.",
+    "exEn": "These pants are too short.",
+    "lvl": "A1",
+    "note": "Plural in Swedish: ett par byxor = a pair of pants. Shops also use the singular en byxa."
+  },
+  {
+    "sv": "jeans",
+    "en": "jeans",
+    "alt": [
+      "denims",
+      "pair of jeans"
+    ],
+    "pos": "noun",
+    "g": "pl",
+    "f": [
+      null,
+      "jeans",
+      "jeansen"
+    ],
+    "ipa": "jiːns",
+    "tone": 1,
+    "ex": "Han går alltid i {jeans}.",
+    "exEn": "He always wears jeans.",
+    "lvl": "A1",
+    "note": "Plural: jeansen = the jeans, ett par jeans = a pair of jeans. Gå i = to usually wear."
+  },
+  {
+    "sv": "shorts",
+    "en": "shorts",
+    "alt": [
+      "pair of shorts"
+    ],
+    "pos": "noun",
+    "g": "pl",
+    "f": [
+      null,
+      "shorts",
+      "shortsen"
+    ],
+    "ipa": "ɧoːʈʂ",
+    "tone": 1,
+    "ex": "Barnen springer runt i {shorts} hela sommaren.",
+    "exEn": "The kids run around in shorts all summer.",
+    "lvl": "A1",
+    "note": "Plural, as in English: ett par shorts, shortsen = the shorts."
+  },
+  {
+    "sv": "kjol",
+    "en": "skirt",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "kjolen",
+      "kjolar",
+      "kjolarna"
+    ],
+    "ipa": "ɕuːl",
+    "tone": 1,
+    "ex": "Ska jag ha {kjol} eller byxor i kväll?",
+    "exEn": "Should I wear a skirt or pants tonight?",
+    "lvl": "A1",
+    "note": "kj is the tj-sound: \"tjol\"."
+  },
+  {
+    "sv": "klänning",
+    "en": "dress",
+    "alt": [
+      "gown"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "klänningen",
+      "klänningar",
+      "klänningarna"
+    ],
+    "ipa": "ˈklɛnːɪŋ",
+    "tone": 2,
+    "ex": "Vilken fin {klänning}! Är den ny?",
+    "exEn": "What a nice dress! Is it new?",
+    "lvl": "A1"
+  },
+  {
+    "sv": "jacka",
+    "en": "jacket",
+    "alt": [
+      "coat"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "jackan",
+      "jackor",
+      "jackorna"
+    ],
+    "ipa": "ˈjakːa",
+    "tone": 2,
+    "ex": "Min {jacka} är för tunn för vintern.",
+    "exEn": "My jacket is too thin for winter.",
+    "lvl": "A1",
+    "note": "The everyday word for any outdoor jacket or coat: vinterjacka, regnjacka, skidjacka."
+  },
+  {
+    "sv": "rock",
+    "en": "coat (long)",
+    "alt": [
+      "coat",
+      "overcoat",
+      "long coat"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "rocken",
+      "rockar",
+      "rockarna"
+    ],
+    "ipa": "rɔkː",
+    "tone": 1,
+    "ex": "Han har en lång svart {rock}.",
+    "exEn": "He has a long black coat.",
+    "lvl": "A2",
+    "note": "Also means rock music. A woman's coat is often called en kappa, and a bathrobe is en morgonrock."
+  },
+  {
+    "sv": "regnjacka",
+    "en": "raincoat",
+    "alt": [
+      "rain jacket"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "regnjackan",
+      "regnjackor",
+      "regnjackorna"
+    ],
+    "ipa": "ˈrɛŋːnˌjakːa",
+    "tone": 2,
+    "ex": "Barnen behöver {regnjackor} till förskolan.",
+    "exEn": "The kids need raincoats for preschool.",
+    "lvl": "A2",
+    "note": "Rain jacket and rain pants together are regnkläder, a must at Swedish preschools."
+  },
+  {
+    "sv": "kostym",
+    "en": "suit",
+    "alt": [
+      "men's suit"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "kostymen",
+      "kostymer",
+      "kostymerna"
+    ],
+    "ipa": "kɔˈstyːm",
+    "tone": 1,
+    "ex": "Måste man ha {kostym} på bröllopet?",
+    "exEn": "Do you have to wear a suit to the wedding?",
+    "lvl": "A2",
+    "note": "Stress on the last syllable: ko-STYM. False friend: a costume is en maskeraddräkt."
+  },
+  {
+    "sv": "slips",
+    "en": "tie",
+    "alt": [
+      "necktie"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "slipsen",
+      "slipsar",
+      "slipsarna"
+    ],
+    "ipa": "slɪpːs",
+    "tone": 1,
+    "ex": "Behöver jag ha {slips}?",
+    "exEn": "Do I need to wear a tie?",
+    "lvl": "A2"
+  },
+  {
+    "sv": "underkläder",
+    "en": "underwear",
+    "alt": [
+      "underclothes",
+      "underclothing",
+      "undies"
+    ],
+    "pos": "noun",
+    "g": "pl",
+    "f": [
+      null,
+      "underkläder",
+      "underkläderna"
+    ],
+    "ipa": "ˈɵnːdɛrˌklɛːdɛr",
+    "tone": 2,
+    "ex": "Glöm inte att packa rena {underkläder}.",
+    "exEn": "Don't forget to pack clean underwear.",
+    "lvl": "A2",
+    "note": "Plural. Single items: kalsonger (men's underpants), trosor (panties), behå (bra)."
+  },
+  {
+    "sv": "pyjamas",
+    "en": "pajamas",
+    "alt": [
+      "pyjamas",
+      "PJs",
+      "pair of pajamas"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "pyjamasen",
+      "pyjamasar",
+      "pyjamasarna"
+    ],
+    "ipa": "pʏˈjɑːmas",
+    "tone": 1,
+    "ex": "Ta på dig {pyjamasen}, det är dags att sova.",
+    "exEn": "Put on your pajamas, it's time to sleep.",
+    "lvl": "A2",
+    "note": "Singular in Swedish: en pyjamas = one set of pajamas. Stress on ja: py-JA-mas."
+  },
+  {
+    "sv": "strumpa",
+    "en": "sock",
+    "alt": [
+      "stocking"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "strumpan",
+      "strumpor",
+      "strumporna"
+    ],
+    "ipa": "ˈstrɵmːpa",
+    "tone": 2,
+    "ex": "Var är min andra {strumpa}?",
+    "exEn": "Where's my other sock?",
+    "lvl": "A1",
+    "note": "Wool socks, ullstrumpor, are a Swedish winter essential."
+  },
+  {
+    "sv": "sko",
+    "en": "shoe",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "skon",
+      "skor",
+      "skorna"
+    ],
+    "ipa": "skuː",
+    "tone": 1,
+    "ex": "Hur mycket kostade {skorna}?",
+    "exEn": "How much did the shoes cost?",
+    "lvl": "A1",
+    "note": "In Swedish homes, shoes come off at the door."
+  },
+  {
+    "sv": "stövel",
+    "en": "boot",
+    "alt": [
+      "rubber boot",
+      "wellington"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "stöveln",
+      "stövlar",
+      "stövlarna"
+    ],
+    "ipa": "ˈstœvːɛl",
+    "tone": 1,
+    "ex": "Ta på dig {stövlarna}, det är blött ute.",
+    "exEn": "Put your boots on, it's wet outside.",
+    "lvl": "A2",
+    "note": "The e drops in the plural: stövlar. Rubber boots are gummistövlar."
+  },
+  {
+    "sv": "sandal",
+    "en": "sandal",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "sandalen",
+      "sandaler",
+      "sandalerna"
+    ],
+    "ipa": "sanˈdɑːl",
+    "tone": 1,
+    "ex": "På sommaren går jag i {sandaler}.",
+    "exEn": "In the summer I wear sandals.",
+    "lvl": "A2",
+    "note": "Stress on the last syllable: san-DAL."
+  },
+  {
+    "sv": "gympasko",
+    "en": "sneaker",
+    "alt": [
+      "sneakers",
+      "trainer",
+      "trainers",
+      "gym shoe",
+      "running shoe"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "gympaskon",
+      "gympaskor",
+      "gympaskorna"
+    ],
+    "ipa": "ˈjʏmːpaˌskuː",
+    "tone": 2,
+    "ex": "Glöm inte {gympaskorna}, du har idrott idag!",
+    "exEn": "Don't forget your sneakers, you have PE today!",
+    "lvl": "A2",
+    "note": "From gympa (gym class, PE). The g is soft: \"jympa\". Many Swedes also just say sneakers."
+  },
+  {
+    "sv": "mössa",
+    "en": "knit hat",
+    "alt": [
+      "beanie",
+      "winter hat",
+      "woolly hat",
+      "hat"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "mössan",
+      "mössor",
+      "mössorna"
+    ],
+    "ipa": "ˈmœsːa",
+    "tone": 2,
+    "ex": "Ta på dig {mössan}, det är minusgrader ute!",
+    "exEn": "Put your hat on, it's below freezing outside!",
+    "lvl": "A1",
+    "note": "A soft hat, usually knitted; a hat with a brim is en hatt. Also the white graduation cap: studentmössa."
+  },
+  {
+    "sv": "halsduk",
+    "en": "scarf",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "halsduken",
+      "halsdukar",
+      "halsdukarna"
+    ],
+    "ipa": "ˈhalːsˌdʉːk",
+    "tone": 2,
+    "ex": "Mormor har stickat en {halsduk} till mig.",
+    "exEn": "Grandma knitted a scarf for me.",
+    "lvl": "A2",
+    "note": "Literally \"neck cloth\": hals + duk."
+  },
+  {
+    "sv": "vante",
+    "en": "mitten",
+    "alt": [
+      "mittens"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "vanten",
+      "vantar",
+      "vantarna"
+    ],
+    "ipa": "ˈvanːtɛ",
+    "tone": 2,
+    "ex": "Mina {vantar} är alldeles blöta.",
+    "exEn": "My mittens are completely wet.",
+    "lvl": "A2",
+    "note": "Vantar are mittens; gloves with fingers are handskar (or fingervantar)."
+  },
+  {
+    "sv": "handske",
+    "en": "glove",
+    "alt": [
+      "gloves"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "handsken",
+      "handskar",
+      "handskarna"
+    ],
+    "ipa": "ˈhanːskɛ",
+    "tone": 2,
+    "ex": "Jag har glömt mina {handskar} på bussen.",
+    "exEn": "I left my gloves on the bus.",
+    "lvl": "A2",
+    "note": "The d is silent: \"hanske\"."
+  },
+  {
+    "sv": "keps",
+    "en": "cap",
+    "alt": [
+      "baseball cap",
+      "peaked cap"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "kepsen",
+      "kepsar",
+      "kepsarna"
+    ],
+    "ipa": "kɛpːs",
+    "tone": 1,
+    "ex": "Ta av dig {kepsen} vid bordet!",
+    "exEn": "Take your cap off at the table!",
+    "lvl": "A2"
+  },
+  {
+    "sv": "hatt",
+    "en": "hat (with a brim)",
+    "alt": [
+      "hat",
+      "sun hat"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "hatten",
+      "hattar",
+      "hattarna"
+    ],
+    "ipa": "hatː",
+    "tone": 1,
+    "ex": "Alla barn måste ha {hatt} eller keps i solen.",
+    "exEn": "All the kids have to wear a hat or cap in the sun.",
+    "lvl": "A2",
+    "note": "A hat with a brim. A knitted winter hat is en mössa."
+  },
+  {
+    "sv": "bälte",
+    "en": "belt",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "bältet",
+      "bälten",
+      "bältena"
+    ],
+    "ipa": "ˈbɛlːtɛ",
+    "tone": 2,
+    "ex": "Byxorna är för stora, jag behöver ett {bälte}.",
+    "exEn": "The pants are too big, I need a belt.",
+    "lvl": "A2",
+    "note": "Also a seat belt: Ta på dig bältet! = Put on your seat belt!"
+  },
+  {
+    "sv": "väska",
+    "en": "bag",
+    "alt": [
+      "handbag",
+      "purse"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "väskan",
+      "väskor",
+      "väskorna"
+    ],
+    "ipa": "ˈvɛsːka",
+    "tone": 2,
+    "ex": "Kan du hålla min {väska} en stund?",
+    "exEn": "Can you hold my bag for a moment?",
+    "lvl": "A1",
+    "note": "General word for a bag: handväska (handbag), resväska (suitcase). A plastic or paper bag is en påse."
+  },
+  {
+    "sv": "ryggsäck",
+    "en": "backpack",
+    "alt": [
+      "rucksack",
+      "knapsack"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "ryggsäcken",
+      "ryggsäckar",
+      "ryggsäckarna"
+    ],
+    "ipa": "ˈrʏɡːˌsɛkː",
+    "tone": 2,
+    "ex": "Jag har datorn i {ryggsäcken}.",
+    "exEn": "I have my laptop in my backpack.",
+    "lvl": "A2",
+    "note": "Literally \"back sack\": rygg + säck."
+  },
+  {
+    "sv": "plånbok",
+    "en": "wallet",
+    "alt": [
+      "purse",
+      "billfold"
+    ],
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "plånboken",
+      "plånböcker",
+      "plånböckerna"
+    ],
+    "ipa": "ˈploːnˌbuːk",
+    "tone": 2,
+    "ex": "Jag har tappat min {plånbok}!",
+    "exEn": "I've lost my wallet!",
+    "lvl": "A2",
+    "note": "Irregular plural like bok – böcker: plånböcker."
+  },
+  {
+    "sv": "glasögon",
+    "en": "glasses",
+    "alt": [
+      "eyeglasses",
+      "spectacles",
+      "specs"
+    ],
+    "pos": "noun",
+    "g": "pl",
+    "f": [
+      null,
+      "glasögon",
+      "glasögonen"
+    ],
+    "ipa": "ˈɡlɑːsˌøːɡɔn",
+    "tone": 2,
+    "ex": "Jag ser ingenting utan mina {glasögon}.",
+    "exEn": "I can't see anything without my glasses.",
+    "lvl": "A1",
+    "note": "Plural: glasögonen = the glasses. Literally \"glass eyes\"."
+  },
+  {
+    "sv": "solglasögon",
+    "en": "sunglasses",
+    "alt": [
+      "shades"
+    ],
+    "pos": "noun",
+    "g": "pl",
+    "f": [
+      null,
+      "solglasögon",
+      "solglasögonen"
+    ],
+    "ipa": "ˈsuːlɡlɑːsˌøːɡɔn",
+    "tone": 2,
+    "ex": "Har du sett mina {solglasögon}?",
+    "exEn": "Have you seen my sunglasses?",
+    "lvl": "A2"
+  },
+  {
+    "sv": "smycke",
+    "en": "piece of jewelry",
+    "alt": [
+      "jewelry",
+      "jewel",
+      "jewellery"
+    ],
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "smycket",
+      "smycken",
+      "smyckena"
+    ],
+    "ipa": "ˈsmʏkːɛ",
+    "tone": 2,
+    "ex": "Jag fick ett fint {smycke} i present.",
+    "exEn": "I got a nice piece of jewelry as a present.",
+    "lvl": "A2",
+    "note": "Countable: jewelry in general is smycken (plural)."
+  },
+  {
+    "sv": "ring",
+    "en": "ring",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "ringen",
+      "ringar",
+      "ringarna"
+    ],
+    "ipa": "rɪŋː",
+    "tone": 1,
+    "ex": "Vilken vacker {ring}! Är ni förlovade?",
+    "exEn": "What a beautiful ring! Are you engaged?",
+    "lvl": "A1",
+    "note": "Also a circle, and the imperative of ringa (to call): Ring mig!"
+  },
+  {
+    "sv": "örhänge",
+    "en": "earring",
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "örhänget",
+      "örhängen",
+      "örhängena"
+    ],
+    "ipa": "ˈœːrˌhɛŋːɛ",
+    "tone": 2,
+    "ex": "Jag har köpt {örhängen} till min syster.",
+    "exEn": "I've bought earrings for my sister.",
+    "lvl": "A2",
+    "note": "Literally \"ear hanger\": öra + hänge."
+  },
+  {
+    "sv": "halsband",
+    "en": "necklace",
+    "alt": [
+      "chain"
+    ],
+    "pos": "noun",
+    "g": "ett",
+    "f": [
+      "halsbandet",
+      "halsband",
+      "halsbanden"
+    ],
+    "ipa": "ˈhalːsˌbanːd",
+    "tone": 2,
+    "ex": "Hon fick ett {halsband} i födelsedagspresent.",
+    "exEn": "She got a necklace for her birthday.",
+    "lvl": "A2",
+    "note": "Also a dog's collar."
+  },
+  {
+    "sv": "ficka",
+    "en": "pocket",
+    "pos": "noun",
+    "g": "en",
+    "f": [
+      "fickan",
+      "fickor",
+      "fickorna"
+    ],
+    "ipa": "ˈfɪkːa",
+    "tone": 2,
+    "ex": "Jag har nycklarna i {fickan}.",
+    "exEn": "I have the keys in my pocket.",
+    "lvl": "A2",
+    "note": "Don't mix it up with flicka (girl)!"
+  },
+  {
+    "sv": "ha på sig",
+    "en": "to wear; to have on",
+    "alt": [
+      "to wear",
+      "to have on",
+      "to be wearing"
+    ],
+    "pos": "verb",
+    "f": [
+      "har på sig",
+      "hade på sig",
+      "haft på sig",
+      "ha på dig"
+    ],
+    "ipa": "hɑː ˈpoː sɛj",
+    "ex": "Vad ska du {ha på dig} på festen?",
+    "exEn": "What are you going to wear to the party?",
+    "lvl": "A1",
+    "note": "sig changes with the person: jag har på mig, du har på dig. Stress on på."
+  },
+  {
+    "sv": "ta på sig",
+    "en": "to put on (clothes)",
+    "alt": [
+      "to put on"
+    ],
+    "pos": "verb",
+    "f": [
+      "tar på sig",
+      "tog på sig",
+      "tagit på sig",
+      "ta på dig"
+    ],
+    "ipa": "tɑː ˈpoː sɛj",
+    "ex": "{Ta på dig} jackan, vi ska gå nu.",
+    "exEn": "Put your jacket on, we're leaving now.",
+    "lvl": "A1",
+    "note": "Irregular like ta: tog, tagit. sig changes with the person: jag tar på mig, du tar på dig."
+  },
+  {
+    "sv": "ta av sig",
+    "en": "to take off (clothes)",
+    "alt": [
+      "to take off",
+      "to remove"
+    ],
+    "pos": "verb",
+    "f": [
+      "tar av sig",
+      "tog av sig",
+      "tagit av sig",
+      "ta av dig"
+    ],
+    "ipa": "tɑː ˈɑːv sɛj",
+    "ex": "Du kan {ta av dig} skorna här.",
+    "exEn": "You can take your shoes off here.",
+    "lvl": "A1",
+    "note": "Irregular like ta: tog, tagit. Stress on av."
+  },
+  {
+    "sv": "klä på sig",
+    "en": "to get dressed",
+    "alt": [
+      "to dress",
+      "to get dressed"
+    ],
+    "pos": "verb",
+    "f": [
+      "klär på sig",
+      "klädde på sig",
+      "klätt på sig",
+      "klä på dig"
+    ],
+    "ipa": "klɛː ˈpoː sɛj",
+    "ex": "{Klä på dig} nu, vi åker om fem minuter.",
+    "exEn": "Get dressed now, we're leaving in five minutes.",
+    "lvl": "A2",
+    "note": "The opposite is klä av sig (to get undressed). Past klädde, supine klätt."
+  },
+  {
+    "sv": "byta om",
+    "en": "to change (clothes)",
+    "alt": [
+      "to get changed",
+      "to change"
+    ],
+    "pos": "verb",
+    "f": [
+      "byter om",
+      "bytte om",
+      "bytt om",
+      "byt om"
+    ],
+    "ipa": "byːta ˈɔmː",
+    "ex": "Jag ska bara {byta om} innan vi går.",
+    "exEn": "I'm just going to change before we go.",
+    "lvl": "A2",
+    "note": "Only about clothes; byta alone means to swap or exchange. Omklädningsrum = locker room."
+  },
+  {
+    "sv": "passa",
+    "en": "to fit; to suit",
+    "alt": [
+      "to fit",
+      "to suit"
+    ],
+    "pos": "verb",
+    "f": [
+      "passar",
+      "passade",
+      "passat",
+      "passa"
+    ],
+    "ipa": "ˈpasːa",
+    "tone": 2,
+    "ex": "{Passar} byxorna, eller vill du ha en större storlek?",
+    "exEn": "Do the pants fit, or do you want a bigger size?",
+    "lvl": "A2",
+    "note": "Also: Den färgen passar dig (That color suits you), Passar det på fredag? (Does Friday work?)."
+  }
+]
