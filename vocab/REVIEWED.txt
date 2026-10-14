@@ -7,3 +7,4 @@ verbs1
 family
 body
 home
+colors
