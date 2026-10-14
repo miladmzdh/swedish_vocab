@@ -2,3 +2,4 @@ pronouns
 time
 basics
 food
+numbers
