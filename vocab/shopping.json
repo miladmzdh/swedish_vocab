@@ -71,7 +71,7 @@
     "pos": "noun",
     "g": "ett",
     "f": ["öret", "öre", "örena"],
-    "ipa": "ˈøːrɛ",
+    "ipa": "ˈœːrɛ",
     "tone": 2,
     "ex": "Priset är nitton kronor och nittio {öre}.",
     "exEn": "The price is nineteen kronor and ninety öre.",
@@ -386,7 +386,7 @@
   {
     "sv": "ha öppet",
     "en": "to be open (of a business)",
-    "alt": ["to be open", "to stay open", "to open"],
+    "alt": ["to be open", "to stay open"],
     "pos": "verb",
     "f": ["har öppet", "hade öppet", "haft öppet", null],
     "ipa": "hɑː ˈœpːɛt",
