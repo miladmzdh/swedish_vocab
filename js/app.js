@@ -3,7 +3,7 @@ import { h, mount, toast, closeTopSheet } from './ui.js';
 import { load, save, flush, onChange, applyFreezes, requestPersist, S } from './store.js';
 import { loadData } from './data.js';
 import { headerBar, learnView, practiceView, wordsView, profileView, settingsView, applyTheme, setRerender } from './views.js';
-import { unlockAudio } from './audio.js';
+import { unlockAudio, initOfflineAudio } from './audio.js';
 import { sessionActive } from './session.js';
 import { autoSync } from './sync.js';
 
@@ -69,7 +69,7 @@ async function boot() {
   if (saved) save(true);
   setRerender(render);
   try {
-    await loadData();
+    await Promise.all([loadData(), initOfflineAudio()]);
   } catch (e) {
     mount(document.getElementById('main'), h('div.pad', h('h2', 'Could not load the word list'), h('p', 'Check your connection and reload the page.')));
     return;
@@ -78,6 +78,11 @@ async function boot() {
     closeTopSheet();
     render();
   });
+  // Going on or offline changes what can play (recordings, speaking exercises): refresh the screen.
+  const onNet = () => !sessionActive() && render();
+  window.addEventListener('online', onNet);
+  window.addEventListener('offline', onNet);
+
   // Header reflects XP/coins live.
   onChange(() => !sessionActive() && renderHeader());
   render();
@@ -135,9 +140,11 @@ function registerSW() {
       });
     })
     .catch(() => {});
+  // Reload when an update takes over, but not on the very first visit (nothing old to replace).
+  const hadController = !!navigator.serviceWorker.controller;
   let reloaded = false;
   navigator.serviceWorker.addEventListener('controllerchange', () => {
-    if (reloaded || sessionActive()) return;
+    if (!hadController || reloaded || sessionActive()) return;
     reloaded = true;
     location.reload();
   });

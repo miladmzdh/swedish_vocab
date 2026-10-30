@@ -7,7 +7,8 @@ import { levelInfo, wordStats, unitProgress, unitStars, unitUnlocked, quests, AC
 import { startSession, buildLesson, buildReview, buildPractice, bossConfig, jumpConfig, survivalConfig, labConfig, dueWords, weakestWords } from './session.js';
 import { blitz, genderRush, matchMadness } from './arcade.js';
 import { wordCard, speakerBtn, canListen } from './exercises.js';
-import { speak, slowRate, findNative, playUrl, lastNativeError, lastNativeLookup, swedishVoices, onVoices, ttsSupported, speechRecognitionSupported, sfx } from './audio.js';
+import { speak, slowRate, findNative, playUrl, lastNativeError, lastNativeLookup, swedishVoices, onVoices, ttsSupported, speechRecognitionSupported, sfx, isOnline, currentVoice, downloadedCount } from './audio.js';
+import { downloadAll, deleteDownloads, offlineMeta, appCached, recordableWords } from './offline.js';
 import { downloadBackup, backupCode, parseBackup, importBackup, gistToken, gistId, setGist, syncGist, autoSync, cleanToken, tokenProblem } from './sync.js';
 
 let rerender = () => {};
@@ -44,6 +45,7 @@ export function headerBar() {
     h('button.stat', { type: 'button', onclick: shopSheet, 'aria-label': `${coins()} kronor` }, h('span', '🪙'), h('b', fmtNum(coins()))),
     h('button.stat.lvl', { type: 'button', onclick: () => (location.hash = '#me'), 'aria-label': `Level ${li.level}` }, h('span', '⭐'), h('b', li.level)),
     h('button.stat.goal', { type: 'button', onclick: goalSheet, 'aria-label': `Daily goal ${todayXp()} of ${goal} XP` }, ring),
+    isOnline() ? null : h('button.chip.offline-chip', { type: 'button', onclick: () => (location.hash = '#settings'), title: 'You are offline' }, '✈️ Offline'),
     h('button.icon-btn.gear', { type: 'button', onclick: () => (location.hash = '#settings'), 'aria-label': 'Settings' }, '⚙️'),
   );
 }
@@ -330,7 +332,7 @@ export function practiceView() {
       game('🧩', 'Match Madness', 'Match pairs against the clock', S.best.match, () => matchMadness(after)),
       game('🎧', 'Listening Lab', canListen() ? 'Train your ear' : 'Needs a Swedish voice', null, () => startSession({ ...labConfig('listen'), onExit: after }), !canListen()),
       speechRecognitionSupported()
-        ? game('🎙️', 'Speaking', 'Say words out loud', null, () => startSession({ ...labConfig('speak'), onExit: after }), !S.settings.speaking)
+        ? game('🎙️', 'Speaking', isOnline() ? 'Say words out loud' : 'Needs internet', null, () => startSession({ ...labConfig('speak'), onExit: after }), !S.settings.speaking || !isOnline())
         : null,
       game('🎯', 'Weak words', weak.length ? `${weak.length} words that need love` : 'Learn some words first', null, () =>
         startSession({ kind: 'practice', title: 'Weak words', steps: buildPractice(null), onExit: after }), weak.length < 3),
@@ -732,6 +734,7 @@ export function settingsView() {
   return h(
     'div.view.settings',
     h('div.view-head', h('button.back-btn', { type: 'button', onclick: goBack }, '‹ Back'), h('h1', 'Settings')),
+    offlineCard(),
     h(
       'section.card',
       h('h2', 'Learning'),
@@ -875,6 +878,115 @@ export function settingsView() {
       ),
       h('p.muted.small', `${WORDS.length} words · ${UNITS.length} units`),
     ),
+  );
+}
+
+// ---------- offline ----------
+
+let dl = null; // the running download: {ctrl, progress, listeners}
+
+const fmtMB = (b) => `${(b / 1048576).toFixed(b < 10485760 ? 1 : 0)} MB`;
+
+function offlineCard() {
+  const meta = offlineMeta();
+  const saved = downloadedCount();
+  const total = recordableWords().length;
+  const appLine = h('div.off-row', h('span.off-ic', '⏳'), h('div', h('b', `App and all ${WORDS.length.toLocaleString()} words`), h('div.muted.small', 'Checking…')));
+  appCached().then((ok) =>
+    appLine.replaceChildren(
+      h('span.off-ic', ok ? '✅' : '⚠️'),
+      h('div', h('b', `App and all ${WORDS.length.toLocaleString()} words`), h('div.muted.small', ok ? 'Saved on this phone: lessons, reviews and games work offline.' : 'Not saved yet. Open the app once with internet, then reload it.')),
+    ),
+  );
+  const v = currentVoice();
+  const voiceLine = h(
+    'div.off-row',
+    h('span.off-ic', !v ? '⚠️' : v.offline ? '✅' : '⚠️'),
+    h(
+      'div',
+      h('b', 'Phone voice (🔊 and 🐢)'),
+      h(
+        'div.muted.small',
+        !v
+          ? 'No Swedish voice installed. See “Swedish voice” below for how to add one; it then works offline.'
+          : v.offline
+            ? `${v.name} is on this phone, so it works offline.`
+            : `${v.name} needs internet. Choose another Swedish voice below, or install Swedish voice data in your phone's settings.`,
+      ),
+    ),
+  );
+  const recInfo = h('div.muted.small');
+  const bar = h('div.bar', { hidden: true }, h('div.fill'));
+  const btn = h('button.btn.wide', { type: 'button' });
+  const cancel = h('button.btn.ghost.small', { type: 'button', hidden: true }, 'Cancel');
+  const del = h('button.btn.ghost.small', { type: 'button', hidden: !saved }, 'Delete downloaded recordings');
+
+  const paint = (p) => {
+    const busy = !!dl;
+    btn.disabled = busy || !isOnline();
+    cancel.hidden = !busy;
+    bar.hidden = !busy;
+    del.hidden = busy || !downloadedCount();
+    if (busy && p) {
+      const pct = p.total ? Math.round((p.done / p.total) * 100) : 0;
+      bar.firstChild.style.width = `${p.total ? pct : 5}%`;
+      recInfo.textContent = `${p.phase}${p.total ? ` · ${p.done.toLocaleString()} / ${p.total.toLocaleString()}` : ''}${p.bytes ? ` · ${fmtMB(p.bytes)}` : ''}`;
+      btn.textContent = '⏳ Downloading… keep the app open';
+      return;
+    }
+    const n = downloadedCount();
+    const m = offlineMeta();
+    recInfo.textContent = n
+      ? `${n.toLocaleString()} recordings saved${m.bytes ? ` (${fmtMB(m.bytes)})` : ''}. Words without a native recording use the phone voice.`
+      : `Not downloaded yet. Many of the ${total.toLocaleString()} single words have one. It can take a few minutes and tens of MB, so use Wi-Fi.`;
+    btn.textContent = !isOnline() ? 'Connect to the internet to download' : n ? '🔄 Check for new recordings' : '📥 Download recordings';
+  };
+
+  btn.onclick = async () => {
+    if (dl) return;
+    requestPersist();
+    const ctrl = new AbortController();
+    dl = { ctrl, progress: null, paint };
+    paint({ phase: 'Starting', done: 0, total: 0 });
+    try {
+      const r = await downloadAll({
+        signal: ctrl.signal,
+        onProgress: (p) => {
+          dl.progress = p;
+          dl.paint(p);
+        },
+      });
+      dl = null;
+      toast(`✈️ Ready for offline: ${r.saved.toLocaleString()} recordings saved${r.failed ? ` (${r.failed} couldn't be downloaded; try again later)` : ''}.`, 5000);
+    } catch (e) {
+      const cancelled = e && e.name === 'AbortError';
+      dl = null;
+      toast(cancelled ? 'Download paused. Tap the button again to continue where it stopped.' : `⚠️ Download stopped: ${e.message || 'network error'}. Tap again to resume.`, 5000);
+    }
+    paint();
+  };
+  cancel.onclick = () => dl && dl.ctrl.abort();
+  del.onclick = async () => {
+    if (!(await confirmDialog('Delete downloaded recordings?', 'They will stream from the internet again when you are online.', 'Delete', true))) return;
+    await deleteDownloads();
+    toast('Recordings deleted');
+    paint();
+  };
+  // A download started earlier keeps running; show its progress here.
+  if (dl) dl.paint = paint;
+  paint(dl && dl.progress);
+
+  return h(
+    'section.card.offline',
+    h('h2', '✈️ Offline'),
+    h('p.muted.small', 'Get the app ready for planes, trains and places without signal.'),
+    appLine,
+    voiceLine,
+    h('div.off-row', h('span.off-ic', '🎙️'), h('div', h('b', 'Native-speaker recordings'), recInfo)),
+    bar,
+    btn,
+    h('div.row.off-actions', cancel, del),
+    h('div.off-row', h('span.off-ic', '🎤'), h('div', h('b', 'Speaking exercises'), h('div.muted.small', 'Need internet on most phones, so they are skipped while you are offline.'))),
   );
 }
 

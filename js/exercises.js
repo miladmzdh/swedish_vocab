@@ -3,14 +3,15 @@
 import { h } from './ui.js';
 import { S } from './store.js';
 import { display, prefix, distractors, shuffle, splitExample, unitWords, WORDS, SV_FORMS, POS_LABEL, FORM_LABELS } from './data.js';
-import { sayWord, speak, slowRate, sfx, findNative, cachedNative, playNative, nativeStatus, swedishVoices, ttsSupported, listenOnce, speechRecognitionSupported } from './audio.js';
+import { sayWord, speak, slowRate, sfx, findNative, cachedNative, playNative, nativeStatus, canPlayRecording, isOnline, swedishVoices, ttsSupported, listenOnce, speechRecognitionSupported } from './audio.js';
 import { checkTyped, checkSpoken, norm } from './answer.js';
 
 // ---------- capability checks ----------
 
 export const canListen = () => ttsSupported() && swedishVoices().length > 0;
 let speakPausedUntil = 0;
-export const canSpeakEx = () => speechRecognitionSupported() && S.settings.speaking && Date.now() > speakPausedUntil;
+// Speech recognition needs internet on most phones, so speaking exercises are skipped while offline.
+export const canSpeakEx = () => speechRecognitionSupported() && S.settings.speaking && isOnline() && Date.now() > speakPausedUntil;
 export const pauseSpeaking = (ms = 3600000) => (speakPausedUntil = Date.now() + ms);
 
 const FORM_PROMPT = {
@@ -143,8 +144,9 @@ export function nativeBtn(w, { onStatus } = {}) {
     return btn;
   }
   const show = (n) => {
-    btn.hidden = !n;
-    onStatus && onStatus(n ? 'found' : nativeStatus(w.sv) === 'none' ? 'none' : 'unknown', n);
+    const playable = !!n && canPlayRecording(n.url);
+    btn.hidden = !playable;
+    onStatus && onStatus(playable ? 'found' : n ? 'online-only' : nativeStatus(w.sv) === 'none' ? 'none' : 'unknown', n);
   };
   const c = cachedNative(w.sv);
   if (c) show(c);
@@ -203,7 +205,9 @@ function setNativeLine(el, st, n) {
         ? ['Looking for a native-speaker recording…']
         : st === 'none'
           ? ['No native recording of this word yet: 🔊 uses your phone’s Swedish voice.']
-          : []),
+          : st === 'online-only'
+            ? ['🎙️ A native recording plays when you’re online (or download recordings in Settings → Offline).']
+            : []),
   );
 }
 

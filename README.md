@@ -15,7 +15,7 @@
 - Every word has its **en/ett gender**, **all its forms** (plural, past tense, comparative…), an **example sentence**, and its **pronunciation** written in IPA
 - **Listen three ways**: your phone's Swedish voice 🔊, the same voice slowed down 🐢, and **real native speakers** 🎙️ when a recording exists
 - **Spaced repetition** brings each word back right before you'd forget it
-- Works **offline** and saves your progress automatically
+- Works **offline**: download everything, recordings included, with one tap before a flight ✈️
 
 ---
 
@@ -105,6 +105,15 @@ Then open the app again. You can test it and set the speed in ⚙️ **Settings 
 
 ---
 
+## ✈️ Offline (planes, trains, no signal)
+
+Once you've opened the app, **lessons, reviews, games and all 1,869 words work without internet**. To get it fully ready, go to ⚙️ **Settings → ✈️ Offline**:
+
+- **📥 Download recordings** saves the native-speaker recordings on your phone, so 🎙️ works offline too. It takes a few minutes and tens of MB, so use Wi-Fi and keep the app open. If it's interrupted, tap the button again and it continues where it stopped. **🔄 Check for new recordings** picks up new ones later.
+- The **phone voice** (🔊 🐢) works offline once a Swedish voice is installed on the phone (see below). The checklist tells you whether yours is ready.
+- **Speaking exercises** need internet on most phones, so they're skipped automatically while you're offline.
+- A **✈️ Offline** badge appears at the top while you have no connection. Your progress is saved as usual and syncs when you're back online.
+
 ## 💾 Your progress
 
 - **Saved automatically on your phone** after every answer. There's no account, and your progress is never sent anywhere (unless you turn on sync below).
@@ -129,6 +138,12 @@ After that it syncs automatically after every lesson. On another device, paste t
 <summary><b>Do I need to reinstall when the app gets updated?</b></summary>
 
 No. New words and improvements arrive by themselves. When a new version is ready you'll see **"✨ A new version is ready → Update"**. If something looks old, close the app completely and open it again.
+</details>
+
+<details>
+<summary><b>Can I use it on a plane?</b></summary>
+
+Yes. Open ⚙️ **Settings → ✈️ Offline** before you fly and tap **📥 Download recordings**. Everything else is already saved on your phone. See [Offline](#️-offline-planes-trains-no-signal) above.
 </details>
 
 <details>
@@ -206,6 +221,7 @@ tests/                  unit tests and phone-sized browser tests (Playwright)
 - `node tools/lookup.mjs hund katt` shows the reference pronunciations and frequency of words
 - `node tools/build-vocab.mjs --report` merges all units into `data/vocab.json` and lists overlaps
 - `node --test tests/*.test.mjs` runs the unit tests
+- `node tests/offline.mjs http://localhost:8080/` downloads recordings from a mocked Wikimedia, switches the browser to offline and checks that the app, the words and the recordings still work
 - `node tests/smoke.mjs http://localhost:8080/` plays a whole lesson and the arcade games in a phone-sized browser; `tests/navigation.mjs` checks the back buttons, the phone back gesture and the select-then-Check answers; `tests/sync.mjs` and `tests/native.mjs` test gist sync and native recordings against mocked APIs
 - `node tools/screenshots.mjs` regenerates the screenshots in this README
 

@@ -674,6 +674,14 @@ textarea.code { font-family: ui-monospace, Menlo, monospace; font-size: 0.75rem;
 .game:nth-child(7) { --g: #c2255c; }
 .game:nth-child(8) { --g: #1c7ed6; }
 
+/* offline */
+.offline .off-row { display: flex; gap: 10px; align-items: flex-start; }
+.offline .off-ic { font-size: 1.2rem; line-height: 1.4; width: 1.6em; text-align: center; flex: none; }
+.offline .bar { margin: 0; }
+.off-actions { justify-content: space-between; }
+.off-actions .btn { flex: 0 0 auto; }
+.offline-chip { background: #fff3bf; color: #8a6d00; border-color: #ffe066; cursor: pointer; }
+
 /* ---------- animation ---------- */
 
 @keyframes shake { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-8px); } 40% { transform: translateX(8px); } 60% { transform: translateX(-5px); } 80% { transform: translateX(5px); } }

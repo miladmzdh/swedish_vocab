@@ -36,6 +36,12 @@ function chooseVoice() {
   );
 }
 
+/** The Swedish voice speech uses, and whether it works without internet (an on-device voice). */
+export function currentVoice() {
+  const v = chooseVoice();
+  return v ? { name: v.name, offline: v.localService !== false } : null;
+}
+
 export function speak(text, { rate } = {}) {
   return new Promise((resolve) => {
     if (!ttsSupported()) return resolve(false);
@@ -75,7 +81,7 @@ const MISS_TTL = 21 * 86400000;
 let cache = null;
 const inflight = new Map();
 
-function readCache() {
+export function readCache() {
   if (cache) return cache;
   try {
     cache = JSON.parse(localStorage.getItem(CACHE_KEY) || '{}');
@@ -84,13 +90,13 @@ function readCache() {
   }
   return cache;
 }
-function writeCache() {
+export function writeCache() {
   try {
     localStorage.setItem(CACHE_KEY, JSON.stringify(cache));
   } catch {}
 }
 
-async function getJson(url, ms = 8000) {
+export async function getJson(url, ms = 8000) {
   const ctl = typeof AbortController !== 'undefined' ? new AbortController() : null;
   const t = setTimeout(() => ctl && ctl.abort(), ms);
   try {
@@ -132,7 +138,7 @@ export function audioFilesIn(section) {
   return [...new Set(out)];
 }
 
-const LL = /^LL-Q9027 \(swe\)-(.+?)-(.+)\.(wav|ogg|mp3|flac)$/i;
+export const LL = /^LL-Q9027 \(swe\)-(.+?)-(.+)\.(wav|ogg|mp3|flac)$/i;
 
 export function linguaLibreMatches(titles, word) {
   const w = word.toLowerCase();
@@ -157,30 +163,29 @@ const canOgg = () => {
   }
 };
 
-function creditFor(name, source) {
+export function creditFor(name, source) {
   const m = name.match(LL);
   if (m) return `Lingua Libre speaker ${m[1]} (CC BY-SA)`;
   return source === 'sv' ? 'Swedish Wiktionary / Wikimedia Commons' : source === 'en' ? 'Wiktionary / Wikimedia Commons' : 'Wikimedia Commons';
 }
 
-const fileTitle = (name) => 'File:' + name.charAt(0).toUpperCase() + name.slice(1).replace(/_/g, ' ');
+export const fileTitle = (name) => 'File:' + name.charAt(0).toUpperCase() + name.slice(1).replace(/_/g, ' ');
 
 /** Look up many Commons files in one request; returns Map(title -> playable URL) for the ones this device can play. */
-async function playableUrls(names) {
+export async function playableUrls(names) {
   const out = new Map();
   if (!names.length) return out;
   const titles = names.map(fileTitle);
   const j = await getJson(`${COMMONS}&prop=videoinfo|imageinfo&viprop=url|derivatives&iiprop=url&titles=${encodeURIComponent(titles.join('|'))}`);
   const ogg = canOgg();
   for (const page of Object.values(j?.query?.pages || {})) {
-    if (!page || page.missing !== undefined || !page.title) continue;
+    if (!page || page.missing !== undefined || page.missing === true || !page.title) continue;
     const vi = page.videoinfo?.[0];
     const original = vi?.url || page.imageinfo?.[0]?.url;
-    let url = null;
-    if (/\.(ogg|oga|opus)$/i.test(page.title) && !ogg) {
-      const mp3 = (vi?.derivatives || []).find((d) => /mpeg|mp3/i.test(d.type || '') || /\.mp3$/i.test(d.src || ''));
-      url = mp3?.src || null;
-    } else url = original || null;
+    // Prefer Commons' MP3 copy: small, and it plays on every phone. Otherwise the original file,
+    // unless it's Ogg on a device that can't play Ogg (iPhone).
+    const mp3 = (vi?.derivatives || []).find((d) => /mpeg|mp3/i.test(d.type || '') || /\.mp3$/i.test(d.src || ''));
+    const url = mp3?.src || (/\.(ogg|oga|opus)$/i.test(page.title) && !ogg ? null : original || null);
     if (url) out.set(page.title, url);
   }
   return out;
@@ -208,6 +213,8 @@ export function findNative(word, { force = false } = {}) {
   if (!word || /\s/.test(word) || typeof fetch === 'undefined') return Promise.resolve(null);
   const c = readCache();
   const hit = c[word];
+  // Offline: answer from what we already know, never record a miss.
+  if (typeof navigator !== 'undefined' && navigator.onLine === false) return Promise.resolve(hit && hit.u ? { url: hit.u, credit: hit.by, page: hit.p } : null);
   if (!force && hit && (hit.u || Date.now() - hit.t < MISS_TTL)) return Promise.resolve(hit.u ? { url: hit.u, credit: hit.by, page: hit.p } : null);
   if (inflight.has(word)) return inflight.get(word);
   const p = (async () => {
@@ -277,19 +284,77 @@ export function findNative(word, { force = false } = {}) {
   return p;
 }
 
-let current = null;
-export function playUrl(url, { rate = 1 } = {}) {
+// ---------- playback (online, or downloaded for offline) ----------
+
+export const AUDIO_CACHE = 'sq-audio-v1';
+const downloaded = new Set(); // URLs saved in AUDIO_CACHE
+let player = null;
+let finishCurrent = null;
+
+export async function initOfflineAudio() {
+  try {
+    if (typeof caches === 'undefined') return;
+    const c = await caches.open(AUDIO_CACHE);
+    for (const req of await c.keys()) downloaded.add(req.url);
+  } catch {}
+}
+export const isDownloaded = (url) => !!url && downloaded.has(url);
+export const downloadedCount = () => downloaded.size;
+export const markDownloaded = (url) => downloaded.add(url);
+export const clearDownloaded = () => downloaded.clear();
+export const isOnline = () => typeof navigator === 'undefined' || navigator.onLine !== false;
+/** A recording can be played right now: we're online, or it was downloaded. */
+export const canPlayRecording = (url) => !!url && (isOnline() || downloaded.has(url));
+
+// One shared <audio> element. iPhones only let a page start sound from a tap; once this element has
+// played during a tap, it may keep playing later, even after an await (e.g. reading from storage).
+function getPlayer() {
+  if (!player) player = new Audio();
+  return player;
+}
+const SILENCE = 'data:audio/wav;base64,UklGRjQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YRAAAACAgICAgICAgICAgICAgICA';
+export function unlockPlayer() {
+  try {
+    const a = getPlayer();
+    if (a.dataset && a.dataset.unlocked) return;
+    a.src = SILENCE;
+    const p = a.play();
+    if (p && p.then) p.then(() => a.dataset && (a.dataset.unlocked = '1')).catch(() => {});
+  } catch {}
+}
+
+export async function playUrl(url, { rate = 1 } = {}) {
+  let src = url;
+  let blobUrl = null;
+  if (downloaded.has(url)) {
+    try {
+      const hit = await (await caches.open(AUDIO_CACHE)).match(url);
+      if (hit) src = blobUrl = URL.createObjectURL(await hit.blob());
+    } catch {}
+  }
+  if (!blobUrl && !isOnline()) return false;
   return new Promise((resolve) => {
     try {
-      current && current.pause();
-      const a = new Audio(url);
-      current = a;
+      if (finishCurrent) finishCurrent(false);
+      const a = getPlayer();
+      a.pause();
+      const done = (ok) => {
+        if (finishCurrent !== done) return;
+        finishCurrent = null;
+        a.onended = a.onerror = null;
+        if (blobUrl) setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
+        resolve(ok);
+      };
+      finishCurrent = done;
+      a.onended = () => done(true);
+      a.onerror = () => done(false);
+      a.src = src;
       // Slow playback keeps the speaker's pitch (time-stretching) instead of sounding deeper.
       a.preservesPitch = a.webkitPreservesPitch = a.mozPreservesPitch = true;
       a.playbackRate = rate;
-      a.onended = () => resolve(true);
-      a.onerror = () => resolve(false);
-      a.play().catch(() => resolve(false));
+      a.defaultPlaybackRate = rate;
+      const p = a.play();
+      if (p && p.catch) p.catch(() => done(false));
     } catch {
       resolve(false);
     }
@@ -304,7 +369,7 @@ export function cachedNative(word) {
 /** Play the native-speaker recording at its original speed (resolves false if there is none). */
 export async function playNative(w) {
   const n = cachedNative(w.sv) || (S.settings.native ? await findNative(w.sv) : null);
-  return n ? playUrl(n.url) : false;
+  return n && canPlayRecording(n.url) ? playUrl(n.url) : false;
 }
 
 // Slow mode is half the learner's normal speed. On iPhone the browser maps speech rates below 1
@@ -315,7 +380,7 @@ export const slowRate = () => Math.max(0.3, S.settings.rate * 0.5);
 export async function sayWord(w, { rate, native = true, slow = false } = {}) {
   if (native && S.settings.native) {
     const n = cachedNative(w.sv);
-    if (n && (await playUrl(n.url, { rate: slow ? 0.6 : 1 }))) return 'native';
+    if (n && canPlayRecording(n.url) && (await playUrl(n.url, { rate: slow ? 0.6 : 1 }))) return 'native';
   }
   await speak(speakText(w), { rate: slow ? slowRate() : rate });
   return 'tts';
@@ -336,6 +401,7 @@ function ac() {
 
 // Call from a user gesture early on so iOS lets us play sounds later.
 export function unlockAudio() {
+  unlockPlayer();
   const c = ac();
   if (!c) return;
   const b = c.createBuffer(1, 1, 22050);

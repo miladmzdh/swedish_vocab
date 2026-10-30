@@ -1,6 +1,6 @@
 // Service worker: makes the app work offline and load instantly.
 // Bump VERSION whenever app files change so phones pick up the new version.
-const VERSION = 'sq-v9';
+const VERSION = 'sq-v10';
 const SHELL = [
   './',
   'index.html',
@@ -12,6 +12,7 @@ const SHELL = [
   'js/data.js',
   'js/exercises.js',
   'js/gamify.js',
+  'js/offline.js',
   'js/session.js',
   'js/srs.js',
   'js/store.js',
@@ -35,7 +36,8 @@ self.addEventListener('activate', (e) => {
   e.waitUntil(
     caches
       .keys()
-      .then((keys) => Promise.all(keys.filter((k) => k !== VERSION).map((k) => caches.delete(k))))
+      // Only old app versions are removed; downloaded recordings (sq-audio-*) are kept.
+      .then((keys) => Promise.all(keys.filter((k) => k.startsWith('sq-v') && k !== VERSION).map((k) => caches.delete(k))))
       .then(() => self.clients.claim()),
   );
 });
