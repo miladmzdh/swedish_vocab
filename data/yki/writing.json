@@ -1,0 +1,1124 @@
+{
+  "tasks": [
+    {
+      "id": "informal-party",
+      "type": "informal",
+      "title": "Du kan inte komma på festen",
+      "titleEn": "You can't come to the party",
+      "prompt": "Din vän Johanna fyller 40 år. Hon har bjudit dig på fest hemma hos sig i Esbo på lördag kväll. Du kan tyvärr inte komma. Skriv ett meddelande till Johanna.",
+      "promptEn": "Your friend Johanna is turning 40. She has invited you to a party at her home in Espoo on Saturday evening. Unfortunately you can't come. Write a message to Johanna.",
+      "points": [
+        "Tacka för inbjudan",
+        "Säg att du inte kan komma och förklara varför",
+        "Föreslå att ni träffas en annan dag"
+      ],
+      "words": [
+        50,
+        90
+      ],
+      "minutes": 15,
+      "model": "Hej Johanna!\n\nTack så mycket för inbjudan till din fest! Det var så snällt av dig. Tyvärr kan jag inte komma på lördag, eftersom min mamma kommer på besök från Somalia. Hennes flyg landar sent på kvällen och jag ska hämta henne på flygplatsen.\n\nMen jag vill gärna fira dig! Kan vi träffas på ett kafé i Hagalund nästa vecka, till exempel på onsdag efter jobbet? Jag bjuder på kaffe och tårta.\n\nGrattis och ha en jättetrevlig fest!\nKram, Amina",
+      "modelEn": "Hi Johanna!\n\nThank you so much for the invitation to your party! That was so kind of you. Unfortunately I can't come on Saturday, because my mother is coming to visit from Somalia. Her flight lands late in the evening and I'm going to pick her up at the airport.\n\nBut I'd really like to celebrate your birthday with you! Could we meet at a café in Tapiola next week, for example on Wednesday after work? Coffee and cake are on me.\n\nCongratulations, and have a really nice party!\nHugs, Amina",
+      "phrases": [
+        {
+          "sv": "Tack så mycket för inbjudan!",
+          "en": "Thank you so much for the invitation!"
+        },
+        {
+          "sv": "Tyvärr kan jag inte komma, eftersom …",
+          "en": "Unfortunately I can't come, because …"
+        },
+        {
+          "sv": "Jag är ledsen att jag inte kan komma.",
+          "en": "I'm sorry that I can't come."
+        },
+        {
+          "sv": "Kan vi träffas en annan dag?",
+          "en": "Can we meet another day?"
+        },
+        {
+          "sv": "Passar det dig på onsdag efter jobbet?",
+          "en": "Does Wednesday after work suit you?"
+        },
+        {
+          "sv": "Jag bjuder på kaffe.",
+          "en": "The coffee is on me."
+        },
+        {
+          "sv": "Grattis på födelsedagen!",
+          "en": "Happy birthday!"
+        },
+        {
+          "sv": "Ha en jättetrevlig fest!",
+          "en": "Have a really nice party!"
+        }
+      ],
+      "checklist": [
+        "You thanked Johanna for the invitation.",
+        "You said clearly that you can't come and gave a reason (eftersom …).",
+        "You suggested a concrete other day, time or place to meet.",
+        "You used a friendly greeting and closing (Hej …! / Kram, …).",
+        "Your text is about 50–90 words."
+      ]
+    },
+    {
+      "id": "informal-neighbour",
+      "type": "informal",
+      "title": "Be grannen om hjälp",
+      "titleEn": "Ask your neighbour for help",
+      "prompt": "Du ska resa bort i en vecka. Din granne Mikael bor i samma trappuppgång, och ni brukar hjälpa varandra. Skriv ett meddelande till Mikael och be honom om hjälp medan du är borta.",
+      "promptEn": "You are going away for a week. Your neighbour Mikael lives in the same stairwell, and you usually help each other. Write a message to Mikael and ask him for help while you are away.",
+      "points": [
+        "Berätta vart du reser och hur länge du är borta",
+        "Be Mikael om hjälp med två saker",
+        "Säg hur han får nyckeln och tacka honom"
+      ],
+      "words": [
+        50,
+        90
+      ],
+      "minutes": 15,
+      "model": "Hej Mikael!\n\nJag ska hälsa på min syster i Uleåborg nästa vecka. Jag är borta från måndag till söndag.\n\nSkulle du kunna hjälpa mig med två saker? Kan du ta hand om min post och vattna mina blommor några gånger under veckan? Den stora palmen i vardagsrummet behöver mycket vatten.\n\nJag kommer med nyckeln till dig i morgon kväll, om det passar. Tusen tack för hjälpen! Säg till om du också behöver hjälp någon gång.\n\nHälsningar\nAhmed (A 5)",
+      "modelEn": "Hi Mikael!\n\nI'm going to visit my sister in Oulu next week. I'll be away from Monday to Sunday.\n\nCould you help me with two things? Could you take care of my mail and water my plants a few times during the week? The big palm in the living room needs a lot of water.\n\nI'll bring the key to you tomorrow evening, if that suits you. Thanks a lot for your help! Let me know if you ever need help too.\n\nBest wishes\nAhmed (flat A 5)",
+      "phrases": [
+        {
+          "sv": "Skulle du kunna hjälpa mig?",
+          "en": "Could you help me?"
+        },
+        {
+          "sv": "Jag är borta från måndag till söndag.",
+          "en": "I'll be away from Monday to Sunday."
+        },
+        {
+          "sv": "Kan du ta hand om min post?",
+          "en": "Can you take care of my mail?"
+        },
+        {
+          "sv": "vattna blommorna",
+          "en": "water the plants"
+        },
+        {
+          "sv": "Jag kommer med nyckeln till dig i morgon.",
+          "en": "I'll bring the key to you tomorrow."
+        },
+        {
+          "sv": "om det passar",
+          "en": "if that suits you"
+        },
+        {
+          "sv": "Tusen tack för hjälpen!",
+          "en": "Thanks a lot for your help!"
+        },
+        {
+          "sv": "Säg till om du också behöver hjälp.",
+          "en": "Let me know if you need help too."
+        }
+      ],
+      "checklist": [
+        "You said where you are going and for how long.",
+        "You asked for help with two clear things.",
+        "You explained how Mikael gets the key.",
+        "You thanked him (and maybe offered to help him back).",
+        "Your request is polite: Skulle du kunna …? / Kan du …?",
+        "Your text is about 50–90 words."
+      ]
+    },
+    {
+      "id": "informal-choir",
+      "type": "informal",
+      "title": "Du kan inte komma på körövningen",
+      "titleEn": "You can't come to choir practice",
+      "prompt": "Du sjunger i en kör i Vasa. Kören övar varje torsdag och har en konsert om två veckor. Du är sjuk och kan inte komma på övningen den här veckan. Skriv ett meddelande i körens chattgrupp.",
+      "promptEn": "You sing in a choir in Vaasa. The choir practises every Thursday and has a concert in two weeks. You are ill and can't come to practice this week. Write a message in the choir's group chat.",
+      "points": [
+        "Säg att du inte kan komma och varför",
+        "Fråga vad ni ska öva och be någon skicka material till dig",
+        "Erbjud dig att hjälpa till med något inför konserten"
+      ],
+      "words": [
+        50,
+        90
+      ],
+      "minutes": 15,
+      "model": "Hej allihopa!\n\nTyvärr kan jag inte komma på övningen på torsdag. Jag har feber och ont i halsen, så jag kan inte sjunga just nu. Jag hoppas att jag är frisk igen nästa vecka.\n\nVilka sånger ska ni öva? Kan någon skicka noterna eller en inspelning till mig? Då kan jag öva hemma.\n\nJag hjälper gärna till inför konserten. Jag kan till exempel baka bullar till kaffeförsäljningen i pausen.\n\nVi ses snart!\nAino",
+      "modelEn": "Hi everyone!\n\nUnfortunately I can't come to practice on Thursday. I have a fever and a sore throat, so I can't sing right now. I hope I'll be well again next week.\n\nWhich songs are you going to practise? Could someone send me the sheet music or a recording? Then I can practise at home.\n\nI'm happy to help out before the concert. For example, I can bake buns for the coffee sale during the interval.\n\nSee you soon!\nAino",
+      "phrases": [
+        {
+          "sv": "Hej allihopa!",
+          "en": "Hi everyone!"
+        },
+        {
+          "sv": "Tyvärr kan jag inte komma på övningen.",
+          "en": "Unfortunately I can't come to practice."
+        },
+        {
+          "sv": "Jag har feber och ont i halsen.",
+          "en": "I have a fever and a sore throat."
+        },
+        {
+          "sv": "Jag hoppas att jag är frisk igen nästa vecka.",
+          "en": "I hope I'll be well again next week."
+        },
+        {
+          "sv": "Kan någon skicka … till mig?",
+          "en": "Could someone send me …?"
+        },
+        {
+          "sv": "Jag hjälper gärna till med …",
+          "en": "I'm happy to help with …"
+        },
+        {
+          "sv": "inför konserten",
+          "en": "before the concert (to prepare for it)"
+        },
+        {
+          "sv": "Vi ses snart!",
+          "en": "See you soon!"
+        }
+      ],
+      "checklist": [
+        "You said that you can't come and why.",
+        "You asked what the group will practise.",
+        "You asked someone to send you something (notes, a recording, a link).",
+        "You offered to help with something concrete for the concert.",
+        "Your text is about 50–90 words."
+      ]
+    },
+    {
+      "id": "informal-dinner",
+      "type": "informal",
+      "title": "Bjud en arbetskamrat på middag",
+      "titleEn": "Invite a colleague to dinner",
+      "prompt": "Du vill bjuda din arbetskamrat Jukka och hans fru på middag hemma hos dig. Du vill laga mat från ditt hemland. Skriv ett meddelande till Jukka.",
+      "promptEn": "You want to invite your colleague Jukka and his wife to dinner at your home. You want to cook food from your home country. Write a message to Jukka.",
+      "points": [
+        "Bjud in Jukka och säg när och var middagen är",
+        "Berätta vilken mat du ska laga",
+        "Fråga om det finns något som de inte äter"
+      ],
+      "words": [
+        50,
+        90
+      ],
+      "minutes": 15,
+      "model": "Hej Jukka!\n\nVill du och din fru komma på middag hemma hos mig på fredag klockan 18? Jag bor på Tavastvägen 12 B 21 i Helsingfors.\n\nJag ska laga mat från Iran. Det blir ris med saffran och en gryta med kyckling, tomat och aubergine. Till efterrätt bakar jag en kaka.\n\nÄr ni allergiska mot något? Eller finns det något som ni inte äter? Säg till, så kan jag ändra menyn.\n\nVälkomna!\nLeila",
+      "modelEn": "Hi Jukka!\n\nWould you and your wife like to come to dinner at my place on Friday at 6 pm? I live at Tavastvägen (Hämeentie) 12 B 21 in Helsinki.\n\nI'm going to cook food from Iran. There will be saffron rice and a stew with chicken, tomato and aubergine. For dessert I'll bake a cake.\n\nAre you allergic to anything? Or is there anything you don't eat? Let me know, and I can change the menu.\n\nYou're both welcome!\nLeila",
+      "phrases": [
+        {
+          "sv": "Vill du komma på middag hos mig?",
+          "en": "Would you like to come to dinner at my place?"
+        },
+        {
+          "sv": "på fredag klockan 18",
+          "en": "on Friday at 6 pm"
+        },
+        {
+          "sv": "Jag bor på … i …",
+          "en": "I live at … (street) in … (town)"
+        },
+        {
+          "sv": "Jag ska laga mat från …",
+          "en": "I'm going to cook food from …"
+        },
+        {
+          "sv": "till efterrätt",
+          "en": "for dessert"
+        },
+        {
+          "sv": "Är du allergisk mot något?",
+          "en": "Are you allergic to anything?"
+        },
+        {
+          "sv": "Finns det något som du inte äter?",
+          "en": "Is there anything you don't eat?"
+        },
+        {
+          "sv": "Säg till, så …",
+          "en": "Let me know, and then …"
+        }
+      ],
+      "checklist": [
+        "You invited Jukka and his wife and gave a day, a time and your address.",
+        "You described the food you will cook.",
+        "You asked about allergies or food they don't eat.",
+        "You used a friendly greeting and closing.",
+        "Your text is about 50–90 words."
+      ]
+    },
+    {
+      "id": "informal-summer",
+      "type": "informal",
+      "title": "Berätta om din sommar",
+      "titleEn": "Tell a friend about your summer",
+      "prompt": "Din vän Sara bor i Uleåborg. Hon har skickat ett mejl och frågar hur din sommar var. Du var en vecka på en sommarstuga i skärgården. Svara på Saras mejl.",
+      "promptEn": "Your friend Sara lives in Oulu. She has sent you an email asking how your summer was. You spent a week at a summer cottage in the archipelago. Reply to Sara's email.",
+      "points": [
+        "Berätta var du var och med vem",
+        "Berätta vad ni gjorde och hur vädret var",
+        "Fråga om Saras sommar"
+      ],
+      "words": [
+        50,
+        90
+      ],
+      "minutes": 15,
+      "model": "Hej Sara!\n\nTack för ditt mejl! Min sommar var jättefin. I juli var jag en vecka på en sommarstuga i Pargas skärgård tillsammans med min man och våra barn. Stugan låg nära havet och hade en egen bastu.\n\nVi badade bastu varje kväll, simmade i havet och plockade blåbär i skogen. Vädret var för det mesta soligt och varmt, men en dag regnade det hela dagen. Då spelade vi kort inne i stugan.\n\nHur var din sommar? Var du också på semester?\n\nKram,\nOlga",
+      "modelEn": "Hi Sara!\n\nThanks for your email! My summer was really lovely. In July I spent a week at a summer cottage in the Pargas (Parainen) archipelago with my husband and our children. The cottage was close to the sea and had its own sauna.\n\nWe had a sauna every evening, swam in the sea and picked blueberries in the forest. The weather was mostly sunny and warm, but one day it rained all day. Then we played cards inside the cottage.\n\nHow was your summer? Were you on holiday too?\n\nHugs,\nOlga",
+      "phrases": [
+        {
+          "sv": "Tack för ditt mejl!",
+          "en": "Thanks for your email!"
+        },
+        {
+          "sv": "Min sommar var jättefin.",
+          "en": "My summer was really lovely."
+        },
+        {
+          "sv": "Stugan låg nära havet.",
+          "en": "The cottage was close to the sea."
+        },
+        {
+          "sv": "Vi badade bastu varje kväll.",
+          "en": "We had a sauna every evening."
+        },
+        {
+          "sv": "plocka blåbär / svamp",
+          "en": "pick blueberries / mushrooms"
+        },
+        {
+          "sv": "Vädret var för det mesta soligt.",
+          "en": "The weather was mostly sunny."
+        },
+        {
+          "sv": "En dag regnade det hela dagen.",
+          "en": "One day it rained all day."
+        },
+        {
+          "sv": "Hur var din sommar?",
+          "en": "How was your summer?"
+        }
+      ],
+      "checklist": [
+        "You said where you were and who you were with.",
+        "You told what you did and what the weather was like.",
+        "You used the past tense (var, badade, simmade, regnade …).",
+        "You asked Sara about her summer.",
+        "Your text is about 50–90 words."
+      ]
+    },
+    {
+      "id": "informal-course",
+      "type": "informal",
+      "title": "Berätta om din svenskkurs",
+      "titleEn": "Tell a friend about your Swedish course",
+      "prompt": "Du har börjat på en kvällskurs i svenska på medborgarinstitutet. Din vän Erik har svenska som modersmål. Han har frågat hur kursen är. Skriv ett meddelande till Erik.",
+      "promptEn": "You have started an evening course in Swedish at the adult education centre (medborgarinstitutet). Your friend Erik is a native Swedish speaker. He has asked what the course is like. Write a message to Erik.",
+      "points": [
+        "Berätta när och var kursen är",
+        "Berätta vad som är roligt och vad som är svårt",
+        "Fråga om ni kan träffas och prata svenska ibland"
+      ],
+      "words": [
+        50,
+        90
+      ],
+      "minutes": 15,
+      "model": "Hej Erik!\n\nTack för att du frågade! Kursen är på medborgarinstitutet i Jakobstad på måndagar och onsdagar klockan 17–19. Vi är tolv studerande från många olika länder.\n\nLäraren är trevlig och vi pratar mycket i par. Det är roligt! Men grammatiken är svår, särskilt ordföljden. Jag glömmer ofta att verbet ska stå på andra plats.\n\nKan vi träffas och prata svenska ibland, till exempel på ett kafé? Det skulle hjälpa mig mycket.\n\nHälsningar\nCarlos",
+      "modelEn": "Hi Erik!\n\nThanks for asking! The course is at the adult education centre in Jakobstad (Pietarsaari) on Mondays and Wednesdays from 5 to 7 pm. There are twelve of us students from many different countries.\n\nThe teacher is nice and we talk a lot in pairs. That's fun! But the grammar is difficult, especially the word order. I often forget that the verb has to come in second place.\n\nCould we meet and speak Swedish sometimes, for example at a café? It would help me a lot.\n\nBest wishes\nCarlos",
+      "phrases": [
+        {
+          "sv": "Tack för att du frågade!",
+          "en": "Thanks for asking!"
+        },
+        {
+          "sv": "Kursen är på måndagar och onsdagar.",
+          "en": "The course is on Mondays and Wednesdays."
+        },
+        {
+          "sv": "Vi är tolv studerande.",
+          "en": "There are twelve of us students."
+        },
+        {
+          "sv": "Det roligaste är …",
+          "en": "The most fun thing is …"
+        },
+        {
+          "sv": "Det svåraste är …",
+          "en": "The hardest thing is …"
+        },
+        {
+          "sv": "Jag glömmer ofta att …",
+          "en": "I often forget that …"
+        },
+        {
+          "sv": "Kan vi träffas och prata svenska ibland?",
+          "en": "Could we meet and speak Swedish sometimes?"
+        },
+        {
+          "sv": "Det skulle hjälpa mig mycket.",
+          "en": "It would help me a lot."
+        }
+      ],
+      "checklist": [
+        "You said when and where the course is.",
+        "You mentioned at least one thing that is fun and one that is hard.",
+        "You asked Erik to meet and practise Swedish.",
+        "You used a friendly greeting and closing.",
+        "Your text is about 50–90 words."
+      ]
+    },
+    {
+      "id": "formal-radiator",
+      "type": "formal",
+      "title": "Felanmälan till disponenten",
+      "titleEn": "Reporting a fault to the property manager",
+      "prompt": "Du bor i en hyresbostad i Tammerfors. Elementet i ditt sovrum har varit kallt i en vecka. Skriv ett e-postmeddelande till disponenten.",
+      "promptEn": "You live in a rented flat in Tampere. The radiator in your bedroom has been cold for a week. Write an email to the property manager.",
+      "points": [
+        "Berätta vad som är fel och sedan när",
+        "Förklara varför problemet är besvärligt för dig",
+        "Be om reparation och säg när du är hemma"
+      ],
+      "words": [
+        60,
+        100
+      ],
+      "minutes": 15,
+      "model": "Bästa disponent,\n\nJag bor på Björkgatan 8 A 12 i Tammerfors. Elementet i mitt sovrum fungerar inte. Det har varit kallt sedan förra måndagen.\n\nNu är det bara 16 grader i rummet på natten. Min lilla dotter sover i samma rum, och jag är rädd att hon blir förkyld.\n\nKan ni skicka en fastighetsskötare så snart som möjligt? Jag är hemma varje dag efter klockan 16. Om ingen är hemma får fastighetsskötaren gärna gå in med egen nyckel.\n\nTack på förhand!\n\nMed vänliga hälsningar\nJamal Hassan\ntfn 040 123 4567",
+      "modelEn": "Dear property manager,\n\nI live at Björkgatan 8 A 12 in Tampere. The radiator in my bedroom doesn't work. It has been cold since last Monday.\n\nNow it is only 16 degrees in the room at night. My little daughter sleeps in the same room, and I'm afraid she will catch a cold.\n\nCould you send a caretaker as soon as possible? I'm at home every day after 4 pm. If nobody is at home, the caretaker is welcome to go in with their own key.\n\nThanks in advance!\n\nKind regards\nJamal Hassan\ntel. 040 123 4567",
+      "phrases": [
+        {
+          "sv": "Bästa disponent,",
+          "en": "Dear property manager,"
+        },
+        {
+          "sv": "Jag bor på … (adress).",
+          "en": "I live at … (address)."
+        },
+        {
+          "sv": "… fungerar inte.",
+          "en": "… doesn't work."
+        },
+        {
+          "sv": "sedan förra måndagen",
+          "en": "since last Monday"
+        },
+        {
+          "sv": "Kan ni skicka en fastighetsskötare?",
+          "en": "Could you send a caretaker?"
+        },
+        {
+          "sv": "så snart som möjligt",
+          "en": "as soon as possible"
+        },
+        {
+          "sv": "Jag är hemma efter klockan 16.",
+          "en": "I'm at home after 4 pm."
+        },
+        {
+          "sv": "Tack på förhand!",
+          "en": "Thanks in advance!"
+        },
+        {
+          "sv": "Med vänliga hälsningar",
+          "en": "Kind regards"
+        }
+      ],
+      "checklist": [
+        "You started politely (Bästa disponent / Hej) and ended with Med vänliga hälsningar and your name.",
+        "You gave your address and said exactly what is broken and since when.",
+        "You explained why it is a problem for you.",
+        "You asked clearly for a repair and said when you are at home.",
+        "You gave contact details (phone number).",
+        "Your text is about 60–100 words."
+      ]
+    },
+    {
+      "id": "formal-job",
+      "type": "formal",
+      "title": "Sök ett deltidsjobb",
+      "titleEn": "Apply for a part-time job",
+      "prompt": "Du har sett en annons: Kafé Solros i Åbo söker en glad medarbetare till ett deltidsjobb på veckosluten. Skriv ett e-postmeddelande till kaféets chef, Anna Lindholm.",
+      "promptEn": "You have seen an ad: Café Solros in Turku is looking for a cheerful employee for a part-time job at weekends. Write an email to the café's manager, Anna Lindholm.",
+      "points": [
+        "Säg vilket jobb du söker och var du såg annonsen",
+        "Berätta kort om dig själv och din arbetserfarenhet",
+        "Ställ en fråga om jobbet och säg när du kan börja"
+      ],
+      "words": [
+        60,
+        100
+      ],
+      "minutes": 15,
+      "model": "Bästa Anna Lindholm,\n\nJag såg er annons på nätet och vill söka deltidsjobbet på veckosluten.\n\nJag heter Zahra Ahmadi och kommer från Afghanistan. Jag har bott i Åbo i tre år. I mitt hemland arbetade jag i två år på ett bageri. I Finland har jag jobbat som kassör i en matbutik. Jag är noggrann och flexibel, och jag tycker om att arbeta med människor. Jag talar finska, svenska och engelska.\n\nHur många timmar i veckan är jobbet? Jag kan börja redan i december.\n\nJag ser fram emot ert svar.\n\nMed vänliga hälsningar\nZahra Ahmadi\ntfn 050 987 6543",
+      "modelEn": "Dear Anna Lindholm,\n\nI saw your ad online and would like to apply for the part-time weekend job.\n\nMy name is Zahra Ahmadi and I come from Afghanistan. I have lived in Turku for three years. In my home country I worked in a bakery for two years. In Finland I have worked as a cashier in a grocery shop. I am careful and flexible, and I like working with people. I speak Finnish, Swedish and English.\n\nHow many hours a week is the job? I can start as early as December.\n\nI look forward to your reply.\n\nKind regards\nZahra Ahmadi\ntel. 050 987 6543",
+      "phrases": [
+        {
+          "sv": "Jag såg er annons på nätet.",
+          "en": "I saw your ad online."
+        },
+        {
+          "sv": "Jag vill söka jobbet som …",
+          "en": "I'd like to apply for the job as …"
+        },
+        {
+          "sv": "Jag har jobbat som … i … år.",
+          "en": "I have worked as … for … years."
+        },
+        {
+          "sv": "Jag är noggrann och flexibel.",
+          "en": "I am careful and flexible."
+        },
+        {
+          "sv": "Jag tycker om att arbeta med människor.",
+          "en": "I like working with people."
+        },
+        {
+          "sv": "Hur många timmar i veckan är jobbet?",
+          "en": "How many hours a week is the job?"
+        },
+        {
+          "sv": "Jag kan börja redan i december.",
+          "en": "I can start as early as December."
+        },
+        {
+          "sv": "Jag ser fram emot ert svar.",
+          "en": "I look forward to your reply."
+        }
+      ],
+      "checklist": [
+        "You started politely and ended with Med vänliga hälsningar, your name and phone number.",
+        "You said which job you are applying for and where you saw the ad.",
+        "You told briefly about yourself, your work experience and your languages.",
+        "You asked at least one question about the job.",
+        "You said when you can start.",
+        "Your text is about 60–100 words."
+      ]
+    },
+    {
+      "id": "formal-healthcentre",
+      "type": "formal",
+      "title": "Avboka en tid på hälsostationen",
+      "titleEn": "Cancel an appointment at the health centre",
+      "prompt": "Du har en tid hos läkaren på hälsostationen på torsdag klockan 10.30, men du kan inte komma. Skriv ett meddelande till hälsostationen i välfärdsområdets e-tjänst.",
+      "promptEn": "You have a doctor's appointment at the health centre on Thursday at 10.30, but you can't come. Write a message to the health centre in the wellbeing services county's online service.",
+      "points": [
+        "Säg vilken tid du har och att du vill avboka den",
+        "Förklara varför du inte kan komma",
+        "Be om en ny tid och säg när det passar dig"
+      ],
+      "words": [
+        60,
+        100
+      ],
+      "minutes": 15,
+      "model": "Hej,\n\nJag har en tid hos läkaren på torsdag klockan 10.30. Tyvärr måste jag avboka den.\n\nJag har fått ett nytt jobb, och torsdag är min första arbetsdag. Därför kan jag inte komma.\n\nJag behöver ändå träffa läkaren, eftersom jag har haft ont i ryggen i flera veckor. Kan jag få en ny tid nästa vecka? Jag kan komma alla dagar efter klockan 15.\n\nMitt namn är Fatima Ali och mitt födelsedatum är 12.3.1985. Mitt telefonnummer är 044 555 1234.\n\nMed vänliga hälsningar\nFatima Ali",
+      "modelEn": "Hello,\n\nI have a doctor's appointment on Thursday at 10.30. Unfortunately I have to cancel it.\n\nI have got a new job, and Thursday is my first day at work. That's why I can't come.\n\nI still need to see the doctor, because my back has been hurting for several weeks. Could I have a new appointment next week? I can come any day after 3 pm.\n\nMy name is Fatima Ali and my date of birth is 12 March 1985. My phone number is 044 555 1234.\n\nKind regards\nFatima Ali",
+      "phrases": [
+        {
+          "sv": "Jag har en tid hos läkaren på …",
+          "en": "I have a doctor's appointment on …"
+        },
+        {
+          "sv": "Tyvärr måste jag avboka min tid.",
+          "en": "Unfortunately I have to cancel my appointment."
+        },
+        {
+          "sv": "Därför kan jag inte komma.",
+          "en": "That's why I can't come."
+        },
+        {
+          "sv": "Jag har haft ont i ryggen i flera veckor.",
+          "en": "My back has been hurting for several weeks."
+        },
+        {
+          "sv": "Kan jag få en ny tid?",
+          "en": "Could I have a new appointment?"
+        },
+        {
+          "sv": "Det passar bäst på eftermiddagen.",
+          "en": "The afternoon suits me best."
+        },
+        {
+          "sv": "Mitt födelsedatum är …",
+          "en": "My date of birth is …"
+        },
+        {
+          "sv": "Mitt telefonnummer är …",
+          "en": "My phone number is …"
+        }
+      ],
+      "checklist": [
+        "You said which appointment you have (day and time) and that you want to cancel it.",
+        "You gave a reason why you can't come.",
+        "You asked for a new appointment and said when you can come.",
+        "You gave your name and date of birth or phone number so they can find you.",
+        "You used a polite opening and closing (Hej / Med vänliga hälsningar).",
+        "Your text is about 60–100 words."
+      ]
+    },
+    {
+      "id": "formal-complaint",
+      "type": "formal",
+      "title": "Reklamation till en nätbutik",
+      "titleEn": "Complaint to an online shop",
+      "prompt": "Du beställde en vinterjacka för 129 euro från en finsk nätbutik. När du öppnade paketet såg du att dragkedjan var trasig. Skriv ett e-postmeddelande till nätbutikens kundtjänst.",
+      "promptEn": "You ordered a winter jacket for 129 euros from a Finnish online shop. When you opened the parcel, you saw that the zip was broken. Write an email to the online shop's customer service.",
+      "points": [
+        "Berätta vad du beställde och när",
+        "Beskriv vad som är fel med produkten",
+        "Säg vad du vill att butiken ska göra"
+      ],
+      "words": [
+        60,
+        100
+      ],
+      "minutes": 15,
+      "model": "Hej,\n\nJag beställde en vinterjacka från er nätbutik den 20 oktober. Jackan kostade 129 euro och mitt ordernummer är 45872. Jag hämtade paketet från en paketautomat i förrgår.\n\nNär jag öppnade paketet såg jag att dragkedjan var trasig. Det går inte att stänga jackan. Jag har inte använt den alls.\n\nJag vill gärna byta jackan mot en ny i samma storlek, M. Om det inte är möjligt vill jag ha pengarna tillbaka. Kan ni skicka mig en returetikett?\n\nMed vänliga hälsningar\nDaniel Okafor",
+      "modelEn": "Hello,\n\nI ordered a winter jacket from your online shop on 20 October. The jacket cost 129 euros and my order number is 45872. I picked up the parcel from a parcel locker the day before yesterday.\n\nWhen I opened the parcel, I saw that the zip was broken. It isn't possible to close the jacket. I haven't worn it at all.\n\nI would like to exchange the jacket for a new one in the same size, M. If that isn't possible, I want my money back. Could you send me a return label?\n\nKind regards\nDaniel Okafor",
+      "phrases": [
+        {
+          "sv": "Jag beställde … från er nätbutik.",
+          "en": "I ordered … from your online shop."
+        },
+        {
+          "sv": "Mitt ordernummer är …",
+          "en": "My order number is …"
+        },
+        {
+          "sv": "… är trasig.",
+          "en": "… is broken."
+        },
+        {
+          "sv": "Det går inte att stänga jackan.",
+          "en": "It isn't possible to close the jacket."
+        },
+        {
+          "sv": "Jag har inte använt den alls.",
+          "en": "I haven't used/worn it at all."
+        },
+        {
+          "sv": "Jag vill byta … mot en ny.",
+          "en": "I want to exchange … for a new one."
+        },
+        {
+          "sv": "Om det inte är möjligt vill jag ha pengarna tillbaka.",
+          "en": "If that isn't possible, I want my money back."
+        },
+        {
+          "sv": "Kan ni skicka mig en returetikett?",
+          "en": "Could you send me a return label?"
+        }
+      ],
+      "checklist": [
+        "You said what you ordered, when, and gave the price or order number.",
+        "You described the fault clearly.",
+        "You said exactly what you want: an exchange, a repair or your money back.",
+        "Your tone is polite but clear, with Hej and Med vänliga hälsningar.",
+        "Your text is about 60–100 words."
+      ]
+    },
+    {
+      "id": "formal-daycare",
+      "type": "formal",
+      "title": "Fråga om en plats på daghem",
+      "titleEn": "Ask about a daycare place",
+      "prompt": "Du har fått ett jobb och börjar arbeta i januari. Ditt barn behöver en plats på daghem. Skriv ett e-postmeddelande till småbarnspedagogiken i Borgå stad.",
+      "promptEn": "You have got a job and start working in January. Your child needs a place at a daycare centre. Write an email to the early childhood education services of the City of Porvoo.",
+      "points": [
+        "Presentera dig och ditt barn",
+        "Berätta när ni behöver en dagvårdsplats och varför",
+        "Fråga om det finns plats på ett svenskspråkigt daghem nära ert hem"
+      ],
+      "words": [
+        60,
+        100
+      ],
+      "minutes": 15,
+      "model": "Bästa mottagare,\n\nJag heter Mei Chen och bor i Borgå med min man och vår son Leo. Leo är två år och är hemma med mig nu.\n\nJag har fått ett jobb på ett hotell och börjar arbeta den 7 januari. Därför behöver Leo en plats på daghem redan i början av januari. Jag arbetar på vardagar klockan 8–16.\n\nVi vill gärna att Leo lär sig svenska. Finns det plats på något svenskspråkigt daghem nära vårt hem i Näse? Hur ska jag ansöka om platsen?\n\nMed vänliga hälsningar\nMei Chen\ntfn 045 678 9012",
+      "modelEn": "Dear Sir or Madam,\n\nMy name is Mei Chen and I live in Porvoo with my husband and our son Leo. Leo is two years old and is at home with me now.\n\nI have got a job at a hotel and I start working on 7 January. That's why Leo needs a daycare place already at the beginning of January. I work on weekdays from 8 am to 4 pm.\n\nWe would really like Leo to learn Swedish. Is there a place at a Swedish-language daycare centre near our home in Näse? How should I apply for the place?\n\nKind regards\nMei Chen\ntel. 045 678 9012",
+      "phrases": [
+        {
+          "sv": "Bästa mottagare,",
+          "en": "Dear Sir or Madam, (to an office)"
+        },
+        {
+          "sv": "Jag heter … och bor i …",
+          "en": "My name is … and I live in …"
+        },
+        {
+          "sv": "Jag har fått ett jobb och börjar arbeta den …",
+          "en": "I have got a job and start working on …"
+        },
+        {
+          "sv": "Därför behöver vi en plats på daghem.",
+          "en": "That's why we need a daycare place."
+        },
+        {
+          "sv": "i början av januari",
+          "en": "at the beginning of January"
+        },
+        {
+          "sv": "ett svenskspråkigt daghem",
+          "en": "a Swedish-language daycare centre"
+        },
+        {
+          "sv": "Hur ska jag ansöka om …?",
+          "en": "How should I apply for …?"
+        },
+        {
+          "sv": "Med vänliga hälsningar",
+          "en": "Kind regards"
+        }
+      ],
+      "checklist": [
+        "You introduced yourself and your child (name, age).",
+        "You said from which date you need the place and why.",
+        "You asked about a Swedish-language daycare near your home.",
+        "You asked a practical question (how to apply, what to do next).",
+        "You used a polite opening and closing and gave your phone number.",
+        "Your text is about 60–100 words."
+      ]
+    },
+    {
+      "id": "formal-train",
+      "type": "formal",
+      "title": "Ersättning för ett försenat tåg",
+      "titleEn": "Compensation for a delayed train",
+      "prompt": "Du reste med tåg från Helsingfors till Uleåborg. Tåget var mer än två timmar försenat, och du missade den sista bussen hem. Skriv ett meddelande till VR:s kundtjänst.",
+      "promptEn": "You travelled by train from Helsinki to Oulu. The train was more than two hours late, and you missed the last bus home. Write a message to VR's customer service.",
+      "points": [
+        "Berätta när du reste och vad som hände",
+        "Förklara vilka problem du fick på grund av förseningen",
+        "Be om ersättning"
+      ],
+      "words": [
+        60,
+        100
+      ],
+      "minutes": 15,
+      "model": "Hej,\n\nJag reste i fredags med tåget från Helsingfors till Uleåborg. Tåget skulle komma fram klockan 21.30, men det kom först klockan 23.40. Konduktören sa att det var ett tekniskt fel.\n\nPå grund av förseningen missade jag den sista bussen hem. Jag var tvungen att ta taxi, och det kostade 45 euro.\n\nJag ber om ersättning för biljetten, som kostade 68 euro. Jag hoppas att ni också kan ersätta taxiresan. Jag bifogar en kopia av biljetten och taxikvittot.\n\nMed vänliga hälsningar\nPedro Silva\nkontonummer FI12 3456 7890 1234 56",
+      "modelEn": "Hello,\n\nLast Friday I travelled on the train from Helsinki to Oulu. The train was supposed to arrive at 21.30, but it didn't arrive until 23.40. The conductor said it was a technical fault.\n\nBecause of the delay, I missed the last bus home. I had to take a taxi, and it cost 45 euros.\n\nI am asking for compensation for the ticket, which cost 68 euros. I hope you can also pay me back for the taxi ride. I am attaching a copy of the ticket and the taxi receipt.\n\nKind regards\nPedro Silva\naccount number FI12 3456 7890 1234 56",
+      "phrases": [
+        {
+          "sv": "Jag reste i fredags med tåget från … till …",
+          "en": "Last Friday I travelled on the train from … to …"
+        },
+        {
+          "sv": "Tåget skulle komma fram klockan …",
+          "en": "The train was supposed to arrive at …"
+        },
+        {
+          "sv": "Tåget var två timmar försenat.",
+          "en": "The train was two hours late."
+        },
+        {
+          "sv": "På grund av förseningen missade jag …",
+          "en": "Because of the delay I missed …"
+        },
+        {
+          "sv": "Jag var tvungen att ta taxi.",
+          "en": "I had to take a taxi."
+        },
+        {
+          "sv": "Jag ber om ersättning för …",
+          "en": "I am asking for compensation for …"
+        },
+        {
+          "sv": "Jag bifogar en kopia av biljetten.",
+          "en": "I am attaching a copy of the ticket."
+        },
+        {
+          "sv": "Med vänliga hälsningar",
+          "en": "Kind regards"
+        }
+      ],
+      "checklist": [
+        "You said when you travelled and which route.",
+        "You explained how late the train was and what happened.",
+        "You described the problem the delay caused you, with costs in euros.",
+        "You asked clearly for compensation and mentioned attachments or your account number.",
+        "You used a polite opening and closing.",
+        "Your text is about 60–100 words."
+      ]
+    },
+    {
+      "id": "opinion-phones",
+      "type": "opinion",
+      "title": "Mobiltelefoner i skolan",
+      "titleEn": "Mobile phones at school",
+      "prompt": "I lokaltidningen har en förälder skrivit: ”Mobiltelefoner borde vara helt förbjudna i skolan. Barnen tittar på skärmen hela dagen och pratar inte med varandra.” Skriv en insändare till tidningen. Vad tycker du?",
+      "promptEn": "In the local newspaper a parent has written: \"Mobile phones should be completely banned at school. The children look at the screen all day and don't talk to each other.\" Write a letter to the editor. What do you think?",
+      "points": [
+        "Säg vad du tycker om förslaget",
+        "Ge minst två skäl för din åsikt",
+        "Ge ett exempel från ditt eget liv",
+        "Avsluta med en slutsats"
+      ],
+      "words": [
+        100,
+        150
+      ],
+      "minutes": 20,
+      "model": "Jag håller delvis med skribenten. Enligt mig ska eleverna inte använda mobilen på lektionerna. Det är svårt att koncentrera sig om telefonen piper hela tiden. Dessutom behöver barn röra på sig och leka på rasterna i stället för att sitta och titta på mobilen.\n\nMin son går i femte klass i Lovisa. I hans skola lämnar eleverna sina telefoner i en låda på morgonen. Först var han arg, men nu spelar han fotboll med sina kompisar på rasterna. Han säger att det är roligare.\n\nÅ andra sidan är mobilen också ett bra verktyg. Man kan till exempel söka information på den, och föräldrar vill kunna kontakta sina barn efter skolan. Därför tycker jag inte att mobilen ska vara helt förbjuden. Läraren ska bestämma när eleverna får använda den.\n\nNadia, mamma i Lovisa",
+      "modelEn": "I partly agree with the writer. In my opinion, pupils should not use their phones during lessons. It is hard to concentrate if the phone beeps all the time. In addition, children need to move and play during breaks instead of sitting and looking at their phones.\n\nMy son is in fifth grade in Loviisa. At his school the pupils leave their phones in a box in the morning. At first he was angry, but now he plays football with his friends at break time. He says it is more fun.\n\nOn the other hand, the phone is also a good tool. You can, for example, look up information on it, and parents want to be able to contact their children after school. That's why I don't think phones should be completely banned. The teacher should decide when the pupils may use them.\n\nNadia, a mother in Loviisa",
+      "phrases": [
+        {
+          "sv": "Jag håller (delvis) med skribenten.",
+          "en": "I (partly) agree with the writer."
+        },
+        {
+          "sv": "Jag håller inte med.",
+          "en": "I don't agree."
+        },
+        {
+          "sv": "Enligt mig …",
+          "en": "In my opinion …"
+        },
+        {
+          "sv": "Det är svårt att koncentrera sig.",
+          "en": "It is hard to concentrate."
+        },
+        {
+          "sv": "Dessutom …",
+          "en": "In addition …"
+        },
+        {
+          "sv": "Å ena sidan … Å andra sidan …",
+          "en": "On the one hand … On the other hand …"
+        },
+        {
+          "sv": "till exempel",
+          "en": "for example"
+        },
+        {
+          "sv": "Därför tycker jag att …",
+          "en": "That's why I think that …"
+        }
+      ],
+      "checklist": [
+        "Your opinion is clear in the first sentences.",
+        "You gave at least two reasons, linked with words like Dessutom or eftersom.",
+        "You gave a concrete example from your own life.",
+        "You showed the other side (Å andra sidan …).",
+        "You ended with a clear conclusion (Därför …).",
+        "Your text is about 100–150 words."
+      ]
+    },
+    {
+      "id": "opinion-recycling",
+      "type": "opinion",
+      "title": "Lönar det sig att sortera avfall?",
+      "titleEn": "Is sorting waste worth it?",
+      "prompt": "På ett diskussionsforum skriver någon: ”Det är meningslöst att sortera soporna hemma. En vanlig familj kan inte rädda miljön. Det är fabrikerna och de stora företagen som måste ändra sig.” Skriv ett inlägg där du svarar och säger vad du tycker.",
+      "promptEn": "On a discussion forum someone writes: \"It is pointless to sort your rubbish at home. An ordinary family can't save the environment. It's the factories and the big companies that must change.\" Write a post in which you reply and say what you think.",
+      "points": [
+        "Säg om du håller med eller inte",
+        "Ge skäl för din åsikt",
+        "Ge ett exempel på hur du själv gör",
+        "Avsluta med en slutsats"
+      ],
+      "words": [
+        100,
+        150
+      ],
+      "minutes": 20,
+      "model": "Jag håller inte med. Det är sant att fabrikerna och de stora företagen måste ändra sig, men vanliga människor har också ett ansvar.\n\nFör det första blir sorterat avfall nytt material. Gamla glasflaskor kan bli nya flaskor, och av bioavfall kan man göra biogas. För det andra är det inte svårt att sortera. På gården vid vårt hus i Esbo finns det sopkärl för bioavfall, kartong, glas, metall och plast.\n\nHemma har vi fyra påsar under diskbänken. Det tar bara några minuter om dagen att sortera. Dessutom returnerar vi alla burkar och flaskor till butiken och får pengar för dem. Våra barn tycker att det är roligt att hjälpa till.\n\nOm alla familjer sorterar blir det mycket mindre blandavfall. Därför tycker jag att alla ska sortera, och samtidigt ska vi kräva mer av företagen.\n\nJonas, Esbo",
+      "modelEn": "I don't agree. It's true that the factories and the big companies must change, but ordinary people also have a responsibility.\n\nFirstly, sorted waste becomes new material. Old glass bottles can become new bottles, and biogas can be made from bio-waste. Secondly, sorting isn't difficult. In the yard by our building in Espoo there are bins for bio-waste, cardboard, glass, metal and plastic.\n\nAt home we have four bags under the kitchen sink. Sorting only takes a few minutes a day. In addition, we return all our cans and bottles to the shop and get money for them. Our children think it's fun to help.\n\nIf all families sort their waste, there will be much less mixed waste. That's why I think everyone should sort, and at the same time we should demand more from companies.\n\nJonas, Espoo",
+      "phrases": [
+        {
+          "sv": "Jag håller inte med.",
+          "en": "I don't agree."
+        },
+        {
+          "sv": "Det är sant att …, men …",
+          "en": "It's true that …, but …"
+        },
+        {
+          "sv": "För det första … För det andra …",
+          "en": "Firstly … Secondly …"
+        },
+        {
+          "sv": "Det tar bara några minuter om dagen.",
+          "en": "It only takes a few minutes a day."
+        },
+        {
+          "sv": "Hemma gör vi så här: …",
+          "en": "At home we do it like this: …"
+        },
+        {
+          "sv": "Om alla …, blir det …",
+          "en": "If everyone …, there will be …"
+        },
+        {
+          "sv": "Därför tycker jag att …",
+          "en": "That's why I think that …"
+        },
+        {
+          "sv": "bioavfall, kartong, glas, metall, plast, blandavfall",
+          "en": "bio-waste, cardboard, glass, metal, plastic, mixed waste"
+        }
+      ],
+      "checklist": [
+        "You said at the start whether you agree or not.",
+        "You reacted to the statement (Det är sant att …, men …).",
+        "You gave at least two reasons (För det första …, För det andra …).",
+        "You described what you do yourself, as an example.",
+        "You ended with a conclusion (Därför …).",
+        "Your text is about 100–150 words."
+      ]
+    },
+    {
+      "id": "opinion-remote-work",
+      "type": "opinion",
+      "title": "Distansarbete – bra eller dåligt?",
+      "titleEn": "Remote work – good or bad?",
+      "prompt": "I en tidning diskuterar man distansarbete. En chef säger: ”Det är bäst för alla att arbeta på kontoret. Där kan kollegerna hjälpa varandra.” Skriv en insändare till tidningen. Vad tycker du om distansarbete?",
+      "promptEn": "A newspaper is discussing remote work. A manager says: \"It's best for everyone to work at the office. There, colleagues can help each other.\" Write a letter to the editor. What do you think about remote work?",
+      "points": [
+        "Säg vad du tycker om distansarbete",
+        "Skriv om både fördelar och nackdelar",
+        "Ge ett exempel från ditt eget liv",
+        "Avsluta med en slutsats"
+      ],
+      "words": [
+        100,
+        150
+      ],
+      "minutes": 20,
+      "model": "Jag tycker att distansarbete är bra, men inte varje dag.\n\nDet finns många fördelar. När jag jobbar hemma sparar jag en timme om dagen, eftersom jag inte behöver åka buss och metro till Helsingfors centrum. Dessutom kan jag koncentrera mig bättre, för det är tyst hemma.\n\nÅ andra sidan har chefen delvis rätt. Hemma kan man känna sig ensam, och på kontoret är det lättare att fråga en kollega om hjälp. På min arbetsplats jobbade vi bara hemifrån under coronatiden. Jag var ofta trött och saknade mina kolleger.\n\nNu jobbar jag på kontoret två dagar i veckan och hemma tre dagar. Det fungerar mycket bra. Enligt mig är en sådan blandning bäst både för de anställda och för företaget.\n\nReza, Helsingfors",
+      "modelEn": "I think remote work is good, but not every day.\n\nThere are many advantages. When I work at home, I save an hour a day, because I don't need to take the bus and the metro to central Helsinki. In addition, I can concentrate better, because it's quiet at home.\n\nOn the other hand, the manager is partly right. At home you can feel lonely, and at the office it's easier to ask a colleague for help. At my workplace we worked only from home during the coronavirus period. I was often tired and missed my colleagues.\n\nNow I work at the office two days a week and at home three days. It works very well. In my opinion, a mix like this is best both for the employees and for the company.\n\nReza, Helsinki",
+      "phrases": [
+        {
+          "sv": "Jag tycker att … är bra, men …",
+          "en": "I think … is good, but …"
+        },
+        {
+          "sv": "Det finns många fördelar.",
+          "en": "There are many advantages."
+        },
+        {
+          "sv": "En nackdel är att …",
+          "en": "One disadvantage is that …"
+        },
+        {
+          "sv": "Å andra sidan har chefen delvis rätt.",
+          "en": "On the other hand, the manager is partly right."
+        },
+        {
+          "sv": "Jag sparar en timme om dagen.",
+          "en": "I save an hour a day."
+        },
+        {
+          "sv": "jobba hemifrån / på distans",
+          "en": "work from home / remotely"
+        },
+        {
+          "sv": "Enligt mig är … bäst.",
+          "en": "In my opinion … is best."
+        },
+        {
+          "sv": "både för … och för …",
+          "en": "both for … and for …"
+        }
+      ],
+      "checklist": [
+        "Your opinion is clear in the first sentence.",
+        "You wrote about both advantages and disadvantages.",
+        "You gave an example from your own life.",
+        "You reacted to what the manager said.",
+        "You ended with a conclusion (Enligt mig … / Därför …).",
+        "Your text is about 100–150 words."
+      ]
+    },
+    {
+      "id": "opinion-library",
+      "type": "opinion",
+      "title": "Ska biblioteket stängas?",
+      "titleEn": "Should the library be closed?",
+      "prompt": "Din kommun måste spara pengar. I lokaltidningen skriver en politiker: ”Vi borde stänga det lilla biblioteket i stadsdelen. I dag kan alla läsa e-böcker på nätet.” Skriv en insändare till tidningen. Vad tycker du?",
+      "promptEn": "Your municipality has to save money. In the local newspaper a politician writes: \"We should close the small library in the district. Today everyone can read e-books online.\" Write a letter to the editor. What do you think?",
+      "points": [
+        "Säg vad du tycker om förslaget",
+        "Förklara varför biblioteket är viktigt eller inte viktigt",
+        "Ge ett exempel",
+        "Avsluta med en slutsats"
+      ],
+      "words": [
+        100,
+        150
+      ],
+      "minutes": 20,
+      "model": "Låt biblioteket vara kvar!\n\nJag håller inte alls med politikern. Biblioteket är mycket mer än ett ställe där man lånar böcker.\n\nFör det första är biblioteket gratis och öppet för alla. Alla har inte råd att köpa böcker eller en egen dator. På biblioteket kan man läsa tidningar, använda datorer och skriva ut dokument. För det andra är biblioteket en viktig mötesplats. Jag flyttade till Karleby för tre år sedan. Varje vecka går jag på språkcafé på biblioteket och övar svenska med andra. Mina barn går på sagostund där på lördagarna.\n\nDet är sant att många läser e-böcker i dag. Men äldre människor och barn behöver ett bibliotek nära hemmet. Kommunen borde spara på något annat, för ett bibliotek är en investering i framtiden.\n\nAmir, Karleby",
+      "modelEn": "Keep the library open!\n\nI don't agree with the politician at all. The library is much more than a place where you borrow books.\n\nFirstly, the library is free and open to everyone. Not everyone can afford to buy books or their own computer. At the library you can read newspapers, use computers and print documents. Secondly, the library is an important meeting place. I moved to Kokkola three years ago. Every week I go to a language café at the library and practise Swedish with other people. My children go to story time there on Saturdays.\n\nIt's true that many people read e-books today. But older people and children need a library close to home. The municipality should save on something else, because a library is an investment in the future.\n\nAmir, Kokkola",
+      "phrases": [
+        {
+          "sv": "Jag håller inte alls med …",
+          "en": "I don't agree with … at all."
+        },
+        {
+          "sv": "… är mycket mer än …",
+          "en": "… is much more than …"
+        },
+        {
+          "sv": "Alla har inte råd att …",
+          "en": "Not everyone can afford to …"
+        },
+        {
+          "sv": "en viktig mötesplats",
+          "en": "an important meeting place"
+        },
+        {
+          "sv": "Varje vecka går jag på …",
+          "en": "Every week I go to …"
+        },
+        {
+          "sv": "Det är sant att … Men …",
+          "en": "It's true that … But …"
+        },
+        {
+          "sv": "Kommunen borde spara på något annat.",
+          "en": "The municipality should save on something else."
+        },
+        {
+          "sv": "en investering i framtiden",
+          "en": "an investment in the future"
+        }
+      ],
+      "checklist": [
+        "Your opinion is clear at the start (a short heading is a bonus).",
+        "You gave at least two reasons (För det första …, För det andra …).",
+        "You gave a personal example of how you or your family use the library.",
+        "You answered the politician's argument about e-books.",
+        "You ended with a conclusion.",
+        "Your text is about 100–150 words."
+      ]
+    },
+    {
+      "id": "opinion-school-food",
+      "type": "opinion",
+      "title": "Vegetarisk mat i skolan",
+      "titleEn": "Vegetarian food at school",
+      "prompt": "I Finland får alla skolelever gratis lunch. Nu vill din kommun servera bara vegetarisk mat i skolorna två dagar i veckan. En förälder skriver i lokaltidningen: ”Barn behöver kött för att orka i skolan.” Skriv en insändare där du säger vad du tycker.",
+      "promptEn": "In Finland all school pupils get a free lunch. Now your municipality wants to serve only vegetarian food in schools two days a week. A parent writes in the local newspaper: \"Children need meat to have enough energy at school.\" Write a letter to the editor in which you say what you think.",
+      "points": [
+        "Säg vad du tycker om kommunens plan",
+        "Ge minst två skäl för din åsikt",
+        "Ge ett exempel",
+        "Avsluta med en slutsats"
+      ],
+      "words": [
+        100,
+        150
+      ],
+      "minutes": 20,
+      "model": "Jag tycker att kommunens plan är bra. Det är inte farligt för barn att äta vegetariskt två dagar i veckan. De andra dagarna får de ju kött eller fisk.\n\nDet finns flera skäl till att jag tycker så. För det första är grönsaker, bönor och linser nyttiga och ger mycket energi. För det andra är vegetarisk mat bättre för miljön. Dessutom är mat utan kött ofta billigare, så kommunen får mer pengar till annat.\n\nMin dotter går i lågstadiet i Lahtis. I hennes skola har de redan en vegetarisk dag i veckan. Hon tycker mest om grönsakssoppan och linsbiffarna, och den dagen är hon inte tröttare än vanligt.\n\nDet viktigaste är att maten smakar gott, så att barnen verkligen äter den. Jag stöder alltså kommunens plan, men skolorna borde också fråga eleverna vad de tycker.\n\nMaria, Lahtis",
+      "modelEn": "I think the municipality's plan is good. It isn't dangerous for children to eat vegetarian food two days a week. On the other days they do get meat or fish, after all.\n\nThere are several reasons why I think so. Firstly, vegetables, beans and lentils are healthy and give a lot of energy. Secondly, vegetarian food is better for the environment. In addition, food without meat is often cheaper, so the municipality has more money for other things.\n\nMy daughter is at primary school in Lahti. At her school they already have one vegetarian day a week. She likes the vegetable soup and the lentil patties best, and on that day she isn't any more tired than usual.\n\nThe most important thing is that the food tastes good, so that the children really eat it. So I support the municipality's plan, but the schools should also ask the pupils what they think.\n\nMaria, Lahti",
+      "phrases": [
+        {
+          "sv": "Jag tycker att … är bra.",
+          "en": "I think … is good."
+        },
+        {
+          "sv": "Det finns flera skäl till att jag tycker så.",
+          "en": "There are several reasons why I think so."
+        },
+        {
+          "sv": "… är nyttigt och ger mycket energi.",
+          "en": "… is healthy and gives a lot of energy."
+        },
+        {
+          "sv": "bättre för miljön",
+          "en": "better for the environment"
+        },
+        {
+          "sv": "Min dotter går i lågstadiet.",
+          "en": "My daughter is at primary school (grades 1–6)."
+        },
+        {
+          "sv": "Hon tycker mest om …",
+          "en": "She likes … best."
+        },
+        {
+          "sv": "Det viktigaste är att …",
+          "en": "The most important thing is that …"
+        },
+        {
+          "sv": "Jag stöder alltså …, men …",
+          "en": "So I support …, but …"
+        }
+      ],
+      "checklist": [
+        "You said clearly what you think of the plan.",
+        "You gave at least two reasons (För det första …, För det andra …, Dessutom …).",
+        "You gave a concrete example.",
+        "You answered the parent's argument about meat and energy.",
+        "You ended with a conclusion.",
+        "Your text is about 100–150 words."
+      ]
+    },
+    {
+      "id": "opinion-public-transport",
+      "type": "opinion",
+      "title": "Gratis kollektivtrafik?",
+      "titleEn": "Free public transport?",
+      "prompt": "På ett diskussionsforum frågar någon: ”Borde bussar, spårvagnar och tåg i Helsingforsregionen vara gratis för alla? Då skulle färre människor åka bil.” Skriv ett inlägg där du svarar och säger vad du tycker.",
+      "promptEn": "On a discussion forum someone asks: \"Should buses, trams and trains in the Helsinki region be free for everyone? Then fewer people would drive.\" Write a post in which you reply and say what you think.",
+      "points": [
+        "Säg vad du tycker",
+        "Skriv om både fördelar och nackdelar",
+        "Ge ett exempel från ditt eget liv",
+        "Avsluta med en slutsats"
+      ],
+      "words": [
+        100,
+        150
+      ],
+      "minutes": 20,
+      "model": "Det låter som en fin idé, men jag tror inte att gratis kollektivtrafik är den bästa lösningen.\n\nÅ ena sidan skulle det vara bra för miljön och för människor med låga inkomster. Om bussen är gratis lämnar kanske fler människor bilen hemma. Å andra sidan kostar kollektivtrafiken mycket pengar. Om ingen köper biljetter måste kommunerna betala allt med skattepengar. Då blir det kanske mindre pengar till skolor och hälsovård.\n\nJag bor i Vanda och åker buss och tåg till jobbet varje dag. Jag har en säsongsbiljett från HRT. För mig är priset inte det största problemet. Det största problemet är att bussen inte går tillräckligt ofta. På vintern väntar jag ibland 20 minuter i kylan.\n\nDärför tycker jag att det är viktigare att bussar och tåg går oftare och kommer i tid. Billigare biljetter för studerande och pensionärer är också en bra idé.\n\nOlga, Vanda",
+      "modelEn": "It sounds like a nice idea, but I don't think free public transport is the best solution.\n\nOn the one hand, it would be good for the environment and for people with low incomes. If the bus is free, perhaps more people will leave their car at home. On the other hand, public transport costs a lot of money. If nobody buys tickets, the municipalities have to pay for everything with tax money. Then there might be less money for schools and health care.\n\nI live in Vantaa and take the bus and the train to work every day. I have a season ticket from HSL. For me the price isn't the biggest problem. The biggest problem is that the bus doesn't run often enough. In winter I sometimes wait 20 minutes in the cold.\n\nThat's why I think it's more important that buses and trains run more often and on time. Cheaper tickets for students and pensioners are also a good idea.\n\nOlga, Vantaa",
+      "phrases": [
+        {
+          "sv": "Det låter som en fin idé, men …",
+          "en": "It sounds like a nice idea, but …"
+        },
+        {
+          "sv": "Jag tror inte att … är den bästa lösningen.",
+          "en": "I don't think … is the best solution."
+        },
+        {
+          "sv": "Å ena sidan … Å andra sidan …",
+          "en": "On the one hand … On the other hand …"
+        },
+        {
+          "sv": "Om bussen är gratis lämnar kanske fler människor bilen hemma.",
+          "en": "If the bus is free, perhaps more people will leave their car at home."
+        },
+        {
+          "sv": "Det största problemet är att …",
+          "en": "The biggest problem is that …"
+        },
+        {
+          "sv": "en säsongsbiljett från HRT",
+          "en": "a season ticket from HSL (Helsinki regional transport)"
+        },
+        {
+          "sv": "Det är viktigare att …",
+          "en": "It's more important that …"
+        },
+        {
+          "sv": "Därför tycker jag att …",
+          "en": "That's why I think that …"
+        }
+      ],
+      "checklist": [
+        "Your opinion is clear in the first sentence.",
+        "You wrote about both advantages and disadvantages (Å ena sidan … Å andra sidan …).",
+        "You gave an example from your own everyday life.",
+        "You ended with a conclusion or your own suggestion.",
+        "You used linking words (om, därför, dessutom, men).",
+        "Your text is about 100–150 words."
+      ]
+    }
+  ]
+}
