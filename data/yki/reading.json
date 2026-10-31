@@ -664,7 +664,7 @@
           "type": "open",
           "q": "Varför är det farligt att cykla utan dubbdäck, enligt Sanna?",
           "answer": "Eftersom det ofta är halt.",
-          "explain": "Sanna says “Utan dubbdäck är det farligt, eftersom det ofta är halt.” The answer needs the idea that it is often slippery (halt = slippery, icy)."
+          "explain": "Sanna says “Utan dubbdäck är det farligt, eftersom det ofta är halt”. The answer needs the idea that it is often slippery (halt = slippery, icy)."
         },
         {
           "type": "open",
@@ -770,7 +770,7 @@
         {
           "type": "open",
           "q": "Vad måste man visa om man plötsligt har fått ett jobb eller en studieplats?",
-          "answer": "Arbetsavtalet eller ett antagningsbesked.",
+          "answer": "Ett arbetsavtal eller ett antagningsbesked.",
           "explain": "The text says “Då måste du visa till exempel ditt arbetsavtal eller ett antagningsbesked.” A correct answer names the employment contract (for a job) or the letter of admission (for a study place); both together is best."
         }
       ],
