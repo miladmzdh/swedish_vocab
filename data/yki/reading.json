@@ -52,6 +52,18 @@
           "q": "Den som är med på talkot får något att äta efteråt.",
           "answer": true,
           "explain": "True. “Efter talkot bjuder styrelsen på korv och kaffe.” (bjuda på = to offer / treat someone to)."
+        },
+        {
+          "type": "open",
+          "q": "När är vårtalkot?",
+          "answer": "Lördag 6.6 kl. 10–13.",
+          "explain": "The text says “Lördag 6.6 kl. 10–13 ordnar vi vårtalko.” The answer needs the day or the date (Saturday 6 June) and the time, 10–13. Monday 1.6 is when the new bins arrive."
+        },
+        {
+          "type": "open",
+          "q": "Vad ska man göra med kartongerna innan man lägger dem i kärlet?",
+          "answer": "Platta till dem.",
+          "explain": "The text says “Platta till kartongerna innan ni lägger dem i kärlet.” The answer needs the idea of flattening them (platta till = make flat), for example “Platta till dem” or “Göra dem platta”."
         }
       ],
       "glossary": [
@@ -141,6 +153,18 @@
           "q": "Man ska inte vaccinera sig när man har feber.",
           "answer": true,
           "explain": "True. “Om du har feber ska du inte komma. Vänta tills du är frisk.”"
+        },
+        {
+          "type": "open",
+          "q": "Var är ingången till vaccineringen?",
+          "answer": "Från parkeringen, dörr B.",
+          "explain": "The text says “Ingången är från parkeringen, dörr B.” The answer needs door B; saying that it is on the car park side (från parkeringen) makes it complete."
+        },
+        {
+          "type": "open",
+          "q": "När är sista dagen för vaccineringen på hälsostationen?",
+          "answer": "Torsdag 3.12.",
+          "explain": "The text says “Kom till hälsostationen på tisdagar och torsdagar kl. 12–18, fram till torsdag 3.12.” The answer needs the date 3.12 (Thursday 3 December). 3.11 is the day vaccinations start, not the last day."
         }
       ],
       "glossary": [
@@ -235,6 +259,18 @@
           ],
           "answer": 2,
           "explain": "“Glöm inte badkläder, regnjacka och myggmedel!” Sara's dad grills the fish, and the family already has food and drink (“Vi har mat och dryck”)."
+        },
+        {
+          "type": "open",
+          "q": "Vilken tid går bussen från busstationen i Åbo?",
+          "answer": "Kl. 10.15.",
+          "explain": "The text says “Ta bussen mot Nagu från busstationen i Åbo kl. 10.15.” The answer needs the time 10.15. “Resan tar ungefär en timme” is how long the journey takes, not when the bus leaves."
+        },
+        {
+          "type": "open",
+          "q": "Var hämtar Sara Mei med bil?",
+          "answer": "Vid hållplatsen i Nagu kyrkby.",
+          "explain": "The text says “så hämtar jag dig med bil vid hållplatsen i Nagu kyrkby.” The answer needs the bus stop (hållplatsen) in Nagu kyrkby, the village centre. Just “i Nagu” is not precise enough."
         }
       ],
       "glossary": [
@@ -324,6 +360,18 @@
           ],
           "answer": 0,
           "explain": "“Till nästa gång: ta med läroboken och gör uppgifterna på sidorna 45–47.”"
+        },
+        {
+          "type": "open",
+          "q": "När är den extra lektionen på distans?",
+          "answer": "Måndag 19.10 kl. 18–19.",
+          "explain": "The text says “I stället har vi en extra lektion på distans måndag 19.10 kl. 18–19.” The answer needs the day or the date (Monday 19 October) and the time, 18–19."
+        },
+        {
+          "type": "open",
+          "q": "När gör gruppen ett övningstest i läsförståelse och skrivning?",
+          "answer": "Onsdag 4.11.",
+          "explain": "The text says “Därför gör vi ett övningstest i läsförståelse och skrivning onsdag 4.11.” The answer needs the date 4.11 (Wednesday 4 November)."
         }
       ],
       "glossary": [
@@ -409,6 +457,18 @@
           ],
           "answer": 0,
           "explain": "“Skicka din ansökan och ditt CV senast 15.11 till Liisa Mäkinen, rekrytering@kafekanelen.fi.” You call Liisa only if you have questions, and week 47 is for the interviews the café invites people to."
+        },
+        {
+          "type": "open",
+          "q": "När börjar arbetet?",
+          "answer": "Den 1.12.",
+          "explain": "The ad says “Arbetet börjar 1.12.” The answer needs the date 1.12 (1 December). 15.11 is the last day to apply, and week 47 is for the interviews."
+        },
+        {
+          "type": "open",
+          "q": "Vilket intyg måste den sökande ha?",
+          "answer": "Ett hygienpass.",
+          "explain": "The ad says “Vi söker dig som … har hygienpass”. The answer needs the word hygienpass (a food hygiene certificate). Languages and working hours are other requirements, but they are not a certificate (intyg)."
         }
       ],
       "glossary": [
@@ -498,6 +558,18 @@
           "q": "Mobilkliniken tar emot gamla telefoner utan att ta betalt.",
           "answer": true,
           "explain": "True. “Ta med dem till oss. Vi återvinner dem gratis …”"
+        },
+        {
+          "type": "open",
+          "q": "Hur mycket kostar en ny skärm till en telefon?",
+          "answer": "Från 79 euro.",
+          "explain": "The price list says “ny skärm till telefon: från 79 €”. The answer needs 79 euros; “från” (from) shows that it is the lowest price. 49 € is the price of a new battery."
+        },
+        {
+          "type": "open",
+          "q": "När är Mobilkliniken öppen på lördagar?",
+          "answer": "Kl. 10–15.",
+          "explain": "The ad says “Öppet mån–fre kl. 10–18, lör kl. 10–15.” (lör = lördag). The answer needs the Saturday hours, 10–15, not the weekday hours 10–18."
         }
       ],
       "glossary": [
@@ -587,6 +659,18 @@
           ],
           "answer": 1,
           "explain": "“En del bilister tycker att cyklisterna får för mycket pengar och plats.”"
+        },
+        {
+          "type": "open",
+          "q": "Varför är det farligt att cykla utan dubbdäck, enligt Sanna?",
+          "answer": "Eftersom det ofta är halt.",
+          "explain": "Sanna says “Utan dubbdäck är det farligt, eftersom det ofta är halt.” The answer needs the idea that it is often slippery (halt = slippery, icy)."
+        },
+        {
+          "type": "open",
+          "q": "Vad ska staden bygga nästa år?",
+          "answer": "Fler cykelparkeringar med tak.",
+          "explain": "The text says “Nästa år ska staden bygga fler cykelparkeringar med tak vid skolor och vid järnvägsstationen.” The answer needs covered bike parking (cykelparkeringar med tak); saying where (at schools and the railway station) is a bonus."
         }
       ],
       "glossary": [
@@ -676,6 +760,18 @@
           ],
           "answer": 0,
           "explain": "“Om barnet är under tre år och vårdas hemma, kan familjen i stället ansöka om hemvårdsstöd från FPA.” Housing allowance (bostadsbidrag) and student financial aid (studiestöd) are not mentioned in the text."
+        },
+        {
+          "type": "open",
+          "q": "Var kan man få en pappersblankett?",
+          "answer": "Vid stadens servicepunkter.",
+          "explain": "The text says “Blanketter finns vid stadens servicepunkter.” The answer needs the city’s service points (servicepunkter), not the daycare centre."
+        },
+        {
+          "type": "open",
+          "q": "Vad måste man visa om man plötsligt har fått ett jobb eller en studieplats?",
+          "answer": "Arbetsavtalet eller ett antagningsbesked.",
+          "explain": "The text says “Då måste du visa till exempel ditt arbetsavtal eller ett antagningsbesked.” A correct answer names the employment contract (for a job) or the letter of admission (for a study place); both together is best."
         }
       ],
       "glossary": [
@@ -765,6 +861,18 @@
           ],
           "answer": 0,
           "explain": "“Läkaren på hälsostationen sa att jag borde ta D-vitamin varje dag under den mörka tiden.”"
+        },
+        {
+          "type": "open",
+          "q": "Varför ska man köpa vinterskor med grova sulor, enligt Kerstin?",
+          "answer": "Eftersom trottoarerna kan vara hala.",
+          "explain": "Kerstin writes “Köp också vinterskor med grova sulor, för trottoarerna kan vara hala.” The answer needs the idea that the pavements (trottoarerna) can be slippery."
+        },
+        {
+          "type": "open",
+          "q": "Vad finns det gratis i Vasa, enligt Kerstin?",
+          "answer": "Skidspår.",
+          "explain": "Kerstin writes “Det finns gratis skidspår i Vasa”. The answer needs ski tracks (skidspår). The winter clothes at the flea market are cheap, not free."
         }
       ],
       "glossary": [
@@ -850,6 +958,18 @@
           ],
           "answer": 0,
           "explain": "“Kören låter roligast, men tyvärr har jag en annan kurs på tisdagar.” The choir rehearses on Tuesdays."
+        },
+        {
+          "type": "open",
+          "q": "Varför läser Olga svenska?",
+          "answer": "Eftersom hon vill ta YKI-testet.",
+          "explain": "Olga writes “Jag bor i Helsingfors och läser svenska, eftersom jag vill ta YKI-testet.” The answer needs the YKI test."
+        },
+        {
+          "type": "open",
+          "q": "När ordnas språkcaféet på biblioteket i Berghäll?",
+          "answer": "På torsdagar kl. 17–18.30.",
+          "explain": "Johanna writes “På mitt bibliotek i Berghäll ordnas ett språkcafé varje torsdag kl. 17–18.30.” The answer needs the day (Thursday) and the time, 17–18.30."
         }
       ],
       "glossary": [
