@@ -102,6 +102,18 @@
           "q": "Omar måste boka en tid hos disponenten om han vill bada bastu på lördag kväll.",
           "answer": false,
           "explain": "False. Usually you book a sauna slot through the property manager, “men på lördag kväll är bastun öppen för alla som har varit med på talkot.” Omar is coming to the talko, so he doesn't need to book. Listen for “men”: it often brings the important information."
+        },
+        {
+          "type": "open",
+          "q": "När flyttade Omar in i huset?",
+          "answer": "I början av månaden.",
+          "explain": "Omar says: “Vi flyttade hit i början av månaden.” (We moved here at the beginning of the month.) The answer needs “i början av månaden”."
+        },
+        {
+          "type": "open",
+          "q": "Vad ska grannarna göra på talkot?",
+          "answer": "Kratta löv och ta in trädgårdsmöblerna.",
+          "explain": "Anna explains: “Vi krattar löv, tar in trädgårdsmöblerna och gör allt klart inför vintern.” A correct answer names at least one concrete job: raking leaves (kratta löv) or bringing in the garden furniture (ta in trädgårdsmöblerna)."
         }
       ],
       "glossary": [
@@ -246,6 +258,18 @@
           ],
           "answer": 0,
           "explain": "“Ta med ditt arbetsintyg från hotellet.” An arbetsintyg is a certificate from a former employer."
+        },
+        {
+          "type": "open",
+          "q": "När arbetar man mest i det här jobbet?",
+          "answer": "På kvällar och varannan helg.",
+          "explain": "Jukka says: “Arbetet är mest på kvällar och varannan helg.” The answer needs both parts: evenings and every other weekend."
+        },
+        {
+          "type": "open",
+          "q": "Hur länge arbetade Mei på hotellet?",
+          "answer": "I två år.",
+          "explain": "Mei says: “jag jobbade i två år i köket på ett hotell i Kina.” The answer needs the length of time: two years."
         }
       ],
       "glossary": [
@@ -382,6 +406,18 @@
           ],
           "answer": 2,
           "explain": "“Då anmäler jag mig här nu”: she signs up at the office. Only the bill comes by email."
+        },
+        {
+          "type": "open",
+          "q": "När börjar kursen?",
+          "answer": "Om två veckor.",
+          "explain": "At the end: “Kursen börjar om två veckor.” The answer needs “om två veckor” (in two weeks). Note: om två veckor = in two weeks’ time, i två veckor = for two weeks."
+        },
+        {
+          "type": "open",
+          "q": "Vad behöver Olga ha med sig första gången?",
+          "answer": "Papper och penna.",
+          "explain": "“Första gången behöver du inte boken, bara papper och penna.” The answer needs paper and a pen. The book is not needed the first time."
         }
       ],
       "glossary": [
@@ -489,6 +525,18 @@
           "q": "Ahmed ska ringa hälsostationen om han inte kan komma på den nya tiden.",
           "answer": true,
           "explain": "True. “Om den nya tiden inte passar, ring oss under telefontiden.”"
+        },
+        {
+          "type": "open",
+          "q": "Vilken tid ska Ahmed träffa läkaren?",
+          "answer": "Klockan kvart över nio.",
+          "explain": "“Din nya tid är på måndag nästa vecka klockan kvart över nio.” The answer needs the time: a quarter past nine (9.15). Don’t mix it up with kvart i nio (8.45)."
+        },
+        {
+          "type": "open",
+          "q": "Vad ska Ahmed ta med sig?",
+          "answer": "Ett identitetskort.",
+          "explain": "“Ta också med ett identitetskort.” The answer needs an ID card (ett id-kort is also right)."
         }
       ],
       "glossary": [
@@ -601,6 +649,18 @@
           ],
           "answer": 1,
           "explain": "“Ring mig senast på onsdag.” Thursday is the day they leave."
+        },
+        {
+          "type": "open",
+          "q": "Var kan Aino hämta Sara och barnen om de åker buss?",
+          "answer": "Vid butiken i byn.",
+          "explain": "“Annars går det en buss från Åbo klockan fem, och då kan vi hämta er vid butiken i byn.” The answer needs the place: at the shop in the village."
+        },
+        {
+          "type": "open",
+          "q": "Vad ska Sara inte glömma att ta med?",
+          "answer": "Myggmedel.",
+          "explain": "Aino ends with: “Och glöm inte myggmedel!” (And don’t forget mosquito repellent!) The answer needs myggmedel. Warm clothes and rain clothes are also mentioned, but “glöm inte” points to the mosquito repellent."
         }
       ],
       "glossary": [
@@ -708,6 +768,12 @@
           ],
           "answer": 2,
           "explain": "“Det är lättast att nå mig mellan tolv och ett, när barnen sover.”"
+        },
+        {
+          "type": "open",
+          "q": "Hur gamla är barnen i Samis grupp?",
+          "answer": "Mellan tre och fem år.",
+          "explain": "“Han kommer till en svenskspråkig grupp för barn mellan tre och fem år.” The answer needs both ages: from three to five."
         }
       ],
       "glossary": [
@@ -819,6 +885,12 @@
           "q": "I restaurangvagnen kan man bara köpa kaffe och smörgåsar.",
           "answer": false,
           "explain": "False. “Där kan ni köpa kaffe, smörgåsar och varm mat”: there is hot food too. Watch out for “bara” (only) in a statement."
+        },
+        {
+          "type": "open",
+          "q": "Hur mycket blir tåget försenat?",
+          "answer": "Ungefär tjugo minuter.",
+          "explain": "“vi blir tyvärr ungefär tjugo minuter försenade.” The answer needs the delay: about 20 minutes. Don’t mix it up with the arrival time “tjugo i tolv” (11.40)."
         }
       ],
       "glossary": [
@@ -935,6 +1007,18 @@
           ],
           "answer": 0,
           "explain": "“Ni får ett kvitto från automaten, och det kan ni använda när ni betalar i kassan.”"
+        },
+        {
+          "type": "open",
+          "q": "När måste man senast beställa julskinkan?",
+          "answer": "Den tjugonde december.",
+          "explain": "“Ni kan beställa den vid köttdisken eller i vår nätbutik fram till den tjugonde december.” The answer needs the date: 20 December."
+        },
+        {
+          "type": "open",
+          "q": "Var i butiken finns erbjudandet på karelska piroger?",
+          "answer": "I bageriavdelningen.",
+          "explain": "“I dag har vi också ett specialerbjudande i vår bageriavdelning.” The answer needs the bakery department (“i bageriet” is also right)."
         }
       ],
       "glossary": [
@@ -1075,6 +1159,18 @@
           ],
           "answer": 2,
           "explain": "“På söndag blir det lite varmare, men då regnar det i södra Finland.” Sunny and cold is Saturday."
+        },
+        {
+          "type": "open",
+          "q": "Hur kallt blir det i natt i södra Finland?",
+          "answer": "Minus fem grader.",
+          "explain": "“I natt sjunker temperaturen till minus fem grader i södra Finland och till minus femton i Lappland.” The answer needs minus five degrees. Minus fifteen is the temperature in Lapland."
+        },
+        {
+          "type": "open",
+          "q": "Hur mycket snö kan det komma?",
+          "answer": "Fem till tio centimeter.",
+          "explain": "“Det kan komma fem till tio centimeter.” The answer needs the amount: five to ten centimetres."
         }
       ],
       "glossary": [
@@ -1198,6 +1294,18 @@
           "q": "Enligt Nina är det bäst för miljön att använda samma telefon länge.",
           "answer": true,
           "explain": "True. “det allra bästa för miljön är att använda sin telefon så länge som möjligt.”"
+        },
+        {
+          "type": "open",
+          "q": "Var kan man lämna en gammal telefon, förutom i en butik?",
+          "answer": "På en avfallsstation.",
+          "explain": "“Man kan också lämna den på en avfallsstation.” The answer needs a waste station (avfallsstation). The mixed-waste bin is wrong: you must never throw a phone there."
+        },
+        {
+          "type": "open",
+          "q": "Vad kan man göra med en telefon som fortfarande fungerar?",
+          "answer": "Ge den till någon eller sälja den på nätet.",
+          "explain": "“Då kan du ge den till någon som behöver den eller sälja den på nätet.” Either answer is right: give it to someone who needs it, or sell it online."
         }
       ],
       "glossary": [
