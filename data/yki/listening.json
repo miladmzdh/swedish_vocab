@@ -1,0 +1,1239 @@
+{
+  "items": [
+    {
+      "id": "dialogue-talko",
+      "title": "Talko på gården",
+      "titleEn": "Clean-up day in the yard",
+      "kind": "dialogue",
+      "plays": 2,
+      "script": [
+        {
+          "spk": "A",
+          "text": "Hej! Du är väl den nya grannen på tredje våningen?"
+        },
+        {
+          "spk": "B",
+          "text": "Ja, hej! Jag heter Omar. Vi flyttade hit i början av månaden."
+        },
+        {
+          "spk": "A",
+          "text": "Välkommen till huset! Jag heter Anna och bor på andra våningen, under er. Har du sett lappen på anslagstavlan i trapphuset? Vi har talko på gården på lördag."
+        },
+        {
+          "spk": "B",
+          "text": "Nej, den har jag inte sett. Vad är ett talko?"
+        },
+        {
+          "spk": "A",
+          "text": "Det betyder att alla som bor i huset städar gården tillsammans. Vi krattar löv, tar in trädgårdsmöblerna och gör allt klart inför vintern. Vi börjar klockan tio."
+        },
+        {
+          "spk": "B",
+          "text": "Det låter trevligt. Jag jobbar på lördag förmiddag, men jag kan komma efter klockan tolv."
+        },
+        {
+          "spk": "A",
+          "text": "Det gör ingenting. Vi håller på till ungefär klockan två. Efteråt grillar vi korv och dricker kaffe, och husbolaget bjuder."
+        },
+        {
+          "spk": "B",
+          "text": "Bra! Ska jag ta med något?"
+        },
+        {
+          "spk": "A",
+          "text": "Ta gärna med egna arbetshandskar. Krattor och sopsäckar finns i förrådet."
+        },
+        {
+          "spk": "B",
+          "text": "Okej. En sak till: hur bokar man bastutur här?"
+        },
+        {
+          "spk": "A",
+          "text": "Det gör du hos disponenten. Men på lördag kväll är bastun öppen för alla som har varit med på talkot."
+        },
+        {
+          "spk": "B",
+          "text": "Perfekt. Då ses vi på lördag!"
+        }
+      ],
+      "scriptEn": "A: Hi! You must be the new neighbour on the third floor?\nB: Yes, hi! I'm Omar. We moved here at the beginning of the month.\nA: Welcome to the building! I'm Anna and I live on the second floor, below you. Have you seen the notice on the noticeboard in the stairwell? We're having a talko in the yard on Saturday.\nB: No, I haven't seen it. What's a talko?\nA: It means that everyone who lives in the building tidies up the yard together. We rake leaves, bring in the garden furniture and get everything ready for winter. We start at ten.\nB: That sounds nice. I'm working on Saturday morning, but I can come after twelve.\nA: That doesn't matter. We'll keep going until about two. Afterwards we grill sausages and have coffee, and the housing company pays.\nB: Great! Should I bring anything?\nA: Please bring your own work gloves. The rakes and rubbish bags are in the storeroom.\nB: OK. One more thing: how do you book a sauna slot here?\nA: You do that through the property manager. But on Saturday evening the sauna is open to everyone who took part in the talko.\nB: Perfect. See you on Saturday, then!",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Var finns informationen om talkot?",
+          "options": [
+            "I ett e-postmeddelande från disponenten",
+            "På dörren till förrådet",
+            "På anslagstavlan i trapphuset"
+          ],
+          "answer": 2,
+          "explain": "Anna asks: “Har du sett lappen på anslagstavlan i trapphuset?” (Have you seen the notice on the noticeboard in the stairwell?)"
+        },
+        {
+          "type": "mc",
+          "q": "När kan Omar komma till talkot?",
+          "options": [
+            "Klockan tio",
+            "Efter klockan tolv",
+            "Efter klockan två"
+          ],
+          "answer": 1,
+          "explain": "Omar works on Saturday morning: “jag kan komma efter klockan tolv”. Ten is when the talko starts, and about two is when it ends."
+        },
+        {
+          "type": "tf",
+          "q": "Efter talkot bjuder husbolaget på korv och kaffe.",
+          "answer": true,
+          "explain": "True. “Efteråt grillar vi korv och dricker kaffe, och husbolaget bjuder.” The housing company pays."
+        },
+        {
+          "type": "mc",
+          "q": "Vad ska Omar ta med sig?",
+          "options": [
+            "Arbetshandskar",
+            "En kratta",
+            "Sopsäckar"
+          ],
+          "answer": 0,
+          "explain": "“Ta gärna med egna arbetshandskar.” The rakes and rubbish bags are already in the storeroom (“finns i förrådet”)."
+        },
+        {
+          "type": "tf",
+          "q": "Omar måste boka en tid hos disponenten om han vill bada bastu på lördag kväll.",
+          "answer": false,
+          "explain": "False. Usually you book a sauna slot through the property manager, “men på lördag kväll är bastun öppen för alla som har varit med på talkot.” Omar is coming to the talko, so he doesn't need to book. Listen for “men”: it often brings the important information."
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "ett talko",
+          "en": "a voluntary work day when neighbours do a job together (Finnish talkoot)"
+        },
+        {
+          "sv": "en anslagstavla",
+          "en": "a noticeboard"
+        },
+        {
+          "sv": "ett trapphus",
+          "en": "a stairwell"
+        },
+        {
+          "sv": "kratta löv",
+          "en": "to rake leaves"
+        },
+        {
+          "sv": "husbolaget",
+          "en": "the housing company (taloyhtiö)"
+        },
+        {
+          "sv": "ett förråd",
+          "en": "a storeroom"
+        },
+        {
+          "sv": "en bastutur",
+          "en": "a regular sauna slot that you book in your building"
+        },
+        {
+          "sv": "en disponent",
+          "en": "a property manager (isännöitsijä)"
+        }
+      ]
+    },
+    {
+      "id": "dialogue-jobb",
+      "title": "Ett jobb i restaurangköket",
+      "titleEn": "A job in a restaurant kitchen",
+      "kind": "dialogue",
+      "plays": 2,
+      "script": [
+        {
+          "spk": "A",
+          "text": "Restaurang Fyren, det är Jukka."
+        },
+        {
+          "spk": "B",
+          "text": "Hej, jag heter Mei Chen. Jag ringer om er annons. Ni söker ett köksbiträde, eller hur?"
+        },
+        {
+          "spk": "A",
+          "text": "Ja, det stämmer. Har du arbetat i ett kök tidigare?"
+        },
+        {
+          "spk": "B",
+          "text": "Ja, jag jobbade i två år i köket på ett hotell i Kina. Och här i Esbo har jag gjort praktik i ett skolkök."
+        },
+        {
+          "spk": "A",
+          "text": "Det låter bra. Har du hygienpass?"
+        },
+        {
+          "spk": "B",
+          "text": "Ja, jag tog hygienpasset i våras."
+        },
+        {
+          "spk": "A",
+          "text": "Utmärkt. Arbetet är mest på kvällar och varannan helg. Passar det dig?"
+        },
+        {
+          "spk": "B",
+          "text": "Kvällar passar bra, men på tisdagar går jag på en svenskkurs. Den slutar klockan sju."
+        },
+        {
+          "spk": "A",
+          "text": "Det är inget problem, då kan du vara ledig på tisdagar. Kan du komma på intervju på torsdag klockan tio?"
+        },
+        {
+          "spk": "B",
+          "text": "Tyvärr har jag en tid hos tandläkaren på torsdag förmiddag. Skulle det gå på fredag i stället?"
+        },
+        {
+          "spk": "A",
+          "text": "Ja, fredag klockan ett går bra. Ta med ditt arbetsintyg från hotellet. Restaurangen ligger vid torget i Hagalund."
+        },
+        {
+          "spk": "B",
+          "text": "Tack, det gör jag. Vi ses på fredag!"
+        }
+      ],
+      "scriptEn": "A: Restaurant Fyren, Jukka speaking.\nB: Hi, my name is Mei Chen. I'm calling about your ad. You're looking for a kitchen assistant, aren't you?\nA: Yes, that's right. Have you worked in a kitchen before?\nB: Yes, I worked for two years in the kitchen of a hotel in China. And here in Espoo I've done a work placement in a school kitchen.\nA: That sounds good. Do you have a hygiene passport?\nB: Yes, I got my hygiene passport last spring.\nA: Excellent. The work is mostly in the evenings and every other weekend. Does that suit you?\nB: Evenings are fine, but on Tuesdays I go to a Swedish course. It finishes at seven.\nA: That's no problem, then you can have Tuesdays off. Can you come for an interview on Thursday at ten?\nB: Unfortunately I have a dentist's appointment on Thursday morning. Would Friday be possible instead?\nA: Yes, Friday at one is fine. Bring your employment certificate from the hotel. The restaurant is by the square in Tapiola (Hagalund).\nB: Thank you, I will. See you on Friday!",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Var har Mei arbetat i Finland?",
+          "options": [
+            "I ett skolkök",
+            "På ett hotell",
+            "På en restaurang i Hagalund"
+          ],
+          "answer": 0,
+          "explain": "“här i Esbo har jag gjort praktik i ett skolkök.” The hotel was in China, and Hagalund is where the new restaurant is."
+        },
+        {
+          "type": "tf",
+          "q": "Mei har redan hygienpass.",
+          "answer": true,
+          "explain": "True. “jag tog hygienpasset i våras”: she got it last spring."
+        },
+        {
+          "type": "mc",
+          "q": "Vad gör Mei på tisdagar?",
+          "options": [
+            "Hon går till tandläkaren.",
+            "Hon jobbar på ett hotell.",
+            "Hon går på en svenskkurs."
+          ],
+          "answer": 2,
+          "explain": "“på tisdagar går jag på en svenskkurs.” The dentist's appointment is on Thursday morning."
+        },
+        {
+          "type": "mc",
+          "q": "När är intervjun?",
+          "options": [
+            "På torsdag klockan tio",
+            "På fredag klockan ett",
+            "På fredag klockan tio"
+          ],
+          "answer": 1,
+          "explain": "Mei can't come on Thursday (dentist), so they agree on “fredag klockan ett”."
+        },
+        {
+          "type": "mc",
+          "q": "Vad ska Mei ta med sig till intervjun?",
+          "options": [
+            "Ett intyg från sitt förra jobb",
+            "En kopia av sitt hygienpass",
+            "Ett betyg från svenskkursen"
+          ],
+          "answer": 0,
+          "explain": "“Ta med ditt arbetsintyg från hotellet.” An arbetsintyg is a certificate from a former employer."
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "ett köksbiträde",
+          "en": "a kitchen assistant"
+        },
+        {
+          "sv": "en annons",
+          "en": "an advertisement (here: a job ad)"
+        },
+        {
+          "sv": "praktik",
+          "en": "a work placement, internship"
+        },
+        {
+          "sv": "ett hygienpass",
+          "en": "a hygiene passport, the food-hygiene certificate needed for food work in Finland"
+        },
+        {
+          "sv": "i våras",
+          "en": "last spring"
+        },
+        {
+          "sv": "varannan helg",
+          "en": "every other weekend"
+        },
+        {
+          "sv": "ett arbetsintyg",
+          "en": "an employment certificate from a former employer (työtodistus)"
+        }
+      ]
+    },
+    {
+      "id": "dialogue-kurs",
+      "title": "Anmälan till en svenskkurs",
+      "titleEn": "Signing up for a Swedish course",
+      "kind": "dialogue",
+      "plays": 2,
+      "script": [
+        {
+          "spk": "A",
+          "text": "Hej och välkommen till medborgarinstitutet! Hur kan jag hjälpa dig?"
+        },
+        {
+          "spk": "B",
+          "text": "Hej! Jag heter Olga Smirnova, och jag skulle vilja anmäla mig till en kurs i svenska. Jag har studerat svenska i två år, och i vår ska jag göra YKI-testet."
+        },
+        {
+          "spk": "A",
+          "text": "Då passar vår kurs i svenska på mellannivå bra. Den går på måndagar och onsdagar från klockan fem till halv sju. Men tyvärr är den redan full."
+        },
+        {
+          "spk": "B",
+          "text": "Åh, vad tråkigt. Finns det någon annan kurs?"
+        },
+        {
+          "spk": "A",
+          "text": "Ja, vi har en kurs på lördagar. Där är lektionerna tre timmar långa, men kursen har samma innehåll. Det finns fortfarande fem platser kvar."
+        },
+        {
+          "spk": "B",
+          "text": "Lördag passar faktiskt bättre, för då jobbar jag inte. Vad kostar kursen?"
+        },
+        {
+          "spk": "A",
+          "text": "Den kostar 95 euro för hela terminen. Kursboken ingår inte i priset. Den kostar ungefär 40 euro, och du kan köpa den i bokhandeln."
+        },
+        {
+          "spk": "B",
+          "text": "Okej. Hur anmäler man sig?"
+        },
+        {
+          "spk": "A",
+          "text": "Du kan anmäla dig på vår webbsida eller här hos mig direkt. Räkningen kommer sedan per e-post."
+        },
+        {
+          "spk": "B",
+          "text": "Då anmäler jag mig här nu, så att jag säkert får en plats."
+        },
+        {
+          "spk": "A",
+          "text": "Bra! Kursen börjar om två veckor. Första gången behöver du inte boken, bara papper och penna."
+        }
+      ],
+      "scriptEn": "A: Hello and welcome to the adult education centre! How can I help you?\nB: Hi! My name is Olga Smirnova, and I'd like to sign up for a Swedish course. I've studied Swedish for two years, and this spring I'm going to take the YKI test.\nA: Then our intermediate Swedish course will suit you. It's on Mondays and Wednesdays from five to half past six. But unfortunately it's already full.\nB: Oh, what a pity. Is there another course?\nA: Yes, we have a course on Saturdays. There the lessons are three hours long, but the course has the same content. There are still five places left.\nB: Saturday actually suits me better, because I don't work then. How much does the course cost?\nA: It costs 95 euros for the whole term. The course book isn't included in the price. It costs about 40 euros, and you can buy it in the bookshop.\nB: OK. How do you sign up?\nA: You can sign up on our website or here with me straight away. The bill then comes by email.\nB: Then I'll sign up here now, so that I'm sure to get a place.\nA: Good! The course starts in two weeks. The first time you don't need the book, just paper and a pen.",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Varför vill Olga gå på en kurs i svenska?",
+          "options": [
+            "Hon behöver svenska på sitt nya jobb.",
+            "Hon har just börjat lära sig svenska.",
+            "Hon ska göra YKI-testet i vår."
+          ],
+          "answer": 2,
+          "explain": "“i vår ska jag göra YKI-testet.” She has already studied Swedish for two years, and she doesn't mention a new job."
+        },
+        {
+          "type": "tf",
+          "q": "Det finns lediga platser på kursen på måndagar och onsdagar.",
+          "answer": false,
+          "explain": "False. About the Monday and Wednesday course: “tyvärr är den redan full.”"
+        },
+        {
+          "type": "mc",
+          "q": "Varför väljer Olga kursen på lördagar?",
+          "options": [
+            "Hon jobbar inte på lördagar.",
+            "Den är billigare än den andra kursen.",
+            "Lektionerna är kortare där."
+          ],
+          "answer": 0,
+          "explain": "“Lördag passar faktiskt bättre, för då jobbar jag inte.” The Saturday course is not shorter (“lektionerna är tre timmar långa”), and no cheaper price is mentioned."
+        },
+        {
+          "type": "mc",
+          "q": "Hur mycket kostar kursboken?",
+          "options": [
+            "95 euro",
+            "Ungefär 40 euro",
+            "Den ingår i kursavgiften."
+          ],
+          "answer": 1,
+          "explain": "“Kursboken ingår inte i priset. Den kostar ungefär 40 euro.” 95 euros is the price of the course."
+        },
+        {
+          "type": "mc",
+          "q": "Hur anmäler sig Olga till kursen?",
+          "options": [
+            "På institutets webbsida",
+            "Med ett e-postmeddelande",
+            "Direkt på kontoret"
+          ],
+          "answer": 2,
+          "explain": "“Då anmäler jag mig här nu”: she signs up at the office. Only the bill comes by email."
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "anmäla sig",
+          "en": "to sign up, register"
+        },
+        {
+          "sv": "ett medborgarinstitut",
+          "en": "an adult education centre, usually run by the municipality (kansalaisopisto)"
+        },
+        {
+          "sv": "mellannivå",
+          "en": "intermediate level"
+        },
+        {
+          "sv": "en termin",
+          "en": "a term, semester"
+        },
+        {
+          "sv": "ingå i priset",
+          "en": "to be included in the price"
+        },
+        {
+          "sv": "en bokhandel",
+          "en": "a bookshop"
+        },
+        {
+          "sv": "en räkning",
+          "en": "a bill, invoice"
+        }
+      ]
+    },
+    {
+      "id": "voicemail-halsostation",
+      "title": "Meddelande från hälsostationen",
+      "titleEn": "A message from the health centre",
+      "kind": "voicemail",
+      "plays": 2,
+      "script": [
+        {
+          "spk": "A",
+          "text": "Hej, det här är sjukskötare Tiina Virtanen från Malms hälsostation. Det här är ett meddelande till Ahmed Hassan. Det gäller din läkartid på torsdag."
+        },
+        {
+          "spk": "A",
+          "text": "Tyvärr är läkaren borta på en kurs den dagen, så vi måste flytta din tid. Din nya tid är på måndag nästa vecka klockan kvart över nio."
+        },
+        {
+          "spk": "A",
+          "text": "Innan du träffar läkaren behöver vi ta ett blodprov. Du kan gå till laboratoriet på första våningen på fredag morgon mellan klockan sju och tio. Du behöver inte boka någon tid dit."
+        },
+        {
+          "spk": "A",
+          "text": "Kom ihåg att du inte får äta efter klockan tio på kvällen före provet. Du får inte heller dricka något annat än vatten. Ta också med ett identitetskort."
+        },
+        {
+          "spk": "A",
+          "text": "Om den nya tiden inte passar, ring oss under telefontiden, vardagar mellan klockan åtta och tolv. Tack och hej!"
+        }
+      ],
+      "scriptEn": "Hello, this is nurse Tiina Virtanen from Malmi health centre. This is a message for Ahmed Hassan. It's about your doctor's appointment on Thursday.\nUnfortunately the doctor is away on a course that day, so we have to move your appointment. Your new appointment is on Monday next week at a quarter past nine.\nBefore you see the doctor, we need to take a blood test. You can go to the laboratory on the first floor on Friday morning between seven and ten. You don't need to book an appointment for it.\nRemember that you must not eat after ten o'clock the evening before the test. You must not drink anything except water either. Please also bring an ID card.\nIf the new time doesn't suit you, call us during telephone hours, on weekdays between eight and twelve. Thank you, bye!",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Varför ringer sjukskötaren?",
+          "options": [
+            "Läkaren är borta på torsdag.",
+            "Ahmed har glömt sin tid.",
+            "Provsvaren är redan klara."
+          ],
+          "answer": 0,
+          "explain": "“Tyvärr är läkaren borta på en kurs den dagen, så vi måste flytta din tid.”"
+        },
+        {
+          "type": "mc",
+          "q": "När ska Ahmed träffa läkaren nu?",
+          "options": [
+            "På torsdag",
+            "På fredag morgon",
+            "På måndag nästa vecka"
+          ],
+          "answer": 2,
+          "explain": "“Din nya tid är på måndag nästa vecka klockan kvart över nio.” Thursday was the old time, and Friday morning is for the blood test."
+        },
+        {
+          "type": "tf",
+          "q": "Ahmed måste boka en tid till laboratoriet.",
+          "answer": false,
+          "explain": "False. “Du behöver inte boka någon tid dit.” He can just go there between seven and ten."
+        },
+        {
+          "type": "mc",
+          "q": "Vad får Ahmed göra på morgonen före blodprovet?",
+          "options": [
+            "Äta en lätt frukost",
+            "Dricka vatten",
+            "Dricka kaffe"
+          ],
+          "answer": 1,
+          "explain": "He must not eat after ten the evening before, and “du får inte heller dricka något annat än vatten”: only water is allowed."
+        },
+        {
+          "type": "tf",
+          "q": "Ahmed ska ringa hälsostationen om han inte kan komma på den nya tiden.",
+          "answer": true,
+          "explain": "True. “Om den nya tiden inte passar, ring oss under telefontiden.”"
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "en sjukskötare",
+          "en": "a nurse (sairaanhoitaja)"
+        },
+        {
+          "sv": "en läkartid",
+          "en": "a doctor's appointment"
+        },
+        {
+          "sv": "flytta en tid",
+          "en": "to move, reschedule an appointment"
+        },
+        {
+          "sv": "ett blodprov",
+          "en": "a blood test"
+        },
+        {
+          "sv": "ett laboratorium",
+          "en": "a laboratory"
+        },
+        {
+          "sv": "inte heller",
+          "en": "not … either"
+        },
+        {
+          "sv": "ett identitetskort",
+          "en": "an ID card"
+        },
+        {
+          "sv": "telefontid",
+          "en": "the hours when you can phone"
+        }
+      ]
+    },
+    {
+      "id": "voicemail-midsommar",
+      "title": "En inbjudan till sommarstugan",
+      "titleEn": "An invitation to the summer cottage",
+      "kind": "voicemail",
+      "plays": 2,
+      "script": [
+        {
+          "spk": "A",
+          "text": "Hej Sara, det är Aino! Du svarade inte, så jag lämnar ett meddelande. Vi ska fira midsommar på vår sommarstuga i Pargas, och vi undrar om du och barnen vill komma med."
+        },
+        {
+          "spk": "A",
+          "text": "Vi åker på torsdag efter jobbet. Ni kan åka med oss, för det finns plats för tre till i bilen. Annars går det en buss från Åbo klockan fem, och då kan vi hämta er vid butiken i byn."
+        },
+        {
+          "spk": "A",
+          "text": "På kvällen badar vi bastu och grillar, och på lördag tänkte vi fiska om vädret är fint. Du behöver inte ta med mat, för vi har redan handlat. Men ta med varma kläder och regnkläder, för det kan bli kallt vid havet på kvällarna. Och glöm inte myggmedel!"
+        },
+        {
+          "spk": "A",
+          "text": "Ring mig senast på onsdag, så att jag vet hur många vi blir. Hej då!"
+        }
+      ],
+      "scriptEn": "Hi Sara, it's Aino! You didn't answer, so I'm leaving a message. We're going to celebrate Midsummer at our summer cottage in Parainen (Pargas), and we're wondering if you and the children would like to come along.\nWe're leaving on Thursday after work. You can come with us, because there's room for three more in the car. Otherwise there's a bus from Turku (Åbo) at five, and then we can pick you up at the shop in the village.\nIn the evening we'll have a sauna and grill, and on Saturday we were thinking of going fishing if the weather is nice. You don't need to bring any food, because we've already done the shopping. But bring warm clothes and rain clothes, because it can get cold by the sea in the evenings. And don't forget mosquito repellent!\nCall me by Wednesday at the latest, so that I know how many of us there will be. Bye!",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Vart bjuder Aino in Sara och barnen?",
+          "options": [
+            "Till sitt hem i Åbo",
+            "Till en midsommarfest i byn",
+            "Till sin sommarstuga i Pargas"
+          ],
+          "answer": 2,
+          "explain": "“Vi ska fira midsommar på vår sommarstuga i Pargas.” Åbo is where the bus leaves from, and the village is where Aino can pick them up."
+        },
+        {
+          "type": "mc",
+          "q": "Hur kan Sara och barnen komma till stugan?",
+          "options": [
+            "Med Ainos bil eller med buss",
+            "Bara med bussen från Åbo",
+            "Med tåg från Åbo till Pargas"
+          ],
+          "answer": 0,
+          "explain": "“Ni kan åka med oss, för det finns plats för tre till i bilen. Annars går det en buss från Åbo klockan fem.”"
+        },
+        {
+          "type": "tf",
+          "q": "Sara ska ta med mat till stugan.",
+          "answer": false,
+          "explain": "False. “Du behöver inte ta med mat, för vi har redan handlat.”"
+        },
+        {
+          "type": "mc",
+          "q": "Varför ska Sara ta med varma kläder?",
+          "options": [
+            "De ska fiska tidigt på morgonen.",
+            "Det kan bli kallt vid havet på kvällarna.",
+            "Det finns ingen bastu i stugan."
+          ],
+          "answer": 1,
+          "explain": "“ta med varma kläder och regnkläder, för det kan bli kallt vid havet på kvällarna.” They will have a sauna, and no early fishing is mentioned."
+        },
+        {
+          "type": "mc",
+          "q": "När ska Sara ringa Aino senast?",
+          "options": [
+            "På tisdag",
+            "På onsdag",
+            "På torsdag"
+          ],
+          "answer": 1,
+          "explain": "“Ring mig senast på onsdag.” Thursday is the day they leave."
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "midsommar",
+          "en": "Midsummer (juhannus), celebrated in late June"
+        },
+        {
+          "sv": "en sommarstuga",
+          "en": "a summer cottage"
+        },
+        {
+          "sv": "plats för tre till",
+          "en": "room for three more"
+        },
+        {
+          "sv": "hämta",
+          "en": "to pick up, fetch"
+        },
+        {
+          "sv": "bada bastu",
+          "en": "to have a sauna"
+        },
+        {
+          "sv": "ett myggmedel",
+          "en": "a mosquito repellent"
+        },
+        {
+          "sv": "senast",
+          "en": "at the latest"
+        }
+      ]
+    },
+    {
+      "id": "voicemail-daghem",
+      "title": "En plats på daghemmet",
+      "titleEn": "A place at the day care centre",
+      "kind": "voicemail",
+      "plays": 2,
+      "script": [
+        {
+          "spk": "A",
+          "text": "Hej, det här är Johanna Nyström, föreståndare för daghemmet Solrosen i Sibbo. Det här är ett meddelande till Leila Karimi. Jag ringer om er ansökan om dagvårdsplats för Sami."
+        },
+        {
+          "spk": "A",
+          "text": "Jag har goda nyheter: Sami har fått en plats hos oss från och med den första augusti. Han kommer till en svenskspråkig grupp för barn mellan tre och fem år."
+        },
+        {
+          "spk": "A",
+          "text": "Ni ska bekräfta att ni tar emot platsen i kommunens e-tjänst senast den femtonde juni. Om ni inte gör det, går platsen till ett annat barn."
+        },
+        {
+          "spk": "A",
+          "text": "Innan Sami börjar vill vi gärna träffa er. Ni är välkomna på ett besök, så att Sami kan lära känna personalen och de andra barnen. När han börjar behöver han extra kläder, regnkläder och gummistövlar, eftersom vi är ute varje dag, också när det regnar."
+        },
+        {
+          "spk": "A",
+          "text": "Ring mig gärna, så bestämmer vi en tid för besöket. Det är lättast att nå mig mellan tolv och ett, när barnen sover. Tack och hej!"
+        }
+      ],
+      "scriptEn": "Hello, this is Johanna Nyström, head of the Solrosen day care centre in Sipoo (Sibbo). This is a message for Leila Karimi. I'm calling about your application for a day care place for Sami.\nI have good news: Sami has got a place with us from the first of August. He will be in a Swedish-speaking group for children between three and five.\nYou need to confirm in the municipality's online service that you accept the place, by the fifteenth of June at the latest. If you don't, the place will go to another child.\nBefore Sami starts, we would like to meet you. You are welcome to come for a visit, so that Sami can get to know the staff and the other children. When he starts, he will need extra clothes, rain clothes and rubber boots, because we are outside every day, even when it rains.\nPlease call me, and we'll decide on a time for the visit. It's easiest to reach me between twelve and one, when the children are sleeping. Thank you, bye!",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Från när har Sami en plats på daghemmet?",
+          "options": [
+            "Från den första juni",
+            "Från den femtonde juni",
+            "Från den första augusti"
+          ],
+          "answer": 2,
+          "explain": "“Sami har fått en plats hos oss från och med den första augusti.” The fifteenth of June is the deadline for confirming the place."
+        },
+        {
+          "type": "mc",
+          "q": "Vad måste familjen göra senast den femtonde juni?",
+          "options": [
+            "Besöka daghemmet med Sami",
+            "Bekräfta platsen i kommunens e-tjänst",
+            "Köpa regnkläder och gummistövlar"
+          ],
+          "answer": 1,
+          "explain": "“Ni ska bekräfta att ni tar emot platsen i kommunens e-tjänst senast den femtonde juni.”"
+        },
+        {
+          "type": "tf",
+          "q": "Föreståndaren vill träffa familjen innan Sami börjar.",
+          "answer": true,
+          "explain": "True. “Innan Sami börjar vill vi gärna träffa er. Ni är välkomna på ett besök …”"
+        },
+        {
+          "type": "tf",
+          "q": "Barnen på Solrosen är bara ute när det är fint väder.",
+          "answer": false,
+          "explain": "False. “vi är ute varje dag, också när det regnar.”"
+        },
+        {
+          "type": "mc",
+          "q": "Varför är det bäst att ringa mellan tolv och ett?",
+          "options": [
+            "Då har föreståndaren lunchpaus.",
+            "Då är kommunens kontor öppet.",
+            "Då sover barnen."
+          ],
+          "answer": 2,
+          "explain": "“Det är lättast att nå mig mellan tolv och ett, när barnen sover.”"
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "ett daghem",
+          "en": "a day care centre (päiväkoti)"
+        },
+        {
+          "sv": "en föreståndare",
+          "en": "the head, director (of a day care centre)"
+        },
+        {
+          "sv": "en dagvårdsplats",
+          "en": "a day care place (the official term is småbarnspedagogik, early childhood education)"
+        },
+        {
+          "sv": "från och med",
+          "en": "from, starting on"
+        },
+        {
+          "sv": "svenskspråkig",
+          "en": "Swedish-speaking"
+        },
+        {
+          "sv": "bekräfta",
+          "en": "to confirm"
+        },
+        {
+          "sv": "en e-tjänst",
+          "en": "an online service"
+        },
+        {
+          "sv": "gummistövlar",
+          "en": "rubber boots, wellies"
+        }
+      ]
+    },
+    {
+      "id": "announcement-tag",
+      "title": "Meddelande på tåget till Tammerfors",
+      "titleEn": "An announcement on the train to Tampere",
+      "kind": "announcement",
+      "plays": 2,
+      "script": [
+        {
+          "spk": "A",
+          "text": "Bästa passagerare, välkomna ombord på InterCity-tåget från Helsingfors till Tammerfors. Tåget stannar i Böle, Dickursby, Riihimäki, Tavastehus och Toijala."
+        },
+        {
+          "spk": "A",
+          "text": "På grund av ett signalfel nära Riihimäki blir vi tyvärr ungefär tjugo minuter försenade. Vi är framme i Tammerfors ungefär klockan tjugo i tolv."
+        },
+        {
+          "spk": "A",
+          "text": "Passagerare som ska byta till tåget mot Jyväskylä i Tammerfors behöver inte vara oroliga. Det tåget väntar på oss."
+        },
+        {
+          "spk": "A",
+          "text": "Restaurangvagnen finns i vagn tre, mitt i tåget. Där kan ni köpa kaffe, smörgåsar och varm mat. Barnfamiljer hittar lekavdelningen i vagn fem."
+        },
+        {
+          "spk": "A",
+          "text": "Vi ber om ursäkt för förseningen och önskar er en trevlig resa."
+        }
+      ],
+      "scriptEn": "Dear passengers, welcome on board the InterCity train from Helsinki (Helsingfors) to Tampere (Tammerfors). The train stops at Pasila (Böle), Tikkurila (Dickursby), Riihimäki, Hämeenlinna (Tavastehus) and Toijala.\nBecause of a signal fault near Riihimäki we will unfortunately be about twenty minutes late. We will arrive in Tampere at about twenty to twelve.\nPassengers who are changing in Tampere to the train to Jyväskylä do not need to worry. That train will wait for us.\nThe restaurant car is in carriage three, in the middle of the train. There you can buy coffee, sandwiches and hot food. Families with children will find the play area in carriage five.\nWe apologise for the delay and wish you a pleasant journey.",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Varför är tåget försenat?",
+          "options": [
+            "Det ligger mycket snö på banan.",
+            "Tåget väntar på ett annat tåg.",
+            "Det är fel på en signal."
+          ],
+          "answer": 2,
+          "explain": "“På grund av ett signalfel nära Riihimäki …” It is the train to Jyväskylä that waits for this train, not the other way round."
+        },
+        {
+          "type": "mc",
+          "q": "När är tåget framme i Tammerfors?",
+          "options": [
+            "Ungefär tjugo över elva",
+            "Ungefär tjugo i tolv",
+            "Ungefär tjugo över tolv"
+          ],
+          "answer": 1,
+          "explain": "“Vi är framme i Tammerfors ungefär klockan tjugo i tolv”, which is 11.40. Remember: tjugo i = twenty to, tjugo över = twenty past."
+        },
+        {
+          "type": "tf",
+          "q": "Tåget mot Jyväskylä väntar på passagerarna från det här tåget.",
+          "answer": true,
+          "explain": "True. “Passagerare som ska byta till tåget mot Jyväskylä … behöver inte vara oroliga. Det tåget väntar på oss.”"
+        },
+        {
+          "type": "mc",
+          "q": "Var finns restaurangvagnen?",
+          "options": [
+            "I vagn tre",
+            "Först i tåget",
+            "I vagn fem"
+          ],
+          "answer": 0,
+          "explain": "“Restaurangvagnen finns i vagn tre, mitt i tåget.” Carriage five has the play area for children."
+        },
+        {
+          "type": "tf",
+          "q": "I restaurangvagnen kan man bara köpa kaffe och smörgåsar.",
+          "answer": false,
+          "explain": "False. “Där kan ni köpa kaffe, smörgåsar och varm mat”: there is hot food too. Watch out for “bara” (only) in a statement."
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "en passagerare",
+          "en": "a passenger"
+        },
+        {
+          "sv": "ombord",
+          "en": "on board"
+        },
+        {
+          "sv": "ett signalfel",
+          "en": "a signal fault"
+        },
+        {
+          "sv": "försenad",
+          "en": "delayed, late"
+        },
+        {
+          "sv": "vara framme",
+          "en": "to arrive, be there"
+        },
+        {
+          "sv": "byta tåg",
+          "en": "to change trains"
+        },
+        {
+          "sv": "en restaurangvagn",
+          "en": "a restaurant car"
+        },
+        {
+          "sv": "en lekavdelning",
+          "en": "a play area for children"
+        }
+      ]
+    },
+    {
+      "id": "announcement-butik",
+      "title": "Öppettider i matbutiken under julen",
+      "titleEn": "Supermarket opening hours at Christmas",
+      "kind": "announcement",
+      "plays": 2,
+      "script": [
+        {
+          "spk": "A",
+          "text": "Bästa kunder, välkomna till vår butik! Vi vill informera er om våra öppettider under julen."
+        },
+        {
+          "spk": "A",
+          "text": "På julafton har vi öppet från klockan sju till tolv. På juldagen är butiken stängd. På annandag jul har vi öppet från klockan tolv till nio på kvällen, och efter det har vi öppet som vanligt igen."
+        },
+        {
+          "spk": "A",
+          "text": "Kom ihåg att beställa julskinkan i god tid. Ni kan beställa den vid köttdisken eller i vår nätbutik fram till den tjugonde december."
+        },
+        {
+          "spk": "A",
+          "text": "I dag har vi också ett specialerbjudande i vår bageriavdelning: tre färska karelska piroger för bara två euro."
+        },
+        {
+          "spk": "A",
+          "text": "Har ni tomma flaskor och burkar? Pantautomaten finns vid ingången. Ni får ett kvitto från automaten, och det kan ni använda när ni betalar i kassan. Tack för att ni handlar hos oss, och god jul!"
+        }
+      ],
+      "scriptEn": "Dear customers, welcome to our shop! We would like to tell you about our opening hours over Christmas.\nOn Christmas Eve we are open from seven to twelve. On Christmas Day the shop is closed. On Boxing Day we are open from twelve to nine in the evening, and after that we are open as usual again.\nRemember to order your Christmas ham in good time. You can order it at the meat counter or in our online shop until the twentieth of December.\nToday we also have a special offer in our bakery department: three fresh Karelian pasties for only two euros.\nDo you have empty bottles and cans? The bottle-return machine is by the entrance. You get a receipt from the machine, and you can use it when you pay at the checkout. Thank you for shopping with us, and merry Christmas!",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "När har butiken öppet på julafton?",
+          "options": [
+            "Från sju till tolv",
+            "Från tolv till nio",
+            "Butiken är stängd."
+          ],
+          "answer": 0,
+          "explain": "“På julafton har vi öppet från klockan sju till tolv.” Twelve to nine is Boxing Day, and the shop is closed on Christmas Day."
+        },
+        {
+          "type": "tf",
+          "q": "Butiken är stängd på juldagen.",
+          "answer": true,
+          "explain": "True. “På juldagen är butiken stängd.”"
+        },
+        {
+          "type": "mc",
+          "q": "Hur kan man beställa julskinkan?",
+          "options": [
+            "I nätbutiken, men bara till den tionde december",
+            "Bara per telefon till köttdisken",
+            "Vid köttdisken eller i nätbutiken"
+          ],
+          "answer": 2,
+          "explain": "“Ni kan beställa den vid köttdisken eller i vår nätbutik fram till den tjugonde december.” The last day is the 20th, not the 10th, and the telephone is not mentioned."
+        },
+        {
+          "type": "mc",
+          "q": "Vad kostar tre karelska piroger i dag?",
+          "options": [
+            "En euro",
+            "Två euro",
+            "Tre euro"
+          ],
+          "answer": 1,
+          "explain": "“tre färska karelska piroger för bara två euro.”"
+        },
+        {
+          "type": "mc",
+          "q": "Vad kan man göra med kvittot från pantautomaten?",
+          "options": [
+            "Använda det när man betalar i kassan",
+            "Visa det vid köttdisken när man beställer",
+            "Lämna det i automaten vid ingången"
+          ],
+          "answer": 0,
+          "explain": "“Ni får ett kvitto från automaten, och det kan ni använda när ni betalar i kassan.”"
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "öppettider",
+          "en": "opening hours"
+        },
+        {
+          "sv": "julafton",
+          "en": "Christmas Eve (24 December), the main day of Christmas in Finland"
+        },
+        {
+          "sv": "juldagen",
+          "en": "Christmas Day (25 December)"
+        },
+        {
+          "sv": "annandag jul",
+          "en": "Boxing Day (26 December)"
+        },
+        {
+          "sv": "en köttdisk",
+          "en": "a meat counter"
+        },
+        {
+          "sv": "karelska piroger",
+          "en": "Karelian pasties (karjalanpiirakat)"
+        },
+        {
+          "sv": "en pantautomat",
+          "en": "a bottle-return machine"
+        },
+        {
+          "sv": "en julskinka",
+          "en": "a Christmas ham, the main dish on the Finnish Christmas table"
+        }
+      ]
+    },
+    {
+      "id": "radio-vader",
+      "title": "Vintern är på väg",
+      "titleEn": "Winter is on its way",
+      "kind": "radio",
+      "plays": 2,
+      "script": [
+        {
+          "spk": "A",
+          "text": "Och nu är det dags för vädret. Här i studion har jag meteorologen Erik Lindqvist. Erik, kommer vintern nu?"
+        },
+        {
+          "spk": "B",
+          "text": "Ja, det ser ut så. Hösten har varit ganska mild hittills, men nu kommer kall luft från norr. I natt sjunker temperaturen till minus fem grader i södra Finland och till minus femton i Lappland."
+        },
+        {
+          "spk": "A",
+          "text": "Blir det snö också?"
+        },
+        {
+          "spk": "B",
+          "text": "Ja. I morgon förmiddag börjar det snöa i Österbotten, och på eftermiddagen kommer snön till Åbo och Helsingfors. Det kan komma fem till tio centimeter."
+        },
+        {
+          "spk": "A",
+          "text": "Vad betyder det för trafiken?"
+        },
+        {
+          "spk": "B",
+          "text": "Vägarna och trottoarerna blir hala, särskilt tidigt i morgon. Kör försiktigt och åk hemifrån i god tid. Om du går till fots är det bra att ha broddar under skorna."
+        },
+        {
+          "spk": "A",
+          "text": "När det blir kallt vill många gå ut på isen. Kan man göra det redan nu?"
+        },
+        {
+          "spk": "B",
+          "text": "Nej, absolut inte. Isen på sjöarna är fortfarande alldeles för tunn och håller inte. Vänta minst ett par veckor till."
+        },
+        {
+          "spk": "A",
+          "text": "Och hur blir helgen?"
+        },
+        {
+          "spk": "B",
+          "text": "På lördag blir det soligt och kallt, alltså en fin dag för en promenad i skogen. På söndag blir det lite varmare, men då regnar det i södra Finland."
+        },
+        {
+          "spk": "A",
+          "text": "Tack, Erik!"
+        }
+      ],
+      "scriptEn": "A: And now it's time for the weather. Here in the studio I have the meteorologist Erik Lindqvist. Erik, is winter coming now?\nB: Yes, it looks like it. The autumn has been quite mild so far, but now cold air is coming from the north. Tonight the temperature will drop to minus five degrees in southern Finland and to minus fifteen in Lapland.\nA: Will there be snow too?\nB: Yes. Tomorrow morning it will start snowing in Ostrobothnia, and in the afternoon the snow will reach Turku and Helsinki. There may be five to ten centimetres.\nA: What does that mean for traffic?\nB: Roads and pavements will be slippery, especially early tomorrow. Drive carefully and leave home in good time. If you walk, it's a good idea to have ice grips on your shoes.\nA: When it gets cold, many people want to go out on the ice. Can you do that already?\nB: No, absolutely not. The ice on the lakes is still far too thin and won't hold you. Wait at least another couple of weeks.\nA: And what will the weekend be like?\nB: On Saturday it will be sunny and cold, so a nice day for a walk in the forest. On Sunday it will be a bit warmer, but then it will rain in southern Finland.\nA: Thank you, Erik!",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Hur har hösten varit hittills?",
+          "options": [
+            "Mycket kall",
+            "Ganska mild",
+            "Regnig och blåsig"
+          ],
+          "answer": 1,
+          "explain": "“Hösten har varit ganska mild hittills, men nu kommer kall luft från norr.”"
+        },
+        {
+          "type": "mc",
+          "q": "Var börjar det snöa i morgon förmiddag?",
+          "options": [
+            "I Åbo och Helsingfors",
+            "I Lappland",
+            "I Österbotten"
+          ],
+          "answer": 2,
+          "explain": "“I morgon förmiddag börjar det snöa i Österbotten.” The snow reaches Åbo and Helsingfors in the afternoon, and Lapland is only mentioned for the temperature."
+        },
+        {
+          "type": "mc",
+          "q": "Vad rekommenderar meteorologen för dem som går till fots?",
+          "options": [
+            "Att ha broddar under skorna",
+            "Att stanna hemma på morgonen",
+            "Att ta bussen i stället för att gå"
+          ],
+          "answer": 0,
+          "explain": "“Om du går till fots är det bra att ha broddar under skorna.”"
+        },
+        {
+          "type": "tf",
+          "q": "Enligt meteorologen kan man gå ut på isen redan nu.",
+          "answer": false,
+          "explain": "False. “Nej, absolut inte. Isen på sjöarna är fortfarande alldeles för tunn och håller inte.”"
+        },
+        {
+          "type": "mc",
+          "q": "Hur blir vädret på söndag i södra Finland?",
+          "options": [
+            "Soligt och kallt",
+            "Snöigt och kallt",
+            "Lite varmare och regnigt"
+          ],
+          "answer": 2,
+          "explain": "“På söndag blir det lite varmare, men då regnar det i södra Finland.” Sunny and cold is Saturday."
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "hittills",
+          "en": "so far, until now"
+        },
+        {
+          "sv": "sjunka",
+          "en": "to drop, fall (sjunker – sjönk – sjunkit)"
+        },
+        {
+          "sv": "Österbotten",
+          "en": "Ostrobothnia, the region on the west coast around Vasa"
+        },
+        {
+          "sv": "hal",
+          "en": "slippery (hala vägar = slippery roads)"
+        },
+        {
+          "sv": "broddar",
+          "en": "ice grips, spikes you put on your shoes"
+        },
+        {
+          "sv": "tunn",
+          "en": "thin"
+        },
+        {
+          "sv": "isen håller inte",
+          "en": "the ice won't hold (your weight)"
+        }
+      ]
+    },
+    {
+      "id": "radio-mobiler",
+      "title": "Gamla mobiler i lådan",
+      "titleEn": "Old phones in the drawer",
+      "kind": "radio",
+      "plays": 2,
+      "script": [
+        {
+          "spk": "A",
+          "text": "Har du en gammal mobiltelefon som ligger i en låda hemma? Då är du inte ensam. Hos mig i studion har jag Nina Korhonen, som arbetar med återvinning. Nina, varför ska vi inte bara behålla de gamla telefonerna?"
+        },
+        {
+          "spk": "B",
+          "text": "Därför att de innehåller värdefulla metaller, till exempel guld och koppar. När vi återvinner telefonerna kan metallerna användas igen. Det är mycket bättre för miljön än att ta nya metaller ur jorden."
+        },
+        {
+          "spk": "A",
+          "text": "Var kan man lämna en gammal telefon?"
+        },
+        {
+          "spk": "B",
+          "text": "Man kan lämna den gratis i de flesta större butiker som säljer elektronik, och man behöver inte köpa något. Man kan också lämna den på en avfallsstation. Men man får aldrig slänga den i soptunnan för blandavfall, eftersom batteriet kan börja brinna."
+        },
+        {
+          "spk": "A",
+          "text": "Vad ska man göra innan man lämnar in telefonen?"
+        },
+        {
+          "spk": "B",
+          "text": "Det viktigaste är att ta bort all personlig information, till exempel bilder och meddelanden. Återställ telefonen till fabriksinställningarna och ta ut SIM-kortet."
+        },
+        {
+          "spk": "A",
+          "text": "Och om telefonen fortfarande fungerar?"
+        },
+        {
+          "spk": "B",
+          "text": "Då kan du ge den till någon som behöver den eller sälja den på nätet. Men det allra bästa för miljön är att använda sin telefon så länge som möjligt."
+        },
+        {
+          "spk": "A",
+          "text": "Tack, Nina!"
+        }
+      ],
+      "scriptEn": "A: Do you have an old mobile phone lying in a drawer at home? Then you're not alone. Here with me in the studio is Nina Korhonen, who works in recycling. Nina, why shouldn't we just keep our old phones?\nB: Because they contain valuable metals, for example gold and copper. When we recycle the phones, the metals can be used again. That's much better for the environment than taking new metals out of the ground.\nA: Where can you leave an old phone?\nB: You can leave it for free in most larger shops that sell electronics, and you don't have to buy anything. You can also leave it at a waste station. But you must never throw it in the mixed-waste bin, because the battery can catch fire.\nA: What should you do before you hand in the phone?\nB: The most important thing is to delete all personal information, for example photos and messages. Reset the phone to its factory settings and take out the SIM card.\nA: And if the phone still works?\nB: Then you can give it to someone who needs it or sell it online. But the very best thing for the environment is to use your phone for as long as possible.\nA: Thank you, Nina!",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Varför är det bra att återvinna gamla telefoner?",
+          "options": [
+            "Man får pengar för dem i butiken.",
+            "Metallerna i dem kan användas igen.",
+            "De tar mycket plats hemma."
+          ],
+          "answer": 1,
+          "explain": "“När vi återvinner telefonerna kan metallerna användas igen.” Nobody says you get money for them or that they take up space."
+        },
+        {
+          "type": "tf",
+          "q": "Man måste köpa något i butiken om man vill lämna sin gamla telefon där.",
+          "answer": false,
+          "explain": "False. “Man kan lämna den gratis … och man behöver inte köpa något.”"
+        },
+        {
+          "type": "mc",
+          "q": "Varför får man inte slänga telefonen i soptunnan för blandavfall?",
+          "options": [
+            "Batteriet kan börja brinna.",
+            "Det kostar extra att slänga den.",
+            "Sopbilen tar inte emot metall."
+          ],
+          "answer": 0,
+          "explain": "“man får aldrig slänga den i soptunnan för blandavfall, eftersom batteriet kan börja brinna.”"
+        },
+        {
+          "type": "mc",
+          "q": "Vad är det viktigaste att göra innan man lämnar in telefonen?",
+          "options": [
+            "Ladda batteriet helt fullt",
+            "Köpa en ny telefon först",
+            "Ta bort all personlig information"
+          ],
+          "answer": 2,
+          "explain": "“Det viktigaste är att ta bort all personlig information, till exempel bilder och meddelanden.”"
+        },
+        {
+          "type": "tf",
+          "q": "Enligt Nina är det bäst för miljön att använda samma telefon länge.",
+          "answer": true,
+          "explain": "True. “det allra bästa för miljön är att använda sin telefon så länge som möjligt.”"
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "återvinning",
+          "en": "recycling"
+        },
+        {
+          "sv": "värdefull",
+          "en": "valuable"
+        },
+        {
+          "sv": "koppar",
+          "en": "copper"
+        },
+        {
+          "sv": "en avfallsstation",
+          "en": "a waste station where you can leave special or large waste (jäteasema)"
+        },
+        {
+          "sv": "blandavfall",
+          "en": "mixed waste (sekajäte), the bin for rubbish that can't be sorted"
+        },
+        {
+          "sv": "lämna in",
+          "en": "to hand in"
+        },
+        {
+          "sv": "återställa",
+          "en": "to reset, restore"
+        },
+        {
+          "sv": "fabriksinställningar",
+          "en": "factory settings"
+        }
+      ]
+    }
+  ]
+}
