@@ -8,10 +8,13 @@ const MAX_URL = 7000; // longer links get cut off by some browsers; then we rely
 
 const EXAMINER =
   'You are an experienced examiner for the Finnish National Certificates of Language Proficiency (YKI), Swedish, intermediate level. ' +
-  'The intermediate level is graded 3, 4 or 5 (below 3 = not passed); grade 3 is about CEFR B1, the level needed for Finnish citizenship. ' +
+  'The intermediate test is graded 3 (about CEFR B1) or 4 (about CEFR B2); a performance below level 3 does not pass. Grade 3 is the level needed for Finnish citizenship. ' +
   'I am an adult learner in Finland practising for the test.';
-const HONEST = 'Be encouraging but honest: do not give a higher grade than my answer deserves. Write your feedback in English and quote Swedish where useful.';
-const SPOKEN = 'I will answer by voice dictation, so my answer arrives as a transcript: ignore punctuation, capital letters and spelling, and judge it as speech.';
+const HONEST =
+  'Be encouraging but honest: do not give a higher grade than my answer deserves, only give 4 if it is clearly at B2 level, and if you are unsure between two grades choose the lower one. Write your feedback in English and quote Swedish where useful.';
+const SPOKEN =
+  'I will answer by voice dictation, so my answer arrives as a transcript: ignore punctuation, capital letters and spelling, and judge it as speech. ' +
+  'You cannot hear my pronunciation, pauses or speed, and dictation may hide hesitations and small mistakes, so base the grade on task completion, vocabulary, grammar and structure, and say that pronunciation and fluency are not included.';
 
 const clean = (s) => String(s || '').replace(/\*([^*]+)\*/g, '$1').trim();
 const list = (items, numbered) => items.map((x, i) => `${numbered ? `${i + 1}.` : '-'} ${clean(x)}`).join('\n');
@@ -26,7 +29,7 @@ export function writingPrompt(t, label, text) {
     `The text must:\n${list(t.points)}`,
     `MY TEXT (${n} words):\n${quote(text)}`,
     'Give me:\n' +
-      '1. An estimated YKI grade (below 3, 3, 4 or 5) and one sentence on why.\n' +
+      '1. An estimated YKI grade (below 3, 3 or 4) and one sentence on why.\n' +
       '2. Task completion: did I cover every point? Is the register (formal or informal) right? Is the length OK?\n' +
       '3. My most important language mistakes as "wrong → right" with a short reason (at most 8). Skip tiny typos unless they change the meaning.\n' +
       '4. A corrected version of my text that keeps my ideas and stays at about B1 level.\n' +
@@ -42,7 +45,7 @@ export function speakingPrompt(t, label) {
     `TASK:\n${t.prompt}\n(In English: ${t.promptEn})`,
     `How this works: in your first reply, only show me the task in Swedish, remind me of the times, and wait for my answer. ${SPOKEN}`,
     'When you have my answer, give me:\n' +
-      '1. An estimated YKI grade (below 3, 3, 4 or 5) and one sentence on why.\n' +
+      '1. An estimated YKI grade (below 3, 3 or 4) and one sentence on why.\n' +
       `2. Task completion: did I answer every question in the task? Was it enough for ${t.speak} seconds of speech?\n` +
       '3. Fluency and structure: did I connect my ideas (först, sedan, eftersom, men, därför…)?\n' +
       '4. My most important grammar and vocabulary mistakes as "wrong → right" (at most 8).\n' +
@@ -63,7 +66,7 @@ export function situationPrompt(t) {
     `Rules: send only line 1 now, then wait for my reply. After each of my replies, send only your next line: no feedback yet. In the test I have about ${t.reply} seconds for each reply. ${SPOKEN}`,
     'After my last reply, give me:\n' +
       '1. For each of my replies: did it do what it should? The most important corrections as "wrong → right", and a natural B1 reply I could have given.\n' +
-      '2. An estimated YKI grade (below 3, 3, 4 or 5) for the whole conversation, and two tips.',
+      '2. An estimated YKI grade (below 3, 3 or 4) for the whole conversation, and two tips.',
     HONEST,
   ].join('\n\n');
 }
@@ -84,23 +87,35 @@ export function answersPrompt(t, part, rows) {
   ].join('\n\n');
 }
 
+// Copies inside the tap itself (a hidden textarea + execCommand works on iPhone and Android even when the
+// new tab takes the focus right after), then also tries the Clipboard API.
+function copyNow(text) {
+  try {
+    const ta = h('textarea', { style: { position: 'fixed', top: '0', left: '0', opacity: '0', fontSize: '16px' } });
+    ta.value = text;
+    ta.contentEditable = 'true';
+    document.body.append(ta);
+    const range = document.createRange();
+    range.selectNodeContents(ta);
+    const sel = getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    ta.setSelectionRange(0, text.length);
+    const ok = document.execCommand('copy');
+    ta.remove();
+    sel.removeAllRanges();
+    return ok;
+  } catch {
+    return false;
+  }
+}
 export async function copyText(text) {
+  const ok = copyNow(text);
   try {
     await navigator.clipboard.writeText(text);
     return true;
   } catch {
-    // Older browsers, or the page lost focus: fall back to a hidden textarea.
-    try {
-      const ta = h('textarea', { readonly: true, style: { position: 'fixed', top: '-1000px', opacity: '0' } });
-      ta.value = text;
-      document.body.append(ta);
-      ta.select();
-      const ok = document.execCommand('copy');
-      ta.remove();
-      return ok;
-    } catch {
-      return false;
-    }
+    return ok;
   }
 }
 
@@ -109,16 +124,27 @@ export const chatUrl = (prompt) => {
   return url.length <= MAX_URL ? url : CHATGPT;
 };
 
-// A card with "Open in ChatGPT" and "Copy prompt". getPrompt() builds the prompt when tapped, or
-// returns '' after explaining (with a toast) why there's nothing to grade yet.
+// A card with "Open in ChatGPT" and "Copy prompt". getPrompt(quiet) builds the prompt, or returns '' (with a
+// toast explaining why, unless quiet) when there's nothing to grade yet.
 export function gptCard({ title, text, button = '✨ Open in ChatGPT', getPrompt }) {
-  const open = h('a.btn.wide.y-gpt-open', { href: CHATGPT, target: '_blank', rel: 'noopener' }, button);
+  const open = h('a.btn.wide.y-gpt-open', { href: CHATGPT, target: '_blank', rel: 'noopener', 'aria-label': `${button.replace(/^\W+/, '')} (opens ChatGPT)` }, button);
+  // Keep the link current before a long-press "Open in new tab", which skips the click handler.
+  const refresh = () => {
+    const prompt = getPrompt(true);
+    open.href = prompt ? chatUrl(prompt) : CHATGPT;
+  };
+  open.addEventListener('pointerdown', refresh);
   open.addEventListener('click', (e) => {
     const prompt = getPrompt();
     if (!prompt) return e.preventDefault();
     const url = chatUrl(prompt);
     open.href = url;
-    copyText(prompt).then((ok) =>
+    const copied = copyText(prompt);
+    if (navigator.onLine === false) {
+      e.preventDefault();
+      return copied.then((ok) => toast(ok ? 'You’re offline. The prompt is copied: paste it into ChatGPT when you’re back online.' : 'You’re offline. Try again when you’re back online.'));
+    }
+    copied.then((ok) =>
       toast(url === CHATGPT ? (ok ? 'Prompt copied: paste it into the new chat' : 'Use “Copy prompt” and paste it into ChatGPT') : ok ? 'Opening ChatGPT… (the prompt is copied too)' : 'Opening ChatGPT…'),
     );
   });
@@ -129,12 +155,16 @@ export function gptCard({ title, text, button = '✨ Open in ChatGPT', getPrompt
       if (prompt) toast((await copyText(prompt)) ? 'Copied: paste it into ChatGPT or any AI chat' : 'Could not copy on this phone');
     },
   }, '📋 Copy prompt');
+  refresh();
   return h(
     'section.card.y-gpt',
     h('h3', title),
     h('p.muted.small', text),
     open,
     copy,
-    h('p.muted.small', 'You need a ChatGPT account (the free one works). If the chat opens empty, paste: the prompt is already copied.'),
+    h(
+      'p.muted.small',
+      'You need a ChatGPT account (the free one works); sign in once in your browser. If the prompt waits in the box, tap send. If the chat opens empty or you’re signed out, come back, tap 📋 Copy prompt and paste it into the ChatGPT app.',
+    ),
   );
 }

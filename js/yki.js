@@ -513,7 +513,7 @@ function situationTask(body, t, api) {
 function writingTask(body, t, api) {
   const r = rec('writing')[t.id] || {};
   const [lo, hi] = t.words;
-  const ta = h('textarea.y-text', { rows: 9, lang: 'sv', spellcheck: false, autocapitalize: 'sentences', placeholder: 'Skriv här…' });
+  const ta = h('textarea.y-text', { rows: 9, lang: 'sv', spellcheck: 'false', autocorrect: 'off', autocomplete: 'off', autocapitalize: 'sentences', placeholder: 'Skriv här…' });
   ta.value = r.text || '';
   const counter = h('div.y-count');
   const updateCount = () => {
@@ -583,7 +583,7 @@ function writingTask(body, t, api) {
       title: '✨ Grade it in ChatGPT',
       text: 'Sends this task and your text to a new ChatGPT chat. It estimates your YKI grade, checks every point, corrects your mistakes and rewrites your text.',
       button: '✨ Grade my text in ChatGPT',
-      getPrompt: () => (wordCount(ta.value) < 10 ? (toast('Write your text first'), '') : writingPrompt(t, TYPE_LABEL[t.type][0].toLowerCase(), ta.value)),
+      getPrompt: (quiet) => (wordCount(ta.value) < 10 ? (quiet || toast('Write your text first'), '') : writingPrompt(t, TYPE_LABEL[t.type][0].toLowerCase(), ta.value)),
     }),
   );
   updateCount();
@@ -620,7 +620,7 @@ function questionTask(body, t, api, part) {
     const explain = h('div.y-explain', { hidden: true });
     const head = h('div.y-qtext', `${qi + 1}. ${q.q}`);
     if (q.type === 'open') {
-      const input = h('textarea.y-open', { rows: 2, lang: 'sv', spellcheck: false, autocapitalize: 'sentences', placeholder: 'Svara kort på svenska…' });
+      const input = h('textarea.y-open', { rows: 2, lang: 'sv', spellcheck: 'false', autocorrect: 'off', autocomplete: 'off', autocapitalize: 'sentences', placeholder: 'Svara kort på svenska…', 'aria-label': `${qi + 1}. ${q.q}` });
       input.addEventListener('input', () => (picks[qi] = input.value.trim() || null));
       return { q, input, explain, el: h('div.y-q.open', head, input, explain) };
     }
@@ -644,42 +644,53 @@ function questionTask(body, t, api, part) {
   const result = h('div');
   const banner = h('div.banner');
   const total = t.questions.length;
-  let best = rec(part)[t.id]?.done ? rec(part)[t.id].score || 0 : -1;
-  // Shows the score; once every written answer is marked (or you leave), saves and rewards a new best.
-  const settle = (leaving) => {
+  let prior = null; // the saved result before this attempt, read when you check
+  let paid = 0; // XP this attempt earned so far (only a first completion earns XP)
+  // Saves the attempt as soon as you check, counting unmarked written answers as wrong, and again on every
+  // mark: the saved result is the better of the earlier best and this attempt as marked now.
+  const settle = () => {
     const pending = marks.filter((m) => m === null).length;
     const score = marks.filter((m) => m === true).length;
     banner.textContent = `${score === total ? '🌟' : '📊'} ${score} / ${total} correct` + (pending ? ` · mark your written answer${pending > 1 ? 's' : ''} above` : '');
-    if (pending && !leaving) return;
-    if (score > best) {
-      best = score;
-      award(part, t.id, 2 * score, { score, total });
+    // A result from before the item had its current questions doesn't count as a best.
+    const priorBest = prior?.done && prior.total === total ? prior.score || 0 : -1;
+    const now = rec(part)[t.id];
+    if (!now?.done) {
+      paid = 2 * score;
+      award(part, t.id, paid, { score, total });
     } else {
-      rec(part)[t.id] = { ...rec(part)[t.id], t: Date.now() };
+      rec(part)[t.id] = { ...now, ...(score > priorBest ? { score, total } : { score: prior.score, total: prior.total }), t: Date.now() };
+      if (!prior?.done && 2 * score > paid) {
+        reward(2 * score - paid);
+        toast(`+${2 * score - paid} XP`);
+        paid = 2 * score;
+      }
       save(true);
     }
-    if (leaving) return;
+    if (pending) return;
     sfx(score === total ? 'win' : 'correct');
     if (score === total) confetti(50);
   };
-  // Unmarked written answers count as wrong if you leave without marking them.
-  api.onClose(() => checked && marks.includes(null) && settle(true));
   const check = () => {
     if (picks.some((p) => p === null)) return toast('Answer every question first');
     checked = true;
+    prior = rec(part)[t.id] ? { ...rec(part)[t.id] } : null;
     qEls.forEach(({ q, opts, btns, input, explain }, qi) => {
       explain.hidden = false;
       if (q.type === 'open') {
         input.readOnly = true;
         const mark = (ok) => {
           marks[qi] = ok;
-          markRow.querySelectorAll('.chip').forEach((c, k) => c.classList.toggle('sel', k === (ok ? 0 : 1)));
+          markRow.querySelectorAll('.chip').forEach((c, k) => {
+            c.classList.toggle('sel', k === (ok ? 0 : 1));
+            c.setAttribute('aria-pressed', String(k === (ok ? 0 : 1)));
+          });
           input.classList.toggle('correct', ok);
           input.classList.toggle('wrong', !ok);
           if (marks.includes(null)) sfx('tap');
           settle();
         };
-        const markRow = h('div.y-mark', h('span', 'Was yours right?'), h('button.chip', { type: 'button', onclick: () => mark(true) }, '✓ Yes'), h('button.chip', { type: 'button', onclick: () => mark(false) }, '✗ No'));
+        const markRow = h('div.y-mark', h('span', 'Was yours right?'), h('button.chip', { type: 'button', 'aria-pressed': 'false', onclick: () => mark(true) }, '✓ Yes'), h('button.chip', { type: 'button', 'aria-pressed': 'false', onclick: () => mark(false) }, '✗ No'));
         mount(explain, h('div', h('b', 'Expected: '), q.answer), h('div.muted', q.explain), markRow);
         return;
       }

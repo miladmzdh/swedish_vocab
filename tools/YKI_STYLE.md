@@ -50,7 +50,7 @@ The official sample has three task types, and every task has `id`, `type`, `titl
 
 * Reading: `kind` is notice, email, ad, article or forum. `text`: 90–250 words of Swedish (paragraphs separated by `\n\n`). `textEn`: an English translation, shown only after answering.
 * Listening: `kind` is dialogue, voicemail, announcement or radio. `script`: lines `{ "spk": "A" | "B", "text": "…" }`, 60–200 words in all, natural spoken Swedish (an announcement has a single speaker A). `scriptEn`: an English translation of the whole script. `plays`: 2 (the learner may listen twice).
-* `questions`: 3–5 per item, each either
+* `questions`: 3–5 multiple-choice or true/false questions per item (plus the written-answer questions below), each either
   * `{ "type": "mc", "q": "…", "options": ["…", "…", "…"], "answer": 0, "explain": "English: why, quoting the text" }` with 3–4 options and only one defensible answer, or
   * `{ "type": "tf", "q": "statement in Swedish", "answer": true | false, "explain": "…" }`.
 * The answer must be clearly in the text or script; distractors must be plausible but clearly wrong. Questions are in Swedish, like the exam.

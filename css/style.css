@@ -797,3 +797,4 @@ textarea.code { font-family: ui-monospace, Menlo, monospace; font-size: 0.75rem;
 .y-gpt { display: flex; flex-direction: column; gap: 8px; }
 .y-gpt h3, .y-gpt p { margin: 0; }
 .y-gpt .btn { text-align: center; text-decoration: none; box-sizing: border-box; }
+.y-gpt-open { -webkit-touch-callout: none; }
