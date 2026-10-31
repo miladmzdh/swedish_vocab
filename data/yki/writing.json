@@ -179,7 +179,7 @@
       "checklist": [
         "You said that you can't come and why.",
         "You asked what the group will practise.",
-        "You asked someone to send you something (notes, a recording, a link).",
+        "You asked someone to send you something (sheet music, a recording, a link).",
         "You offered to help with something concrete for the concert.",
         "Your text is about 50–90 words."
       ]
@@ -375,7 +375,7 @@
       "prompt": "Du bor i en hyresbostad i Tammerfors. Elementet i ditt sovrum har varit kallt i en vecka. Skriv ett e-postmeddelande till disponenten.",
       "promptEn": "You live in a rented flat in Tampere. The radiator in your bedroom has been cold for a week. Write an email to the property manager.",
       "points": [
-        "Berätta vad som är fel och sedan när",
+        "Berätta vad som är fel och hur länge det har varit så",
         "Förklara varför problemet är besvärligt för dig",
         "Be om reparation och säg när du är hemma"
       ],
@@ -384,8 +384,8 @@
         100
       ],
       "minutes": 15,
-      "model": "Bästa disponent,\n\nJag bor på Björkgatan 8 A 12 i Tammerfors. Elementet i mitt sovrum fungerar inte. Det har varit kallt sedan förra måndagen.\n\nNu är det bara 16 grader i rummet på natten. Min lilla dotter sover i samma rum, och jag är rädd att hon blir förkyld.\n\nKan ni skicka en fastighetsskötare så snart som möjligt? Jag är hemma varje dag efter klockan 16. Om ingen är hemma får fastighetsskötaren gärna gå in med egen nyckel.\n\nTack på förhand!\n\nMed vänliga hälsningar\nJamal Hassan\ntfn 040 123 4567",
-      "modelEn": "Dear property manager,\n\nI live at Björkgatan 8 A 12 in Tampere. The radiator in my bedroom doesn't work. It has been cold since last Monday.\n\nNow it is only 16 degrees in the room at night. My little daughter sleeps in the same room, and I'm afraid she will catch a cold.\n\nCould you send a caretaker as soon as possible? I'm at home every day after 4 pm. If nobody is at home, the caretaker is welcome to go in with their own key.\n\nThanks in advance!\n\nKind regards\nJamal Hassan\ntel. 040 123 4567",
+      "model": "Bästa disponent,\n\nJag bor på Koivukatu 8 A 12 i Tammerfors. Elementet i mitt sovrum fungerar inte. Det har varit kallt sedan förra måndagen.\n\nNu är det bara 16 grader i rummet på natten. Min lilla dotter sover i samma rum, och jag är rädd att hon blir förkyld.\n\nKan ni skicka en fastighetsskötare så snart som möjligt? Jag är hemma varje dag efter klockan 16. Om ingen är hemma får fastighetsskötaren gärna gå in med egen nyckel.\n\nTack på förhand!\n\nMed vänliga hälsningar\nJamal Hassan\ntfn 040 123 4567",
+      "modelEn": "Dear property manager,\n\nI live at Koivukatu 8 A 12 in Tampere. The radiator in my bedroom doesn't work. It has been cold since last Monday.\n\nNow it is only 16 degrees in the room at night. My little daughter sleeps in the same room, and I'm afraid she will catch a cold.\n\nCould you send a caretaker as soon as possible? I'm at home every day after 4 pm. If nobody is at home, the caretaker is welcome to go in with their own key.\n\nThanks in advance!\n\nKind regards\nJamal Hassan\ntel. 040 123 4567",
       "phrases": [
         {
           "sv": "Bästa disponent,",
@@ -451,7 +451,7 @@
       ],
       "minutes": 15,
       "model": "Bästa Anna Lindholm,\n\nJag såg er annons på nätet och vill söka deltidsjobbet på veckosluten.\n\nJag heter Zahra Ahmadi och kommer från Afghanistan. Jag har bott i Åbo i tre år. I mitt hemland arbetade jag i två år på ett bageri. I Finland har jag jobbat som kassör i en matbutik. Jag är noggrann och flexibel, och jag tycker om att arbeta med människor. Jag talar finska, svenska och engelska.\n\nHur många timmar i veckan är jobbet? Jag kan börja redan i december.\n\nJag ser fram emot ert svar.\n\nMed vänliga hälsningar\nZahra Ahmadi\ntfn 050 987 6543",
-      "modelEn": "Dear Anna Lindholm,\n\nI saw your ad online and would like to apply for the part-time weekend job.\n\nMy name is Zahra Ahmadi and I come from Afghanistan. I have lived in Turku for three years. In my home country I worked in a bakery for two years. In Finland I have worked as a cashier in a grocery shop. I am careful and flexible, and I like working with people. I speak Finnish, Swedish and English.\n\nHow many hours a week is the job? I can start as early as December.\n\nI look forward to your reply.\n\nKind regards\nZahra Ahmadi\ntel. 050 987 6543",
+      "modelEn": "Dear Anna Lindholm,\n\nI saw your ad online and would like to apply for the part-time weekend job.\n\nMy name is Zahra Ahmadi and I come from Afghanistan. I have lived in Turku for three years. In my home country I worked in a bakery for two years. In Finland I have worked as a cashier in a grocery shop. I am thorough and flexible, and I like working with people. I speak Finnish, Swedish and English.\n\nHow many hours a week is the job? I can start as early as December.\n\nI look forward to your reply.\n\nKind regards\nZahra Ahmadi\ntel. 050 987 6543",
       "phrases": [
         {
           "sv": "Jag såg er annons på nätet.",
@@ -467,7 +467,7 @@
         },
         {
           "sv": "Jag är noggrann och flexibel.",
-          "en": "I am careful and flexible."
+          "en": "I am thorough and flexible."
         },
         {
           "sv": "Jag tycker om att arbeta med människor.",
@@ -562,7 +562,7 @@
       "type": "formal",
       "title": "Reklamation till en nätbutik",
       "titleEn": "Complaint to an online shop",
-      "prompt": "Du beställde en vinterjacka för 129 euro från en finsk nätbutik. När du öppnade paketet såg du att dragkedjan var trasig. Skriv ett e-postmeddelande till nätbutikens kundtjänst.",
+      "prompt": "Du beställde en vinterjacka för 129 euro från en finsk nätbutik. När du öppnade paketet såg du att blixtlåset var trasigt. Skriv ett e-postmeddelande till nätbutikens kundtjänst.",
       "promptEn": "You ordered a winter jacket for 129 euros from a Finnish online shop. When you opened the parcel, you saw that the zip was broken. Write an email to the online shop's customer service.",
       "points": [
         "Berätta vad du beställde och när",
@@ -574,7 +574,7 @@
         100
       ],
       "minutes": 15,
-      "model": "Hej,\n\nJag beställde en vinterjacka från er nätbutik den 20 oktober. Jackan kostade 129 euro och mitt ordernummer är 45872. Jag hämtade paketet från en paketautomat i förrgår.\n\nNär jag öppnade paketet såg jag att dragkedjan var trasig. Det går inte att stänga jackan. Jag har inte använt den alls.\n\nJag vill gärna byta jackan mot en ny i samma storlek, M. Om det inte är möjligt vill jag ha pengarna tillbaka. Kan ni skicka mig en returetikett?\n\nMed vänliga hälsningar\nDaniel Okafor",
+      "model": "Hej,\n\nJag beställde en vinterjacka från er nätbutik den 20 oktober. Jackan kostade 129 euro och mitt ordernummer är 45872. Jag hämtade paketet från en paketautomat i förrgår.\n\nNär jag öppnade paketet såg jag att blixtlåset var trasigt. Det går inte att stänga jackan. Jag har inte använt den alls.\n\nJag vill gärna byta jackan mot en ny i samma storlek, M. Om det inte är möjligt vill jag ha pengarna tillbaka. Kan ni skicka mig en returetikett?\n\nMed vänliga hälsningar\nDaniel Okafor",
       "modelEn": "Hello,\n\nI ordered a winter jacket from your online shop on 20 October. The jacket cost 129 euros and my order number is 45872. I picked up the parcel from a parcel locker the day before yesterday.\n\nWhen I opened the parcel, I saw that the zip was broken. It isn't possible to close the jacket. I haven't worn it at all.\n\nI would like to exchange the jacket for a new one in the same size, M. If that isn't possible, I want my money back. Could you send me a return label?\n\nKind regards\nDaniel Okafor",
       "phrases": [
         {
@@ -586,8 +586,8 @@
           "en": "My order number is …"
         },
         {
-          "sv": "… är trasig.",
-          "en": "… is broken."
+          "sv": "… är trasig / trasigt.",
+          "en": "… is broken. (trasigt with ett-words: blixtlåset är trasigt)"
         },
         {
           "sv": "Det går inte att stänga jackan.",
@@ -1012,8 +1012,8 @@
         150
       ],
       "minutes": 20,
-      "model": "Jag tycker att kommunens plan är bra. Det är inte farligt för barn att äta vegetariskt två dagar i veckan. De andra dagarna får de ju kött eller fisk.\n\nDet finns flera skäl till att jag tycker så. För det första är grönsaker, bönor och linser nyttiga och ger mycket energi. För det andra är vegetarisk mat bättre för miljön. Dessutom är mat utan kött ofta billigare, så kommunen får mer pengar till annat.\n\nMin dotter går i lågstadiet i Lahtis. I hennes skola har de redan en vegetarisk dag i veckan. Hon tycker mest om grönsakssoppan och linsbiffarna, och den dagen är hon inte tröttare än vanligt.\n\nDet viktigaste är att maten smakar gott, så att barnen verkligen äter den. Jag stöder alltså kommunens plan, men skolorna borde också fråga eleverna vad de tycker.\n\nMaria, Lahtis",
-      "modelEn": "I think the municipality's plan is good. It isn't dangerous for children to eat vegetarian food two days a week. On the other days they do get meat or fish, after all.\n\nThere are several reasons why I think so. Firstly, vegetables, beans and lentils are healthy and give a lot of energy. Secondly, vegetarian food is better for the environment. In addition, food without meat is often cheaper, so the municipality has more money for other things.\n\nMy daughter is at primary school in Lahti. At her school they already have one vegetarian day a week. She likes the vegetable soup and the lentil patties best, and on that day she isn't any more tired than usual.\n\nThe most important thing is that the food tastes good, so that the children really eat it. So I support the municipality's plan, but the schools should also ask the pupils what they think.\n\nMaria, Lahti",
+      "model": "Jag tycker att kommunens plan är bra. Det är inte farligt för barn att äta vegetariskt två dagar i veckan. De andra dagarna får de ju kött eller fisk.\n\nDet finns flera skäl till att jag tycker så. För det första är grönsaker, bönor och linser nyttiga och ger mycket energi. För det andra är vegetarisk mat bättre för miljön. Dessutom är mat utan kött ofta billigare, så kommunen får mer pengar över till annat.\n\nMin dotter går i lågstadiet i Lahtis. I hennes skola har de redan en vegetarisk dag i veckan. Hon tycker mest om grönsakssoppan och linsbiffarna, och den dagen är hon inte tröttare än vanligt.\n\nDet viktigaste är att maten smakar gott, så att barnen verkligen äter den. Jag stöder alltså kommunens plan, men skolorna borde också fråga eleverna vad de tycker.\n\nMaria, Lahtis",
+      "modelEn": "I think the municipality's plan is good. It isn't dangerous for children to eat vegetarian food two days a week. On the other days they do get meat or fish, after all.\n\nThere are several reasons why I think so. Firstly, vegetables, beans and lentils are healthy and give a lot of energy. Secondly, vegetarian food is better for the environment. In addition, food without meat is often cheaper, so the municipality has more money left over for other things.\n\nMy daughter is at primary school in Lahti. At her school they already have one vegetarian day a week. She likes the vegetable soup and the lentil patties best, and on that day she isn't any more tired than usual.\n\nThe most important thing is that the food tastes good, so that the children really eat it. So I support the municipality's plan, but the schools should also ask the pupils what they think.\n\nMaria, Lahti",
       "phrases": [
         {
           "sv": "Jag tycker att … är bra.",
@@ -1075,8 +1075,8 @@
         150
       ],
       "minutes": 20,
-      "model": "Det låter som en fin idé, men jag tror inte att gratis kollektivtrafik är den bästa lösningen.\n\nÅ ena sidan skulle det vara bra för miljön och för människor med låga inkomster. Om bussen är gratis lämnar kanske fler människor bilen hemma. Å andra sidan kostar kollektivtrafiken mycket pengar. Om ingen köper biljetter måste kommunerna betala allt med skattepengar. Då blir det kanske mindre pengar till skolor och hälsovård.\n\nJag bor i Vanda och åker buss och tåg till jobbet varje dag. Jag har en säsongsbiljett från HRT. För mig är priset inte det största problemet. Det största problemet är att bussen inte går tillräckligt ofta. På vintern väntar jag ibland 20 minuter i kylan.\n\nDärför tycker jag att det är viktigare att bussar och tåg går oftare och kommer i tid. Billigare biljetter för studerande och pensionärer är också en bra idé.\n\nOlga, Vanda",
-      "modelEn": "It sounds like a nice idea, but I don't think free public transport is the best solution.\n\nOn the one hand, it would be good for the environment and for people with low incomes. If the bus is free, perhaps more people will leave their car at home. On the other hand, public transport costs a lot of money. If nobody buys tickets, the municipalities have to pay for everything with tax money. Then there might be less money for schools and health care.\n\nI live in Vantaa and take the bus and the train to work every day. I have a season ticket from HSL. For me the price isn't the biggest problem. The biggest problem is that the bus doesn't run often enough. In winter I sometimes wait 20 minutes in the cold.\n\nThat's why I think it's more important that buses and trains run more often and on time. Cheaper tickets for students and pensioners are also a good idea.\n\nOlga, Vantaa",
+      "model": "Det låter som en fin idé, men jag tror inte att gratis kollektivtrafik är den bästa lösningen.\n\nÅ ena sidan skulle det vara bra för miljön och för människor med låga inkomster. Om bussen är gratis lämnar kanske fler människor bilen hemma. Å andra sidan kostar kollektivtrafiken mycket pengar. Om ingen köper biljetter måste kommunerna betala allt med skattepengar. Då blir det kanske mindre pengar till skolor och daghem.\n\nJag bor i Vanda och åker buss och tåg till jobbet varje dag. Jag har en säsongsbiljett från HRT. För mig är priset inte det största problemet. Det största problemet är att bussen inte går tillräckligt ofta. På vintern väntar jag ibland 20 minuter i kylan.\n\nDärför tycker jag att det är viktigare att bussar och tåg går oftare och kommer i tid. Billigare biljetter för studerande och pensionärer är också en bra idé.\n\nOlga, Vanda",
+      "modelEn": "It sounds like a nice idea, but I don't think free public transport is the best solution.\n\nOn the one hand, it would be good for the environment and for people with low incomes. If the bus is free, perhaps more people will leave their car at home. On the other hand, public transport costs a lot of money. If nobody buys tickets, the municipalities have to pay for everything with tax money. Then there might be less money for schools and daycare.\n\nI live in Vantaa and take the bus and the train to work every day. I have a season ticket from HSL. For me the price isn't the biggest problem. The biggest problem is that the bus doesn't run often enough. In winter I sometimes wait 20 minutes in the cold.\n\nThat's why I think it's more important that buses and trains run more often and on time. Cheaper tickets for students and pensioners are also a good idea.\n\nOlga, Vantaa",
       "phrases": [
         {
           "sv": "Det låter som en fin idé, men …",
