@@ -115,7 +115,7 @@ h3 { font-size: 1rem; margin: 1.2em 0 0.5em; }
 .view { padding: 14px 16px 32px; }
 
 #tabs {
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-template-columns: repeat(5, 1fr);
   background: var(--surface);
   border-top: 1px solid var(--line);
   padding-bottom: env(safe-area-inset-bottom);
@@ -681,6 +681,91 @@ textarea.code { font-family: ui-monospace, Menlo, monospace; font-size: 0.75rem;
 .off-actions { justify-content: space-between; }
 .off-actions .btn { flex: 0 0 auto; }
 .offline-chip { background: #fff3bf; color: #8a6d00; border-color: #ffe066; cursor: pointer; }
+
+/* ---------- YKI ---------- */
+.y-hero { margin-bottom: 14px; }
+.y-hero-sub { margin: 10px 0 0; font-weight: 600; opacity: 0.95; }
+.y-parts { display: grid; gap: 10px; margin-bottom: 14px; }
+.y-part {
+  display: flex; align-items: center; gap: 12px; text-align: left; padding: 14px; border-radius: var(--radius);
+  border: 2px solid var(--line); background: var(--surface); box-shadow: var(--shadow);
+}
+.y-part:active { transform: translateY(2px); box-shadow: none; }
+.y-part .go { margin-left: auto; font-size: 1.6rem; color: var(--muted); }
+.y-icon { font-size: 2rem; }
+.y-meta { display: inline-block; margin-top: 4px; font-size: 0.75rem; font-weight: 800; color: var(--brand-2); }
+.y-info h2 { margin-bottom: 6px; }
+.y-about { border-top: 1px solid var(--line); padding: 10px 0; }
+.y-about summary { font-weight: 800; cursor: pointer; }
+.y-about-body p, .y-about-body ul { margin: 8px 0; font-size: 0.92rem; }
+.y-sources { display: grid; gap: 4px; font-size: 0.8rem; margin-top: 6px; }
+
+.y-screen {
+  position: fixed; inset: 0; z-index: 55; background: var(--bg); display: flex; flex-direction: column;
+  max-width: 640px; margin: 0 auto; padding-top: env(safe-area-inset-top);
+}
+.y-top { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+.y-title { font-weight: 800; flex: 1; }
+.y-body { flex: 1; overflow-y: auto; padding: 14px 16px calc(env(safe-area-inset-bottom) + 24px); -webkit-overflow-scrolling: touch; }
+.y-group { margin-bottom: 16px; }
+.y-group-head { margin: 4px 2px 8px; }
+.y-task {
+  display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 12px 14px; margin-bottom: 8px;
+  border-radius: 14px; border: 2px solid var(--line); background: var(--surface);
+}
+.y-task.done { border-color: color-mix(in srgb, var(--ok) 50%, var(--line)); }
+.y-task > div { flex: 1; min-width: 0; }
+.y-badge { font-weight: 800; color: var(--ok-dark); white-space: nowrap; }
+.y-kicker { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--brand-2); }
+.y-prompt h2 { margin: 2px 0 8px; }
+.y-sv { font-weight: 600; white-space: pre-line; }
+.y-en { color: var(--muted); white-space: pre-line; }
+.y-entoggle { margin: 6px 0; cursor: pointer; }
+.y-say { display: flex; gap: 8px; margin-top: 8px; }
+.y-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 4px 0 10px; }
+.y-tabs .chip { padding: 8px 12px; font-size: 0.85rem; cursor: pointer; }
+.y-timer { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
+.y-clock { font-size: 3rem; font-weight: 900; font-variant-numeric: tabular-nums; color: var(--muted); }
+.y-clock.prep { color: var(--brand-2); }
+.y-clock.speak { color: var(--bad); animation: pulse-text 1.2s ease-in-out infinite alternate; }
+.y-phase { font-weight: 700; }
+.y-actions { display: grid; gap: 10px; width: 100%; }
+.y-check { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+.y-check input { width: 20px; height: 20px; accent-color: var(--ok); flex: none; }
+.y-rate { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 12px 0; }
+.y-rate .chip { padding: 8px 12px; cursor: pointer; }
+.y-steps li, .y-points li { margin-bottom: 4px; }
+.y-phrases { display: grid; gap: 6px; }
+.y-phrase {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 1px; text-align: left; padding: 8px 12px;
+  border-radius: 12px; border: 1px solid var(--line); background: var(--surface-2);
+}
+.y-phrase b { color: var(--brand); }
+.y-model .y-sv { font-weight: 500; line-height: 1.55; }
+.y-chat { display: flex; flex-direction: column; gap: 8px; margin: 10px 0; }
+.y-bubble { max-width: 85%; padding: 10px 12px; border-radius: 16px; display: grid; gap: 6px; }
+.y-bubble.them { align-self: flex-start; background: var(--surface); border: 2px solid var(--line); border-bottom-left-radius: 4px; }
+.y-bubble.you { align-self: flex-end; background: color-mix(in srgb, var(--ok) 14%, var(--surface)); border: 2px solid color-mix(in srgb, var(--ok) 40%, var(--line)); border-bottom-right-radius: 4px; }
+.y-bubble .chip.small { padding: 3px 8px; font-size: 0.72rem; cursor: pointer; justify-self: start; }
+.y-bubble-tools { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.y-dock { position: sticky; bottom: 0; background: var(--bg); padding: 8px 0; }
+.y-goal { background: color-mix(in srgb, var(--accent) 22%, var(--surface)); border-radius: 12px; padding: 10px 12px; }
+.y-mini-clock { font-weight: 900; color: var(--bad); font-variant-numeric: tabular-nums; }
+.y-write { display: grid; gap: 8px; }
+.y-text { width: 100%; padding: 12px; border-radius: 14px; border: 2px solid var(--line); background: var(--surface); font-size: 1.05rem; line-height: 1.5; resize: vertical; }
+.y-count { font-weight: 800; font-size: 0.85rem; color: var(--muted); }
+.y-count.ok { color: var(--ok-dark); }
+.y-count.over { color: var(--bad-dark); }
+.y-reading p { line-height: 1.55; }
+.y-q { padding: 10px 0; border-top: 1px solid var(--line); }
+.y-q:first-of-type { border-top: 0; }
+.y-qtext { font-weight: 700; margin-bottom: 8px; }
+.y-q .opts { margin-top: 0; }
+.y-q .opts.tf { grid-template-columns: 1fr 1fr; }
+.y-q .opt { min-height: 48px; font-size: 0.98rem; }
+.y-explain { margin-top: 8px; font-size: 0.88rem; background: var(--surface-2); border-radius: 10px; padding: 8px 10px; }
+.y-line { margin: 4px 0; }
+@keyframes pulse-text { from { opacity: 1; } to { opacity: 0.6; } }
 
 /* ---------- animation ---------- */
 

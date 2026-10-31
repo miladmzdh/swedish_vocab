@@ -42,17 +42,24 @@ export function currentVoice() {
   return v ? { name: v.name, offline: v.localService !== false } : null;
 }
 
-export function speak(text, { rate } = {}) {
+/**
+ * Speak Swedish text. `speaker` (0, 1, …) picks a different Swedish voice for each person in a dialogue
+ * when the phone has several, otherwise a different pitch.
+ */
+export function speak(text, { rate, speaker = 0, pitch } = {}) {
   return new Promise((resolve) => {
     if (!ttsSupported()) return resolve(false);
     try {
       synth.cancel();
       const u = new SpeechSynthesisUtterance(text);
       u.lang = 'sv-SE';
-      const v = chooseVoice();
+      const base = chooseVoice();
+      const v = speaker && voices.length > 1 ? voices.filter((x) => x !== base)[(speaker - 1) % (voices.length - 1)] : base;
       if (v) u.voice = v;
       u.rate = rate ?? S.settings.rate;
-      const t = setTimeout(() => resolve(true), 8000);
+      u.pitch = pitch ?? (speaker && voices.length < 2 ? (speaker % 2 ? 1.35 : 0.8) : 1);
+      // Safety net in case the browser never fires "end": long texts get more time.
+      const t = setTimeout(() => resolve(true), Math.max(8000, (text.length * 110) / u.rate));
       u.onend = u.onerror = () => {
         clearTimeout(t);
         resolve(true);
@@ -63,6 +70,23 @@ export function speak(text, { rate } = {}) {
     }
   });
 }
+
+/** Speak dialogue lines one after another; resolves false if stopped early. */
+let linesRun = 0;
+export async function speakLines(lines, { rate } = {}) {
+  const run = ++linesRun;
+  for (const l of lines) {
+    if (run !== linesRun) return false;
+    await speak(l.text, { rate, speaker: l.spk === 'B' ? 1 : 0 });
+    if (run !== linesRun) return false;
+    await new Promise((r) => setTimeout(r, 350));
+  }
+  return true;
+}
+export const stopLines = () => {
+  linesRun++;
+  stopSpeaking();
+};
 
 export const stopSpeaking = () => {
   try {

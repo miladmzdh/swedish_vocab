@@ -56,6 +56,7 @@ export function defaultState() {
     best: {}, // arcade mode -> best score
     counts: {}, // lifetime counters for achievements
     quests: null, // {day, items:[{id, n, done, claimed}]}
+    yki: {}, // YKI practice: {speaking|writing|reading|listening: {taskId: {t, ...}}}
     settings: defaultSettings(),
     lastBackup: 0,
     lastSync: 0,
@@ -66,7 +67,7 @@ function migrate(s) {
   const base = defaultState();
   const out = { ...base, ...s };
   out.settings = { ...base.settings, ...(s.settings || {}) };
-  for (const k of ['days', 'words', 'units', 'ach', 'best', 'counts']) if (!out[k] || typeof out[k] !== 'object') out[k] = {};
+  for (const k of ['days', 'words', 'units', 'ach', 'best', 'counts', 'yki']) if (!out[k] || typeof out[k] !== 'object') out[k] = {};
   for (const k of ['frozen', 'owned']) if (!Array.isArray(out[k])) out[k] = base[k];
   return out;
 }
@@ -223,6 +224,15 @@ export function merge(a, b) {
   out.best = maxMap(a.best, b.best);
   out.counts = maxMap(a.counts, b.counts);
   out.quests = newer.quests;
+  // YKI practice: per part, per task, keep the most recently touched record.
+  out.yki = {};
+  for (const part of new Set([...Object.keys(a.yki), ...Object.keys(b.yki)])) {
+    out.yki[part] = { ...(a.yki[part] || {}) };
+    for (const [id, r] of Object.entries(b.yki[part] || {})) {
+      const l = out.yki[part][id];
+      if (!l || (r.t || 0) > (l.t || 0)) out.yki[part][id] = r;
+    }
+  }
   out.lastBackup = Math.max(a.lastBackup, b.lastBackup);
   out.lastSync = Math.max(a.lastSync, b.lastSync);
   return out;

@@ -3,6 +3,7 @@ import { h, mount, toast, closeTopSheet } from './ui.js';
 import { load, save, flush, onChange, applyFreezes, requestPersist, S } from './store.js';
 import { loadData } from './data.js';
 import { headerBar, learnView, practiceView, wordsView, profileView, settingsView, applyTheme, setRerender } from './views.js';
+import { ykiView } from './yki.js';
 import { unlockAudio, initOfflineAudio } from './audio.js';
 import { sessionActive } from './session.js';
 import { autoSync } from './sync.js';
@@ -11,6 +12,7 @@ const TABS = [
   ['learn', '🗺️', 'Learn', learnView],
   ['practice', '🎮', 'Practice', practiceView],
   ['words', '📖', 'Words', wordsView],
+  ['yki', '🇫🇮', 'YKI', ykiView],
   ['me', '🦊', 'Profile', profileView],
 ];
 const VIEWS = { ...Object.fromEntries(TABS.map(([id, , , fn]) => [id, fn])), settings: settingsView };
