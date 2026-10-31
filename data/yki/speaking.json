@@ -561,7 +561,7 @@
         {
           "them": "Hej! Oj, vad kan jag hjälpa dig med?",
           "themEn": "Hi! Oh, what can I do for you?",
-          "you": "Hej, jag bor i lägenheten under din. Förlåt att jag stör, men musiken hörs väldigt mycket hos oss.",
+          "you": "Hej, jag bor i lägenheten under din. Förlåt att jag stör, men musiken hörs väldigt högt hos oss.",
           "youEn": "Hi, I live in the flat below yours. Sorry to bother you, but we can hear the music very loudly in our flat.",
           "goal": "Say who you are and explain the problem politely."
         },
@@ -646,15 +646,15 @@
         {
           "them": "Hej, välkommen! Hur kan jag hjälpa till?",
           "themEn": "Hi, welcome! How can I help?",
-          "you": "Hej! Jag köpte den här kaffebryggaren här för två veckor sedan, men nu fungerar den inte.",
-          "youEn": "Hi! I bought this coffee maker here two weeks ago, but now it doesn't work.",
+          "you": "Hej! Jag köpte den här kaffebryggaren hos er för två veckor sedan, men nu fungerar den inte.",
+          "youEn": "Hi! I bought this coffee maker from you two weeks ago, but now it doesn't work.",
           "goal": "Say what you bought, when, and that there is a problem."
         },
         {
           "them": "Jaha. Vad är det som inte fungerar?",
           "themEn": "I see. What is it that doesn't work?",
-          "you": "Lampan lyser, men den värmer inte vattnet, så det kommer inget kaffe. Jag har försökt flera gånger.",
-          "youEn": "The light comes on, but it doesn't heat the water, so no coffee comes out. I have tried several times.",
+          "you": "Lampan lyser, men vattnet blir inte varmt, så det kommer inget kaffe. Jag har försökt flera gånger.",
+          "youEn": "The light comes on, but the water doesn't get hot, so no coffee comes out. I have tried several times.",
           "goal": "Describe the fault in more detail."
         },
         {
@@ -800,7 +800,7 @@
         }
       ],
       "tips": [
-        "Clock times: *8.10* = *tio över åtta*, *8.15* = *kvart över åtta*, *9.30* = *halv tio* (half to ten).",
+        "Clock times: *8.10* = *tio över åtta*, *8.15* = *kvart över åtta*, *9.30* = *halv tio* (literally 'half to ten', so not 10.30).",
         "React to what you hear before you ask the next question: *Klockan tio? Då kommer jag för sent.*",
         "*Ska till* is very common for where you are going: *Jag ska till Helsingfors* ('I'm going to Helsinki')."
       ]
@@ -1145,7 +1145,7 @@
       ],
       "tips": [
         "Learn to spell your name with Swedish letter names; you often need it on the phone.",
-        "Adult education centres (*medborgarinstitut*, in Helsinki *Arbis*) offer affordable evening courses in many subjects, including Swedish.",
+        "Adult education centres (*medborgarinstitut* or *arbetarinstitut*; the Swedish-language one in Helsinki is *Arbis*) offer affordable evening courses in many subjects, including Swedish.",
         "Follow-up questions (*när, hur länge, vad kostar*) show that you can manage a real conversation."
       ]
     },
@@ -1514,8 +1514,8 @@
         "Show the other side — *Å andra sidan förstår jag att …*",
         "Conclude — *Sammanfattningsvis tycker jag att kommunen ska …*"
       ],
-      "model": "Jag ska tala om biblioteken. En del säger att vi inte behöver bibliotek längre, eftersom allt finns på nätet. Jag håller inte med. Enligt mig är biblioteken mycket viktiga, kanske ännu viktigare än förr.\n\nFör det första är biblioteket gratis och öppet för alla. Man kan låna böcker, tidningar och filmer, och i många bibliotek kan man till och med låna verktyg och sportutrustning. Alla har inte råd att köpa många böcker, särskilt inte barnfamiljer.\n\nFör det andra är biblioteket mer än böcker. Där kan man använda datorer, skriva ut dokument och få hjälp med digitala tjänster. I mitt bibliotek i Vanda finns det också ett språkcafé, där invandrare kan öva finska och svenska med frivilliga. Jag gick dit varje vecka när jag var ny i Finland, och där fick jag mina första finska vänner.\n\nFör det tredje är biblioteket en lugn plats. Studerande kan läsa där, och äldre människor kan träffa andra.\n\nÅ andra sidan förstår jag att kommunerna har lite pengar och måste spara. Kanske behöver inte varje by ett stort bibliotek. På landsbygden kan en bokbuss vara en bra lösning.\n\nSammanfattningsvis tycker jag att kommunen ska fortsätta att satsa på biblioteken, eftersom de är bra för hela samhället.",
-      "modelEn": "I'm going to talk about libraries. Some people say that we don't need libraries any more, because everything is online. I don't agree. In my opinion libraries are very important, perhaps even more important than before.\n\nFirst, the library is free and open to everyone. You can borrow books, newspapers and films, and in many libraries you can even borrow tools and sports equipment. Not everyone can afford to buy a lot of books, especially not families with children.\n\nSecond, the library is more than books. There you can use computers, print documents and get help with digital services. My library in Vantaa also has a language café, where immigrants can practise Finnish and Swedish with volunteers. I went there every week when I was new in Finland, and that is where I made my first Finnish friends.\n\nThird, the library is a quiet place. Students can study there, and older people can meet others.\n\nOn the other hand, I understand that municipalities have little money and have to save. Perhaps not every village needs a big library. In the countryside a mobile library can be a good solution.\n\nTo sum up, I think the municipality should continue to invest in libraries, because they are good for the whole of society.",
+      "model": "Jag ska tala om biblioteken. En del säger att vi inte behöver bibliotek längre, eftersom allt finns på nätet. Jag håller inte med. Enligt mig är biblioteken mycket viktiga, kanske ännu viktigare än förr.\n\nFör det första är biblioteket gratis och öppet för alla. Man kan låna böcker, tidningar och filmer, och i många bibliotek kan man till och med låna verktyg och sportutrustning. Alla har inte råd att köpa många böcker, särskilt inte barnfamiljer.\n\nFör det andra är biblioteket mer än böcker. Där kan man använda datorer, skriva ut dokument och få hjälp med digitala tjänster. I mitt bibliotek i Vanda finns det också ett språkcafé, där invandrare kan öva finska och svenska med frivilliga. Jag gick dit varje vecka när jag var ny i Finland, och där fick jag mina första finska vänner. Nu går jag dit mest för att låna böcker till mina barn.\n\nFör det tredje är biblioteket en lugn plats. Studerande kan läsa där, och äldre människor kan träffa andra.\n\nÅ andra sidan förstår jag att kommunerna har lite pengar och måste spara. Kanske behöver inte varje by ett stort bibliotek. På landsbygden kan en bokbuss vara en bra lösning.\n\nSammanfattningsvis tycker jag att kommunen ska fortsätta att satsa på biblioteken, eftersom de är bra för hela samhället.",
+      "modelEn": "I'm going to talk about libraries. Some people say that we don't need libraries any more, because everything is online. I don't agree. In my opinion libraries are very important, perhaps even more important than before.\n\nFirst, the library is free and open to everyone. You can borrow books, newspapers and films, and in many libraries you can even borrow tools and sports equipment. Not everyone can afford to buy a lot of books, especially not families with children.\n\nSecond, the library is more than books. There you can use computers, print documents and get help with digital services. My library in Vantaa also has a language café, where immigrants can practise Finnish and Swedish with volunteers. I went there every week when I was new in Finland, and that is where I made my first Finnish friends. Now I mostly go there to borrow books for my children.\n\nThird, the library is a quiet place. Students can study there, and older people can meet others.\n\nOn the other hand, I understand that municipalities have little money and have to save. Perhaps not every village needs a big library. In the countryside a mobile library can be a good solution.\n\nTo sum up, I think the municipality should continue to invest in libraries, because they are good for the whole of society.",
       "phrases": [
         {
           "sv": "En del säger att …",
