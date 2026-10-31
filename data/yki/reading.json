@@ -1,0 +1,891 @@
+{
+  "items": [
+    {
+      "id": "notice-waste-sorting",
+      "kind": "notice",
+      "title": "Nya sopkärl på gården",
+      "titleEn": "New waste bins in the yard",
+      "text": "Bästa boende i Bostads Ab Björkhagen i Esbo!\n\nFrån och med måndag 1.6 finns det nya sopkärl i sopskjulet. Nu kan ni sortera bioavfall, kartong, glas, metall och plast här hemma på gården. Kärlen för blandavfall och papper står kvar på samma plats som förut.\n\nVarför? Enligt lagen måste alla bostadshus med minst fem lägenheter sortera bioavfall och förpackningar. Om vi sorterar bra blir det mindre blandavfall. Då kan våra avfallsavgifter bli lägre.\n\nKom ihåg:\n\n– Lägg bioavfallet i en papperspåse eller en komposterbar påse, aldrig i en vanlig plastpåse.\n\n– Platta till kartongerna innan ni lägger dem i kärlet.\n\n– Glas- och metallförpackningar ska vara tomma. Skölj dem gärna lätt med kallt vatten.\n\n– Möbler och elapparater får inte lämnas i sopskjulet. Ta dem till en avfallsstation.\n\nLördag 6.6 kl. 10–13 ordnar vi vårtalko. Vi städar gården tillsammans och planterar blommor. Efter talkot bjuder styrelsen på korv och kaffe.\n\nHar ni frågor? Kontakta disponent Maria Lindqvist, tfn 040 123 4567.\n\nStyrelsen",
+      "textEn": "Dear residents of the Björkhagen housing company in Espoo!\n\nFrom Monday 1 June there are new waste bins in the bin shelter. Now you can sort biowaste, cardboard, glass, metal and plastic here at home in the yard. The bins for mixed waste and paper stay in the same place as before.\n\nWhy? By law, all residential buildings with at least five flats must sort biowaste and packaging. If we sort well, there will be less mixed waste. Then our waste fees can go down.\n\nRemember:\n\n– Put biowaste in a paper bag or a compostable bag, never in an ordinary plastic bag.\n\n– Flatten the cardboard boxes before you put them in the bin.\n\n– Glass and metal packaging must be empty. Please rinse it lightly with cold water.\n\n– Furniture and electrical appliances must not be left in the bin shelter. Take them to a waste station.\n\nOn Saturday 6 June, 10–13, we are holding a spring talko (a communal work day). We will tidy the yard together and plant flowers. After the talko the board will offer sausages and coffee.\n\nAny questions? Contact the property manager Maria Lindqvist, tel. 040 123 4567.\n\nThe Board",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Vad är nytt i sopskjulet från och med 1.6?",
+          "options": [
+            "Kärl för blandavfall och papper",
+            "En plats för gamla möbler",
+            "Kärl för bioavfall, kartong, glas, metall och plast"
+          ],
+          "answer": 2,
+          "explain": "“Nu kan ni sortera bioavfall, kartong, glas, metall och plast här hemma på gården.” The bins for mixed waste and paper were there before (“står kvar på samma plats som förut”), and furniture may not be left there at all."
+        },
+        {
+          "type": "mc",
+          "q": "Hur ska man lägga bioavfallet i kärlet?",
+          "options": [
+            "I en vanlig plastpåse",
+            "I en papperspåse eller en komposterbar påse",
+            "Tillsammans med kartongerna"
+          ],
+          "answer": 1,
+          "explain": "“Lägg bioavfallet i en papperspåse eller en komposterbar påse, aldrig i en vanlig plastpåse.”"
+        },
+        {
+          "type": "mc",
+          "q": "Varför kan sorteringen vara bra för de boende?",
+          "options": [
+            "Avfallsavgifterna kan bli lägre.",
+            "De får gratis papperspåsar.",
+            "Sopskjulet blir större."
+          ],
+          "answer": 0,
+          "explain": "“Om vi sorterar bra blir det mindre blandavfall. Då kan våra avfallsavgifter bli lägre.” Lower fees = lower costs for the residents."
+        },
+        {
+          "type": "tf",
+          "q": "Man får lämna en gammal soffa i sopskjulet.",
+          "answer": false,
+          "explain": "False. A sofa is furniture: “Möbler och elapparater får inte lämnas i sopskjulet. Ta dem till en avfallsstation.”"
+        },
+        {
+          "type": "tf",
+          "q": "Den som är med på talkot får något att äta efteråt.",
+          "answer": true,
+          "explain": "True. “Efter talkot bjuder styrelsen på korv och kaffe.” (bjuda på = to offer / treat someone to)."
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "ett sopkärl",
+          "en": "a waste bin / container"
+        },
+        {
+          "sv": "ett sopskjul",
+          "en": "a bin shelter"
+        },
+        {
+          "sv": "bioavfall",
+          "en": "biowaste (food waste)"
+        },
+        {
+          "sv": "blandavfall",
+          "en": "mixed waste"
+        },
+        {
+          "sv": "en förpackning",
+          "en": "a package, packaging"
+        },
+        {
+          "sv": "platta till",
+          "en": "to flatten"
+        },
+        {
+          "sv": "ett talko",
+          "en": "a communal work day, when neighbours work together for free (Finnish: talkoot)"
+        },
+        {
+          "sv": "en disponent",
+          "en": "a property manager (Finnish: isännöitsijä)"
+        }
+      ]
+    },
+    {
+      "id": "notice-flu-vaccine",
+      "kind": "notice",
+      "title": "Influensavaccinering i höst",
+      "titleEn": "Flu vaccinations this autumn",
+      "text": "Österbottens välfärdsområde informerar: influensavaccinering vid Jakobstads hälsostation\n\nInfluensan sprider sig varje vinter. Vaccinet skyddar dig och dina närstående. I år börjar vaccineringen tisdag 3.11.\n\nVem får vaccinet gratis?\n\n– du som är 65 år eller äldre\n\n– barn mellan 6 månader och 6 år\n\n– du som är gravid\n\n– du som har en kronisk sjukdom, till exempel astma eller diabetes\n\n– du som bor tillsammans med en person som hör till en riskgrupp\n\nHör du inte till någon av grupperna? Då kan du vaccinera dig mot en avgift, till exempel vid en privat läkarstation.\n\nSå här gör du: Du behöver inte boka tid. Kom till hälsostationen på tisdagar och torsdagar kl. 12–18, fram till torsdag 3.12. Ingången är från parkeringen, dörr B. Ta med ett identitetskort eller ett pass.\n\nBarn under 3 år vaccineras på barnrådgivningen. Ring rådgivningen och boka en tid.\n\nOm du har feber ska du inte komma. Vänta tills du är frisk.\n\nFrågor: tfn 06 786 1234, vardagar kl. 8–15.",
+      "textEn": "The Ostrobothnia wellbeing services county informs: flu vaccinations at the Jakobstad (Pietarsaari) health centre\n\nThe flu spreads every winter. The vaccine protects you and your loved ones. This year vaccinations start on Tuesday 3 November.\n\nWho gets the vaccine free of charge?\n\n– people aged 65 or over\n\n– children between 6 months and 6 years\n\n– pregnant women\n\n– people with a chronic illness, for example asthma or diabetes\n\n– people who live with someone who belongs to a risk group\n\nNot in any of these groups? Then you can get vaccinated for a fee, for example at a private medical clinic.\n\nWhat to do: You don't need to book an appointment. Come to the health centre on Tuesdays and Thursdays, 12–18, until Thursday 3 December. The entrance is from the car park, door B. Bring an ID card or a passport.\n\nChildren under 3 are vaccinated at the child health clinic. Call the clinic and book an appointment.\n\nIf you have a fever, do not come. Wait until you are well.\n\nQuestions: tel. 06 786 1234, weekdays 8–15.",
+      "questions": [
+        {
+          "type": "tf",
+          "q": "Alla som bor i Jakobstad kan få vaccinet gratis på hälsostationen.",
+          "answer": false,
+          "explain": "False. Only the groups in the list get it free. “Hör du inte till någon av grupperna? Då kan du vaccinera dig mot en avgift.”"
+        },
+        {
+          "type": "mc",
+          "q": "Anna är 70 år. Vad ska hon göra för att få vaccinet gratis?",
+          "options": [
+            "Ringa barnrådgivningen och boka en tid",
+            "Vaccinera sig vid en privat läkarstation",
+            "Gå till hälsostationen en tisdag eller torsdag mellan kl. 12 och 18"
+          ],
+          "answer": 2,
+          "explain": "She is over 65, so the vaccine is free for her. “Du behöver inte boka tid. Kom till hälsostationen på tisdagar och torsdagar kl. 12–18.” The child health clinic is for small children, and at a private clinic you pay (“mot en avgift”)."
+        },
+        {
+          "type": "mc",
+          "q": "Var vaccineras ett barn som är två år?",
+          "options": [
+            "På daghemmet",
+            "På barnrådgivningen",
+            "På apoteket"
+          ],
+          "answer": 1,
+          "explain": "Two is under three: “Barn under 3 år vaccineras på barnrådgivningen. Ring rådgivningen och boka en tid.”"
+        },
+        {
+          "type": "mc",
+          "q": "Vad ska man ta med till vaccineringen?",
+          "options": [
+            "Ett identitetskort eller ett pass",
+            "Ett recept från läkaren",
+            "Ett beslut från FPA"
+          ],
+          "answer": 0,
+          "explain": "“Ta med ett identitetskort eller ett pass.”"
+        },
+        {
+          "type": "tf",
+          "q": "Man ska inte vaccinera sig när man har feber.",
+          "answer": true,
+          "explain": "True. “Om du har feber ska du inte komma. Vänta tills du är frisk.”"
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "ett välfärdsområde",
+          "en": "a wellbeing services county (runs health and social services)"
+        },
+        {
+          "sv": "en närstående",
+          "en": "a loved one, close family member"
+        },
+        {
+          "sv": "en kronisk sjukdom",
+          "en": "a chronic illness"
+        },
+        {
+          "sv": "en riskgrupp",
+          "en": "a risk group"
+        },
+        {
+          "sv": "mot en avgift",
+          "en": "for a fee"
+        },
+        {
+          "sv": "en läkarstation",
+          "en": "a (private) medical clinic"
+        },
+        {
+          "sv": "barnrådgivningen",
+          "en": "the child health clinic (Finnish: neuvola)"
+        },
+        {
+          "sv": "ett identitetskort",
+          "en": "an ID card"
+        }
+      ]
+    },
+    {
+      "id": "email-midsummer",
+      "kind": "email",
+      "title": "Inbjudan till midsommar",
+      "titleEn": "A Midsummer invitation",
+      "text": "Ämne: Midsommar på stugan?\n\nHej Mei!\n\nHur mår du? Det var länge sedan vi sågs! Nu har jag en fråga till dig: vill du fira midsommar med oss på vår sommarstuga i Nagu? Vi åker dit redan på torsdag, men du kan komma på fredag, alltså på midsommarafton.\n\nSå här kommer du hit: Ta bussen mot Nagu från busstationen i Åbo kl. 10.15. Du behöver inte byta buss, för bussen åker med färjan från Pargas till Nagu. Resan tar ungefär en timme. Ring mig när du är på färjan, så hämtar jag dig med bil vid hållplatsen i Nagu kyrkby.\n\nPå kvällen tänder vi en midsommarbrasa vid stranden, och min pappa grillar fisk. Vi har mat och dryck, men ta gärna med en efterrätt om du vill. Glöm inte badkläder, regnjacka och myggmedel! Det kan bli kallt på kvällen, även om det är sommar.\n\nDet finns ingen dusch i stugan, men vi har en vedeldad bastu. Du kan sova i gäststugan.\n\nSvara senast på måndag, så att jag vet hur mycket mat jag ska köpa.\n\nKram, Sara",
+      "textEn": "Subject: Midsummer at the cottage?\n\nHi Mei!\n\nHow are you? It's been a long time since we saw each other! Now I have a question for you: would you like to celebrate Midsummer with us at our summer cottage in Nagu (Nauvo)? We are going there already on Thursday, but you can come on Friday, that is on Midsummer Eve.\n\nThis is how you get here: Take the bus towards Nagu from the bus station in Turku at 10.15. You don't need to change buses, because the bus goes on the ferry from Pargas (Parainen) to Nagu. The journey takes about an hour. Call me when you are on the ferry, and I'll pick you up by car at the bus stop in Nagu village centre.\n\nIn the evening we will light a Midsummer bonfire by the shore, and my dad will grill fish. We have food and drink, but feel free to bring a dessert if you like. Don't forget swimwear, a raincoat and mosquito repellent! It can get cold in the evening, even though it's summer.\n\nThere is no shower at the cottage, but we have a wood-heated sauna. You can sleep in the guest cottage.\n\nReply by Monday at the latest, so that I know how much food to buy.\n\nHugs, Sara",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Varför skriver Sara till Mei?",
+          "options": [
+            "Hon vill låna Meis bil till midsommar.",
+            "Hon frågar om Mei kan hämta henne i Åbo.",
+            "Hon bjuder in Mei till sin sommarstuga på midsommar."
+          ],
+          "answer": 2,
+          "explain": "“Vill du fira midsommar med oss på vår sommarstuga i Nagu?” Sara is the one who picks Mei up by car, not the other way round."
+        },
+        {
+          "type": "mc",
+          "q": "När ska Mei komma till stugan?",
+          "options": [
+            "På torsdag",
+            "På midsommarafton",
+            "På måndag"
+          ],
+          "answer": 1,
+          "explain": "“Vi åker dit redan på torsdag, men du kan komma på fredag, alltså på midsommarafton.” Thursday is when Sara's family goes; Monday is the deadline for replying."
+        },
+        {
+          "type": "tf",
+          "q": "Mei måste byta buss i Pargas.",
+          "answer": false,
+          "explain": "False. “Du behöver inte byta buss, för bussen åker med färjan från Pargas till Nagu.”"
+        },
+        {
+          "type": "mc",
+          "q": "Vad ska Mei göra när hon är på färjan?",
+          "options": [
+            "Ringa till Sara",
+            "Köpa en ny biljett",
+            "Gå av bussen"
+          ],
+          "answer": 0,
+          "explain": "“Ring mig när du är på färjan, så hämtar jag dig med bil.”"
+        },
+        {
+          "type": "mc",
+          "q": "Vad ska Mei komma ihåg att ta med sig?",
+          "options": [
+            "Fisk till grillen",
+            "Mat och dryck till hela familjen",
+            "Badkläder, regnjacka och myggmedel"
+          ],
+          "answer": 2,
+          "explain": "“Glöm inte badkläder, regnjacka och myggmedel!” Sara's dad grills the fish, and the family already has food and drink (“Vi har mat och dryck”)."
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "en sommarstuga",
+          "en": "a summer cottage"
+        },
+        {
+          "sv": "midsommarafton",
+          "en": "Midsummer Eve (a Friday in late June)"
+        },
+        {
+          "sv": "en färja",
+          "en": "a ferry"
+        },
+        {
+          "sv": "en hållplats",
+          "en": "a (bus) stop"
+        },
+        {
+          "sv": "en kyrkby",
+          "en": "a church village, the village centre"
+        },
+        {
+          "sv": "en midsommarbrasa",
+          "en": "a Midsummer bonfire (Finnish: kokko)"
+        },
+        {
+          "sv": "myggmedel",
+          "en": "mosquito repellent"
+        },
+        {
+          "sv": "vedeldad",
+          "en": "wood-heated"
+        }
+      ]
+    },
+    {
+      "id": "email-course-changes",
+      "kind": "email",
+      "title": "Ändringar i svenskkursen",
+      "titleEn": "Changes to the Swedish course",
+      "text": "Ämne: Viktiga ändringar i kursen Svenska B1\n\nHej alla kursdeltagare!\n\nJag har några nyheter om vår kurs.\n\nFör det första byter vi klassrum. Från och med onsdag 7.10 träffas vi i rum 204 på andra våningen, eftersom det har varit för kallt i vårt gamla klassrum. Tiden är densamma som förut, kl. 17.30–19.00.\n\nFör det andra har vi ingen lektion onsdag 14.10, eftersom det är höstlov och skolhuset är stängt. I stället har vi en extra lektion på distans måndag 19.10 kl. 18–19. Ni får länken per e-post samma dag. Om ni inte kan vara med, kan ni titta på inspelningen senare.\n\nFör det tredje: många av er har frågat om YKI-testet. Därför gör vi ett övningstest i läsförståelse och skrivning onsdag 4.11. Det tar ungefär en och en halv timme. Ni får inget vitsord. Testet är bara till för att ni ska se vad ni redan kan och vad ni behöver öva mer på.\n\nTill nästa gång: ta med läroboken och gör uppgifterna på sidorna 45–47.\n\nHälsningar\n\nHelena Nyström, lärare vid Borgå medborgarinstitut",
+      "textEn": "Subject: Important changes to the course Swedish B1\n\nHi all course participants!\n\nI have some news about our course.\n\nFirst, we are changing classrooms. From Wednesday 7 October we will meet in room 204 on the second floor, because it has been too cold in our old classroom. The time is the same as before, 17.30–19.00.\n\nSecond, there is no lesson on Wednesday 14 October, because it is the autumn holiday and the school building is closed. Instead we will have an extra online lesson on Monday 19 October, 18–19. You will get the link by email the same day. If you can't take part, you can watch the recording later.\n\nThird: many of you have asked about the YKI test. That's why we will do a practice test in reading and writing on Wednesday 4 November. It takes about an hour and a half. You will not get a grade. The test is only so that you can see what you already know and what you need to practise more.\n\nFor next time: bring the textbook and do the exercises on pages 45–47.\n\nBest regards\n\nHelena Nyström, teacher at the Porvoo adult education centre",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Varför byter kursen klassrum?",
+          "options": [
+            "Gruppen har blivit för stor.",
+            "Det har varit för kallt i det gamla klassrummet.",
+            "Skolhuset är stängt på onsdagar."
+          ],
+          "answer": 1,
+          "explain": "“… eftersom det har varit för kallt i vårt gamla klassrum.” The building is closed only on 14 October, because of the autumn holiday."
+        },
+        {
+          "type": "tf",
+          "q": "Gruppen träffas i rum 204 onsdag 14.10.",
+          "answer": false,
+          "explain": "False. “Vi har ingen lektion onsdag 14.10, eftersom det är höstlov och skolhuset är stängt.”"
+        },
+        {
+          "type": "mc",
+          "q": "Vad kan man göra om man inte kan vara med på distanslektionen?",
+          "options": [
+            "Komma till rum 204 i stället",
+            "Göra övningstestet hemma",
+            "Titta på inspelningen senare"
+          ],
+          "answer": 2,
+          "explain": "“Om ni inte kan vara med, kan ni titta på inspelningen senare.”"
+        },
+        {
+          "type": "tf",
+          "q": "Övningstestet ska visa deltagarna vad de behöver öva mer på.",
+          "answer": true,
+          "explain": "True. “Testet är bara till för att ni ska se vad ni redan kan och vad ni behöver öva mer på.” They get no grade for it (“Ni får inget vitsord”)."
+        },
+        {
+          "type": "mc",
+          "q": "Vad ska deltagarna göra till nästa lektion?",
+          "options": [
+            "Göra uppgifterna på sidorna 45–47",
+            "Anmäla sig till YKI-testet",
+            "Skicka en länk till läraren"
+          ],
+          "answer": 0,
+          "explain": "“Till nästa gång: ta med läroboken och gör uppgifterna på sidorna 45–47.”"
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "en kursdeltagare",
+          "en": "a course participant"
+        },
+        {
+          "sv": "en våning",
+          "en": "a floor, storey"
+        },
+        {
+          "sv": "höstlov",
+          "en": "the autumn school holiday"
+        },
+        {
+          "sv": "på distans",
+          "en": "remotely, online"
+        },
+        {
+          "sv": "en inspelning",
+          "en": "a recording"
+        },
+        {
+          "sv": "ett vitsord",
+          "en": "a grade, mark (Finland-Swedish)"
+        },
+        {
+          "sv": "ett medborgarinstitut",
+          "en": "an adult education centre (Finnish: kansalaisopisto)"
+        }
+      ]
+    },
+    {
+      "id": "ad-cafe-job",
+      "kind": "ad",
+      "title": "Kafé söker personal",
+      "titleEn": "Café looking for staff",
+      "text": "Kafé Kanelen i Tammerfors söker ett KAFÉBITRÄDE (deltid, 20–25 timmar i veckan)\n\nVi är ett litet familjeföretag i centrum, nära järnvägsstationen. Vi bakar allt själva: bullar, kakor och bröd. Hos oss är både kunderna och kollegerna viktiga.\n\nDina arbetsuppgifter:\n\n– betjäna kunder och sköta kassan\n\n– koka kaffe och göra enkla smörgåsar\n\n– städa och diska\n\nVi söker dig som\n\n– har hygienpass\n\n– kan tala finska eller svenska, gärna också engelska\n\n– kan jobba både tidiga morgnar och veckoslut\n\nErfarenhet av kafé- eller butiksarbete är ett plus, men inget krav. Vi lär dig gärna!\n\nVi erbjuder en trevlig arbetsmiljö, lön enligt kollektivavtalet och gratis kaffe och lunch under arbetsdagen.\n\nArbetet börjar 1.12. Skicka din ansökan och ditt CV senast 15.11 till Liisa Mäkinen, rekrytering@kafekanelen.fi. Vi kallar de sökande som passar bäst till intervju vecka 47.\n\nHar du frågor? Ring Liisa på vardagar kl. 14–16, tfn 050 765 4321.",
+      "textEn": "Café Kanelen in Tampere is looking for a CAFÉ ASSISTANT (part-time, 20–25 hours a week)\n\nWe are a small family business in the centre, near the railway station. We bake everything ourselves: buns, cakes and bread. Both our customers and our colleagues are important to us.\n\nYour tasks:\n\n– serve customers and work the till\n\n– make coffee and simple sandwiches\n\n– clean and wash up\n\nWe are looking for someone who\n\n– has a hygiene passport\n\n– can speak Finnish or Swedish, preferably also English\n\n– can work both early mornings and weekends\n\nExperience of working in a café or shop is a plus, but not a requirement. We are happy to teach you!\n\nWe offer a pleasant working environment, pay according to the collective agreement and free coffee and lunch during the working day.\n\nThe job starts on 1 December. Send your application and your CV by 15 November to Liisa Mäkinen, rekrytering@kafekanelen.fi. We will invite the most suitable applicants to an interview in week 47.\n\nAny questions? Call Liisa on weekdays, 14–16, tel. 050 765 4321.",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Hur mycket jobbar man i veckan?",
+          "options": [
+            "Ungefär 40 timmar",
+            "Bara under veckosluten",
+            "Ungefär 20–25 timmar"
+          ],
+          "answer": 2,
+          "explain": "“deltid, 20–25 timmar i veckan” – it is a part-time job. Weekends are part of it, but so are early mornings."
+        },
+        {
+          "type": "mc",
+          "q": "Vad säger annonsen om erfarenhet?",
+          "options": [
+            "Man måste ha jobbat på ett kafé i minst ett år.",
+            "Det är bra att ha erfarenhet, men det är inte nödvändigt.",
+            "Erfarenhet är viktigare än språkkunskaper."
+          ],
+          "answer": 1,
+          "explain": "“Erfarenhet av kafé- eller butiksarbete är ett plus, men inget krav. Vi lär dig gärna!”"
+        },
+        {
+          "type": "tf",
+          "q": "Man måste kunna finska för att få jobbet.",
+          "answer": false,
+          "explain": "False. “kan tala finska eller svenska” – Swedish is also fine."
+        },
+        {
+          "type": "tf",
+          "q": "Den som får jobbet behöver inte betala för lunchen på jobbet.",
+          "answer": true,
+          "explain": "True. The café offers “gratis kaffe och lunch under arbetsdagen”."
+        },
+        {
+          "type": "mc",
+          "q": "Hur söker man jobbet?",
+          "options": [
+            "Man skickar en ansökan och ett CV per e-post.",
+            "Man ringer Liisa före 15.11.",
+            "Man kommer till kaféet vecka 47."
+          ],
+          "answer": 0,
+          "explain": "“Skicka din ansökan och ditt CV senast 15.11 till Liisa Mäkinen, rekrytering@kafekanelen.fi.” You call Liisa only if you have questions, and week 47 is for the interviews the café invites people to."
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "ett kafébiträde",
+          "en": "a café assistant"
+        },
+        {
+          "sv": "deltid",
+          "en": "part-time"
+        },
+        {
+          "sv": "sköta kassan",
+          "en": "to work the till / cash register"
+        },
+        {
+          "sv": "ett hygienpass",
+          "en": "a hygiene passport (food hygiene certificate, Finnish: hygieniapassi)"
+        },
+        {
+          "sv": "ett veckoslut",
+          "en": "a weekend (Finland-Swedish)"
+        },
+        {
+          "sv": "ett kollektivavtal",
+          "en": "a collective agreement (sets pay and conditions)"
+        },
+        {
+          "sv": "ett krav",
+          "en": "a requirement"
+        },
+        {
+          "sv": "en sökande",
+          "en": "an applicant"
+        }
+      ]
+    },
+    {
+      "id": "ad-phone-repair",
+      "kind": "ad",
+      "title": "Reparera din telefon",
+      "titleEn": "Get your phone repaired",
+      "text": "MOBILKLINIKEN I ÅBO\n\nHar din telefon gått sönder? Köp inte en ny – reparera den gamla! Det är billigare och bättre för miljön.\n\nVi reparerar telefoner, pekplattor och datorer. Vi byter till exempel trasiga skärmar och gamla batterier. De flesta reparationer gör vi medan du väntar, på ungefär en timme. Du behöver inte boka tid.\n\nPriser (exempel):\n\n– ny skärm till telefon: från 79 €\n\n– nytt batteri: från 49 €\n\n– kontroll av långsam dator: 25 € (gratis om du låter oss reparera den)\n\nVi ger 12 månaders garanti på alla reparationer.\n\nHÖSTKAMPANJ! Visa den här annonsen före 30.11, så får du 10 % rabatt på batteribyte.\n\nHar du gamla telefoner hemma i en låda? Ta med dem till oss. Vi återvinner dem gratis och raderar all information på ett säkert sätt.\n\nSlottsgatan 12, nära Salutorget. Öppet mån–fre kl. 10–18, lör kl. 10–15. Tfn 02 234 5678.",
+      "textEn": "THE MOBILE CLINIC IN TURKU\n\nHas your phone broken? Don't buy a new one – repair the old one! It's cheaper and better for the environment.\n\nWe repair phones, tablets and computers. For example, we replace broken screens and old batteries. We do most repairs while you wait, in about an hour. You don't need to book an appointment.\n\nPrices (examples):\n\n– new phone screen: from €79\n\n– new battery: from €49\n\n– check of a slow computer: €25 (free if you let us repair it)\n\nWe give a 12-month warranty on all repairs.\n\nAUTUMN OFFER! Show this ad before 30 November and you get 10% off a battery replacement.\n\nDo you have old phones at home in a drawer? Bring them to us. We recycle them for free and delete all the data safely.\n\nLinnankatu (Slottsgatan) 12, near the Market Square. Open Mon–Fri 10–18, Sat 10–15. Tel. 02 234 5678.",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Hur länge tar de flesta reparationer?",
+          "options": [
+            "En hel dag",
+            "Ungefär en timme",
+            "En vecka"
+          ],
+          "answer": 1,
+          "explain": "“De flesta reparationer gör vi medan du väntar, på ungefär en timme.”"
+        },
+        {
+          "type": "tf",
+          "q": "Man måste boka tid innan man kommer till Mobilkliniken.",
+          "answer": false,
+          "explain": "False. “Du behöver inte boka tid.”"
+        },
+        {
+          "type": "mc",
+          "q": "När är kontrollen av en långsam dator gratis?",
+          "options": [
+            "Om man kommer före 30.11",
+            "Om man tar med en gammal telefon",
+            "Om man låter Mobilkliniken reparera datorn"
+          ],
+          "answer": 2,
+          "explain": "“kontroll av långsam dator: 25 € (gratis om du låter oss reparera den)”. The date 30.11 is for the battery discount."
+        },
+        {
+          "type": "mc",
+          "q": "Vad får man om man visar annonsen före 30.11?",
+          "options": [
+            "10 % rabatt på batteribyte",
+            "En gratis ny skärm",
+            "Längre garanti"
+          ],
+          "answer": 0,
+          "explain": "“Visa den här annonsen före 30.11, så får du 10 % rabatt på batteribyte.” The 12-month warranty is for all repairs anyway."
+        },
+        {
+          "type": "tf",
+          "q": "Mobilkliniken tar emot gamla telefoner utan att ta betalt.",
+          "answer": true,
+          "explain": "True. “Ta med dem till oss. Vi återvinner dem gratis …”"
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "gå sönder",
+          "en": "to break"
+        },
+        {
+          "sv": "trasig",
+          "en": "broken"
+        },
+        {
+          "sv": "en pekplatta",
+          "en": "a tablet (Finland-Swedish)"
+        },
+        {
+          "sv": "en garanti",
+          "en": "a warranty, guarantee"
+        },
+        {
+          "sv": "en rabatt",
+          "en": "a discount"
+        },
+        {
+          "sv": "ett batteribyte",
+          "en": "a battery replacement"
+        },
+        {
+          "sv": "återvinna",
+          "en": "to recycle"
+        },
+        {
+          "sv": "radera",
+          "en": "to delete, erase"
+        }
+      ]
+    },
+    {
+      "id": "article-winter-cycling",
+      "kind": "article",
+      "title": "Uleåborg cyklar året runt",
+      "titleEn": "Oulu cycles all year round",
+      "text": "Uleåborg ligger långt norrut, och vintern där är lång och mörk. Ändå cyklar många invånare också i januari, när det kan vara tjugo grader kallt. Staden är känd som en av de bästa städerna i världen för vintercykling.\n\nVarför är det så? En viktig orsak är att cykelvägarna plogas snabbt, ofta tidigt på morgonen innan folk åker till jobbet. Dessutom har staden många cykelvägar som går i tunnlar under bilvägarna. Därför behöver cyklisterna sällan stanna vid trafikljus.\n\nSanna Heikkinen, 34, cyklar fem kilometer till jobbet varje dag.\n\n– Det går snabbare än med bussen, och samtidigt får jag motion. När det är riktigt kallt tar jag på mig en tjock mössa och skidglasögon, säger hon och skrattar.\n\nFrån november till april har hon dubbdäck på cykeln.\n\n– Utan dubbdäck är det farligt, eftersom det ofta är halt, säger hon.\n\nStaden vill att ännu fler ska cykla, både för miljöns och för hälsans skull. Men alla är inte nöjda. En del bilister tycker att cyklisterna får för mycket pengar och plats.\n\n– Vi som kör bil betalar också skatt, säger en man vid ett köpcentrum.\n\nNästa år ska staden bygga fler cykelparkeringar med tak vid skolor och vid järnvägsstationen.",
+      "textEn": "Oulu lies far to the north, and the winter there is long and dark. Still, many residents cycle in January too, when it can be twenty degrees below zero. The city is known as one of the best cities in the world for winter cycling.\n\nWhy is that? One important reason is that the cycle paths are cleared of snow quickly, often early in the morning before people go to work. In addition, the city has many cycle paths that go through tunnels under the roads. That's why cyclists rarely have to stop at traffic lights.\n\nSanna Heikkinen, 34, cycles five kilometres to work every day.\n\n– It's quicker than by bus, and I get exercise at the same time. When it's really cold I put on a thick hat and ski goggles, she says and laughs.\n\nFrom November to April she has studded tyres on her bike.\n\n– Without studded tyres it's dangerous, because it's often slippery, she says.\n\nThe city wants even more people to cycle, both for the sake of the environment and for health. But not everyone is happy. Some drivers think that cyclists get too much money and space.\n\n– We who drive also pay taxes, says a man at a shopping centre.\n\nNext year the city will build more covered bike parking at schools and at the railway station.",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Vad handlar texten främst om?",
+          "options": [
+            "Att många i Uleåborg cyklar också på vintern",
+            "Att bussarna i Uleåborg är för dyra",
+            "Att staden vill bygga nya bilvägar"
+          ],
+          "answer": 0,
+          "explain": "The whole article is about winter cycling: “Ändå cyklar många invånare också i januari …”. Bus prices and new roads are not mentioned."
+        },
+        {
+          "type": "mc",
+          "q": "Varför behöver cyklisterna sällan stanna vid trafikljus?",
+          "options": [
+            "Eftersom de cyklar tidigt på morgonen",
+            "Eftersom det finns få bilar i Uleåborg",
+            "Eftersom många cykelvägar går i tunnlar under bilvägarna"
+          ],
+          "answer": 2,
+          "explain": "“… många cykelvägar som går i tunnlar under bilvägarna. Därför behöver cyklisterna sällan stanna vid trafikljus.” (därför = that's why)."
+        },
+        {
+          "type": "tf",
+          "q": "Sanna tycker att det går snabbare att cykla än att åka buss.",
+          "answer": true,
+          "explain": "True. “Det går snabbare än med bussen, och samtidigt får jag motion.”"
+        },
+        {
+          "type": "tf",
+          "q": "Sanna har dubbdäck på cykeln hela året.",
+          "answer": false,
+          "explain": "False. Only “från november till april”."
+        },
+        {
+          "type": "mc",
+          "q": "Vad tycker en del bilister?",
+          "options": [
+            "Att cykelvägarna borde plogas tidigare",
+            "Att cyklisterna får för mycket pengar och plats",
+            "Att de själva också vill börja cykla"
+          ],
+          "answer": 1,
+          "explain": "“En del bilister tycker att cyklisterna får för mycket pengar och plats.”"
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "norrut",
+          "en": "to the north, northwards"
+        },
+        {
+          "sv": "ploga",
+          "en": "to plough (clear snow from a road)"
+        },
+        {
+          "sv": "ett trafikljus",
+          "en": "a traffic light"
+        },
+        {
+          "sv": "motion",
+          "en": "exercise (not 'motion')"
+        },
+        {
+          "sv": "dubbdäck",
+          "en": "studded tyres"
+        },
+        {
+          "sv": "halt",
+          "en": "slippery (icy)"
+        },
+        {
+          "sv": "en bilist",
+          "en": "a driver, motorist"
+        },
+        {
+          "sv": "för … skull",
+          "en": "for the sake of …"
+        }
+      ]
+    },
+    {
+      "id": "article-daycare",
+      "kind": "article",
+      "title": "Ansök om dagisplats i god tid",
+      "titleEn": "Apply for a daycare place in good time",
+      "text": "Ska ditt barn börja på daghem i början av augusti? Då ska du lämna in ansökan senast i början av april, påminner Vanda stad.\n\nEnligt lagen ska man ansöka om en plats inom småbarnspedagogiken minst fyra månader innan barnet behöver den. Det finns ett undantag: om du plötsligt får ett jobb eller en studieplats och inte kunde veta det i förväg, räcker det med två veckor. Då måste du visa till exempel ditt arbetsavtal eller ett antagningsbesked.\n\nMan ansöker på nätet och loggar in med nätbankskoder eller mobilcertifikat. Den som inte kan använda den elektroniska tjänsten kan fylla i en pappersblankett. Blanketter finns vid stadens servicepunkter.\n\n– Många föräldrar tror att det räcker att ringa till daghemmet. Men det gör det inte. Ansökan måste alltid göras skriftligt, säger servicehandledare Aino Virtanen.\n\nI ansökan kan man skriva vilka daghem man helst önskar, till exempel ett nära hemmet eller nära arbetsplatsen. Staden försöker ordna en plats där, men det är inte alltid möjligt. I Vanda finns både finskspråkiga och svenskspråkiga daghem.\n\nAvgiften beror på familjens storlek och inkomster. Familjer med låga inkomster betalar ingenting. Om barnet är under tre år och vårdas hemma, kan familjen i stället ansöka om hemvårdsstöd från FPA.",
+      "textEn": "Is your child going to start daycare at the beginning of August? Then you must hand in the application by the beginning of April at the latest, the City of Vantaa reminds parents.\n\nBy law, you must apply for a place in early childhood education at least four months before the child needs it. There is one exception: if you suddenly get a job or a study place and could not know about it in advance, two weeks is enough. Then you must show, for example, your employment contract or a letter of admission.\n\nYou apply online and log in with online banking codes or a mobile certificate. Anyone who can't use the electronic service can fill in a paper form. Forms are available at the city's service points.\n\n– Many parents think it's enough to phone the daycare centre. But it isn't. The application must always be made in writing, says service adviser Aino Virtanen.\n\nIn the application you can write which daycare centres you would prefer, for example one near your home or near your workplace. The city tries to arrange a place there, but it is not always possible. In Vantaa there are both Finnish-speaking and Swedish-speaking daycare centres.\n\nThe fee depends on the size of the family and its income. Families with low incomes pay nothing. If the child is under three and is looked after at home, the family can apply for child home care allowance from Kela instead.",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Hur lång tid i förväg ska man normalt ansöka om en dagisplats?",
+          "options": [
+            "Minst två veckor",
+            "Minst ett år",
+            "Minst fyra månader"
+          ],
+          "answer": 2,
+          "explain": "“… minst fyra månader innan barnet behöver den.” Two weeks is only the exception for a sudden job or study place."
+        },
+        {
+          "type": "mc",
+          "q": "När räcker det att ansöka två veckor i förväg?",
+          "options": [
+            "När familjen har låga inkomster",
+            "När man plötsligt får ett jobb eller en studieplats",
+            "När man vill ha ett svenskspråkigt daghem"
+          ],
+          "answer": 1,
+          "explain": "“… om du plötsligt får ett jobb eller en studieplats och inte kunde veta det i förväg, räcker det med två veckor.”"
+        },
+        {
+          "type": "tf",
+          "q": "Det räcker att ringa till daghemmet för att ansöka om en plats.",
+          "answer": false,
+          "explain": "False. Aino Virtanen says: “Men det gör det inte. Ansökan måste alltid göras skriftligt.”"
+        },
+        {
+          "type": "tf",
+          "q": "Avgiften för dagis beror bland annat på hur mycket familjen tjänar.",
+          "answer": true,
+          "explain": "True. “Avgiften beror på familjens storlek och inkomster.” Inkomster = income, what the family earns. Families with low incomes pay nothing."
+        },
+        {
+          "type": "mc",
+          "q": "Vilket stöd kan familjen ansöka om, om ett barn under tre år vårdas hemma?",
+          "options": [
+            "Hemvårdsstöd från FPA",
+            "Bostadsbidrag från staden",
+            "Studiestöd från FPA"
+          ],
+          "answer": 0,
+          "explain": "“Om barnet är under tre år och vårdas hemma, kan familjen i stället ansöka om hemvårdsstöd från FPA.”"
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "småbarnspedagogik",
+          "en": "early childhood education and care (daycare)"
+        },
+        {
+          "sv": "ett undantag",
+          "en": "an exception"
+        },
+        {
+          "sv": "ett arbetsavtal",
+          "en": "an employment contract"
+        },
+        {
+          "sv": "ett antagningsbesked",
+          "en": "a letter of admission (to studies)"
+        },
+        {
+          "sv": "nätbankskoder",
+          "en": "online banking codes (used to log in to e-services)"
+        },
+        {
+          "sv": "skriftligt",
+          "en": "in writing"
+        },
+        {
+          "sv": "en servicehandledare",
+          "en": "a service adviser (Finnish: palveluohjaaja)"
+        },
+        {
+          "sv": "hemvårdsstöd",
+          "en": "child home care allowance (from Kela)"
+        }
+      ]
+    },
+    {
+      "id": "forum-first-winter",
+      "kind": "forum",
+      "title": "Min första vinter i Finland",
+      "titleEn": "My first winter in Finland",
+      "text": "Forum › Ny i Finland › Vardag\n\nAhmed_92: Hej! Jag flyttade till Vasa i augusti, och nu blir det kallare och mörkare för varje dag. Jag har aldrig upplevt en riktig vinter, så jag är lite orolig. Vad behöver jag köpa? Och hur orkar man när det är mörkt nästan hela dagen?\n\nKerstin_V: Välkommen till Vasa! Det viktigaste är kläderna. Klä dig i flera lager: underställ, en varm tröja och en jacka som inte släpper igenom vinden. Köp också vinterskor med grova sulor, för trottoarerna kan vara hala. Allt behöver inte vara nytt. På loppis hittar du billiga vinterkläder i bra skick.\n\nJukka: Glöm inte reflexen! När det är mörkt ser bilisterna dig mycket tidigare om du har en reflex på jackan eller väskan.\n\nMei_L: Min första vinter var tung. Jag var trött hela tiden. Läkaren på hälsostationen sa att jag borde ta D-vitamin varje dag under den mörka tiden, och det hjälpte. Jag försöker också gå ut en stund när det är ljust, till exempel på lunchpausen. Och prova bastun! Det är det bästa med den finska vintern.\n\nKerstin_V: Precis! Och när snön kommer blir allt mycket ljusare. Det finns gratis skidspår i Vasa, så lär dig åka skidor. Det är roligt!\n\nAhmed_92: Tack för alla tips! I morgon går jag till loppis och letar efter vinterskor.",
+      "textEn": "Forum › New in Finland › Everyday life\n\nAhmed_92: Hi! I moved to Vaasa in August, and now it's getting colder and darker every day. I've never experienced a real winter, so I'm a bit worried. What do I need to buy? And how do you keep your energy up when it's dark almost all day?\n\nKerstin_V: Welcome to Vaasa! The most important thing is clothes. Dress in several layers: thermal underwear, a warm jumper and a jacket that keeps out the wind. Also buy winter shoes with chunky soles, because the pavements can be slippery. Not everything has to be new. At a flea market you'll find cheap winter clothes in good condition.\n\nJukka: Don't forget your reflector! When it's dark, drivers see you much earlier if you have a reflector on your jacket or bag.\n\nMei_L: My first winter was hard. I was tired all the time. The doctor at the health centre said that I should take vitamin D every day during the dark season, and it helped. I also try to go out for a while when it's light, for example during my lunch break. And try the sauna! It's the best thing about the Finnish winter.\n\nKerstin_V: Exactly! And when the snow comes, everything gets much lighter. There are free ski tracks in Vaasa, so learn to ski. It's fun!\n\nAhmed_92: Thanks for all the tips! Tomorrow I'm going to a flea market to look for winter shoes.",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Varför skriver Ahmed i forumet?",
+          "options": [
+            "Han vill sälja sina vinterkläder.",
+            "Han söker en läkare i Vasa.",
+            "Han vill ha råd inför sin första vinter."
+          ],
+          "answer": 2,
+          "explain": "“Jag har aldrig upplevt en riktig vinter … Vad behöver jag köpa? Och hur orkar man …?” He asks for advice."
+        },
+        {
+          "type": "mc",
+          "q": "Vad säger Kerstin om vinterkläder?",
+          "options": [
+            "Alla vinterkläder måste vara nya.",
+            "Man kan hitta billiga vinterkläder på loppis.",
+            "Det räcker med en tjock jacka."
+          ],
+          "answer": 1,
+          "explain": "“Allt behöver inte vara nytt. På loppis hittar du billiga vinterkläder i bra skick.” She also says to dress in several layers, so one jacket is not enough."
+        },
+        {
+          "type": "tf",
+          "q": "Enligt Jukka ser bilisterna dig bättre i mörkret om du har en reflex.",
+          "answer": true,
+          "explain": "True. “När det är mörkt ser bilisterna dig mycket tidigare om du har en reflex.”"
+        },
+        {
+          "type": "tf",
+          "q": "Mei mådde bra under hela sin första vinter.",
+          "answer": false,
+          "explain": "False. “Min första vinter var tung. Jag var trött hela tiden.”"
+        },
+        {
+          "type": "mc",
+          "q": "Vem gav Mei rådet att ta D-vitamin?",
+          "options": [
+            "En läkare på hälsostationen",
+            "Kerstin",
+            "Ahmed"
+          ],
+          "answer": 0,
+          "explain": "“Läkaren på hälsostationen sa att jag borde ta D-vitamin varje dag under den mörka tiden.”"
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "uppleva",
+          "en": "to experience"
+        },
+        {
+          "sv": "orka",
+          "en": "to have the energy, to cope"
+        },
+        {
+          "sv": "ett underställ",
+          "en": "thermal underwear, a base layer"
+        },
+        {
+          "sv": "en sula",
+          "en": "a sole (of a shoe)"
+        },
+        {
+          "sv": "en loppis",
+          "en": "a flea market, second-hand market"
+        },
+        {
+          "sv": "en reflex",
+          "en": "a reflector (worn by pedestrians in the dark)"
+        },
+        {
+          "sv": "ett skidspår",
+          "en": "a ski track"
+        }
+      ]
+    },
+    {
+      "id": "forum-hobby",
+      "kind": "forum",
+      "title": "En hobby där man kan prata svenska?",
+      "titleEn": "A hobby where you can speak Swedish?",
+      "text": "Forum › Fritid › Hobbyer\n\nOlga_K: Hej alla! Jag bor i Helsingfors och läser svenska, eftersom jag vill ta YKI-testet. På kursen pratar vi mycket, men utanför kursen har jag ingen att prata svenska med. Alla mina kolleger talar finska. Har ni tips på någon hobby där man kan träffa nya människor och öva svenska? Jag jobbar dagtid, så hobbyn måste vara på kvällen eller under veckoslutet.\n\nMikael: Gå med i en kör! Jag sjunger i en svenskspråkig kör i Tölö. Vi övar på tisdagar kl. 18. Man behöver inte vara proffs, man ska bara tycka om att sjunga. Efter övningen dricker vi alltid kaffe och pratar.\n\nJohanna_H: Många bibliotek i Helsingfors har språkcaféer där man kan prata svenska gratis. På mitt bibliotek i Berghäll ordnas ett språkcafé varje torsdag kl. 17–18.30. Man behöver inte anmäla sig i förväg. Det är bara att komma dit.\n\nErik: Jag spelar innebandy i en svenskspråkig förening. Vi har en grupp för vuxna nybörjare på söndagar. Det kostar 60 euro för hela säsongen, och du kan låna en klubba av oss.\n\nOlga_K: Tack för tipsen! Kören låter roligast, men tyvärr har jag en annan kurs på tisdagar. Därför går jag till språkcaféet nästa torsdag. Och kanske innebandy senare – jag har aldrig spelat!",
+      "textEn": "Forum › Free time › Hobbies\n\nOlga_K: Hi everyone! I live in Helsinki and I'm studying Swedish, because I want to take the YKI test. On the course we talk a lot, but outside the course I have no one to speak Swedish with. All my colleagues speak Finnish. Do you have tips for a hobby where you can meet new people and practise Swedish? I work during the day, so the hobby has to be in the evening or at the weekend.\n\nMikael: Join a choir! I sing in a Swedish-speaking choir in Töölö. We rehearse on Tuesdays at 18. You don't have to be a professional, you just have to like singing. After the rehearsal we always have coffee and chat.\n\nJohanna_H: Many libraries in Helsinki have language cafés where you can speak Swedish for free. At my library in Kallio a language café is held every Thursday, 17–18.30. You don't need to sign up in advance. You just go there.\n\nErik: I play floorball in a Swedish-speaking club. We have a group for adult beginners on Sundays. It costs 60 euros for the whole season, and you can borrow a stick from us.\n\nOlga_K: Thanks for the tips! The choir sounds the most fun, but unfortunately I have another course on Tuesdays. So I'll go to the language café next Thursday. And maybe floorball later – I've never played!",
+      "questions": [
+        {
+          "type": "mc",
+          "q": "Vad är Olgas problem?",
+          "options": [
+            "Hon hinner inte gå på svenskkursen.",
+            "Hon har ingen att prata svenska med utanför kursen.",
+            "Hennes kolleger vill inte prata med henne."
+          ],
+          "answer": 1,
+          "explain": "“… men utanför kursen har jag ingen att prata svenska med.” Her colleagues speak Finnish; the text doesn't say they don't want to talk to her."
+        },
+        {
+          "type": "tf",
+          "q": "Man behöver inte vara någon expert för att sjunga i Mikaels kör.",
+          "answer": true,
+          "explain": "True. “Man behöver inte vara proffs, man ska bara tycka om att sjunga.”"
+        },
+        {
+          "type": "tf",
+          "q": "Man måste anmäla sig i förväg till språkcaféet.",
+          "answer": false,
+          "explain": "False. “Man behöver inte anmäla sig i förväg. Det är bara att komma dit.”"
+        },
+        {
+          "type": "mc",
+          "q": "Vad kostar innebandyn?",
+          "options": [
+            "Den är gratis.",
+            "60 euro i månaden",
+            "60 euro för hela säsongen"
+          ],
+          "answer": 2,
+          "explain": "“Det kostar 60 euro för hela säsongen.” It is the language café that is free."
+        },
+        {
+          "type": "mc",
+          "q": "Varför går Olga inte med i kören?",
+          "options": [
+            "Hon har en annan kurs på tisdagar.",
+            "Kören är för dyr.",
+            "Hon tycker inte om att sjunga."
+          ],
+          "answer": 0,
+          "explain": "“Kören låter roligast, men tyvärr har jag en annan kurs på tisdagar.” The choir rehearses on Tuesdays."
+        }
+      ],
+      "glossary": [
+        {
+          "sv": "en kör",
+          "en": "a choir"
+        },
+        {
+          "sv": "öva",
+          "en": "to practise, rehearse"
+        },
+        {
+          "sv": "ett proffs",
+          "en": "a professional"
+        },
+        {
+          "sv": "ett språkcafé",
+          "en": "a language café (an informal meeting to practise a language)"
+        },
+        {
+          "sv": "anmäla sig",
+          "en": "to sign up, register"
+        },
+        {
+          "sv": "en förening",
+          "en": "a club, an association"
+        },
+        {
+          "sv": "innebandy",
+          "en": "floorball (indoor hockey with a plastic ball)"
+        },
+        {
+          "sv": "en klubba",
+          "en": "a stick (for floorball or hockey)"
+        }
+      ]
+    }
+  ]
+}
