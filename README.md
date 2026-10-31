@@ -100,12 +100,24 @@ To get Finnish citizenship you have to prove your Finnish or Swedish. One common
 |---|---|
 | 🎤 **Speaking** (24 tasks) | **Accounts** (tell about your home, work, a trip…), **situations** where someone on the "recording" talks to you and you answer in time (booking at the hälsostation, calling the disponent…), and **short presentations** where you give your view. Each has the test's preparation and speaking time, a structure to follow, useful phrases, and a model answer to listen to. You can **record yourself** and play it back. |
 | ✍️ **Writing** (18 tasks) | **Informal** messages, **formal** messages (to a landlord, employer or authority) and **opinion** texts. Write with a word counter and an optional timer (å ä ö keys included), then compare with a model text and tick a checklist. Your draft is saved. |
-| 📖 **Reading** (10 texts) | Notices, emails, ads, articles and forum posts with multiple-choice and true/false questions, explanations, a glossary and an English translation. |
-| 🎧 **Listening** (10 recordings) | Conversations, voicemails, announcements and radio clips. Like the test, you can **listen twice** before answering; then the transcript appears. |
+| 📖 **Reading** (10 texts) | Notices, emails, ads, articles and forum posts with multiple-choice, true/false and **written-answer** questions, explanations, a glossary and an English translation. |
+| 🎧 **Listening** (10 recordings) | Conversations, voicemails, announcements and radio clips with the same kinds of questions. Like the test, you can **listen twice** before answering; then the transcript appears. |
+
+**Written-answer questions** ask you to write a short answer in your own words, like *"När öppnar tvättstugan igen?" → "På tisdag."* After you check, you see the expected answer and mark yours right or wrong.
+
+### ✨ Get graded by ChatGPT
+The app can't judge your speaking or your writing by itself, so every task has an **✨ Open in ChatGPT** button. It opens a new ChatGPT chat with an examiner prompt that includes the task (and your text or answers). You need a ChatGPT account; the free one works.
+
+- **✍️ Writing:** ChatGPT estimates your YKI grade, checks every point the task asks for, lists your mistakes as *wrong → right*, and rewrites your text.
+- **🎤 Speaking:** ChatGPT gives you the task and waits. Tap the 🎙️ microphone in ChatGPT and answer out loud; it grades the transcript and gives you a better version to practise.
+- **💬 Situations:** ChatGPT plays the other person, one line at a time, and you answer by voice. At the end it goes through every reply.
+- **📖🎧 Written answers:** ChatGPT says whether each answer counts, and how to write it in correct Swedish.
+
+The prompt is **also copied**, so if the chat opens empty (this can happen in the ChatGPT app) just paste it. **📋 Copy prompt** works with any other AI chat too. Nothing is sent anywhere until you tap the button.
 
 Everything is set in **Finland**: euros, FPA, kommunen, Migri, HRT, Helsingfors, Åbo, Vasa… The tips and instructions are in English; the tasks are in Swedish, each with an English translation.
 
-> ⚠️ This is practice material written for this app, **not official YKI material**, and the test format can change (subtest days are being piloted from autumn 2026, for example). Before you book, check the official pages: [Migri: language skills](https://migri.fi/en/language-skills), [OPH: proving your language skills](https://www.oph.fi/en/education-and-qualifications/demonstrating-your-language-proficiency-when-applying-finnish), and the [official sample tasks](https://ykitesti.solki.jyu.fi/en/tutustu-testiin/in-english/intermediate-level-speaking/). Your phone's Swedish voice usually speaks Sweden Swedish, and Finland Swedish sounds a little different, so also listen to [Svenska Yle](https://svenska.yle.fi) now and then.
+> ⚠️ This is practice material written for this app, **not official YKI material**, ChatGPT's grade is only an estimate, and the test format can change (subtest days are being piloted from autumn 2026, for example). Before you book, check the official pages: [Migri: language skills](https://migri.fi/en/language-skills), [OPH: proving your language skills](https://www.oph.fi/en/education-and-qualifications/demonstrating-your-language-proficiency-when-applying-finnish), and the [official sample tasks](https://ykitesti.solki.jyu.fi/en/tutustu-testiin/in-english/intermediate-level-speaking/). Your phone's Swedish voice usually speaks Sweden Swedish, and Finland Swedish sounds a little different, so also listen to [Svenska Yle](https://svenska.yle.fi) now and then.
 
 ---
 
