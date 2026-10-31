@@ -111,9 +111,9 @@
         },
         {
           "type": "open",
-          "q": "Vad ska grannarna göra på talkot?",
-          "answer": "Kratta löv och ta in trädgårdsmöblerna.",
-          "explain": "Anna explains: “Vi krattar löv, tar in trädgårdsmöblerna och gör allt klart inför vintern.” A correct answer names at least one concrete job: raking leaves (kratta löv) or bringing in the garden furniture (ta in trädgårdsmöblerna)."
+          "q": "Vilket arbete ska grannarna göra på talkot?",
+          "answer": "Städa gården: kratta löv och ta in trädgårdsmöblerna.",
+          "explain": "Anna explains: “Det betyder att alla som bor i huset städar gården tillsammans. Vi krattar löv, tar in trädgårdsmöblerna och gör allt klart inför vintern.” A correct answer says they clean the yard (städa gården) or names at least one concrete job: raking leaves (kratta löv) or bringing in the garden furniture (ta in trädgårdsmöblerna). Grilling sausages and drinking coffee come afterwards (“Efteråt”), so they are not the work."
         }
       ],
       "glossary": [
@@ -409,9 +409,9 @@
         },
         {
           "type": "open",
-          "q": "När börjar kursen?",
+          "q": "När börjar Olgas kurs?",
           "answer": "Om två veckor.",
-          "explain": "At the end: “Kursen börjar om två veckor.” The answer needs “om två veckor” (in two weeks). Note: om två veckor = in two weeks’ time, i två veckor = for two weeks."
+          "explain": "At the end: “Kursen börjar om två veckor.” The answer needs “om två veckor” (in two weeks). Klockan fem is when the full Monday and Wednesday course starts, not Olga’s course. Note: om två veckor = in two weeks’ time, i två veckor = for two weeks."
         },
         {
           "type": "open",
@@ -528,9 +528,9 @@
         },
         {
           "type": "open",
-          "q": "Vilken tid ska Ahmed träffa läkaren?",
+          "q": "Hur dags ska Ahmed träffa läkaren?",
           "answer": "Klockan kvart över nio.",
-          "explain": "“Din nya tid är på måndag nästa vecka klockan kvart över nio.” The answer needs the time: a quarter past nine (9.15). Don’t mix it up with kvart i nio (8.45)."
+          "explain": "“Din nya tid är på måndag nästa vecka klockan kvart över nio.” Hur dags asks for the clock time, so the answer needs a quarter past nine (9.15). Don’t mix it up with kvart i nio (8.45)."
         },
         {
           "type": "open",
@@ -652,15 +652,15 @@
         },
         {
           "type": "open",
-          "q": "Var kan Aino hämta Sara och barnen om de åker buss?",
+          "q": "Var kan Aino hämta Sara och barnen?",
           "answer": "Vid butiken i byn.",
-          "explain": "“Annars går det en buss från Åbo klockan fem, och då kan vi hämta er vid butiken i byn.” The answer needs the place: at the shop in the village."
+          "explain": "“Annars går det en buss från Åbo klockan fem, och då kan vi hämta er vid butiken i byn.” If they come by bus, Aino picks them up there. The answer needs the place: at the shop in the village."
         },
         {
           "type": "open",
-          "q": "Vad ska Sara inte glömma att ta med?",
+          "q": "Vad ska Sara ta med förutom kläder?",
           "answer": "Myggmedel.",
-          "explain": "Aino ends with: “Och glöm inte myggmedel!” (And don’t forget mosquito repellent!) The answer needs myggmedel. Warm clothes and rain clothes are also mentioned, but “glöm inte” points to the mosquito repellent."
+          "explain": "Aino says: “Men ta med varma kläder och regnkläder …” and ends with: “Och glöm inte myggmedel!” (And don’t forget mosquito repellent!) Apart from clothes, the answer needs myggmedel. Food is not needed: they have already done the shopping."
         }
       ],
       "glossary": [
@@ -890,7 +890,7 @@
           "type": "open",
           "q": "Hur mycket blir tåget försenat?",
           "answer": "Ungefär tjugo minuter.",
-          "explain": "“vi blir tyvärr ungefär tjugo minuter försenade.” The answer needs the delay: about 20 minutes. Don’t mix it up with the arrival time “tjugo i tolv” (11.40)."
+          "explain": "“På grund av ett signalfel nära Riihimäki blir vi tyvärr ungefär tjugo minuter försenade.” The answer needs the delay: about 20 minutes. Don’t mix it up with the arrival time “tjugo i tolv” (11.40)."
         }
       ],
       "glossary": [
@@ -1018,7 +1018,7 @@
           "type": "open",
           "q": "Var i butiken finns erbjudandet på karelska piroger?",
           "answer": "I bageriavdelningen.",
-          "explain": "“I dag har vi också ett specialerbjudande i vår bageriavdelning.” The answer needs the bakery department (“i bageriet” is also right)."
+          "explain": "“I dag har vi också ett specialerbjudande i vår bageriavdelning: tre färska karelska piroger …” The answer needs the bakery department (“i bageriet” is also right)."
         }
       ],
       "glossary": [
@@ -1303,9 +1303,9 @@
         },
         {
           "type": "open",
-          "q": "Vad kan man göra med en telefon som fortfarande fungerar?",
+          "q": "Vad kan man göra med en telefon som fortfarande fungerar, om man inte behöver den längre?",
           "answer": "Ge den till någon eller sälja den på nätet.",
-          "explain": "“Då kan du ge den till någon som behöver den eller sälja den på nätet.” Either answer is right: give it to someone who needs it, or sell it online."
+          "explain": "“Då kan du ge den till någon som behöver den eller sälja den på nätet.” Either answer is right: give it to someone who needs it, or sell it online. Using your own phone as long as possible is best for the environment, but this question is about a phone you no longer need."
         }
       ],
       "glossary": [
