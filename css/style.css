@@ -724,6 +724,7 @@ textarea.code { font-family: ui-monospace, Menlo, monospace; font-size: 0.75rem;
 .y-say { display: flex; gap: 8px; margin-top: 8px; }
 .y-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 4px 0 10px; }
 .y-tabs .chip { padding: 8px 12px; font-size: 0.85rem; cursor: pointer; }
+.y-screen .card > h3:first-child { margin-top: 0; }
 .y-timer { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
 .y-clock { font-size: 3rem; font-weight: 900; font-variant-numeric: tabular-nums; color: var(--muted); }
 .y-clock.prep { color: var(--brand-2); }

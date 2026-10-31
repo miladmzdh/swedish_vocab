@@ -19,6 +19,15 @@ const TYPE_LABEL = {
   informal: ['Informal message', 'Informellt meddelande', 'To a friend, neighbour or hobby group.'],
   formal: ['Formal message', 'Formellt meddelande', 'To a landlord, employer, shop or authority.'],
   opinion: ['Opinion text', 'Åsiktstext', 'Give and justify your opinion.'],
+  notice: ['Notices', 'Meddelanden', 'Notes on the board, signs and short information.'],
+  email: ['Emails and letters', 'E-post och brev', 'Messages from people and services.'],
+  ad: ['Ads', 'Annonser', 'Job ads, courses, flats and things for sale.'],
+  article: ['Articles', 'Artiklar', 'Short news and magazine texts.'],
+  forum: ['Forum posts', 'Diskussioner', 'Opinions and questions online.'],
+  dialogue: ['Conversations', 'Samtal', 'Two people talking.'],
+  voicemail: ['Voicemails', 'Röstmeddelanden', 'Messages left on your phone.'],
+  announcement: ['Announcements', 'Utrop', 'At the station, in the shop, at events.'],
+  radio: ['Radio', 'Radio', 'Short news and radio programmes.'],
 };
 const SOURCES = [
   ['Migri: language skills for citizenship', 'https://migri.fi/en/language-skills'],
@@ -37,6 +46,8 @@ export const loadPart = (id) =>
     .catch(() => []));
 const rec = (part) => (S.yki[part] ||= {});
 const doneCount = (part, list) => list.filter((t) => rec(part)[t.id]?.done).length;
+// Content marks Swedish starters as *…*: show them in italics.
+const rich = (s) => String(s).split(/\*([^*]+)\*/).map((x, i) => (i % 2 ? h('i', x) : x));
 const wordCount = (s) => (String(s).trim().match(/\S+/g) || []).length;
 const fmt = (s) => `${Math.floor(s / 60)}:${String(Math.max(0, Math.round(s % 60))).padStart(2, '0')}`;
 
@@ -387,8 +398,8 @@ function speakingTask(body, t, api) {
       [
         '🧭 How to answer',
         () => [
-          h('section.card', h('h3', 'Structure'), h('ol.y-steps', (t.structure || []).map((s) => h('li', s)))),
-          h('section.card', h('h3', 'Tips'), h('ul', (t.tips || []).map((s) => h('li', s)))),
+          h('section.card', h('h3', 'Structure'), h('ol.y-steps', (t.structure || []).map((s) => h('li', ...rich(s))))),
+          h('section.card', h('h3', 'Tips'), h('ul', (t.tips || []).map((s) => h('li', ...rich(s))))),
           h('section.card', h('h3', 'Useful phrases'), h('p.muted.small', 'Tap to hear.'), phraseList(t.phrases)),
         ],
       ],
@@ -457,7 +468,7 @@ function situationTask(body, t, api) {
   };
   const done = () => {
     mount(actions, h('button.btn.ghost.wide', { type: 'button', onclick: restart }, '↺ Practise again'), h('button.btn.ghost.wide', { type: 'button', onclick: () => chat.querySelectorAll('.y-en').forEach((e) => (e.hidden = !e.hidden)) }, 'Show / hide English'));
-    mount(after, h('section.card', h('h3', 'Useful phrases'), phraseList(t.phrases)), h('section.card', h('h3', 'Tips'), h('ul', (t.tips || []).map((s) => h('li', s)))), ratingRow((r) => award('speaking', t.id, 10, { rating: r })));
+    mount(after, h('section.card', h('h3', 'Useful phrases'), phraseList(t.phrases)), h('section.card', h('h3', 'Tips'), h('ul', (t.tips || []).map((s) => h('li', ...rich(s))))), ratingRow((r) => award('speaking', t.id, 10, { rating: r })));
   };
   const restart = () => {
     i = -1;
