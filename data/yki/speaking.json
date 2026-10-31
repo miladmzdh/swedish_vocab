@@ -1,0 +1,1626 @@
+{
+  "tasks": [
+    {
+      "id": "account-home",
+      "type": "account",
+      "title": "Mitt hem",
+      "titleEn": "My home",
+      "prompt": "Berätta om ditt hem. Var bor du och hur ser din bostad ut? Vad tycker du om i ditt bostadsområde? Finns det något som du skulle vilja ändra?",
+      "promptEn": "Tell us about your home. Where do you live and what is your home like? What do you like about your neighbourhood? Is there anything you would like to change?",
+      "prep": 60,
+      "speak": 90,
+      "structure": [
+        "Start: say where and how you live — *Jag bor i en … i …*",
+        "Describe your home: rooms, size, something special — *Lägenheten har … och det finns också …*",
+        "Talk about the neighbourhood: shops, transport, nature — *Jag tycker om området, eftersom …*",
+        "Say what you would change — *Om jag kunde, skulle jag vilja …*",
+        "Round off in one sentence — *Allt som allt trivs jag här.*"
+      ],
+      "model": "Jag ska berätta om mitt hem. Jag bor i Vanda, i en hyreslägenhet på fjärde våningen. Vi är tre personer i familjen: jag, min man och vår dotter. Lägenheten är en trea med två sovrum, ett vardagsrum och ett litet kök. Det finns också en balkong där vi sitter på sommaren.\n\nJag tycker om vårt bostadsområde, eftersom allt finns nära. Det tar bara fem minuter att gå till matbutiken, och det är lätt att ta bussen eller tåget till Helsingfors. Dessutom finns det en skog bakom huset, och där brukar jag promenera på kvällarna. I huset finns en gemensam bastu, och vår familj har en egen bastutur varje fredag.\n\nMen det finns också problem. Lägenheten är lite för liten för oss nu, och hyran har gått upp. Om jag kunde, skulle jag vilja ha ett eget arbetsrum. Allt som allt trivs vi ändå bra här.",
+      "modelEn": "I'm going to tell you about my home. I live in Vantaa, in a rented flat on the fourth floor. There are three of us in the family: me, my husband and our daughter. The flat is a three-room flat with two bedrooms, a living room and a small kitchen. There is also a balcony where we sit in the summer.\n\nI like our neighbourhood because everything is close by. It only takes five minutes to walk to the grocery shop, and it's easy to take the bus or the train to Helsinki. There is also a forest behind the building, and I usually go for walks there in the evenings. The building has a shared sauna, and our family has its own sauna slot every Friday.\n\nBut there are also problems. The flat is a bit too small for us now, and the rent has gone up. If I could, I would like to have a study of my own. All in all, we are still happy here.",
+      "phrases": [
+        {
+          "sv": "Jag bor i en hyreslägenhet.",
+          "en": "I live in a rented flat."
+        },
+        {
+          "sv": "Lägenheten är en tvåa / en trea.",
+          "en": "The flat has two / three rooms (plus a kitchen)."
+        },
+        {
+          "sv": "Det tar fem minuter att gå till …",
+          "en": "It takes five minutes to walk to …"
+        },
+        {
+          "sv": "Det finns en skog / en park nära huset.",
+          "en": "There is a forest / a park near the building."
+        },
+        {
+          "sv": "Huset har en gemensam bastu.",
+          "en": "The building has a shared sauna."
+        },
+        {
+          "sv": "Hyran är … euro i månaden.",
+          "en": "The rent is … euros a month."
+        },
+        {
+          "sv": "Jag tycker om området, eftersom …",
+          "en": "I like the area because …"
+        },
+        {
+          "sv": "Om jag kunde, skulle jag vilja …",
+          "en": "If I could, I would like to …"
+        },
+        {
+          "sv": "Allt som allt trivs jag här.",
+          "en": "All in all, I'm happy here."
+        }
+      ],
+      "tips": [
+        "Take the guiding questions in order and give each one two or three sentences.",
+        "After *eftersom* the word order is normal: *eftersom allt finns nära* (not *eftersom finns allt nära*).",
+        "If you can't find a word, describe it: *ett rum där man tvättar kläder* ('a room where you wash clothes')."
+      ]
+    },
+    {
+      "id": "account-work",
+      "type": "account",
+      "title": "Mitt arbete",
+      "titleEn": "My work",
+      "prompt": "Berätta om ett arbete som du har nu eller har haft tidigare. Vad gör du, eller vad gjorde du, på jobbet? Vad tycker du om arbetet? Vad har du lärt dig där?",
+      "promptEn": "Tell us about a job you have now or have had before. What do you do, or what did you do, at work? What do you think of the job? What have you learned there?",
+      "prep": 60,
+      "speak": 90,
+      "structure": [
+        "Start: say which job you'll talk about and where — *Jag jobbar som … på …*",
+        "Describe a normal working day — *Jag börjar klockan … Först … sedan …*",
+        "Give your opinion: the good sides and the hard sides — *Jag tycker om …, men …*",
+        "Say what you have learned and what you plan — *På jobbet har jag lärt mig … I framtiden vill jag …*"
+      ],
+      "model": "Jag ska berätta om mitt nuvarande arbete. Jag jobbar som städare på ett sjukhus i Åbo, och jag har arbetat där i ungefär två år. Jag börjar tidigt, redan klockan sex på morgonen, och jobbar till halv tre. Först städar jag patientrummen och korridorerna, och sedan hjälper jag ibland till i köket.\n\nJag tycker om mitt arbete, eftersom mina arbetskamrater är trevliga och hjälpsamma. Vi dricker kaffe tillsammans under kaffepausen och pratar om allt möjligt. Där kan jag också öva både svenska och finska. Men arbetet är ganska tungt för ryggen, och ibland har vi för lite tid.\n\nPå jobbet har jag lärt mig mycket om arbetslivet i Finland. Man ska komma i tid, och man kan prata öppet med chefen om man har ett problem. I framtiden vill jag studera vidare och kanske bli närvårdare. Det skulle vara intressant att arbeta mer med människor.",
+      "modelEn": "I'm going to tell you about my current job. I work as a cleaner at a hospital in Turku, and I have worked there for about two years. I start early, at six in the morning, and work until half past two. First I clean the patients' rooms and the corridors, and then I sometimes help out in the kitchen.\n\nI like my job because my colleagues are nice and helpful. We have coffee together during the coffee break and talk about all sorts of things. I can also practise both Swedish and Finnish there. But the work is quite hard on the back, and sometimes we have too little time.\n\nAt work I have learned a lot about working life in Finland. You should be on time, and you can talk openly with your boss if you have a problem. In the future I want to continue my studies and perhaps become a practical nurse. It would be interesting to work more with people.",
+      "phrases": [
+        {
+          "sv": "Jag jobbar som … på …",
+          "en": "I work as a … at …"
+        },
+        {
+          "sv": "Jag har arbetat där i två år.",
+          "en": "I have worked there for two years."
+        },
+        {
+          "sv": "En vanlig arbetsdag börjar klockan …",
+          "en": "A normal working day starts at …"
+        },
+        {
+          "sv": "Mina arbetskamrater är hjälpsamma.",
+          "en": "My colleagues are helpful."
+        },
+        {
+          "sv": "Arbetet är tungt / omväxlande / stressigt.",
+          "en": "The work is hard / varied / stressful."
+        },
+        {
+          "sv": "Det bästa med jobbet är …",
+          "en": "The best thing about the job is …"
+        },
+        {
+          "sv": "Jag har lärt mig att …",
+          "en": "I have learned that …"
+        },
+        {
+          "sv": "I framtiden vill jag studera vidare.",
+          "en": "In the future I want to continue my studies."
+        }
+      ],
+      "tips": [
+        "If you don't work at the moment, talk about an earlier job, a work placement (*praktik*) or the job you would like to have.",
+        "Use the present tense for a job you have now (*jobbar*) and the past tense for an old job (*jobbade*).",
+        "Remember to put the verb second when a sentence starts with a time word: *Först städar jag …*, *I framtiden vill jag …*."
+      ]
+    },
+    {
+      "id": "account-course",
+      "type": "account",
+      "title": "En kurs som jag har gått",
+      "titleEn": "A course I have taken",
+      "prompt": "Berätta om en kurs eller en utbildning som du har gått i Finland. Vad studerade du och var? Hur var undervisningen? Vilken nytta har du haft av kursen?",
+      "promptEn": "Tell us about a course or a training programme you have taken in Finland. What did you study and where? What was the teaching like? How has the course been useful to you?",
+      "prep": 60,
+      "speak": 90,
+      "structure": [
+        "Start: name the course, when and where — *Jag ska berätta om … som jag gick i …*",
+        "Describe the course: timetable, group, what you did — *Vi studerade … dagar i veckan …*",
+        "Say what was good and what was difficult — *Det bästa var … Det svåraste för mig var …*",
+        "Explain how it has helped you — *Efter kursen … / Nu kan jag …*"
+      ],
+      "model": "Jag ska berätta om integrationsutbildningen som jag gick när jag hade bott i Finland i ett år. Kursen var i Vasa och den var på svenska. Vi studerade fyra dagar i veckan, från nio till två. Vi var femton studerande från många olika länder, till exempel Syrien, Ukraina och Thailand.\n\nPå kursen lärde vi oss språket, men också mycket om det finländska samhället. Vi lärde oss till exempel hur man ansöker om bostadsbidrag från FPA och hur man bokar en tid på hälsostationen. Läraren var tålmodig och lektionerna var roliga. Vi pratade mycket i par och gjorde studiebesök, till exempel på biblioteket och i stadshuset.\n\nDet svåraste för mig var uttalet och alla långa ord. Ändå har jag haft stor nytta av kursen. Efter den fick jag en praktikplats på ett daghem, och nu kan jag sköta många ärenden på svenska själv. Jag rekommenderar kursen till alla som är nya i Finland.",
+      "modelEn": "I'm going to tell you about the integration training I took when I had lived in Finland for a year. The course was in Vaasa and it was in Swedish. We studied four days a week, from nine to two. There were fifteen students from many different countries, for example Syria, Ukraine and Thailand.\n\nOn the course we learned the language, but also a lot about Finnish society. For example, we learned how to apply for housing allowance from Kela and how to book an appointment at the health centre. The teacher was patient and the lessons were fun. We talked a lot in pairs and made study visits, for example to the library and the town hall.\n\nThe most difficult thing for me was the pronunciation and all the long words. Even so, the course has been very useful to me. After it I got a work placement at a day-care centre, and now I can deal with many everyday matters in Swedish by myself. I recommend the course to everyone who is new in Finland.",
+      "phrases": [
+        {
+          "sv": "Jag gick en kurs i …",
+          "en": "I took a course in …"
+        },
+        {
+          "sv": "Kursen ordnades av …",
+          "en": "The course was organised by …"
+        },
+        {
+          "sv": "Vi studerade fyra dagar i veckan.",
+          "en": "We studied four days a week."
+        },
+        {
+          "sv": "Läraren var tålmodig och kunnig.",
+          "en": "The teacher was patient and knowledgeable."
+        },
+        {
+          "sv": "Vi gjorde studiebesök på …",
+          "en": "We made study visits to …"
+        },
+        {
+          "sv": "Det svåraste för mig var …",
+          "en": "The most difficult thing for me was …"
+        },
+        {
+          "sv": "Jag har haft stor nytta av kursen.",
+          "en": "The course has been very useful to me."
+        },
+        {
+          "sv": "Jag rekommenderar kursen till …",
+          "en": "I recommend the course to …"
+        }
+      ],
+      "tips": [
+        "This is about the past, so use the past tense: *gick, studerade, lärde oss, var*.",
+        "Any course works: a language course, a driving course, a first-aid course or a hobby course.",
+        "Finish with how the course helps you now; that answers the last guiding question."
+      ]
+    },
+    {
+      "id": "account-free-time",
+      "type": "account",
+      "title": "Min fritid",
+      "titleEn": "My free time",
+      "prompt": "Berätta om din fritid. Vad gör du gärna när du är ledig? Gör du det ensam eller tillsammans med andra? Finns det en hobby som du skulle vilja börja med?",
+      "promptEn": "Tell us about your free time. What do you like to do when you're off? Do you do it alone or together with others? Is there a hobby you would like to take up?",
+      "prep": 60,
+      "speak": 90,
+      "structure": [
+        "Start: say how much free time you have — *Jag har ganska lite fritid, men …*",
+        "Describe your main hobby: what, where, how often — *Min största hobby är … Vi tränar två gånger i veckan.*",
+        "Say who you do it with and why you like it — *Jag tycker om det, eftersom …*",
+        "Talk about a new hobby you want to try — *En hobby som jag vill börja med är …*"
+      ],
+      "model": "Jag ska berätta om min fritid. Jag jobbar mycket, så jag har inte så mycket fritid, men på veckosluten försöker jag göra något roligt. Min största hobby är fotboll. Jag spelar i ett lag för vuxna i Esbo, och vi tränar två gånger i veckan i en idrottshall. På sommaren spelar vi ute.\n\nJag tycker om fotboll, eftersom det är bra motion och jag har fått många nya vänner i laget. Efter träningen går vi ibland och äter pizza tillsammans. Hemma läser jag gärna, eller så tittar jag på filmer med min familj.\n\nEn hobby som jag vill börja med är längdskidåkning. Mina finska kolleger säger att det är det bästa sättet att njuta av vintern. Jag har redan lånat skidor av en vän, och i januari ska jag gå en kurs för nybörjare. Jag hoppas att jag inte faller för många gånger!",
+      "modelEn": "I'm going to tell you about my free time. I work a lot, so I don't have very much free time, but at weekends I try to do something fun. My biggest hobby is football. I play in an adult team in Espoo, and we train twice a week in a sports hall. In the summer we play outdoors.\n\nI like football because it's good exercise and I have made many new friends in the team. After training we sometimes go and eat pizza together. At home I like reading, or I watch films with my family.\n\nA hobby I want to take up is cross-country skiing. My Finnish colleagues say it's the best way to enjoy the winter. I have already borrowed skis from a friend, and in January I'm going to take a course for beginners. I hope I don't fall too many times!",
+      "phrases": [
+        {
+          "sv": "På min fritid brukar jag …",
+          "en": "In my free time I usually …"
+        },
+        {
+          "sv": "Min största hobby är …",
+          "en": "My biggest hobby is …"
+        },
+        {
+          "sv": "Vi tränar två gånger i veckan.",
+          "en": "We train twice a week."
+        },
+        {
+          "sv": "Jag gör det tillsammans med …",
+          "en": "I do it together with …"
+        },
+        {
+          "sv": "Det är bra motion.",
+          "en": "It's good exercise."
+        },
+        {
+          "sv": "Det hjälper mig att koppla av.",
+          "en": "It helps me relax."
+        },
+        {
+          "sv": "på veckosluten",
+          "en": "at weekends"
+        },
+        {
+          "sv": "Jag skulle vilja börja med …",
+          "en": "I would like to take up …"
+        }
+      ],
+      "tips": [
+        "*Brukar* + verb is a very useful way to talk about habits: *Jag brukar simma på söndagar*.",
+        "Say how often you do things: *en gång i veckan, varje dag, ibland, sällan*.",
+        "A small funny or personal detail at the end makes your answer sound natural."
+      ]
+    },
+    {
+      "id": "account-friend",
+      "type": "account",
+      "title": "En viktig person",
+      "titleEn": "An important person",
+      "prompt": "Berätta om en vän eller en familjemedlem som är viktig för dig. Hur länge har ni känt varandra? Vad brukar ni göra tillsammans? Varför är personen viktig för dig?",
+      "promptEn": "Tell us about a friend or a family member who is important to you. How long have you known each other? What do you usually do together? Why is this person important to you?",
+      "prep": 60,
+      "speak": 90,
+      "structure": [
+        "Start: say who the person is — *Jag vill berätta om min vän …*",
+        "Tell how and when you met — *Vi träffades för … år sedan i …*",
+        "Describe what you do together, with one memory — *Vi brukar … / Förra sommaren …*",
+        "Explain why the person matters to you — *Hon är viktig för mig, eftersom …*"
+      ],
+      "model": "Jag vill berätta om min bästa vän Aino. Vi träffades för fem år sedan på en matlagningskurs i Tammerfors. Jag var ny i Finland och kände ingen, men Aino satt bredvid mig och frågade om jag ville dricka kaffe efter kursen. Sedan dess har vi varit goda vänner.\n\nNu bor Aino i Uleåborg, så vi ses inte så ofta. Men vi pratar i telefon nästan varje söndag. När vi träffas brukar vi laga mat tillsammans eller gå ut i naturen. Förra sommaren var jag med hennes familj på deras sommarstuga. Där badade vi bastu och simmade i sjön, och det var första gången som jag plockade blåbär.\n\nAino är viktig för mig, eftersom hon alltid lyssnar och hjälper mig. Hon har till exempel hjälpt mig att skriva en jobbansökan. Dessutom har jag lärt mig mycket om finsk kultur av henne. Jag tror att en god vän är som familj när man bor långt från sitt hemland.",
+      "modelEn": "I want to tell you about my best friend Aino. We met five years ago on a cooking course in Tampere. I was new in Finland and didn't know anyone, but Aino sat next to me and asked if I wanted to have coffee after the class. Since then we have been good friends.\n\nNow Aino lives in Oulu, so we don't see each other very often. But we talk on the phone almost every Sunday. When we meet, we usually cook together or go out into nature. Last summer I stayed with her family at their summer cottage. There we had a sauna and swam in the lake, and it was the first time I picked blueberries.\n\nAino is important to me because she always listens and helps me. For example, she has helped me write a job application. I have also learned a lot about Finnish culture from her. I think a good friend is like family when you live far away from your home country.",
+      "phrases": [
+        {
+          "sv": "Vi träffades för fem år sedan.",
+          "en": "We met five years ago."
+        },
+        {
+          "sv": "Vi har känt varandra i … år.",
+          "en": "We have known each other for … years."
+        },
+        {
+          "sv": "Sedan dess har vi varit goda vänner.",
+          "en": "Since then we have been good friends."
+        },
+        {
+          "sv": "Vi ses ungefär en gång i månaden.",
+          "en": "We see each other about once a month."
+        },
+        {
+          "sv": "När vi träffas brukar vi …",
+          "en": "When we meet, we usually …"
+        },
+        {
+          "sv": "Hon ställer alltid upp för mig.",
+          "en": "She is always there for me."
+        },
+        {
+          "sv": "Jag kan prata med honom om allt.",
+          "en": "I can talk to him about anything."
+        },
+        {
+          "sv": "Han är viktig för mig, eftersom …",
+          "en": "He is important to me because …"
+        }
+      ],
+      "tips": [
+        "*För … sedan* means 'ago' (*för fem år sedan*); *i … år* gives a length of time (*vi har känt varandra i fem år*).",
+        "Tell one concrete memory; it is easier to talk about and sounds personal.",
+        "*Varandra* means 'each other': *vi hjälper varandra*."
+      ]
+    },
+    {
+      "id": "account-food",
+      "type": "account",
+      "title": "Mat i min vardag",
+      "titleEn": "Food in my everyday life",
+      "prompt": "Berätta om mat och måltider i din vardag. Vad äter du en vanlig dag? Vilken maträtt från ditt hemland lagar du gärna? Vad tycker du om finsk mat?",
+      "promptEn": "Tell us about food and meals in your everyday life. What do you eat on a normal day? Which dish from your home country do you like to cook? What do you think of Finnish food?",
+      "prep": 60,
+      "speak": 90,
+      "structure": [
+        "Start: go through a normal day — *På morgonen äter jag … Lunch äter jag …*",
+        "Describe a dish from your home country — *Min favoriträtt är … med …*",
+        "Give your opinion on Finnish food — *Jag tycker om finsk mat, särskilt …*",
+        "Add something you found strange or don't like — *I början tyckte jag att … var konstigt.*"
+      ],
+      "model": "Jag ska berätta om vad jag äter en vanlig dag. På morgonen har jag inte mycket tid, så jag äter bara gröt eller en smörgås och dricker te. Lunch äter jag på jobbet. Vi har en personalmatsal där det alltid finns soppa, sallad och en varm rätt. Middag lagar jag hemma tillsammans med min man.\n\nMin favoriträtt från mitt hemland är en gryta med kyckling, ris och många kryddor. Det tar lite tid att laga den, så jag gör den oftast på veckosluten. Förr var det svårt att hitta alla kryddor, men nu finns det nästan allt i en asiatisk butik i Helsingfors.\n\nJag tycker om finsk mat, särskilt laxsoppa och karelska piroger. I början tyckte jag att rågbröd var konstigt, men nu äter jag det varje dag. Det enda som jag inte tycker om är memma, som man äter på påsken. Den ser konstig ut, och jag tycker inte om smaken.",
+      "modelEn": "I'm going to tell you what I eat on a normal day. In the morning I don't have much time, so I just eat porridge or a sandwich and drink tea. I have lunch at work. We have a staff canteen where there is always soup, salad and a hot dish. I cook dinner at home together with my husband.\n\nMy favourite dish from my home country is a stew with chicken, rice and lots of spices. It takes some time to make, so I usually make it at weekends. It used to be hard to find all the spices, but now you can find almost everything in an Asian shop in Helsinki.\n\nI like Finnish food, especially salmon soup and Karelian pasties. At first I thought rye bread was strange, but now I eat it every day. The only thing I don't like is mämmi, which people eat at Easter. It looks strange, and I don't like the taste.",
+      "phrases": [
+        {
+          "sv": "Till frukost äter jag …",
+          "en": "For breakfast I eat …"
+        },
+        {
+          "sv": "Lunch äter jag oftast på jobbet.",
+          "en": "I usually have lunch at work."
+        },
+        {
+          "sv": "Min favoriträtt är …",
+          "en": "My favourite dish is …"
+        },
+        {
+          "sv": "Den görs av … och …",
+          "en": "It is made from … and …"
+        },
+        {
+          "sv": "Det smakar starkt / sött / salt.",
+          "en": "It tastes spicy / sweet / salty."
+        },
+        {
+          "sv": "Jag tycker särskilt om …",
+          "en": "I especially like …"
+        },
+        {
+          "sv": "I början tyckte jag att … var konstigt.",
+          "en": "At first I thought … was strange."
+        },
+        {
+          "sv": "Det enda som jag inte tycker om är …",
+          "en": "The only thing I don't like is …"
+        }
+      ],
+      "tips": [
+        "Know the meal words: *frukost* (breakfast), *lunch* (lunch), *middag* (dinner), *mellanmål* (snack).",
+        "You don't need the exact name of every ingredient; *kött, grönsaker, kryddor* is enough.",
+        "A comparison is an easy extra: *Hemma äter vi …, men i Finland …*."
+      ]
+    },
+    {
+      "id": "account-winter",
+      "type": "account",
+      "title": "Min första vinter i Finland",
+      "titleEn": "My first winter in Finland",
+      "prompt": "Berätta om din första vinter i Finland. Hur var vädret? Vad var svårt eller överraskande? Vad gör du nu för att trivas på vintern?",
+      "promptEn": "Tell us about your first winter in Finland. What was the weather like? What was difficult or surprising? What do you do now to enjoy the winter?",
+      "prep": 60,
+      "speak": 90,
+      "structure": [
+        "Start: say when and where you spent your first winter — *Jag kom till … i … för … år sedan.*",
+        "Describe the weather and your first feelings — *Först var det … Sedan kom …*",
+        "Tell what was difficult or surprising — *Det var svårt … Det var också överraskande att …*",
+        "Say what you do now and how you feel today — *Nu vet jag bättre. Jag …*"
+      ],
+      "model": "Jag ska berätta om min första vinter i Finland. Jag kom till Kuopio i oktober för fyra år sedan. Först var det bara mörkt och regnigt, och jag var ofta trött. Sedan i december kom snön, och plötsligt blev allt vitt och ljust. Det var mycket vackert.\n\nMen det var också svårt. I januari var det nästan tjugofem grader kallt, och jag hade inte rätt kläder. Jag frös hela tiden när jag väntade på bussen. Det var också överraskande att barnen på daghemmet var ute trots kylan. Och jag halkade flera gånger på isen!\n\nNu vet jag bättre. Jag har köpt varma vinterskor, en tjock jacka och långkalsonger. Jag försöker gå ut varje dag när det är ljust, och ibland åker jag skridskor på en isbana nära mitt hem. Jag har också börjat bada bastu. Nu tycker jag faktiskt om vintern, men jag längtar ändå alltid efter våren.",
+      "modelEn": "I'm going to tell you about my first winter in Finland. I came to Kuopio in October four years ago. At first it was just dark and rainy, and I was often tired. Then in December the snow came, and suddenly everything became white and bright. It was very beautiful.\n\nBut it was also hard. In January it was almost minus twenty-five degrees, and I didn't have the right clothes. I was cold all the time when I was waiting for the bus. It was also surprising that the children at the day-care centre were outside in spite of the cold. And I slipped on the ice several times!\n\nNow I know better. I have bought warm winter shoes, a thick jacket and long johns. I try to go out every day when it's light, and sometimes I go skating on an ice rink near my home. I have also started going to the sauna. Now I actually like the winter, but I still always long for the spring.",
+      "phrases": [
+        {
+          "sv": "Det var tjugo grader kallt.",
+          "en": "It was minus twenty degrees."
+        },
+        {
+          "sv": "Det var mörkt / halt / blåsigt.",
+          "en": "It was dark / slippery / windy."
+        },
+        {
+          "sv": "Jag frös hela tiden.",
+          "en": "I was cold all the time."
+        },
+        {
+          "sv": "Det var överraskande att …",
+          "en": "It was surprising that …"
+        },
+        {
+          "sv": "Jag hade inte rätt kläder.",
+          "en": "I didn't have the right clothes."
+        },
+        {
+          "sv": "Nu vet jag bättre.",
+          "en": "Now I know better."
+        },
+        {
+          "sv": "Jag har vant mig vid kylan.",
+          "en": "I have got used to the cold."
+        },
+        {
+          "sv": "Jag längtar efter våren.",
+          "en": "I long for the spring."
+        }
+      ],
+      "tips": [
+        "Temperatures: *tjugo grader kallt* or *minus tjugo* (−20), *tjugo grader varmt* (+20).",
+        "Contrast then and now (*Först … men nu …*); it shows that you can use both the past and the present tense.",
+        "If you came to Finland in summer, talk about the first winter that followed."
+      ]
+    },
+    {
+      "id": "account-trip",
+      "type": "account",
+      "title": "En resa i Finland",
+      "titleEn": "A trip in Finland",
+      "prompt": "Berätta om en resa som du har gjort i Finland. Vart reste du och med vem? Hur reste ni? Vad var det bästa med resan?",
+      "promptEn": "Tell us about a trip you have made in Finland. Where did you go and who with? How did you travel? What was the best thing about the trip?",
+      "prep": 60,
+      "speak": 90,
+      "structure": [
+        "Start: say where, when and who with — *Förra sommaren reste jag till … med …*",
+        "Explain how you travelled and where you stayed — *Vi åkte … Det tog … Vi bodde i …*",
+        "Tell what you did there — *En dag besökte vi … Vi åkte också …*",
+        "Say what was best and where you'd like to go next — *Det bästa med resan var … Nästa gång …*"
+      ],
+      "model": "Jag ska berätta om en resa till Nyslott som jag gjorde förra sommaren. Jag reste med min fru och våra två barn. Vi har ingen egen bil, så vi hyrde en bil i Helsingfors och körde dit. Det tog ungefär fyra timmar, och på vägen stannade vi för att äta och vila.\n\nI Nyslott bodde vi i en liten stuga vid en sjö i fyra dagar. Varje kväll badade vi bastu och simmade i sjön. En dag besökte vi Olofsborg, som är en gammal borg på en liten ö. Vi åkte också båt på Saimen, och vi hade tur, för vi såg en säl, en saimenvikare, på en sten.\n\nDet bästa med resan var de ljusa nätterna. Klockan var elva på kvällen, men det var fortfarande ljust ute, och det var helt tyst. Resan var ganska dyr, men den var värd pengarna. Nästa gång vill jag resa till Lappland på vintern, så att barnen kan åka hundspann och se norrsken.",
+      "modelEn": "I'm going to tell you about a trip to Savonlinna that I made last summer. I travelled with my wife and our two children. We don't have a car of our own, so we rented a car in Helsinki and drove there. It took about four hours, and on the way we stopped to eat and rest.\n\nIn Savonlinna we stayed in a small cottage by a lake for four days. Every evening we had a sauna and swam in the lake. One day we visited Olavinlinna, which is an old castle on a small island. We also took a boat trip on Lake Saimaa, and we were lucky, because we saw a seal, a Saimaa ringed seal, on a rock.\n\nThe best thing about the trip was the light nights. It was eleven o'clock in the evening, but it was still light outside, and it was completely quiet. The trip was quite expensive, but it was worth the money. Next time I want to travel to Lapland in winter, so that the children can go dog sledding and see the northern lights.",
+      "phrases": [
+        {
+          "sv": "Förra sommaren reste vi till …",
+          "en": "Last summer we travelled to …"
+        },
+        {
+          "sv": "Vi åkte tåg / buss / bil.",
+          "en": "We went by train / bus / car."
+        },
+        {
+          "sv": "Resan tog ungefär fyra timmar.",
+          "en": "The journey took about four hours."
+        },
+        {
+          "sv": "Vi bodde i en stuga / på ett hotell.",
+          "en": "We stayed in a cottage / at a hotel."
+        },
+        {
+          "sv": "En dag besökte vi …",
+          "en": "One day we visited …"
+        },
+        {
+          "sv": "Vi hade tur med vädret.",
+          "en": "We were lucky with the weather."
+        },
+        {
+          "sv": "Det bästa med resan var …",
+          "en": "The best thing about the trip was …"
+        },
+        {
+          "sv": "Det var värt pengarna.",
+          "en": "It was worth the money."
+        },
+        {
+          "sv": "Nästa gång vill jag …",
+          "en": "Next time I want to …"
+        }
+      ],
+      "tips": [
+        "Move the story forward with time words: *först, sedan, en dag, på kvällen, till slut*.",
+        "Many Finnish towns have Swedish names: Tampere = *Tammerfors*, Turku = *Åbo*, Savonlinna = *Nyslott*. Use them if you know them; if you don't, the Finnish name is still understood.",
+        "Travel verbs: *resa* (travel), *åka* (go by bus, train, car), *köra* (drive), *flyga* (fly)."
+      ]
+    },
+    {
+      "id": "situation-health-centre",
+      "type": "situation",
+      "title": "Boka tid på hälsostationen",
+      "titleEn": "Booking an appointment at the health centre",
+      "context": "Du har haft ont i halsen och feber i fyra dagar. Du ringer till hälsostationen för att boka en tid hos läkaren. En sjukskötare svarar.",
+      "contextEn": "You have had a sore throat and a fever for four days. You call the health centre to book an appointment with a doctor. A nurse answers.",
+      "turns": [
+        {
+          "them": "Hälsostationen, sjukskötare Johanna Lindholm. Hur kan jag hjälpa dig?",
+          "themEn": "Health centre, nurse Johanna Lindholm speaking. How can I help you?",
+          "you": "Hej, jag heter Ahmed Hassan. Jag har haft ont i halsen och feber i fyra dagar, så jag skulle vilja boka en tid hos läkaren.",
+          "youEn": "Hi, my name is Ahmed Hassan. I have had a sore throat and a fever for four days, so I would like to book an appointment with a doctor.",
+          "goal": "Say who you are, describe your symptoms and say what you want."
+        },
+        {
+          "them": "Hur hög feber har du haft? Och har du tagit någon medicin?",
+          "themEn": "How high has your fever been? And have you taken any medicine?",
+          "you": "I går kväll hade jag nästan 39 graders feber. Jag har tagit febermedicin från apoteket, men den hjälper bara några timmar.",
+          "youEn": "Last night I had a temperature of almost 39 degrees. I have taken fever medicine from the pharmacy, but it only helps for a few hours.",
+          "goal": "Answer both questions: how high the fever is and what medicine you have taken."
+        },
+        {
+          "them": "Jag kan ge dig en tid i morgon klockan kvart över åtta. Passar det?",
+          "themEn": "I can give you an appointment tomorrow at a quarter past eight. Does that suit you?",
+          "you": "Tyvärr passar det inte, för då måste jag föra mitt barn till daghemmet. Finns det en tid lite senare, till exempel efter tio?",
+          "youEn": "Unfortunately that doesn't suit me, because I have to take my child to day care then. Is there a time a bit later, for example after ten?",
+          "goal": "Say politely that the time does not work, give a reason and suggest another time."
+        },
+        {
+          "them": "Ja, klockan halv två hos doktor Virtanen. Går det bra?",
+          "themEn": "Yes, at half past one with Dr Virtanen. Is that all right?",
+          "you": "Ja, halv två passar bra. Ska jag ta med något till besöket?",
+          "youEn": "Yes, half past one suits me fine. Should I bring anything to the appointment?",
+          "goal": "Accept the new time and ask a practical question about the visit."
+        },
+        {
+          "them": "Ta med ditt id-kort. Och om du blir sämre i natt kan du ringa Jourhjälpen på 116 117.",
+          "themEn": "Bring your ID card. And if you get worse tonight, you can call the medical helpline on 116 117.",
+          "you": "Okej, jag tar med id-kortet. Tack så mycket för hjälpen, hej då!",
+          "youEn": "OK, I'll bring my ID card. Thank you very much for your help, goodbye!",
+          "goal": "Show that you understood, thank the nurse and end the call."
+        }
+      ],
+      "reply": 20,
+      "phrases": [
+        {
+          "sv": "Jag skulle vilja boka en tid hos läkaren.",
+          "en": "I would like to book a doctor's appointment."
+        },
+        {
+          "sv": "Jag har haft feber i fyra dagar.",
+          "en": "I have had a fever for four days."
+        },
+        {
+          "sv": "Jag har ont i halsen / huvudet / magen.",
+          "en": "I have a sore throat / a headache / a stomach ache."
+        },
+        {
+          "sv": "Jag har tagit medicin, men den hjälper inte.",
+          "en": "I have taken medicine, but it doesn't help."
+        },
+        {
+          "sv": "Tyvärr passar det inte.",
+          "en": "Unfortunately that doesn't suit me."
+        },
+        {
+          "sv": "Finns det en tid lite senare?",
+          "en": "Is there an appointment a bit later?"
+        },
+        {
+          "sv": "Det passar bra.",
+          "en": "That suits me fine."
+        },
+        {
+          "sv": "Förlåt, kan du upprepa tiden?",
+          "en": "Sorry, could you repeat the time?"
+        }
+      ],
+      "tips": [
+        "*Ha ont i* + body part: *jag har ont i ryggen, i örat, i en tand*.",
+        "If you don't catch a time or a name, ask: *Förlåt, kan du upprepa?* That is a normal and good reply.",
+        "You have about 20 seconds per reply here: first answer what was asked, then add a reason or a question."
+      ]
+    },
+    {
+      "id": "situation-neighbour-noise",
+      "type": "situation",
+      "title": "Hög musik hos grannen",
+      "titleEn": "Loud music next door",
+      "context": "Klockan är elva en tisdagskväll. Grannen ovanför dig spelar hög musik och du kan inte sova. Du går upp och ringer på grannens dörr.",
+      "contextEn": "It is eleven o'clock on a Tuesday evening. Your upstairs neighbour is playing loud music and you can't sleep. You go upstairs and ring your neighbour's doorbell.",
+      "turns": [
+        {
+          "them": "Hej! Oj, vad kan jag hjälpa dig med?",
+          "themEn": "Hi! Oh, what can I do for you?",
+          "you": "Hej, jag bor i lägenheten under din. Förlåt att jag stör, men musiken hörs väldigt mycket hos oss.",
+          "youEn": "Hi, I live in the flat below yours. Sorry to bother you, but we can hear the music very loudly in our flat.",
+          "goal": "Say who you are and explain the problem politely."
+        },
+        {
+          "them": "Jaså? Vi har lite fest, för min kompis fyller år i dag.",
+          "themEn": "Really? We're having a little party, because it's my friend's birthday today.",
+          "you": "Jag förstår, och grattis till din kompis! Men klockan är redan elva, och jag måste gå upp klockan sex i morgon.",
+          "youEn": "I understand, and happy birthday to your friend! But it's already eleven, and I have to get up at six tomorrow.",
+          "goal": "Show understanding, then explain why the noise is a problem for you."
+        },
+        {
+          "them": "Okej, förlåt. Vi kan skruva ner musiken lite. Räcker det?",
+          "themEn": "OK, sorry. We can turn the music down a bit. Is that enough?",
+          "you": "Tack, det vore snällt. Kan ni också stänga balkongdörren? Ljudet kommer mest därifrån.",
+          "youEn": "Thanks, that would be kind. Could you also close the balcony door? Most of the noise comes from there.",
+          "goal": "Thank them and make one more polite request."
+        },
+        {
+          "them": "Visst. Förlåt, vi tänkte inte på att det är vardag.",
+          "themEn": "Of course. Sorry, we didn't think about it being a weekday.",
+          "you": "Inga problem, det kan hända alla. Men enligt husets ordningsregler ska det vara tyst efter klockan tio på vardagar.",
+          "youEn": "No problem, it can happen to anyone. But according to the house rules it should be quiet after ten o'clock on weekdays.",
+          "goal": "Accept the apology in a friendly way and mention the quiet hours."
+        },
+        {
+          "them": "Det visste jag inte. Tack för att du kom och sa till och inte ringde disponenten direkt.",
+          "themEn": "I didn't know that. Thanks for coming to tell me instead of calling the property manager straight away.",
+          "you": "Det är alltid bättre att prata direkt med varandra. Ha en trevlig fest och god natt!",
+          "youEn": "It's always better to talk to each other directly. Have a nice party and good night!",
+          "goal": "End the conversation on a friendly note."
+        }
+      ],
+      "reply": 20,
+      "phrases": [
+        {
+          "sv": "Förlåt att jag stör, men …",
+          "en": "Sorry to bother you, but …"
+        },
+        {
+          "sv": "Musiken hörs ända ner till oss.",
+          "en": "We can hear the music all the way down in our flat."
+        },
+        {
+          "sv": "Jag kan inte sova.",
+          "en": "I can't sleep."
+        },
+        {
+          "sv": "Skulle ni kunna skruva ner musiken?",
+          "en": "Could you turn the music down?"
+        },
+        {
+          "sv": "Det vore snällt.",
+          "en": "That would be kind."
+        },
+        {
+          "sv": "Det ska vara tyst efter klockan tio.",
+          "en": "It should be quiet after ten o'clock."
+        },
+        {
+          "sv": "Inga problem, det kan hända alla.",
+          "en": "No problem, it can happen to anyone."
+        },
+        {
+          "sv": "Ha en trevlig kväll!",
+          "en": "Have a nice evening!"
+        }
+      ],
+      "tips": [
+        "Be polite but clear: start softly (*Förlåt att jag stör*) and then say exactly what you want.",
+        "*Skulle ni kunna …?* and *Kan ni …?* are polite ways to ask for something.",
+        "Blocks of flats in Finland usually have house rules (*ordningsregler*) with quiet hours at night, and a *disponent* (property manager) who deals with complaints."
+      ]
+    },
+    {
+      "id": "situation-return",
+      "type": "situation",
+      "title": "En trasig kaffebryggare",
+      "titleEn": "A broken coffee maker",
+      "context": "Du köpte en kaffebryggare i en elektronikaffär i Lahtis för två veckor sedan. Nu fungerar den inte. Du går tillbaka till affären med kaffebryggaren och kvittot.",
+      "contextEn": "Two weeks ago you bought a coffee maker at an electronics shop in Lahti. Now it doesn't work. You go back to the shop with the coffee maker and the receipt.",
+      "turns": [
+        {
+          "them": "Hej, välkommen! Hur kan jag hjälpa till?",
+          "themEn": "Hi, welcome! How can I help?",
+          "you": "Hej! Jag köpte den här kaffebryggaren här för två veckor sedan, men nu fungerar den inte.",
+          "youEn": "Hi! I bought this coffee maker here two weeks ago, but now it doesn't work.",
+          "goal": "Say what you bought, when, and that there is a problem."
+        },
+        {
+          "them": "Jaha. Vad är det som inte fungerar?",
+          "themEn": "I see. What is it that doesn't work?",
+          "you": "Lampan lyser, men den värmer inte vattnet, så det kommer inget kaffe. Jag har försökt flera gånger.",
+          "youEn": "The light comes on, but it doesn't heat the water, so no coffee comes out. I have tried several times.",
+          "goal": "Describe the fault in more detail."
+        },
+        {
+          "them": "Har du kvittot med dig?",
+          "themEn": "Do you have the receipt with you?",
+          "you": "Ja, här är det. Kaffebryggaren kostade 49 euro, och jag betalade med kort.",
+          "youEn": "Yes, here it is. The coffee maker cost 49 euros, and I paid by card.",
+          "goal": "Show the receipt and give a detail about the purchase."
+        },
+        {
+          "them": "Tack. Vi kan skicka den på reparation, men det tar ungefär tre veckor.",
+          "themEn": "Thanks. We can send it for repair, but it takes about three weeks.",
+          "you": "Tre veckor är ganska länge, och den är ju nästan ny. Kan jag inte få en ny kaffebryggare eller pengarna tillbaka i stället?",
+          "youEn": "Three weeks is quite a long time, and it's almost new, after all. Couldn't I get a new coffee maker or my money back instead?",
+          "goal": "Say that the solution is not good for you and suggest a better one."
+        },
+        {
+          "them": "Okej, eftersom den är så ny kan du byta den mot en ny. Vill du ha samma modell?",
+          "themEn": "OK, because it's so new you can exchange it for a new one. Do you want the same model?",
+          "you": "Ja, gärna samma modell. Tack så mycket för hjälpen!",
+          "youEn": "Yes, the same model, please. Thank you very much for your help!",
+          "goal": "Accept the offer and thank the shop assistant."
+        }
+      ],
+      "reply": 20,
+      "phrases": [
+        {
+          "sv": "Jag köpte den här för två veckor sedan.",
+          "en": "I bought it here two weeks ago."
+        },
+        {
+          "sv": "Den fungerar inte.",
+          "en": "It doesn't work."
+        },
+        {
+          "sv": "Den är trasig.",
+          "en": "It's broken."
+        },
+        {
+          "sv": "Här är kvittot.",
+          "en": "Here is the receipt."
+        },
+        {
+          "sv": "Kan jag byta den mot en ny?",
+          "en": "Can I exchange it for a new one?"
+        },
+        {
+          "sv": "Kan jag få pengarna tillbaka?",
+          "en": "Can I get my money back?"
+        },
+        {
+          "sv": "Det tar för lång tid.",
+          "en": "That takes too long."
+        },
+        {
+          "sv": "Finns det garanti?",
+          "en": "Is there a warranty?"
+        }
+      ],
+      "tips": [
+        "Describe the problem simply: *den startar inte, den låter konstigt, den blir inte varm*.",
+        "If you don't like the first offer, say why and suggest something else, politely.",
+        "Use *ju* for something obvious: *Den är ju nästan ny* ('It's almost new, after all')."
+      ]
+    },
+    {
+      "id": "situation-train",
+      "type": "situation",
+      "title": "Tåget är inställt",
+      "titleEn": "The train is cancelled",
+      "context": "Du är på järnvägsstationen i Tammerfors. Du ska till ett viktigt möte i Helsingfors, men ditt tåg är inställt. Du pratar med en anställd vid VR:s kundservice.",
+      "contextEn": "You are at Tampere railway station. You are on your way to an important meeting in Helsinki, but your train has been cancelled. You talk to a member of staff at VR's customer service.",
+      "turns": [
+        {
+          "them": "Hej, vad kan jag hjälpa dig med?",
+          "themEn": "Hi, how can I help you?",
+          "you": "Hej! Jag skulle åka med tåget till Helsingfors klockan tio över åtta, men det är inställt. Vad ska jag göra nu?",
+          "youEn": "Hi! I was going to take the ten past eight train to Helsinki, but it's cancelled. What should I do now?",
+          "goal": "Explain your problem and ask for help."
+        },
+        {
+          "them": "Tyvärr är det ett fel på banan. Nästa tåg går först klockan tio.",
+          "themEn": "Unfortunately there's a fault on the track. The next train doesn't leave until ten.",
+          "you": "Klockan tio? Då kommer jag för sent till mitt möte. Finns det något annat sätt att komma till Helsingfors snabbare?",
+          "youEn": "Ten o'clock? Then I'll be late for my meeting. Is there any other way to get to Helsinki faster?",
+          "goal": "Say why this is a problem and ask about other options."
+        },
+        {
+          "them": "Ja, VR ordnar en buss som ersätter tåget. Den går om tjugo minuter från platsen framför stationen.",
+          "themEn": "Yes, VR is arranging a bus to replace the train. It leaves in twenty minutes from the square in front of the station.",
+          "you": "Bra, då tar jag bussen. Gäller min tågbiljett i bussen också?",
+          "youEn": "Good, then I'll take the bus. Is my train ticket valid on the bus too?",
+          "goal": "Choose an option and ask about your ticket."
+        },
+        {
+          "them": "Ja, visa bara biljetten för chauffören. Och om du blir mer än en timme försenad, kan du ansöka om ersättning.",
+          "themEn": "Yes, just show your ticket to the driver. And if you are more than an hour late, you can apply for compensation.",
+          "you": "Vad bra. Hur ansöker man om ersättningen? Går det att göra på nätet?",
+          "youEn": "That's good. How do you apply for the compensation? Can you do it online?",
+          "goal": "React to the information and ask how to apply for compensation."
+        },
+        {
+          "them": "Ja, det finns en blankett på VR:s webbplats. Du behöver bara biljettens nummer.",
+          "themEn": "Yes, there is a form on VR's website. You only need the ticket number.",
+          "you": "Okej, tack för hjälpen. Då skyndar jag mig till bussen nu. Hej då!",
+          "youEn": "OK, thanks for your help. I'll hurry to the bus now, then. Goodbye!",
+          "goal": "Thank the staff member and end the conversation."
+        }
+      ],
+      "reply": 20,
+      "phrases": [
+        {
+          "sv": "Mitt tåg är inställt / försenat.",
+          "en": "My train is cancelled / delayed."
+        },
+        {
+          "sv": "Jag ska till … klockan …",
+          "en": "I need to be in … at …"
+        },
+        {
+          "sv": "När går nästa tåg?",
+          "en": "When does the next train leave?"
+        },
+        {
+          "sv": "Då kommer jag för sent.",
+          "en": "Then I'll be late."
+        },
+        {
+          "sv": "Finns det något annat alternativ?",
+          "en": "Is there any other option?"
+        },
+        {
+          "sv": "Gäller biljetten i bussen?",
+          "en": "Is the ticket valid on the bus?"
+        },
+        {
+          "sv": "Kan jag få ersättning?",
+          "en": "Can I get compensation?"
+        },
+        {
+          "sv": "Från vilket spår går tåget?",
+          "en": "Which track does the train leave from?"
+        }
+      ],
+      "tips": [
+        "Clock times: *8.10* = *tio över åtta*, *8.15* = *kvart över åtta*, *9.30* = *halv tio* (half to ten).",
+        "React to what you hear before you ask the next question: *Klockan tio? Då kommer jag för sent.*",
+        "*Ska till* is very common for where you are going: *Jag ska till Helsingfors* ('I'm going to Helsinki')."
+      ]
+    },
+    {
+      "id": "situation-daycare",
+      "type": "situation",
+      "title": "Barnet börjar på daghemmet",
+      "titleEn": "Your child starts day care",
+      "context": "Din dotter Lina har fått en plats på ett daghem i Esbo. Daghemmets föreståndare ringer dig för att prata om starten.",
+      "contextEn": "Your daughter Lina has been given a place at a day-care centre in Espoo. The head of the day-care centre calls you to talk about the start.",
+      "turns": [
+        {
+          "them": "Hej, det här är Sara Nyström från daghemmet Solrosen. Lina har fått en plats hos oss från och med den första mars. Passar det?",
+          "themEn": "Hi, this is Sara Nyström from Solrosen day-care centre. Lina has a place with us from the first of March. Does that suit you?",
+          "you": "Hej, vad roligt! Ja, första mars passar bra, för jag börjar på en ny kurs samma vecka.",
+          "youEn": "Hi, how nice! Yes, the first of March suits us well, because I'm starting a new course the same week.",
+          "goal": "React positively, confirm the date and give a reason."
+        },
+        {
+          "them": "Fint. Den första veckan har vi inskolning. Kan du vara med Lina på daghemmet några timmar per dag?",
+          "themEn": "Good. The first week is the settling-in period. Can you stay with Lina at the day-care centre for a few hours a day?",
+          "you": "Ja, jag kan vara med henne på förmiddagarna. Men på eftermiddagarna kan jag inte, eftersom jag har lektioner då.",
+          "youEn": "Yes, I can be with her in the mornings. But I can't in the afternoons, because I have lessons then.",
+          "goal": "Say when you can take part in the settling-in period and when you cannot."
+        },
+        {
+          "them": "Det fungerar. Har Lina några allergier, eller behöver hon specialkost?",
+          "themEn": "That works. Does Lina have any allergies, or does she need a special diet?",
+          "you": "Ja, hon är allergisk mot nötter. Hon äter inte heller fläskkött. Jag har ett intyg från läkaren om allergin.",
+          "youEn": "Yes, she's allergic to nuts. She doesn't eat pork either. I have a doctor's certificate about the allergy.",
+          "goal": "Give information about allergies and diet."
+        },
+        {
+          "them": "Tack, ta med intyget när ni kommer. Vill du fråga något?",
+          "themEn": "Thanks, bring the certificate when you come. Is there anything you would like to ask?",
+          "you": "Ja, vilka kläder behöver hon på daghemmet? Och när öppnar ni på morgonen?",
+          "youEn": "Yes, what clothes does she need at day care? And when do you open in the morning?",
+          "goal": "Ask two practical questions."
+        },
+        {
+          "them": "Hon behöver varma utekläder, regnkläder, gummistövlar och extra kläder. Vi öppnar halv sju. Välkomna den första mars!",
+          "themEn": "She needs warm outdoor clothes, rain clothes, rubber boots and spare clothes. We open at half past six. Welcome on the first of March!",
+          "you": "Okej, jag köper regnkläder den här veckan. Tack för samtalet, vi ses i mars!",
+          "youEn": "OK, I'll buy rain clothes this week. Thanks for the call, see you in March!",
+          "goal": "Confirm what you will do and say goodbye."
+        }
+      ],
+      "reply": 20,
+      "phrases": [
+        {
+          "sv": "Det passar bra.",
+          "en": "That suits us fine."
+        },
+        {
+          "sv": "Jag kan vara med på förmiddagarna.",
+          "en": "I can be there in the mornings."
+        },
+        {
+          "sv": "Hon är allergisk mot …",
+          "en": "She is allergic to …"
+        },
+        {
+          "sv": "Hon äter inte …",
+          "en": "She doesn't eat …"
+        },
+        {
+          "sv": "Jag har ett intyg från läkaren.",
+          "en": "I have a doctor's certificate."
+        },
+        {
+          "sv": "Vad behöver hon ha med sig?",
+          "en": "What does she need to bring?"
+        },
+        {
+          "sv": "När öppnar och stänger daghemmet?",
+          "en": "When does the day-care centre open and close?"
+        },
+        {
+          "sv": "Vi ses!",
+          "en": "See you!"
+        }
+      ],
+      "tips": [
+        "*Daghem* and the everyday word *dagis* both mean day-care centre. *Inskolning* is the settling-in period when a parent stays with the child.",
+        "When someone asks *Vill du fråga något?*, ask at least one question; it shows that you can keep the conversation going.",
+        "Add one detail (a reason, a time) instead of only saying *ja* or *nej*."
+      ]
+    },
+    {
+      "id": "situation-extra-shift",
+      "type": "situation",
+      "title": "Kan du jobba på lördag?",
+      "titleEn": "Can you work on Saturday?",
+      "context": "Du jobbar i en matbutik i Jakobstad. Din förman Mikael ringer dig på torsdag kväll.",
+      "contextEn": "You work in a grocery shop in Jakobstad (Pietarsaari). Your supervisor Mikael calls you on Thursday evening.",
+      "turns": [
+        {
+          "them": "Hej, det är Mikael. Hör du, Kim är sjuk, och vi behöver någon i kassan på lördag från åtta till fyra. Kan du komma?",
+          "themEn": "Hi, it's Mikael. Listen, Kim is ill, and we need someone at the till on Saturday from eight to four. Can you come?",
+          "you": "Hej Mikael! Tyvärr kan jag inte på lördag. Min syster gifter sig, och hela familjen ska på bröllopet.",
+          "youEn": "Hi Mikael! Unfortunately I can't on Saturday. My sister is getting married, and the whole family is going to the wedding.",
+          "goal": "Say no politely and explain why."
+        },
+        {
+          "them": "Jaha, det förstår jag. Grattis till din syster! Kunde du jobba på söndag i stället?",
+          "themEn": "I see, I understand. Congratulations to your sister! Could you work on Sunday instead?",
+          "you": "Ja, söndag går bra. Men jag kan komma först klockan tolv, eftersom festen håller på till sent.",
+          "youEn": "Yes, Sunday is fine. But I can't come until twelve, because the party goes on until late.",
+          "goal": "Accept another day, but say what time you can start."
+        },
+        {
+          "them": "Från tolv till åtta på kvällen, alltså. Fungerar det?",
+          "themEn": "From twelve to eight in the evening, then. Does that work?",
+          "you": "Ja, det fungerar. Får jag söndagstillägg för det skiftet?",
+          "youEn": "Yes, that works. Do I get the Sunday supplement for that shift?",
+          "goal": "Agree to the shift and ask about pay."
+        },
+        {
+          "them": "Ja, självklart. Söndagstillägget betalas som vanligt. Jag lägger in dig i arbetsschemat.",
+          "themEn": "Yes, of course. The Sunday supplement is paid as usual. I'll put you on the work schedule.",
+          "you": "Tack. Kan du också skicka ett meddelande med tiderna, så att jag inte glömmer?",
+          "youEn": "Thanks. Could you also send me a message with the times, so that I don't forget?",
+          "goal": "Thank him and ask for the times in writing."
+        },
+        {
+          "them": "Det gör jag. Tack för att du ställer upp! Ha det så roligt på bröllopet.",
+          "themEn": "I will. Thanks for helping out! Have a great time at the wedding.",
+          "you": "Tack, det ska bli roligt. Vi ses på söndag, hej då!",
+          "youEn": "Thanks, it'll be fun. See you on Sunday, bye!",
+          "goal": "Respond to the thanks and end the call."
+        }
+      ],
+      "reply": 20,
+      "phrases": [
+        {
+          "sv": "Tyvärr kan jag inte på lördag.",
+          "en": "Unfortunately I can't on Saturday."
+        },
+        {
+          "sv": "Jag har redan andra planer.",
+          "en": "I already have other plans."
+        },
+        {
+          "sv": "Men jag kan jobba på söndag i stället.",
+          "en": "But I can work on Sunday instead."
+        },
+        {
+          "sv": "Jag kan komma först klockan tolv.",
+          "en": "I can't come until twelve o'clock."
+        },
+        {
+          "sv": "Det fungerar. / Det går bra.",
+          "en": "That works. / That's fine."
+        },
+        {
+          "sv": "Får jag söndagstillägg?",
+          "en": "Do I get the Sunday supplement?"
+        },
+        {
+          "sv": "Kan du skicka tiderna i ett meddelande?",
+          "en": "Can you send me the times in a message?"
+        },
+        {
+          "sv": "Inga problem, jag ställer gärna upp.",
+          "en": "No problem, I'm happy to help out."
+        }
+      ],
+      "tips": [
+        "When you say no, soften it (*tyvärr*), give a reason and, if you can, offer an alternative.",
+        "*Först* + a time means 'not until': *Jag kan komma först klockan tolv*.",
+        "*Skift* (shift), *arbetsschema* (work schedule) and *förman* (supervisor) are common words at Finnish workplaces."
+      ]
+    },
+    {
+      "id": "situation-internet",
+      "type": "situation",
+      "title": "Internet fungerar inte",
+      "titleEn": "The internet isn't working",
+      "context": "Internet i din lägenhet i Åbo har inte fungerat sedan i går kväll. Du jobbar ofta hemifrån. Du ringer till operatörens kundtjänst.",
+      "contextEn": "The internet in your flat in Turku hasn't worked since last night. You often work from home. You call your internet provider's customer service.",
+      "turns": [
+        {
+          "them": "Kundtjänst, du talar med Erik. Vad gäller ärendet?",
+          "themEn": "Customer service, you're speaking to Erik. What is it about?",
+          "you": "Hej, jag heter Olga Ivanova. Internet hemma hos mig har inte fungerat sedan i går kväll.",
+          "youEn": "Hi, my name is Olga Ivanova. The internet at my home hasn't worked since last night.",
+          "goal": "Introduce yourself and say what the problem is."
+        },
+        {
+          "them": "Okej. Kan jag få din adress och ditt kundnummer?",
+          "themEn": "OK. Can I have your address and your customer number?",
+          "you": "Adressen är Strandgatan 5 B 12 i Åbo. Kundnumret har jag tyvärr inte här, men avtalet står på mitt namn.",
+          "youEn": "The address is Strandgatan 5 B 12 in Turku. Unfortunately I don't have the customer number here, but the contract is in my name.",
+          "goal": "Give your address and explain that you don't have the customer number."
+        },
+        {
+          "them": "Tack, nu hittade jag dig. Har du försökt stänga av modemet och sätta på det igen?",
+          "themEn": "Thanks, now I've found you. Have you tried turning the modem off and on again?",
+          "you": "Ja, jag har gjort det två gånger, men det hjälper inte. En röd lampa blinkar på modemet.",
+          "youEn": "Yes, I've done it twice, but it doesn't help. A red light is blinking on the modem.",
+          "goal": "Say what you have already tried and describe what you see."
+        },
+        {
+          "them": "Då måste vi skicka en tekniker. Teknikern kan komma på torsdag mellan åtta och tolv.",
+          "themEn": "Then we have to send a technician. The technician can come on Thursday between eight and twelve.",
+          "you": "På torsdag förmiddag har jag tyvärr ett möte på kontoret. Kan teknikern komma på eftermiddagen i stället?",
+          "youEn": "Unfortunately I have a meeting at the office on Thursday morning. Could the technician come in the afternoon instead?",
+          "goal": "Say that the time does not suit you and suggest another."
+        },
+        {
+          "them": "På torsdag eftermiddag är allt fullt, men på fredag mellan fyra och sex finns det en tid. Passar det?",
+          "themEn": "Thursday afternoon is fully booked, but there's a slot on Friday between four and six. Does that suit you?",
+          "you": "Ja, fredag passar. Men jag behöver internet för mitt jobb. Får jag ett avdrag på räkningen, eftersom jag blir utan internet i flera dagar?",
+          "youEn": "Yes, Friday suits me. But I need the internet for my work. Do I get a discount on the bill, since I'll be without internet for several days?",
+          "goal": "Accept the time and ask about a discount on the bill."
+        }
+      ],
+      "reply": 20,
+      "phrases": [
+        {
+          "sv": "Det gäller mitt internet.",
+          "en": "It's about my internet connection."
+        },
+        {
+          "sv": "Det har inte fungerat sedan i går.",
+          "en": "It hasn't worked since yesterday."
+        },
+        {
+          "sv": "Jag har redan försökt …",
+          "en": "I have already tried …"
+        },
+        {
+          "sv": "En röd lampa blinkar.",
+          "en": "A red light is blinking."
+        },
+        {
+          "sv": "Avtalet står på mitt namn.",
+          "en": "The contract is in my name."
+        },
+        {
+          "sv": "Den tiden passar tyvärr inte.",
+          "en": "Unfortunately that time doesn't suit me."
+        },
+        {
+          "sv": "Kan teknikern komma på eftermiddagen?",
+          "en": "Could the technician come in the afternoon?"
+        },
+        {
+          "sv": "Får jag ett avdrag på räkningen?",
+          "en": "Can I get a discount on the bill?"
+        }
+      ],
+      "tips": [
+        "Practise saying your own address and phone number in Swedish; you need them in many situations.",
+        "In a Finnish address, *Strandgatan 5 B 12* means building 5, staircase B, flat 12.",
+        "*Sedan* + a time tells you since when: *sedan i går, sedan i måndags, sedan i januari*."
+      ]
+    },
+    {
+      "id": "situation-course",
+      "type": "situation",
+      "title": "Anmälan till en kvällskurs",
+      "titleEn": "Signing up for an evening course",
+      "context": "Du vill gå en kvällskurs i svenska vid Borgå medborgarinstitut. Du ringer till kansliet för att få mer information.",
+      "contextEn": "You want to take an evening course in Swedish at the adult education centre in Porvoo. You call the office to get more information.",
+      "turns": [
+        {
+          "them": "Borgå medborgarinstitut, god dag. Hur kan jag hjälpa dig?",
+          "themEn": "Porvoo adult education centre, hello. How can I help you?",
+          "you": "God dag! Jag är intresserad av en kvällskurs i svenska. Jag har studerat svenska i ungefär ett år.",
+          "youEn": "Hello! I'm interested in an evening course in Swedish. I have studied Swedish for about a year.",
+          "goal": "Say what you are interested in and describe your level."
+        },
+        {
+          "them": "Vi har en kurs för fortsättare på tisdagar och torsdagar från fem till halv sju på kvällen. Passar de tiderna?",
+          "themEn": "We have a course for continuing learners on Tuesdays and Thursdays from five to half past six in the evening. Do those times suit you?",
+          "you": "Ja, det passar bra, för jag slutar jobba klockan fyra. När börjar kursen, och hur länge håller den på?",
+          "youEn": "Yes, that suits me well, because I finish work at four. When does the course start, and how long does it last?",
+          "goal": "Say that the times suit you and ask when the course starts and how long it lasts."
+        },
+        {
+          "them": "Den börjar den nionde september och pågår till början av december. Kursavgiften är 85 euro.",
+          "themEn": "It starts on the ninth of September and runs until the beginning of December. The course fee is 85 euros.",
+          "you": "Okej, det låter bra. Ingår kursboken i priset, eller måste jag köpa den själv?",
+          "youEn": "OK, that sounds good. Is the course book included in the price, or do I have to buy it myself?",
+          "goal": "React to the information and ask about the course book."
+        },
+        {
+          "them": "Boken köper du själv, den kostar ungefär 40 euro. Vill du anmäla dig nu?",
+          "themEn": "You buy the book yourself; it costs about 40 euros. Would you like to sign up now?",
+          "you": "Ja, gärna. Jag heter Mei Chen. Chen stavas C-H-E-N.",
+          "youEn": "Yes, please. My name is Mei Chen. Chen is spelt C-H-E-N.",
+          "goal": "Say that you want to sign up and give your name clearly."
+        },
+        {
+          "them": "Tack, nu är du anmäld. Du får en bekräftelse per sms. Välkommen till kursen!",
+          "themEn": "Thanks, you're signed up now. You'll get a confirmation by text message. Welcome to the course!",
+          "you": "Tack så mycket för hjälpen! Jag ser fram emot att börja.",
+          "youEn": "Thank you very much for your help! I'm looking forward to starting.",
+          "goal": "Thank them and end the call politely."
+        }
+      ],
+      "reply": 20,
+      "phrases": [
+        {
+          "sv": "Jag är intresserad av …",
+          "en": "I'm interested in …"
+        },
+        {
+          "sv": "Jag har studerat svenska i ett år.",
+          "en": "I have studied Swedish for a year."
+        },
+        {
+          "sv": "Jag är nybörjare / fortsättare.",
+          "en": "I'm a beginner / a continuing learner."
+        },
+        {
+          "sv": "När börjar kursen?",
+          "en": "When does the course start?"
+        },
+        {
+          "sv": "Hur länge håller kursen på?",
+          "en": "How long does the course last?"
+        },
+        {
+          "sv": "Vad kostar kursen?",
+          "en": "How much does the course cost?"
+        },
+        {
+          "sv": "Ingår boken i priset?",
+          "en": "Is the book included in the price?"
+        },
+        {
+          "sv": "Jag vill gärna anmäla mig.",
+          "en": "I'd like to sign up."
+        },
+        {
+          "sv": "Jag ser fram emot att börja.",
+          "en": "I'm looking forward to starting."
+        }
+      ],
+      "tips": [
+        "Learn to spell your name with Swedish letter names; you often need it on the phone.",
+        "Adult education centres (*medborgarinstitut*, in Helsinki *Arbis*) offer affordable evening courses in many subjects, including Swedish.",
+        "Follow-up questions (*när, hur länge, vad kostar*) show that you can manage a real conversation."
+      ]
+    },
+    {
+      "id": "presentation-environment",
+      "type": "presentation",
+      "title": "Miljön i vardagen",
+      "titleEn": "The environment in everyday life",
+      "prompt": "Håll ett kort anförande om miljön. Vad kan vanliga människor göra för miljön i vardagen? Vad gör du själv? Borde samhället ta större ansvar än enskilda människor?",
+      "promptEn": "Give a short talk about the environment. What can ordinary people do for the environment in everyday life? What do you do yourself? Should society take more responsibility than individuals?",
+      "prep": 120,
+      "speak": 120,
+      "structure": [
+        "Introduce the topic and your view in one or two sentences — *Jag ska tala om … Enligt mig …*",
+        "Give two or three things people can do, with examples from your life — *För det första … Själv …*",
+        "Show both sides of the responsibility question — *Å ena sidan … Å andra sidan …*",
+        "Give a concrete suggestion — *Till exempel borde …*",
+        "Conclude — *Sammanfattningsvis tror jag att …*"
+      ],
+      "model": "Jag ska tala om vad vi kan göra för miljön i vardagen. Enligt mig kan alla göra något, även om det känns litet.\n\nFör det första kan man sortera soporna. I vårt hus finns det olika kärl för bioavfall, papper, kartong, glas, metall och plast, så det är lätt. För det andra kan man köpa mindre. Själv försöker jag köpa färre kläder, och ofta köper jag begagnat på lopptorget eller på nätet. Vi försöker också slänga mindre mat. För det tredje kan man tänka på hur man reser. Jag har ingen bil, utan jag åker buss och tåg. På sommaren cyklar jag till jobbet. Det är billigare och bra för hälsan också.\n\nÅ ena sidan är det viktigt att vanliga människor ändrar sina vanor. Å andra sidan kan en person inte göra allt. Samhället och företagen har ett större ansvar. Till exempel borde kollektivtrafiken vara billigare, så att fler lämnar bilen hemma. Kommunen kan också bygga fler och bättre cykelvägar.\n\nSammanfattningsvis tror jag att vi behöver både små och stora förändringar. Om alla gör lite, blir det mycket tillsammans.",
+      "modelEn": "I'm going to talk about what we can do for the environment in everyday life. In my opinion everyone can do something, even if it feels small.\n\nFirst, you can sort your rubbish. In our building there are different bins for bio-waste, paper, cardboard, glass, metal and plastic, so it's easy. Second, you can buy less. I try to buy fewer clothes myself, and I often buy second-hand at the flea market or online. We also try to throw away less food. Third, you can think about how you travel. I don't have a car; instead I take the bus and the train. In the summer I cycle to work. It's cheaper and good for your health too.\n\nOn the one hand, it's important that ordinary people change their habits. On the other hand, one person can't do everything. Society and companies have a bigger responsibility. For example, public transport should be cheaper, so that more people leave their cars at home. The municipality can also build more and better cycle paths.\n\nTo sum up, I think we need both small and big changes. If everyone does a little, together it adds up to a lot.",
+      "phrases": [
+        {
+          "sv": "Enligt mig …",
+          "en": "In my opinion …"
+        },
+        {
+          "sv": "För det första … för det andra … för det tredje …",
+          "en": "Firstly … secondly … thirdly …"
+        },
+        {
+          "sv": "Vi sorterar soporna hemma.",
+          "en": "We sort our rubbish at home."
+        },
+        {
+          "sv": "Jag köper ofta begagnat.",
+          "en": "I often buy second-hand."
+        },
+        {
+          "sv": "Jag har ingen bil, utan jag …",
+          "en": "I don't have a car; instead I …"
+        },
+        {
+          "sv": "Å ena sidan … å andra sidan …",
+          "en": "On the one hand … on the other hand …"
+        },
+        {
+          "sv": "Samhället har ett större ansvar.",
+          "en": "Society has a bigger responsibility."
+        },
+        {
+          "sv": "Till exempel borde …",
+          "en": "For example, … should …"
+        },
+        {
+          "sv": "Sammanfattningsvis tror jag att …",
+          "en": "To sum up, I think that …"
+        }
+      ],
+      "tips": [
+        "Use the preparation time to note three or four key words, not full sentences.",
+        "Number your points (*för det första, för det andra*); it keeps you on track and is easy to follow.",
+        "*Inte … utan …* means 'not … but (instead)': *Jag har ingen bil, utan jag cyklar*."
+      ]
+    },
+    {
+      "id": "presentation-digital-services",
+      "type": "presentation",
+      "title": "Tjänster på nätet",
+      "titleEn": "Services online",
+      "prompt": "Håll ett kort anförande om digitala tjänster. I dag sköter man allt fler ärenden på nätet, till exempel hos FPA, banken och kommunen. Vilka fördelar och nackdelar har det? Vem kan få problem? Vad tycker du själv?",
+      "promptEn": "Give a short talk about digital services. Today more and more everyday matters are handled online, for example with Kela, the bank and the municipality. What are the advantages and disadvantages? Who might have problems? What do you think yourself?",
+      "prep": 120,
+      "speak": 120,
+      "structure": [
+        "Introduce the topic with a few examples — *Jag ska tala om … I dag sköter vi …*",
+        "Advantages, with an example from your life — *Det finns många fördelar. För det första …*",
+        "Disadvantages and who has problems — *Men det finns också nackdelar. Alla har inte …*",
+        "Your opinion and a suggestion — *Enligt mig … Men samhället måste se till att …*"
+      ],
+      "model": "Jag ska tala om digitala tjänster. I dag sköter vi nästan alla ärenden på nätet. Vi ansöker om stöd från FPA, betalar räkningar och bokar tider på hälsostationen med datorn eller telefonen.\n\nDet finns många fördelar. För det första sparar man tid. Man behöver inte köa på ett kontor, och tjänsterna är öppna dygnet runt. Jag jobbar till exempel på dagen, så det är bra att jag kan skicka en ansökan på kvällen. För det andra kan man ofta välja språk, till exempel finska, svenska eller engelska. Det hjälpte mig mycket när jag var ny i Finland.\n\nMen det finns också nackdelar. Alla har inte en dator eller bankkoder. Äldre människor kan ha svårt att använda tjänsterna, och det kan också vara svårt för dem som inte kan språket bra. Min granne är åttio år, och hon behöver alltid hjälp av sin dotter. Dessutom finns det tekniska problem och bedrägerier på nätet.\n\nEnligt mig är digitala tjänster bra för de flesta. Men samhället måste se till att det fortfarande finns service på plats och per telefon för dem som behöver det. Ingen ska lämnas utanför.",
+      "modelEn": "I'm going to talk about digital services. Today we handle almost all our everyday matters online. We apply for benefits from Kela, pay bills and book appointments at the health centre on a computer or a phone.\n\nThere are many advantages. First, you save time. You don't need to queue at an office, and the services are open around the clock. For example, I work during the day, so it's good that I can send an application in the evening. Second, you can often choose the language, for example Finnish, Swedish or English. That helped me a lot when I was new in Finland.\n\nBut there are also disadvantages. Not everyone has a computer or online banking codes. Older people can find the services hard to use, and it can also be hard for people who don't know the language well. My neighbour is eighty, and she always needs help from her daughter. There are also technical problems and online scams.\n\nIn my opinion digital services are good for most people. But society must make sure that there is still face-to-face and telephone service for those who need it. Nobody should be left out.",
+      "phrases": [
+        {
+          "sv": "Det finns många fördelar.",
+          "en": "There are many advantages."
+        },
+        {
+          "sv": "Nackdelen är att …",
+          "en": "The disadvantage is that …"
+        },
+        {
+          "sv": "Man sparar tid.",
+          "en": "You save time."
+        },
+        {
+          "sv": "Tjänsten är öppen dygnet runt.",
+          "en": "The service is open around the clock."
+        },
+        {
+          "sv": "Alla har inte …",
+          "en": "Not everyone has …"
+        },
+        {
+          "sv": "Äldre människor kan ha svårt att …",
+          "en": "Older people can find it hard to …"
+        },
+        {
+          "sv": "Samhället måste se till att …",
+          "en": "Society must make sure that …"
+        },
+        {
+          "sv": "Ingen ska lämnas utanför.",
+          "en": "Nobody should be left out."
+        }
+      ],
+      "tips": [
+        "A clear plan for two minutes: introduction, advantages, disadvantages, your opinion.",
+        "*Bankkoder* (online banking codes) are a common way to log in to e-services in Finland.",
+        "Mention a real person (*min granne, min mamma*) to make an example concrete."
+      ]
+    },
+    {
+      "id": "presentation-city-or-countryside",
+      "type": "presentation",
+      "title": "Stad eller landsbygd?",
+      "titleEn": "City or countryside?",
+      "prompt": "Håll ett kort anförande om boende. Är det bättre att bo i en stor stad eller på landsbygden? Jämför fördelar och nackdelar. Var skulle du själv vilja bo, och varför?",
+      "promptEn": "Give a short talk about where to live. Is it better to live in a big city or in the countryside? Compare the advantages and disadvantages. Where would you yourself like to live, and why?",
+      "prep": 120,
+      "speak": 120,
+      "structure": [
+        "Introduce what you will compare — *Jag ska jämföra … och …*",
+        "The good sides of the city — *Å ena sidan är staden …*",
+        "The bad sides of the city, then the countryside — *Å andra sidan … På landsbygden …*",
+        "Your own choice and why — *Själv … eftersom …*"
+      ],
+      "model": "Jag ska jämföra livet i en stor stad och på landsbygden. Det finns fördelar och nackdelar med båda.\n\nÅ ena sidan är staden praktisk. I Helsingfors finns det många arbetsplatser, skolor och affärer. Kollektivtrafiken fungerar bra, så man behöver inte nödvändigtvis en bil. Dessutom finns det mycket kultur, till exempel teatrar, museer och restauranger. För en invandrare kan det också vara lättare att hitta vänner och service på sitt eget språk i en stor stad.\n\nÅ andra sidan är livet i staden dyrt. Hyrorna är höga, och lägenheterna är ofta små. Det kan också vara bullrigt och stressigt. På landsbygden är boendet billigare, och man kan ha ett eget hus med trädgård. Naturen är nära och det är lugnt. Men där är avstånden långa. Man behöver en bil för att handla, och det kan vara svårt att hitta jobb. På många mindre orter har också hälsostationer och skolor stängts.\n\nSjälv bor jag i Esbo nu, och jag trivs bra, eftersom mina barn går i skola här. Men när jag blir pensionär vill jag gärna flytta till landet, kanske till en liten ort vid havet nära Ekenäs. Där kan jag odla grönsaker och leva ett lugnare liv.",
+      "modelEn": "I'm going to compare life in a big city and in the countryside. There are advantages and disadvantages to both.\n\nOn the one hand, the city is practical. In Helsinki there are lots of workplaces, schools and shops. Public transport works well, so you don't necessarily need a car. There is also a lot of culture, for example theatres, museums and restaurants. For an immigrant it can also be easier to find friends and services in your own language in a big city.\n\nOn the other hand, life in the city is expensive. Rents are high, and flats are often small. It can also be noisy and stressful. In the countryside housing is cheaper, and you can have your own house with a garden. Nature is close and it's peaceful. But the distances there are long. You need a car to go shopping, and it can be hard to find a job. In many smaller places, health centres and schools have also closed.\n\nI live in Espoo myself now, and I'm happy here, because my children go to school here. But when I retire, I would like to move to the countryside, perhaps to a small place by the sea near Ekenäs (Tammisaari). There I can grow vegetables and live a calmer life.",
+      "phrases": [
+        {
+          "sv": "Jag ska jämföra … och …",
+          "en": "I'm going to compare … and …"
+        },
+        {
+          "sv": "Det finns fördelar och nackdelar med båda.",
+          "en": "There are advantages and disadvantages to both."
+        },
+        {
+          "sv": "I staden finns det fler …",
+          "en": "In the city there are more …"
+        },
+        {
+          "sv": "På landsbygden är det lugnare / billigare.",
+          "en": "In the countryside it's calmer / cheaper."
+        },
+        {
+          "sv": "Avstånden är långa.",
+          "en": "The distances are long."
+        },
+        {
+          "sv": "Man behöver inte nödvändigtvis en bil.",
+          "en": "You don't necessarily need a car."
+        },
+        {
+          "sv": "Jämfört med staden är det …",
+          "en": "Compared with the city, it is …"
+        },
+        {
+          "sv": "Själv skulle jag hellre bo …",
+          "en": "I myself would rather live …"
+        }
+      ],
+      "tips": [
+        "Comparatives help you compare: *billigare, lugnare, dyrare, mer stressigt*.",
+        "Talk about both places before you give your own choice at the end.",
+        "Use places you know in Finland (Helsingfors, a small municipality, the archipelago) to make it concrete."
+      ]
+    },
+    {
+      "id": "presentation-remote-work",
+      "type": "presentation",
+      "title": "Distansarbete",
+      "titleEn": "Remote work",
+      "prompt": "Håll ett kort anförande om distansarbete. Allt fler arbetar hemifrån en del av veckan. Vilka fördelar och nackdelar har det? Passar distansarbete för alla? Vad tycker du?",
+      "promptEn": "Give a short talk about remote work. More and more people work from home part of the week. What are the advantages and disadvantages? Does remote work suit everyone? What do you think?",
+      "prep": 120,
+      "speak": 120,
+      "structure": [
+        "Introduce the topic — *Jag ska tala om … I dag …*",
+        "Advantages, with an example — *Det finns flera fördelar. För det första …*",
+        "Disadvantages — *Men det finns också nackdelar …*",
+        "Say who it doesn't suit — *Distansarbete passar inte för …*",
+        "Your opinion and a balanced solution — *Enligt mig är den bästa lösningen att …*"
+      ],
+      "model": "Jag ska tala om distansarbete. Efter coronapandemin jobbar många finländare hemma en eller flera dagar i veckan.\n\nDet finns flera fördelar med distansarbete. För det första sparar man tid och pengar, eftersom man inte behöver resa till jobbet. Min man jobbar till exempel i Helsingfors, men vi bor i Kervo. När han jobbar hemma, sparar han nästan en och en halv timme per dag. För det andra kan man ofta koncentrera sig bättre hemma, eftersom det är lugnare än på ett stort kontor. Dessutom är det lättare att kombinera arbetet med familjelivet.\n\nMen det finns också nackdelar. Man träffar inte sina kolleger, och man kan känna sig ensam. Det är också svårare att lära sig nya saker, när man inte kan fråga någon direkt. Och när kontoret finns hemma, är det ibland svårt att sluta jobba på kvällen.\n\nDistansarbete passar inte heller för alla yrken. En sjukskötare, en busschaufför eller en kock kan inte jobba hemifrån.\n\nEnligt mig är den bästa lösningen att kombinera. Man kan till exempel jobba hemma två dagar och på arbetsplatsen tre dagar i veckan. Då får man både lugn och ro och kontakt med andra människor.",
+      "modelEn": "I'm going to talk about remote work. Since the coronavirus pandemic, many people in Finland work from home one or more days a week.\n\nThere are several advantages to remote work. First, you save time and money, because you don't need to travel to work. My husband, for example, works in Helsinki, but we live in Kerava. When he works from home, he saves almost an hour and a half a day. Second, you can often concentrate better at home, because it's quieter than in a big office. It is also easier to combine work with family life.\n\nBut there are also disadvantages. You don't meet your colleagues, and you can feel lonely. It's also harder to learn new things when you can't ask someone directly. And when the office is at home, it's sometimes hard to stop working in the evening.\n\nRemote work doesn't suit every profession either. A nurse, a bus driver or a cook can't work from home.\n\nIn my opinion the best solution is to combine the two. For example, you can work from home two days and at the workplace three days a week. Then you get both peace and quiet and contact with other people.",
+      "phrases": [
+        {
+          "sv": "Det finns flera fördelar med …",
+          "en": "There are several advantages to …"
+        },
+        {
+          "sv": "Man sparar tid och pengar.",
+          "en": "You save time and money."
+        },
+        {
+          "sv": "Man kan koncentrera sig bättre.",
+          "en": "You can concentrate better."
+        },
+        {
+          "sv": "Man kan känna sig ensam.",
+          "en": "You can feel lonely."
+        },
+        {
+          "sv": "Det passar inte för alla yrken.",
+          "en": "It doesn't suit every profession."
+        },
+        {
+          "sv": "Den bästa lösningen är att …",
+          "en": "The best solution is to …"
+        },
+        {
+          "sv": "Då får man både … och …",
+          "en": "Then you get both … and …"
+        },
+        {
+          "sv": "Jag håller med om att …, men …",
+          "en": "I agree that …, but …"
+        }
+      ],
+      "tips": [
+        "If remote work isn't possible in your job, say so and explain why; that is a good example too.",
+        "*Eftersom* gives a reason, *därför* gives a result: *Det är lugnt hemma. Därför kan jag koncentrera mig*.",
+        "End with a balanced suggestion, for example *den bästa lösningen är att kombinera*."
+      ]
+    },
+    {
+      "id": "presentation-health",
+      "type": "presentation",
+      "title": "Att må bra",
+      "titleEn": "Staying well",
+      "prompt": "Håll ett kort anförande om hälsa. Vad är viktigt för att må bra och hålla sig frisk? Vad gör du själv för din hälsa? Hur kan samhället hjälpa människor att leva hälsosammare?",
+      "promptEn": "Give a short talk about health. What is important for feeling well and staying healthy? What do you do yourself for your health? How can society help people to live more healthily?",
+      "prep": 120,
+      "speak": 120,
+      "structure": [
+        "Introduce the topic and name your main points — *Enligt mig är tre saker viktigast: …*",
+        "Go through the points one by one, with your own habits — *För det första … Själv …*",
+        "Add mental health — *Hälsa handlar också om …*",
+        "Society's role and your conclusion — *Samhället kan också hjälpa … Men …*"
+      ],
+      "model": "Jag ska tala om hälsa och om vad man kan göra för att må bra. Enligt mig är tre saker viktigast: motion, mat och sömn.\n\nFör det första är motion viktig. Man behöver inte gå på gym varje dag. Det räcker att man rör på sig lite varje dag, till exempel promenerar, cyklar eller tar trapporna i stället för hissen. Själv går jag en lång promenad i skogen tre gånger i veckan.\n\nFör det andra ska man äta mångsidigt. Det är bra att äta mycket grönsaker, fisk och fullkorn och mindre socker. Det är inte alltid lätt, för färdigmat är snabb och god. För det tredje är sömnen viktig. Om jag sover för lite, blir jag trött och irriterad.\n\nHälsa handlar också om att må bra psykiskt. Man behöver vänner och någon att prata med. I Finland är vintern lång och mörk, och många känner sig trötta och nedstämda då.\n\nSamhället kan också hjälpa. Kommunen kan till exempel bygga motionsbanor och erbjuda simhallar och motionsgrupper till låga priser. På hälsostationen kan man få råd. Men varje människa har ändå ett eget ansvar. Jag tror att små förändringar i vardagen är det bästa sättet att börja.",
+      "modelEn": "I'm going to talk about health and about what you can do to feel well. In my opinion three things are most important: exercise, food and sleep.\n\nFirst, exercise is important. You don't have to go to the gym every day. It's enough to move a little every day, for example walk, cycle or take the stairs instead of the lift. I myself go for a long walk in the forest three times a week.\n\nSecond, you should eat a varied diet. It's good to eat lots of vegetables, fish and whole grains, and less sugar. That isn't always easy, because ready meals are quick and tasty. Third, sleep is important. If I sleep too little, I get tired and irritable.\n\nHealth is also about feeling well mentally. You need friends and someone to talk to. In Finland the winter is long and dark, and many people feel tired and low then.\n\nSociety can also help. The municipality can, for example, build exercise trails and offer swimming pools and exercise groups at low prices. At the health centre you can get advice. But each person still has their own responsibility. I think small changes in everyday life are the best way to start.",
+      "phrases": [
+        {
+          "sv": "Enligt mig är tre saker viktigast: …",
+          "en": "In my opinion three things are most important: …"
+        },
+        {
+          "sv": "Det räcker att man …",
+          "en": "It's enough to …"
+        },
+        {
+          "sv": "Man ska röra på sig varje dag.",
+          "en": "You should get some exercise every day."
+        },
+        {
+          "sv": "Man ska äta mångsidigt.",
+          "en": "You should eat a varied diet."
+        },
+        {
+          "sv": "Om jag sover för lite, blir jag …",
+          "en": "If I sleep too little, I get …"
+        },
+        {
+          "sv": "Hälsa handlar också om …",
+          "en": "Health is also about …"
+        },
+        {
+          "sv": "Kommunen kan erbjuda …",
+          "en": "The municipality can offer …"
+        },
+        {
+          "sv": "Varje människa har ett eget ansvar.",
+          "en": "Each person has their own responsibility."
+        }
+      ],
+      "tips": [
+        "Name your points at the start (*tre saker: motion, mat och sömn*) and then go through them in order.",
+        "After an *om* clause, the main clause starts with the verb: *Om jag sover för lite, blir jag trött*.",
+        "*Mångsidig* (varied) is a very common word in Finland-Swedish, as in *mångsidig kost* (a varied diet)."
+      ]
+    },
+    {
+      "id": "presentation-language-learning",
+      "type": "presentation",
+      "title": "Att lära sig ett nytt språk",
+      "titleEn": "Learning a new language",
+      "prompt": "Håll ett kort anförande om språkinlärning. Vilket är det bästa sättet att lära sig ett nytt språk som vuxen? Jämför till exempel kurser, självstudier och att använda språket i vardagen. Vad har fungerat för dig?",
+      "promptEn": "Give a short talk about language learning. What is the best way to learn a new language as an adult? Compare, for example, courses, self-study and using the language in everyday life. What has worked for you?",
+      "prep": 120,
+      "speak": 120,
+      "structure": [
+        "Introduce the topic and your main idea — *Jag ska tala om … Jag tror inte att …*",
+        "Courses: one advantage, one disadvantage — *En kurs är bra, eftersom … Nackdelen är att …*",
+        "Self-study: one advantage, one disadvantage — *Självstudier är ett annat alternativ …*",
+        "Using the language in everyday life, with your own example — *Enligt mig är det viktigaste … Jag lärde mig …*",
+        "Conclude — *Sammanfattningsvis tror jag att …*"
+      ],
+      "model": "Jag ska tala om hur man lär sig ett nytt språk som vuxen. Jag tror inte att det finns bara ett rätt sätt, men vissa saker fungerar bättre än andra.\n\nFörst vill jag tala om kurser. En kurs är bra, eftersom läraren kan förklara grammatiken och rätta fel. Man träffar också andra studerande, och det motiverar. Nackdelen är att kurserna kan vara dyra, och tiderna passar inte alltid om man jobbar.\n\nSjälvstudier är ett annat alternativ. I dag finns det många appar, poddar och videor på nätet. Man kan studera när man vill, till exempel på bussen. Men det är lätt att sluta om man inte har en plan.\n\nEnligt mig är det viktigaste att använda språket i vardagen. Man måste våga prata, även om man gör fel. Jag lärde mig mycket svenska när jag började jobba på ett kafé i Vasa. Kunderna var vänliga och tålmodiga. Dessutom lyssnar jag på Yle Vega på morgonen och lånar lättlästa böcker på biblioteket.\n\nSammanfattningsvis tror jag att det bästa är att kombinera en kurs med självstudier och mycket prat i vardagen. Och man får aldrig ge upp!",
+      "modelEn": "I'm going to talk about how you learn a new language as an adult. I don't think there is only one right way, but some things work better than others.\n\nFirst I want to talk about courses. A course is good because the teacher can explain the grammar and correct mistakes. You also meet other students, and that is motivating. The disadvantage is that courses can be expensive, and the times don't always suit you if you work.\n\nSelf-study is another option. Today there are lots of apps, podcasts and videos online. You can study when you want, for example on the bus. But it's easy to stop if you don't have a plan.\n\nIn my opinion the most important thing is to use the language in everyday life. You have to dare to speak, even if you make mistakes. I learned a lot of Swedish when I started working at a café in Vaasa. The customers were friendly and patient. I also listen to Yle Vega in the morning and borrow easy-to-read books from the library.\n\nTo sum up, I think the best thing is to combine a course with self-study and lots of talking in everyday life. And you must never give up!",
+      "phrases": [
+        {
+          "sv": "Det finns inte bara ett rätt sätt.",
+          "en": "There isn't only one right way."
+        },
+        {
+          "sv": "En fördel med … är att …",
+          "en": "One advantage of … is that …"
+        },
+        {
+          "sv": "Det motiverar mig.",
+          "en": "It motivates me."
+        },
+        {
+          "sv": "Man måste våga prata.",
+          "en": "You have to dare to speak."
+        },
+        {
+          "sv": "även om man gör fel",
+          "en": "even if you make mistakes"
+        },
+        {
+          "sv": "Jag lärde mig mycket när …",
+          "en": "I learned a lot when …"
+        },
+        {
+          "sv": "Det bästa är att kombinera …",
+          "en": "The best thing is to combine …"
+        },
+        {
+          "sv": "Man får aldrig ge upp.",
+          "en": "You must never give up."
+        }
+      ],
+      "tips": [
+        "This topic is close to your own life, so use your own experience as the main example.",
+        "*Även om* means 'even if': *Jag pratar, även om jag gör fel*.",
+        "Yle Vega (radio) and Svenska Yle have programmes in Finland-Swedish, and libraries have easy-to-read books (*lättlästa böcker*): good examples to mention."
+      ]
+    },
+    {
+      "id": "presentation-library",
+      "type": "presentation",
+      "title": "Behövs biblioteken?",
+      "titleEn": "Do we need libraries?",
+      "prompt": "Håll ett kort anförande om biblioteken i kommunen. Behövs biblioteken fortfarande i dag, när man kan läsa och se nästan allt på nätet? Vad använder du själv biblioteket till? Vad borde kommunen satsa på?",
+      "promptEn": "Give a short talk about the libraries in the municipality. Are libraries still needed today, when you can read and watch almost everything online? What do you use the library for yourself? What should the municipality invest in?",
+      "prep": 120,
+      "speak": 120,
+      "structure": [
+        "Present the question and your opinion — *En del säger att … Jag håller inte med.*",
+        "First reason — *För det första är biblioteket …*",
+        "Second reason, with your own experience — *För det andra … I mitt bibliotek …*",
+        "Show the other side — *Å andra sidan förstår jag att …*",
+        "Conclude — *Sammanfattningsvis tycker jag att kommunen ska …*"
+      ],
+      "model": "Jag ska tala om biblioteken. En del säger att vi inte behöver bibliotek längre, eftersom allt finns på nätet. Jag håller inte med. Enligt mig är biblioteken mycket viktiga, kanske ännu viktigare än förr.\n\nFör det första är biblioteket gratis och öppet för alla. Man kan låna böcker, tidningar och filmer, och i många bibliotek kan man till och med låna verktyg och sportutrustning. Alla har inte råd att köpa många böcker, särskilt inte barnfamiljer.\n\nFör det andra är biblioteket mer än böcker. Där kan man använda datorer, skriva ut dokument och få hjälp med digitala tjänster. I mitt bibliotek i Vanda finns det också ett språkcafé, där invandrare kan öva finska och svenska med frivilliga. Jag gick dit varje vecka när jag var ny i Finland, och där fick jag mina första finska vänner.\n\nFör det tredje är biblioteket en lugn plats. Studerande kan läsa där, och äldre människor kan träffa andra.\n\nÅ andra sidan förstår jag att kommunerna har lite pengar och måste spara. Kanske behöver inte varje by ett stort bibliotek. På landsbygden kan en bokbuss vara en bra lösning.\n\nSammanfattningsvis tycker jag att kommunen ska fortsätta att satsa på biblioteken, eftersom de är bra för hela samhället.",
+      "modelEn": "I'm going to talk about libraries. Some people say that we don't need libraries any more, because everything is online. I don't agree. In my opinion libraries are very important, perhaps even more important than before.\n\nFirst, the library is free and open to everyone. You can borrow books, newspapers and films, and in many libraries you can even borrow tools and sports equipment. Not everyone can afford to buy a lot of books, especially not families with children.\n\nSecond, the library is more than books. There you can use computers, print documents and get help with digital services. My library in Vantaa also has a language café, where immigrants can practise Finnish and Swedish with volunteers. I went there every week when I was new in Finland, and that is where I made my first Finnish friends.\n\nThird, the library is a quiet place. Students can study there, and older people can meet others.\n\nOn the other hand, I understand that municipalities have little money and have to save. Perhaps not every village needs a big library. In the countryside a mobile library can be a good solution.\n\nTo sum up, I think the municipality should continue to invest in libraries, because they are good for the whole of society.",
+      "phrases": [
+        {
+          "sv": "En del säger att …",
+          "en": "Some people say that …"
+        },
+        {
+          "sv": "Jag håller inte med.",
+          "en": "I don't agree."
+        },
+        {
+          "sv": "Biblioteket är gratis och öppet för alla.",
+          "en": "The library is free and open to everyone."
+        },
+        {
+          "sv": "Man kan till och med låna …",
+          "en": "You can even borrow …"
+        },
+        {
+          "sv": "Alla har inte råd att …",
+          "en": "Not everyone can afford to …"
+        },
+        {
+          "sv": "Biblioteket är mer än böcker.",
+          "en": "The library is more than books."
+        },
+        {
+          "sv": "Kommunen måste spara.",
+          "en": "The municipality has to save money."
+        },
+        {
+          "sv": "Kommunen borde satsa på …",
+          "en": "The municipality should invest in …"
+        },
+        {
+          "sv": "Det är bra för hela samhället.",
+          "en": "It's good for the whole of society."
+        }
+      ],
+      "tips": [
+        "Start with a clear opinion (*Jag håller inte med*, *Jag tycker att …*) and then give your reasons.",
+        "Show that you understand the other side (*Å andra sidan förstår jag att …*) before your conclusion.",
+        "Many Finnish libraries lend more than books, for example tools, games and sports equipment, so concrete examples are easy to find."
+      ]
+    },
+    {
+      "id": "presentation-friends",
+      "type": "presentation",
+      "title": "Nya vänner i ett nytt land",
+      "titleEn": "New friends in a new country",
+      "prompt": "Håll ett kort anförande om vänskap. Många som flyttar till Finland säger att det är svårt att hitta nya vänner. Varför är det så, tror du? Hur kan man lära känna nya människor? Ge exempel.",
+      "promptEn": "Give a short talk about friendship. Many people who move to Finland say that it is hard to find new friends. Why do you think that is? How can you get to know new people? Give examples.",
+      "prep": 120,
+      "speak": 120,
+      "structure": [
+        "Introduce the topic and why it matters — *Jag ska tala om … Det är ett viktigt ämne, eftersom …*",
+        "Ask the question and give reasons — *Varför är det svårt? Jag tror att det finns flera orsaker …*",
+        "Give ways to meet people — *Hur kan man då …? Enligt mig är det bästa sättet att …*",
+        "Your own example — *Själv hittade jag …*",
+        "Conclude — *Sammanfattningsvis måste man …*"
+      ],
+      "model": "Jag ska tala om hur man kan hitta vänner när man har flyttat till Finland. Det är ett viktigt ämne, eftersom många invandrare känner sig ensamma.\n\nVarför är det svårt? Jag tror att det finns flera orsaker. För det första är språket ett problem. Det är svårt att skämta och prata om viktiga saker på ett nytt språk. För det andra har många finländare redan sina vänner från skolan eller studietiden. De är vänliga, men de pratar inte så mycket med främlingar, till exempel på bussen. Det betyder inte att de är otrevliga. Det är bara en annan kultur.\n\nHur kan man då lära känna nya människor? Enligt mig är det bästa sättet att göra något tillsammans med andra. Man kan till exempel sjunga i en kör, spela i ett idrottslag eller gå en kurs på medborgarinstitutet. Man kan också bli frivillig i en förening eller delta i ett talko i sitt bostadsområde. När man gör något tillsammans, är det lättare att börja prata.\n\nSjälv hittade jag mina bästa vänner i en innebandyklubb i Åbo. Det tog tid, men nu träffas vi också utanför träningarna.\n\nSammanfattningsvis måste man vara aktiv och tålmodig. Vänskap växer långsamt i Finland, men den är ofta stark.",
+      "modelEn": "I'm going to talk about how you can find friends after moving to Finland. It's an important topic, because many immigrants feel lonely.\n\nWhy is it difficult? I think there are several reasons. First, the language is a problem. It's hard to joke and talk about important things in a new language. Second, many Finns already have their friends from school or from their student years. They are friendly, but they don't talk much with strangers, for example on the bus. That doesn't mean that they are unfriendly. It's just a different culture.\n\nSo how can you get to know new people? In my opinion the best way is to do something together with others. For example, you can sing in a choir, play in a sports team or take a course at the adult education centre. You can also become a volunteer in an association or take part in a talko, a voluntary work day, in your neighbourhood. When you do something together, it's easier to start talking.\n\nI found my best friends in a floorball club in Turku. It took time, but now we also meet outside training.\n\nTo sum up, you have to be active and patient. Friendship grows slowly in Finland, but it is often strong.",
+      "phrases": [
+        {
+          "sv": "Jag tror att det finns flera orsaker.",
+          "en": "I think there are several reasons."
+        },
+        {
+          "sv": "Det betyder inte att …",
+          "en": "That doesn't mean that …"
+        },
+        {
+          "sv": "Det är bara en annan kultur.",
+          "en": "It's just a different culture."
+        },
+        {
+          "sv": "Hur kan man då …?",
+          "en": "So how can you …?"
+        },
+        {
+          "sv": "Det bästa sättet är att …",
+          "en": "The best way is to …"
+        },
+        {
+          "sv": "lära känna nya människor",
+          "en": "to get to know new people"
+        },
+        {
+          "sv": "bli frivillig i en förening",
+          "en": "to become a volunteer in an association"
+        },
+        {
+          "sv": "Det tog tid, men nu …",
+          "en": "It took time, but now …"
+        },
+        {
+          "sv": "Man måste vara aktiv och tålmodig.",
+          "en": "You have to be active and patient."
+        }
+      ],
+      "tips": [
+        "Asking a question and answering it yourself (*Varför är det svårt? Jag tror att …*) is an easy way to structure a talk.",
+        "*Talko* is the Finland-Swedish word for a day of shared voluntary work, for example when the residents of a housing company clean the yard together.",
+        "Avoid saying that all Finns are the same; *många finländare* ('many Finns') sounds more balanced."
+      ]
+    }
+  ]
+}
