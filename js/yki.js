@@ -5,6 +5,7 @@ import { h, mount, toast, confetti, pushLayer } from './ui.js';
 import { S, save } from './store.js';
 import { speak, speakLines, stopLines, stopSpeaking, slowRate, sfx } from './audio.js';
 import { reward, checkAchievements } from './gamify.js';
+import { gptCard, writingPrompt, speakingPrompt, situationPrompt, answersPrompt } from './yki-grade.js';
 
 const PARTS = [
   { id: 'speaking', icon: '🎤', title: 'Speaking', sv: 'Tal', desc: 'Account, situations and a short presentation, timed like the test.' },
@@ -80,7 +81,7 @@ function screen(title, build) {
     if (closed) return;
     closed = true;
     if (how !== 'history') layer.release();
-    cleanups.forEach((fn) => {
+    cleanups.reverse().forEach((fn) => {
       try {
         fn();
       } catch {}
@@ -393,7 +394,15 @@ function speakingTask(body, t, api) {
     ...tabs([
       [
         '🎤 Practice',
-        () => [h('section.card.y-timer', clock, phase, actions), after],
+        () => [
+          h('section.card.y-timer', clock, phase, actions),
+          after,
+          gptCard({
+            title: '✨ Practise with ChatGPT',
+            text: 'ChatGPT gives you this task, you answer by voice (tap the 🎙️ in ChatGPT to dictate), and it grades you like a YKI examiner, with corrections and a better version of your answer.',
+            getPrompt: () => speakingPrompt(t, TYPE_LABEL[t.type][0].toLowerCase()),
+          }),
+        ],
       ],
       [
         '🧭 How to answer',
@@ -490,6 +499,11 @@ function situationTask(body, t, api) {
     chat,
     h('section.y-dock', actions),
     after,
+    gptCard({
+      title: '✨ Role-play with ChatGPT',
+      text: 'ChatGPT plays the other person, line by line. You answer by voice (tap the 🎙️ in ChatGPT to dictate), and at the end it grades every reply.',
+      getPrompt: () => situationPrompt(t),
+    }),
   );
   start();
 }
@@ -565,6 +579,12 @@ function writingTask(body, t, api) {
     h('section.card.y-write', ta, h('div.special', ['å', 'ä', 'ö', 'é'].map((ch) => h('button.key', { type: 'button', onmousedown: (e) => e.preventDefault(), onclick: () => insert(ch) }, ch))), counter),
     h('button.btn.wide', { type: 'button', onclick: compare }, 'Compare with the model'),
     result,
+    gptCard({
+      title: '✨ Grade it in ChatGPT',
+      text: 'Sends this task and your text to a new ChatGPT chat. It estimates your YKI grade, checks every point, corrects your mistakes and rewrites your text.',
+      button: '✨ Grade my text in ChatGPT',
+      getPrompt: () => (wordCount(ta.value) < 10 ? (toast('Write your text first'), '') : writingPrompt(t, TYPE_LABEL[t.type][0].toLowerCase(), ta.value)),
+    }),
   );
   updateCount();
 }
@@ -594,7 +614,16 @@ function questionTask(body, t, api, part) {
   };
   api.onClose(stopLines);
 
+  // Written-answer questions: you type a short answer, then compare with the expected one and mark it yourself.
+  const marks = t.questions.map(() => null);
   const qEls = t.questions.map((q, qi) => {
+    const explain = h('div.y-explain', { hidden: true });
+    const head = h('div.y-qtext', `${qi + 1}. ${q.q}`);
+    if (q.type === 'open') {
+      const input = h('textarea.y-open', { rows: 2, lang: 'sv', spellcheck: false, autocapitalize: 'sentences', placeholder: 'Svara kort på svenska…' });
+      input.addEventListener('input', () => (picks[qi] = input.value.trim() || null));
+      return { q, input, explain, el: h('div.y-q.open', head, input, explain) };
+    }
     const opts = q.type === 'tf' ? [true, false] : q.options.map((_, k) => k);
     const label = (o) => (q.type === 'tf' ? (o ? 'Sant (true)' : 'Falskt (false)') : q.options[o]);
     const btns = opts.map((o) =>
@@ -608,42 +637,79 @@ function questionTask(body, t, api, part) {
         },
       }, h('span.lbl', label(o))),
     );
-    const explain = h('div.y-explain', { hidden: true });
-    return { q, opts, btns, explain, el: h('div.y-q', h('div.y-qtext', `${qi + 1}. ${q.q}`), h('div.opts' + (q.type === 'tf' ? '.tf' : ''), btns), explain) };
+    return { q, opts, btns, explain, el: h('div.y-q', head, h('div.opts' + (q.type === 'tf' ? '.tf' : ''), btns), explain) };
   });
+  const openRows = () => qEls.filter((x) => x.q.type === 'open').map((x) => ({ q: x.q.q, mine: x.input.value, answer: x.q.answer }));
 
   const result = h('div');
+  const banner = h('div.banner');
+  const total = t.questions.length;
+  let best = rec(part)[t.id]?.done ? rec(part)[t.id].score || 0 : -1;
+  // Shows the score; once every written answer is marked (or you leave), saves and rewards a new best.
+  const settle = (leaving) => {
+    const pending = marks.filter((m) => m === null).length;
+    const score = marks.filter((m) => m === true).length;
+    banner.textContent = `${score === total ? '🌟' : '📊'} ${score} / ${total} correct` + (pending ? ` · mark your written answer${pending > 1 ? 's' : ''} above` : '');
+    if (pending && !leaving) return;
+    if (score > best) {
+      best = score;
+      award(part, t.id, 2 * score, { score, total });
+    } else {
+      rec(part)[t.id] = { ...rec(part)[t.id], t: Date.now() };
+      save(true);
+    }
+    if (leaving) return;
+    sfx(score === total ? 'win' : 'correct');
+    if (score === total) confetti(50);
+  };
+  // Unmarked written answers count as wrong if you leave without marking them.
+  api.onClose(() => checked && marks.includes(null) && settle(true));
   const check = () => {
     if (picks.some((p) => p === null)) return toast('Answer every question first');
     checked = true;
-    let score = 0;
-    qEls.forEach(({ q, opts, btns, explain }, qi) => {
+    qEls.forEach(({ q, opts, btns, input, explain }, qi) => {
+      explain.hidden = false;
+      if (q.type === 'open') {
+        input.readOnly = true;
+        const mark = (ok) => {
+          marks[qi] = ok;
+          markRow.querySelectorAll('.chip').forEach((c, k) => c.classList.toggle('sel', k === (ok ? 0 : 1)));
+          input.classList.toggle('correct', ok);
+          input.classList.toggle('wrong', !ok);
+          if (marks.includes(null)) sfx('tap');
+          settle();
+        };
+        const markRow = h('div.y-mark', h('span', 'Was yours right?'), h('button.chip', { type: 'button', onclick: () => mark(true) }, '✓ Yes'), h('button.chip', { type: 'button', onclick: () => mark(false) }, '✗ No'));
+        mount(explain, h('div', h('b', 'Expected: '), q.answer), h('div.muted', q.explain), markRow);
+        return;
+      }
       const ok = picks[qi] === q.answer;
-      if (ok) score++;
+      marks[qi] = ok;
       btns.forEach((b, k) => {
         b.disabled = true;
         b.classList.remove('selected');
         if (opts[k] === q.answer) b.classList.add('correct');
         else if (opts[k] === picks[qi]) b.classList.add('wrong');
       });
-      explain.hidden = false;
       explain.textContent = `${ok ? '✅' : '❌'} ${q.explain}`;
     });
-    const total = t.questions.length;
-    const prev = rec(part)[t.id];
-    sfx(score === total ? 'win' : 'correct');
-    if (score === total) confetti(50);
     mount(
       result,
-      h('div.banner', `${score === total ? '🌟' : '📊'} ${score} / ${total} correct`),
+      banner,
+      openRows().length
+        ? gptCard({
+            title: '✨ Check your written answers in ChatGPT',
+            text: 'Not sure if your answer counts? ChatGPT compares it with the text and the expected answer, and shows how to write it in correct Swedish.',
+            getPrompt: () => answersPrompt(t, part, openRows()),
+          })
+        : null,
       listening
         ? h('section.card', h('h3', 'Transcript'), t.script.map((l) => h('p.y-line', h('b', `${l.spk}: `), l.text)), ...toggleEn('', t.scriptEn))
         : h('section.card', ...toggleEn('', t.textEn, { tag: 'div' })),
       t.glossary ? h('section.card', h('h3', 'Words'), h('div.y-phrases', t.glossary.map((g) => h('button.y-phrase', { type: 'button', onclick: () => speak(g.sv) }, h('b', g.sv), h('span.muted.small', g.en))))) : null,
     );
-    if (!prev || score > (prev.score || 0)) award(part, t.id, 2 * score, { score, total });
-    else rec(part)[t.id] = { ...prev, t: Date.now() };
-    save(true);
+    if (marks.includes(null)) sfx('tap');
+    settle();
     checkBtn.hidden = true;
     drawPlay();
     result.firstChild.scrollIntoView({ behavior: 'smooth', block: 'center' });

@@ -54,4 +54,8 @@ The official sample has three task types, and every task has `id`, `type`, `titl
   * `{ "type": "mc", "q": "…", "options": ["…", "…", "…"], "answer": 0, "explain": "English: why, quoting the text" }` with 3–4 options and only one defensible answer, or
   * `{ "type": "tf", "q": "statement in Swedish", "answer": true | false, "explain": "…" }`.
 * The answer must be clearly in the text or script; distractors must be plausible but clearly wrong. Questions are in Swedish, like the exam.
+* **Written-answer questions** (`open`): `{ "type": "open", "q": "…", "answer": "…", "explain": "…" }`. Every item has 1–2 of them, placed after its mc/tf questions (so an item has at most 7 questions). The learner types a short answer in Swedish, sees `answer`, and marks themselves right or wrong (or asks ChatGPT), so:
+  * ask about one concrete fact that is clearly stated in the text or script and that the mc/tf questions do not already give away: a time, date, place, price, reason, what someone must do or bring. Use question words: *Vad, När, Var, Varför, Hur, Vem, Hur mycket, Vilken*. No opinion questions, no yes/no questions.
+  * `answer`: the expected answer in short, natural Swedish, 1–10 words (a phrase is fine: *"Före den 15 maj."*, *"Eftersom hissen ska repareras."*). If two different answers are both right, give both: *"Med buss 55 eller med taxi."*
+  * `explain`: in English, quote where the answer is and say what a correct answer must contain, e.g. *"The text says 'senast fredag den 12 april'. The answer needs the day and the date."*
 * `glossary`: 4–8 harder words from the text with English meanings.

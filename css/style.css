@@ -785,3 +785,15 @@ textarea.code { font-family: ui-monospace, Menlo, monospace; font-size: 0.75rem;
 @media (min-width: 700px) {
   #app { border-left: 1px solid var(--line); border-right: 1px solid var(--line); }
 }
+/* YKI: written answers and ChatGPT grading */
+.y-open { width: 100%; box-sizing: border-box; font: inherit; font-size: 1rem; padding: 10px 12px; border: 2px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--text); resize: vertical; }
+.y-open:focus { outline: none; border-color: var(--brand-2); }
+.y-open.correct { border-color: var(--ok); background: var(--ok-bg); }
+.y-open.wrong { border-color: var(--bad); background: var(--bad-bg); }
+.y-explain > div + div { margin-top: 4px; }
+.y-mark { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.y-mark span { font-weight: 700; margin-right: 4px; }
+.y-mark .chip { cursor: pointer; }
+.y-gpt { display: flex; flex-direction: column; gap: 8px; }
+.y-gpt h3, .y-gpt p { margin: 0; }
+.y-gpt .btn { text-align: center; text-decoration: none; box-sizing: border-box; }

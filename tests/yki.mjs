@@ -25,6 +25,7 @@ const FIX = {
       { type: 'mc', q: 'När är tvättstugan stängd?', options: ['På måndag', 'På tisdag', 'På fredag'], answer: 0, explain: 'It says "stängd på måndag".' },
       { type: 'tf', q: 'Tvättstugan öppnar igen på tisdag.', answer: true, explain: '"Välkommen tillbaka på tisdag."' },
       { type: 'tf', q: 'Tvättstugan är stängd hela veckan.', answer: false, explain: 'Only Monday.' },
+      { type: 'open', q: 'När öppnar tvättstugan igen?', answer: 'På tisdag.', explain: '"Välkommen tillbaka på tisdag."' },
     ] },
   ] },
   listening: { items: [
@@ -37,7 +38,7 @@ const FIX = {
 };
 
 const browser = await chromium.launch({ args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream'] });
-const ctx = await browser.newContext({ ...devices['iPhone 13'], serviceWorkers: 'block', permissions: ['microphone'] });
+const ctx = await browser.newContext({ ...devices['iPhone 13'], serviceWorkers: 'block', permissions: ['microphone', 'clipboard-read', 'clipboard-write'] });
 await ctx.addInitScript(() => {
   window.__spoken = [];
   SpeechSynthesis.prototype.speak = function (u) { window.__spoken.push(u.text); setTimeout(() => u.onend && u.onend(), 30); };
@@ -47,7 +48,7 @@ await ctx.route(/\/data\/yki\/(\w+)\.json/, (route) => {
   const part = route.request().url().match(/\/data\/yki\/(\w+)\.json/)[1];
   route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(FIX[part]) });
 });
-await ctx.route(/wiktionary\.org|wikimedia\.org/, (r) => r.abort());
+await ctx.route(/wiktionary\.org|wikimedia\.org|chatgpt\.com/, (r) => r.abort());
 const page = await ctx.newPage();
 const errors = [];
 page.on('pageerror', (e) => errors.push(e.message));
@@ -84,6 +85,17 @@ check('your own recording can be played back', await page.isVisible('button:has-
 await page.click('.y-rate .chip:has-text("OK")');
 await wait();
 check('rating saves the task as practised', (await yki()).speaking?.['acc-1']?.done === 1);
+const gptHref = async (sel) => {
+  // Clicking builds the prompt, puts it in the link and copies it; the new tab itself is blocked above.
+  const [popup] = await Promise.all([ctx.waitForEvent('page', { timeout: 3000 }).catch(() => null), page.click(sel)]);
+  const href = await page.$eval(sel, (a) => a.href);
+  if (popup) await popup.close();
+  return decodeURIComponent(href.split('?q=')[1] || '');
+};
+const sp = await gptHref('.y-gpt-open');
+check('speaking opens ChatGPT with the task and the examiner instructions', /YKI/.test(sp) && sp.includes('Berätta om din skoltid.') && /voice dictation/.test(sp), sp.slice(0, 200));
+const copied = await page.evaluate(() => navigator.clipboard.readText()).catch(() => '');
+check('the prompt is also copied', copied.includes('Berätta om din skoltid.'));
 await page.click('.y-tabs .chip:has-text("Model answer")');
 check('the model answer tab shows the model', await page.isVisible('.y-model:has-text("Vasa")'));
 await back();
@@ -102,6 +114,8 @@ await page.waitForSelector('.y-rate');
 const bubbles = await page.$$eval('.y-bubble', (b) => b.length);
 const spoken = await page.evaluate(() => window.__spoken);
 check('a situation plays every line and shows a model reply for each turn', bubbles === 6 && spoken.includes('Passar fredag?'), { bubbles, spoken });
+const sit = await gptHref('.y-gpt-open');
+check('the situation role-play prompt lists every line with its goal', sit.includes('3. "Passar fredag?" (my reply should: Accept the time.)') && /send only line 1/.test(sit), sit.slice(0, 200));
 await back();
 await back();
 
@@ -112,6 +126,8 @@ await page.waitForSelector('textarea.y-text');
 await page.fill('textarea.y-text', 'Hej Anna, tack för igår. Kan vi ses på lördag?');
 await wait(600);
 check('the word counter turns green inside the range', await page.isVisible('.y-count.ok'));
+const wr = await gptHref('.y-gpt-open');
+check('writing sends the task, the points and your text to ChatGPT', wr.includes('Skriv till din vän.') && wr.includes('- Föreslå en dag') && wr.includes('Kan vi ses på lördag?') && /\(10 words\)/.test(wr), wr.slice(0, 300));
 await page.click('button:has-text("Compare with the model")');
 await page.waitForSelector('.y-model');
 await page.click('button:has-text("Mark as done")');
@@ -135,9 +151,20 @@ await (await qs[1].$$('.opt'))[0].click();
 await (await qs[2].$$('.opt'))[0].click(); // wrong on purpose (it's false)
 await page.click('button:has-text("Check answers")');
 await wait();
-const banner = await page.$eval('.banner', (b) => b.textContent);
-check('reading scores the answers and explains them', /2 \/ 3/.test(banner) && (await page.$$('.y-explain:not([hidden])')).length === 3, banner);
-check('the best score is saved', (await yki()).reading?.['r-1']?.score === 2);
+check('a written answer is required before checking', (await page.isVisible('button:has-text("Check answers")')) && !(await yki()).reading?.['r-1']);
+await qs[3].$eval('textarea.y-open', (el) => el.focus());
+await page.keyboard.type('Den öppnar på tisdag');
+await page.click('button:has-text("Check answers")');
+await wait();
+let banner = await page.$eval('.banner', (b) => b.textContent);
+check('reading scores the answers, explains them and shows the expected written answer', /2 \/ 4/.test(banner) && /mark your written answer/.test(banner) && (await page.$$('.y-explain:not([hidden])')).length === 4 && (await page.isVisible('.y-explain:has-text("På tisdag.")')), banner);
+check('nothing is saved until the written answer is marked', !(await yki()).reading?.['r-1']);
+const rd = await gptHref('.y-gpt-open');
+check('ChatGPT gets the text, the question, your answer and the expected answer', rd.includes('Tvättstugan är stängd på måndag.') && rd.includes('My answer: Den öppnar på tisdag') && rd.includes('Expected: På tisdag.'), rd.slice(0, 300));
+await page.click('.y-mark .chip:has-text("Yes")');
+await wait();
+banner = await page.$eval('.banner', (b) => b.textContent);
+check('marking it right updates the score and saves the best', /3 \/ 4/.test(banner) && !/mark your/.test(banner) && (await yki()).reading?.['r-1']?.score === 3, banner);
 await back();
 await back();
 

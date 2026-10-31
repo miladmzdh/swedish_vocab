@@ -33,7 +33,8 @@ for (const file of process.argv.slice(2)) {
     if (m) errs.push(`${where}: Sweden-only term "${m[0]}" (use Finland's)`);
   };
   const questions = (qs, where) => {
-    if (!Array.isArray(qs) || qs.length < 3 || qs.length > 6) errs.push(`${where}: needs 3–6 questions`);
+    if (!Array.isArray(qs) || qs.length < 3 || qs.length > 7) errs.push(`${where}: needs 3–7 questions`);
+    if ((qs || []).filter((q) => q.type === 'open').length > 2) errs.push(`${where}: at most 2 "open" questions`);
     (qs || []).forEach((q, i) => {
       const w = `${where} q${i + 1}`;
       str(q, 'q', w);
@@ -44,7 +45,9 @@ for (const file of process.argv.slice(2)) {
         if (new Set((q.options || []).map((x) => x.trim().toLowerCase())).size !== (q.options || []).length) errs.push(`${w}: duplicate options`);
       } else if (q.type === 'tf') {
         if (typeof q.answer !== 'boolean') errs.push(`${w}: tf answer must be true/false`);
-      } else errs.push(`${w}: type must be "mc" or "tf"`);
+      } else if (q.type === 'open') {
+        if (str(q, 'answer', w) && words(q.answer) > 15) warn.push(`${w}: open answer is ${words(q.answer)} words (keep it short)`);
+      } else errs.push(`${w}: type must be "mc", "tf" or "open"`);
     });
   };
 
