@@ -359,7 +359,7 @@
             "Lektionerna är kortare där."
           ],
           "answer": 0,
-          "explain": "“Lördag passar faktiskt bättre, för då jobbar jag inte.” The Saturday course is not shorter (“lektionerna är tre timmar långa”), and no cheaper price is mentioned."
+          "explain": "“Lördag passar faktiskt bättre, för då jobbar jag inte.” The Saturday course is not shorter (“Där är lektionerna tre timmar långa”), and no cheaper price is mentioned. The other course is also full, but that is not one of the options."
         },
         {
           "type": "mc",
@@ -808,11 +808,11 @@
           "q": "Var finns restaurangvagnen?",
           "options": [
             "I vagn tre",
-            "Först i tåget",
+            "Längst fram i tåget",
             "I vagn fem"
           ],
           "answer": 0,
-          "explain": "“Restaurangvagnen finns i vagn tre, mitt i tåget.” Carriage five has the play area for children."
+          "explain": "“Restaurangvagnen finns i vagn tre, mitt i tåget.” It is in the middle of the train, not at the front, and carriage five has the play area for children."
         },
         {
           "type": "tf",
@@ -985,7 +985,7 @@
         },
         {
           "spk": "B",
-          "text": "Ja, det ser ut så. Hösten har varit ganska mild hittills, men nu kommer kall luft från norr. I natt sjunker temperaturen till minus fem grader i södra Finland och till minus femton i Lappland."
+          "text": "Ja, det ser så ut. Hösten har varit ganska mild hittills, men nu kommer kall luft från norr. I natt sjunker temperaturen till minus fem grader i södra Finland och till minus femton i Lappland."
         },
         {
           "spk": "A",
